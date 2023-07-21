@@ -1,0 +1,134 @@
+base-bug:
+  bug:
+    # AKRAB
+    - &bug-ip1 noice.dnstore.my.id
+    - &bug-ip2 cdn.noice.id
+    - &bug-ip3 104.18.2.198
+    - &bug-ip4 104.18.3.198
+    - &bug-ip5 xlakrab.superspeed.my.id
+    - &bug-ip6 open.noice.id
+    - &bug-ip7 akrab.bugku.my.id
+    - &bug-ip8 fvck.love
+    - &bug-ip9 akrab2.v-pn.my.id
+    - &bug-ip10 104.18.0.196
+    - &bug-ip11 104.18.1.196
+    - &bug-ip12 akrab.natanvpn.my.id
+    - &bug-ip13 infile.com
+    - &bug-ip14 cdn.noiceid.cc
+    - &bug-ip15 assets.noiceid.cc
+    - &bug-ip16 meetdory.com
+    - &bug-ip17 www.keldif.com
+    - &bug-ip18 slotvibe24.com
+    - &bug-ip19 www.fpool.com
+    - &bug-ip20 cdn.noiceid.cc
+    
+base-proxy:
+  vmess:
+    - &basevmess
+      type: vmess
+      alterId: 0
+      cipher: auto
+      udp: true
+      udp-over-tcp: true
+      network: ws
+      tls: false
+      skip-cert-verify: true
+  vless:
+    - &basevless
+      type: vless
+      alterId: 0
+      tls: false
+      cipher: auto
+      udp: true
+      udp-over-tcp: true
+      network: ws
+      skip-cert-verify: true
+  trojan:
+    - &basetrojan
+      type: trojan
+      port: 443
+      udp: true
+      skip-cert-verify: true
+      network: ws
+  gfw:
+    - &basegrpc
+      type: trojan
+      port: 443
+      udp: true
+      skip-cert-verify: true
+base-proxy-group:
+  url:
+    - &url-gg http://www.gstatic.com/generate_204
+    - &url-cf http://cp.cloudflare.com/generate_204
+proxies:
+
+  - &sshkit
+    <<: *basevmess
+    name: ID 🇮🇩 PT Biznet 1
+    server: *bug-ip1
+    port: 443
+    tls: true
+    uuid: 46ffa3e3-0f17-4f37-a20a-8fdccd18ce3e
+    servername: id-rysaputra18n19xz.me
+    ws-opts: 
+      path: /vmess
+      headers: 
+        Host: id-rysaputra18n19xz.me
+        Early-Data: 1
+  - <<: *sshkit
+    name: ID 🇮🇩 PT Biznet 2
+    server: *bug-ip2
+  - <<: *sshkit
+    name: ID 🇮🇩 PT Biznet 3
+    server: *bug-ip3
+  - <<: *sshkit
+    name: ID 🇮🇩 PT Biznet 4
+    server: *bug-ip4
+  - <<: *sshkit
+    name: ID 🇮🇩 PT Biznet 5
+    server: *bug-ip5
+  - <<: *sshkit
+    name: ID 🇮🇩 PT Biznet 6
+    server: *bug-ip6
+  - <<: *sshkit
+    name: ID 🇮🇩 PT Biznet 7
+    server: *bug-ip7
+  - <<: *sshkit
+    name: ID 🇮🇩 PT Biznet 8
+    server: *bug-ip8
+  - <<: *sshkit
+    name: ID 🇮🇩 PT Biznet 9
+    server: *bug-ip9
+  - <<: *sshkit
+    name: ID 🇮🇩 PT Biznet 10
+    server: *bug-ip10
+  - <<: *sshkit
+    name: ID 🇮🇩 PT Biznet 11
+    server: *bug-ip11
+  - <<: *sshkit
+    name: ID 🇮🇩 PT Biznet 12
+    server: *bug-ip12
+  - <<: *sshkit
+    name: ID 🇮🇩 PT Biznet 13
+    server: *bug-ip13
+  - <<: *sshkit
+    name: ID 🇮🇩 PT Biznet 14
+    server: *bug-ip14
+  - <<: *sshkit
+    name: ID 🇮🇩 PT Biznet 15
+    server: *bug-ip15
+  - <<: *sshkit
+    name: ID 🇮🇩 PT Biznet 16
+    server: *bug-ip16
+  - <<: *sshkit
+    name: ID 🇮🇩 PT Biznet 17
+    server: *bug-ip17
+  - <<: *sshkit
+    name: ID 🇮🇩 PT Biznet 18
+    server: *bug-ip18
+  - <<: *sshkit
+    name: ID 🇮🇩 PT Biznet 19
+    server: *bug-ip19
+  - <<: *sshkit
+    name: ID 🇮🇩 PT Biznet 20
+    server: *bug-ip20
