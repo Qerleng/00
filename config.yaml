@@ -1,0 +1,162 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+ipv6: false
+mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+secret: ""
+bind-address: "*"
+unified-delay: true
+profile:
+  store-selected: true
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  listen: 0.0.0.0:7874
+  nameserver:
+    - 8.8.8.8
+    - 1.0.0.1
+    - https://dns.google/dns-query
+proxies:
+proxy-groups:
+  - name: PROXY
+    type: select
+    proxies:
+      - TEST-AKUN-SGP
+      - TEST-AKUN-SG
+      - TEST-AKUN
+      - TEST-AKUN-IND
+      - TEST-AKUN-ID
+      - SERVER-SG
+      - SERVER-ID
+      - GAME-ONLY
+  - name: TEST-AKUN-SGP
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 120
+    use:
+      - TEST-AKUN-SGP
+  - name: TEST-AKUN-SG
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 120
+    use:
+      - TEST-AKUN-SG
+  - name: TEST-AKUN
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 120
+    use:
+      - TEST-AKUN
+  - name: TEST-AKUN-IND
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 120
+    use:
+      - TEST-AKUN-IND
+  - name: TEST-AKUN-ID
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 120
+    use:
+      - TEST-AKUN-ID
+  - name: SERVER-SG
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 120
+    use:
+      - SERVER-SG
+  - name: SERVER-ID
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 120
+    use:
+      - SERVER-ID
+  - name: GAME-ONLY
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 120
+    use:
+      - GAME-ONLY
+proxy-providers:
+  SERVER-ID:
+    type: http
+    path: "./proxy_provider/id.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/id.yaml
+    interval: 120
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  SERVER-SG:
+    type: http
+    path: "./proxy_provider/sg.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/sg.yaml
+    interval: 120
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  GAME-ONLY:
+    type: http
+    path: "./proxy_provider/game.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/game.yaml
+    interval: 120
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN:
+    type: http
+    path: "./proxy_provider/test.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/test.yaml
+    interval: 120
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN-ID:
+    type: http
+    path: "./proxy_provider/test-id.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/test-id.yaml
+    interval: 120
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN-IND:
+    type: http
+    path: "./proxy_provider/test-idn.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/test-idn.yaml
+    interval: 120
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN-SG:
+    type: http
+    path: "./proxy_provider/test-sg.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/test-sg.yaml
+    interval: 120
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN-SGP:
+    type: http
+    path: "./proxy_provider/test-sgp.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/test-sgp.yaml
+    interval: 120
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+rules:
+  - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
+  - DOMAIN-SUFFIX,googlesyndication.com,PROXY
+  - MATCH,PROXY
