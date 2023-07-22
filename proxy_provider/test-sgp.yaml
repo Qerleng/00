@@ -63,8 +63,8 @@ proxies:
     <<: *basevmess
     name: 00 🇮🇩 GIO 1
     server: *bug-ip1
-    port: 80
-    tls: false
+    port: 443
+    tls: true
     uuid: 0829b0e8-ce84-4bbe-9beb-34b0366b4ed9
     servername: yzqsvip.stvpn.app
     ws-opts: 
