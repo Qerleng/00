@@ -54,14 +54,14 @@ proxies:
     <<: *basevmess
     name: 99 🇸🇬 AKAMAI  1
     server: *bug-ip1
-    port: 443
-    tls: true
-    uuid: f04d48b8-a4e3-49be-8707-1589892aa3ca
-    servername: free.rizyulstorevpn.site
+    port: 80
+    tls: false
+    uuid: df253746-f3b1-40db-b544-8df78f8dcbab
+    servername: aginvpn.com
     ws-opts: 
-      path: /vmess
+      path: /whatever/vmess
       headers: 
-        Host: free.rizyulstorevpn.site
+        Host: aginvpn.com
       Early-Data: 1
   - <<: *sshkit
     name: 99 🇸🇬 AKAMAI  2
