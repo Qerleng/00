@@ -65,12 +65,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: 0829b0e8-ce84-4bbe-9beb-34b0366b4ed9
-    servername: yzqsvip.stvpn.app
+    uuid: 46ffa3e3-0f17-4f37-a20a-8fdccd18ce3e
+    servername: id-rysaputra18n19xz.me
     ws-opts: 
       path: /vmess
       headers: 
-        Host: yzqsvip.stvpn.app
+        Host: id-rysaputra18n19xz.me
         Early-Data: 1
   - <<: *sshkit
     name: 00 🇮🇩 GIO 2
