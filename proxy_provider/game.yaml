@@ -62,7 +62,7 @@ proxies:
 
   - &sshkit
     <<: *basetrojan
-    name: ID 🇮🇩 PT Biznet 1
+    name: ID 🇮🇩 Herza 1
     server: *bug-ip1
     port: 443
     password: 33450dc0-c2ac-4021-820d-14fb7fdbf512
@@ -73,59 +73,59 @@ proxies:
         Host: herza2.myserver-prem.cloud
         Early-Data: 1
   - <<: *sshkit
-    name: ID 🇮🇩 PT Biznet 2
+    name: ID 🇮🇩 Herza 2
     server: *bug-ip2
   - <<: *sshkit
-    name: ID 🇮🇩 PT Biznet 3
+    name: ID 🇮🇩 Herza 3
     server: *bug-ip3
   - <<: *sshkit
-    name: ID 🇮🇩 PT Biznet 4
+    name: ID 🇮🇩 Herza 4
     server: *bug-ip4
   - <<: *sshkit
-    name: ID 🇮🇩 PT Biznet 5
+    name: ID 🇮🇩 Herza 5
     server: *bug-ip5
   - <<: *sshkit
-    name: ID 🇮🇩 PT Biznet 6
+    name: ID 🇮🇩 Herza 6
     server: *bug-ip6
   - <<: *sshkit
-    name: ID 🇮🇩 PT Biznet 7
+    name: ID 🇮🇩 Herza 7
     server: *bug-ip7
   - <<: *sshkit
-    name: ID 🇮🇩 PT Biznet 8
+    name: ID 🇮🇩 Herza 8
     server: *bug-ip8
   - <<: *sshkit
-    name: ID 🇮🇩 PT Biznet 9
+    name: ID 🇮🇩 Herza 9
     server: *bug-ip9
   - <<: *sshkit
-    name: ID 🇮🇩 PT Biznet 10
+    name: ID 🇮🇩 Herza 10
     server: *bug-ip10
   - <<: *sshkit
-    name: ID 🇮🇩 PT Biznet 11
+    name: ID 🇮🇩 Herza 11
     server: *bug-ip11
   - <<: *sshkit
-    name: ID 🇮🇩 PT Biznet 12
+    name: ID 🇮🇩 Herza 12
     server: *bug-ip12
   - <<: *sshkit
-    name: ID 🇮🇩 PT Biznet 13
+    name: ID 🇮🇩 Herza 13
     server: *bug-ip13
   - <<: *sshkit
-    name: ID 🇮🇩 PT Biznet 14
+    name: ID 🇮🇩 Herza 14
     server: *bug-ip14
   - <<: *sshkit
-    name: ID 🇮🇩 PT Biznet 15
+    name: ID 🇮🇩 Herza 15
     server: *bug-ip15
   - <<: *sshkit
-    name: ID 🇮🇩 PT Biznet 16
+    name: ID 🇮🇩 Herza 16
     server: *bug-ip16
   - <<: *sshkit
-    name: ID 🇮🇩 PT Biznet 17
+    name: ID 🇮🇩 Herza 17
     server: *bug-ip17
   - <<: *sshkit
-    name: ID 🇮🇩 PT Biznet 18
+    name: ID 🇮🇩 Herza 18
     server: *bug-ip18
   - <<: *sshkit
-    name: ID 🇮🇩 PT Biznet 19
+    name: ID 🇮🇩 Herza 19
     server: *bug-ip19
   - <<: *sshkit
-    name: ID 🇮🇩 PT Biznet 20
+    name: ID 🇮🇩 Herza 20
     server: *bug-ip20
