@@ -31,7 +31,6 @@ base-proxy:
       udp: true
       udp-over-tcp: true
       network: ws
-      tls: false
       skip-cert-verify: true
   vless:
     - &basevless
