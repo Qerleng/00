@@ -153,7 +153,7 @@ proxy-providers:
     type: http
     path: "./proxy_provider/id.yaml"
     url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/id.yaml
-    interval: 3600
+    interval: 600
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -162,7 +162,7 @@ proxy-providers:
     type: http
     path: "./proxy_provider/sg.yaml"
     url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/sg.yaml
-    interval: 3600
+    interval: 600
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -171,7 +171,7 @@ proxy-providers:
     type: http
     path: "./proxy_provider/game.yaml"
     url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/game.yaml
-    interval: 3600
+    interval: 600
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -180,7 +180,7 @@ proxy-providers:
     type: http
     path: "./proxy_provider/test.yaml"
     url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/test.yaml
-    interval: 3600
+    interval: 600
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -189,7 +189,7 @@ proxy-providers:
     type: http
     path: "./proxy_provider/test-id.yaml"
     url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/test-id.yaml
-    interval: 3600
+    interval: 600
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -198,7 +198,7 @@ proxy-providers:
     type: http
     path: "./proxy_provider/test-idn.yaml"
     url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/test-idn.yaml
-    interval: 3600
+    interval: 600
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -207,7 +207,7 @@ proxy-providers:
     type: http
     path: "./proxy_provider/test-sg.yaml"
     url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/test-sg.yaml
-    interval: 3600
+    interval: 600
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -216,7 +216,7 @@ proxy-providers:
     type: http
     path: "./proxy_provider/test-sgp.yaml"
     url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/test-sgp.yaml
-    interval: 3600
+    interval: 600
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
