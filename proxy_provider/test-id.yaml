@@ -63,7 +63,7 @@ proxies:
 
   - &sshkit
     <<: *basevmess
-    name: ID 🇮🇩 Biznet 1
+    name: ID 🇮🇩 First Cagayan 1
     server: *bug-ip1
     port: 80
     tls: false
@@ -75,59 +75,59 @@ proxies:
         Host: id1.prassvpn.wrwb.cloud
         Early-Data: 1
   - <<: *sshkit
-    name: ID 🇮🇩 Biznet 2
+    name: ID 🇮🇩 First Cagayan 2
     server: *bug-ip2
   - <<: *sshkit
-    name: ID 🇮🇩 Biznet 3
+    name: ID 🇮🇩 First Cagayan 3
     server: *bug-ip3
   - <<: *sshkit
-    name: ID 🇮🇩 Biznet 4
+    name: ID 🇮🇩 First Cagayan 4
     server: *bug-ip4
   - <<: *sshkit
-    name: ID 🇮🇩 Biznet 5
+    name: ID 🇮🇩 First Cagayan 5
     server: *bug-ip5
   - <<: *sshkit
-    name: ID 🇮🇩 Biznet 6
+    name: ID 🇮🇩 First Cagayan 6
     server: *bug-ip6
   - <<: *sshkit
-    name: ID 🇮🇩 Biznet 7
+    name: ID 🇮🇩 First Cagayan 7
     server: *bug-ip7
   - <<: *sshkit
-    name: ID 🇮🇩 Biznet 8
+    name: ID 🇮🇩 First Cagayan 8
     server: *bug-ip8
   - <<: *sshkit
-    name: ID 🇮🇩 Biznet 9
+    name: ID 🇮🇩 First Cagayan 9
     server: *bug-ip9
   - <<: *sshkit
-    name: ID 🇮🇩 Biznet 10
+    name: ID 🇮🇩 First Cagayan 10
     server: *bug-ip10
   - <<: *sshkit
-    name: ID 🇮🇩 Biznet 11
+    name: ID 🇮🇩 First Cagayan 11
     server: *bug-ip11
   - <<: *sshkit
-    name: ID 🇮🇩 Biznet 12
+    name: ID 🇮🇩 First Cagayan 12
     server: *bug-ip12
   - <<: *sshkit
-    name: ID 🇮🇩 Biznet 13
+    name: ID 🇮🇩 First Cagayan 13
     server: *bug-ip13
   - <<: *sshkit
-    name: ID 🇮🇩 Biznet 14
+    name: ID 🇮🇩 First Cagayan 14
     server: *bug-ip14
   - <<: *sshkit
-    name: ID 🇮🇩 Biznet 15
+    name: ID 🇮🇩 First Cagayan 15
     server: *bug-ip15
   - <<: *sshkit
-    name: ID 🇮🇩 Biznet 16
+    name: ID 🇮🇩 First Cagayan 16
     server: *bug-ip16
   - <<: *sshkit
-    name: ID 🇮🇩 Biznet 17
+    name: ID 🇮🇩 First Cagayan 17
     server: *bug-ip17
   - <<: *sshkit
-    name: ID 🇮🇩 Biznet 18
+    name: ID 🇮🇩 First Cagayan 18
     server: *bug-ip18
   - <<: *sshkit
-    name: ID 🇮🇩 Biznet 19
+    name: ID 🇮🇩 First Cagayan 19
     server: *bug-ip19
   - <<: *sshkit
-    name: ID 🇮🇩 Biznet 20
+    name: ID 🇮🇩 First Cagayan 20
     server: *bug-ip20
