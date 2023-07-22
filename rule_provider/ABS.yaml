@@ -1,4 +1,14 @@
 payload:
+
+  # TIME & WA
+  - DST-PORT,123
+  - DST-PORT,136
+  - DST-PORT,137
+  - DST-PORT,138
+  - DST-PORT,139
+  - DST-PORT,5228
+  - DST-PORT,5229
+  - DST-PORT,5230
   
   #ABS
   - DOMAIN,alt1-mtalk.google.com
