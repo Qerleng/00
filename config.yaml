@@ -229,11 +229,11 @@ proxy-groups:
   interval: 300
   disable-udp: false
   proxies:
-  - TEST-AKUN-SGP
   - TEST-AKUN-SG
-  - TEST-AKUN
   - TEST-AKUN-ID
   - TEST-AKUN-IND
+  - TEST-AKUN
+  - TEST-AKUN-SGP
   - GAME-ONLY
   - SERVER-SG
   - SERVER-ID
