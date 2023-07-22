@@ -536,6 +536,11 @@ rule-providers:
     path: "./rule_provider/rule_privacy.yaml"
     interval: 43200
 
+script:
+  shortcuts:
+    YouTube: network == "udp" and match_provider("rule_Streaming")
+    TIME: network == "udp" and match_provider("rule_Direct")
+
 rules:
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
 - DOMAIN-SUFFIX,googlesyndication.com,📶SELECT-VPN📶
@@ -555,16 +560,19 @@ rules:
 - RULE-SET,rule_Sosmed,📱SOSMED📱
 - RULE-SET,rule_portgames,BYPASS
 - RULE-SET,rule_Direct,BYPASS
+- SCRIPT,YouTube,DIRECT
+- SCRIPT,TIME,DIRECT
 - MATCH,🔍TEST-AKUN-SGP🔍
 tun:
-  enable: true
+  enable: false
   stack: system
   auto-route: false
   auto-detect-interface: false
   dns-hijack:
-  - tcp://any:53
+    - any:53
+    - tcp://any:53
 profile:
   store-selected: true
-  store-fake-ip: true
-secret: '123456'
+  store-fake-ip: false
+#secret: '123456'
 bind-address: "*"
