@@ -89,8 +89,8 @@ dns:
   - https://dns.google/dns-query
   - tls://dns.google
   default-nameserver:
-  - 8.8.8.8
-  - 1.1.1.1
+  - '8.8.8.8#📶SELECT-VPN📶'
+  - '1.1.1.1#📶SELECT-VPN📶'
   fake-ip-filter:
   - "*.lan"
   - "*.localdomain"
@@ -238,7 +238,8 @@ proxy-groups:
   - SERVER-SG
   - SERVER-ID
 - name: TEST-AKUN-SGP
-  type: url-test
+  type: load-balance
+  strategy: round-robin
   url: http://www.gstatic.com/generate_204
   interval: 300
   disable-udp: false
@@ -252,7 +253,8 @@ proxy-groups:
   use:
   - TEST-AKUN-SG
 - name: TEST-AKUN
-  type: url-test
+  type: load-balance
+  strategy: round-robin
   url: http://www.gstatic.com/generate_204
   interval: 300
   disable-udp: false
@@ -294,18 +296,60 @@ proxy-groups:
   use:
   - SERVER-ID
 
+rule-providers:
+  rule_Direct:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_direct.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/ABS.yaml
+    interval: 86400
+  rule_Indo:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_Indo.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/rule_indo.yaml
+    interval: 86400
+  rule_Sosmed:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_sosmed.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/Sosmed.yaml
+    interval: 86400
+  rule_Streaming:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_streaming.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/Stream.yaml
+    interval: 86400
+  rule_Whatsapp:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/helmiau/clashrules/main/rule_provider/Social_WhatsApp.yaml
+    path: "./rule_provider/rule_Whatsapp.yaml"
+    interval: 86400
+    
+script:
+  shortcuts:
+    YouTube: network == "udp" and match_provider("rule_Streaming")
+    TIME: network == "udp" and match_provider("rule_Direct")
+    
 rules:
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
 - DOMAIN-SUFFIX,googlesyndication.com,📶SELECT-VPN📶
+- RULE-SET,rule_Whatsapp,DIRECT
+- RULE-SET,rule_Sosmed,TEST-AKUN
+- RULE-SET,rule_Streaming,TEST-AKUN-SGP
+- RULE-SET,rule_Indo,TEST-AKUN-ID
+- SCRIPT,YouTube,DIRECT
+- SCRIPT,TIME,DIRECT
 - MATCH,📶SELECT-VPN📶
 
 tun:
-  enable: true
+  enable: false
   stack: system
-  auto-route: false
-  auto-detect-interface: false
   dns-hijack:
-  - tcp://any:53
+    - any:53
+    - tcp://any:53
 profile:
   store-selected: true
   store-fake-ip: false
