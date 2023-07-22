@@ -1,0 +1,570 @@
+---
+port: 7890
+socks-port: 7891
+redir-port: 7892
+tproxy-port: 7895
+mixed-port: 7893
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  listen: 0.0.0.0:7874
+  fallback-filter:
+    geoip: true
+    geoip-code: ID
+    ipcidr:
+    - 0.0.0.0/8
+    - 10.0.0.0/8
+    - 100.64.0.0/10
+    - 127.0.0.0/8
+    - 169.254.0.0/16
+    - 172.24.0.0/16
+    - 172.16.0.0/12
+    - 192.0.0.0/24
+    - 192.0.2.0/24
+    - 192.88.99.0/24
+    - 192.168.0.0/16
+    - 198.18.0.0/15
+    - 198.51.100.0/24
+    - 203.0.113.0/24
+    - 224.0.0.0/4
+    - 240.0.0.0/4
+    - 255.255.255.255/32
+    domain:
+    - "+.google.com"
+    - "+.netflix.com"
+    - "+.facebook.com"
+    - "+.youtube.com"
+    - "+.githubusercontent.com"
+    - "+.googlevideo.com"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - msftconnecttest.com
+    - msftncsi.com
+    fake-ip-filter:
+    - "+.pool.ntp.org"
+    - ntp7.*.com
+    - ntp6.*.com
+    - ntp5.*.com
+    - ntp4.*.com
+    - ntp3.*.com
+    - ntp2.*.com
+    - ntp1.*.com
+    - ntp.*.com
+    - time7.*.com
+    - time6.*.com
+    - time5.*.com
+    - time4.*.com
+    - time3.*.com
+    - time2.*.com
+    - time1.*.com
+    - time.*.apple.com
+    - time.*.edu.cn
+    - time.*.gov
+    - time.*.com
+    - "*.home.arpa"
+    - "*.local"
+    - "*.test"
+    - "*.localhost"
+    - "*.invalid"
+    - "*.example"
+    - "*.localdomain"
+    - time1.cloud.tencent.com
+    - "*.ntp.org"
+    - "*.time.edu"
+    - "*.lan"
+    - "*.ntp.org.cn"
+    - "*.time.edu.cn"
+    - "+.*"
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+  - 8.8.8.8
+  - 1.1.1.1
+  - 180.131.144.144
+  - 180.131.145.145
+  - https://dns.google/dns-query
+  - tls://dns.google
+  default-nameserver:
+  - 8.8.8.8
+  - 1.1.1.1
+  fake-ip-filter:
+  - "*.lan"
+  - "*.localdomain"
+  - "*.example"
+  - "*.invalid"
+  - "*.localhost"
+  - "*.test"
+  - "*.local"
+  - "*.home.arpa"
+  - time.*.com
+  - time.*.gov
+  - time.*.edu.cn
+  - time.*.apple.com
+  - time-ios.apple.com
+  - time1.*.com
+  - time2.*.com
+  - time3.*.com
+  - time4.*.com
+  - time5.*.com
+  - time6.*.com
+  - time7.*.com
+  - ntp.*.com
+  - ntp1.*.com
+  - ntp2.*.com
+  - ntp3.*.com
+  - ntp4.*.com
+  - ntp5.*.com
+  - ntp6.*.com
+  - ntp7.*.com
+  - "*.time.edu.cn"
+  - "*.ntp.org.cn"
+  - "+.pool.ntp.org"
+  - time1.cloud.tencent.com
+  - "+.msftconnecttest.com"
+  - "+.msftncsi.com"
+  - "+.msftconnecttest.com"
+  - "+.msftncsi.com"
+  - stun.*.*
+  - stun.*.*.*
+  - "+.stun.*.*"
+  - "+.stun.*.*.*"
+  - "+.stun.*.*.*.*"
+  - "+.stun.*.*.*.*.*"
+  - "*.linksys.com"
+  - "*.linksyssmartwifi.com"
+  - "*.router.asus.com"
+  - mesu.apple.com
+  - swscan.apple.com
+  - swquery.apple.com
+  - swdownload.apple.com
+  - swcdn.apple.com
+  - swdist.apple.com
+  - lens.l.google.com
+  - "+.google.com"
+  - Mijia Cloud
+  - "+.cmbchina.com"
+  - "+.cmbimg.com"
+proxy-providers:
+  SERVER-ID:
+    type: http
+    path: "./proxy_provider/id.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/id.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  SERVER-SG:
+    type: http
+    path: "./proxy_provider/sg.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/sg.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  GAME-ONLY:
+    type: http
+    path: "./proxy_provider/game.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/game.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN:
+    type: http
+    path: "./proxy_provider/test.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/test.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN-ID:
+    type: http
+    path: "./proxy_provider/test-id.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/test-id.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN-IND:
+    type: http
+    path: "./proxy_provider/test-idn.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/test-idn.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN-SG:
+    type: http
+    path: "./proxy_provider/test-sg.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/test-sg.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN-SGP:
+    type: http
+    path: "./proxy_provider/test-sgp.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/test-sgp.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+proxy-groups:
+- name: 📶SELECT-VPN📶
+  type: select
+  disable-udp: false
+  proxies:
+  - 🔍TEST-AKUN-SGP🔍
+  - 🔄BALANCE🔄
+  - ✅MANUAL✅
+  - 🚥PING+🚥
+  - 🔂FALLBACK🔂
+  - 🚥BALANCE SG+ID🚥
+  - 🔍TEST-AKUN🔍
+  - 🔍TEST-AKUN_INDO🔍
+  - 🇮🇩ID-ONLY🇮🇩
+  - 🇸🇬SG-ONLY🇸🇬
+  - 🇮🇩IND🇮🇩
+  - 🇸🇬SG🇸🇬
+- name: 🇮🇩IND🇮🇩
+  type: url-test
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - 🔍TEST-AKUN_INDO🔍
+  - 🇮🇩ID-ONLY🇮🇩
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇸🇬SG🇸🇬
+  type: url-test
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - 🔍TEST-AKUN🔍
+  - 🇸🇬SG-ONLY🇸🇬
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🔍TEST-AKUN🔍
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - 🔍TEST-AKUN-SG🔍
+  use:
+  - TEST-AKUN
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🔍TEST-AKUN_INDO🔍
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - 🔍TEST-AKUN-ID🔍
+  use:
+  - TEST-AKUN-IND
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🔍TEST-AKUN-ID🔍
+  type: load-balance
+  strategy: consistent-hashing
+  disable-udp: false
+  use:
+  - TEST-AKUN-ID
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🔍TEST-AKUN-SG🔍
+  type: load-balance
+  strategy: consistent-hashing
+  disable-udp: false
+  use:
+  - TEST-AKUN-SG
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🔍TEST-AKUN-SGP🔍
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - TEST-AKUN-SGP
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🚥BALANCE SG+ID🚥
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - 🔄BALANCE🔄
+  - 🔄BALANCE ID🔄
+  - 🚥PING+🚥
+  - 🔄BALANCE SG🔄
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🔄BALANCE ID🔄
+  type: load-balance
+  strategy: consistent-hashing
+  disable-udp: false
+  use:
+  - SERVER-ID
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🔄BALANCE SG🔄
+  type: load-balance
+  strategy: consistent-hashing
+  disable-udp: false
+  use:
+  - SERVER-SG
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇮🇩ID-ONLY🇮🇩
+  type: url-test
+  disable-udp: false
+  use:
+  - TEST-AKUN-ID
+  - TEST-AKUN-IND
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇸🇬SG-ONLY🇸🇬
+  type: url-test
+  disable-udp: false
+  use:
+  - TEST-AKUN-SG
+  - TEST-AKUN
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: ✅MANUAL✅
+  type: select
+  disable-udp: false
+  use:
+  - SERVER-ID
+  - SERVER-SG
+- name: 🚥PING+🚥
+  type: url-test
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - SERVER-ID
+  - SERVER-SG
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🔂FALLBACK🔂
+  type: fallback
+  disable-udp: false
+  use:
+  - TEST-AKUN-ID
+  - TEST-AKUN-IND
+  url: http://hi.bonds.id/ping
+  interval: 300
+- name: 🔄BALANCE🔄
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - SERVER-ID
+  - SERVER-SG
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🏧M•BANKING🏧
+  type: select
+  disable-udp: false
+  proxies:
+  - 🔂FALLBACK🔂
+  - DIRECT
+  - 🇮🇩ID-ONLY🇮🇩
+  - 🇮🇩IND🇮🇩
+- name: 💬WHATSAPP💬
+  type: select
+  disable-udp: false
+  proxies:
+  - BYPASS
+  - ✅MANUAL✅
+  - 🚥PING+🚥
+  - 🔂FALLBACK🔂
+  - 🔄BALANCE🔄
+  - 🇮🇩ID-ONLY🇮🇩
+  - 🇮🇩IND🇮🇩
+- name: 📱SOSMED📱
+  type: select
+  disable-udp: false
+  proxies:
+  - 🇸🇬SG🇸🇬
+  - ✅MANUAL✅
+  - 🚥PING+🚥
+  - 🔂FALLBACK🔂
+  - 🔄BALANCE🔄
+  - 🚥BALANCE SG+ID🚥
+  - 🔍TEST-AKUN🔍
+  - 🔍TEST-AKUN_INDO🔍
+  - 📶SELECT-VPN📶
+- name: 🎞STREAMING🎞
+  type: select
+  disable-udp: false
+  proxies:
+  - 🚥BALANCE SG+ID🚥
+  - ✅MANUAL✅
+  - 🚥PING+🚥
+  - 🔂FALLBACK🔂
+  - 🔄BALANCE🔄
+  - 🔍TEST-AKUN🔍
+  - 🔍TEST-AKUN_INDO🔍
+  - 📶SELECT-VPN📶
+- name: 🛡AD•BLOCK🛡
+  type: select
+  disable-udp: false
+  proxies:
+  - REJECT
+  - 📶SELECT-VPN📶
+- name: 🛡ADS•BLOCK🛡
+  type: select
+  disable-udp: false
+  proxies:
+  - REJECT
+  - 📶SELECT-VPN📶
+- name: 🛡AD•MALICIOUS🛡
+  type: select
+  disable-udp: false
+  proxies:
+  - REJECT
+  - 📶SELECT-VPN📶
+- name: BYPASS
+  type: url-test
+  disable-udp: false
+  proxies:
+  - DIRECT
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rule-providers:
+  rule_Direct:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_direct.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/ABS.yaml
+    interval: 86400
+  E-Banking:
+    type: http
+    behavior: classical
+    path: "./rule_provider/E-Banking.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/E-Banking.yaml
+    interval: 86400
+  Bank:
+    type: http
+    behavior: domain
+    path: "./rule_provider/Banking.yaml"
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_bank-id.yaml
+    interval: 86400
+  rule_portgames:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_portgames.yaml"
+    url: https://raw.githubusercontent.com/malikshi/clash_for_android/main/rule_provider/rule_portgames.yaml
+    interval: 86400
+  rule_Indo:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_Indo.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/rule_indo.yaml
+    interval: 86400
+  rule_Sosmed:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_sosmed.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/Sosmed.yaml
+    interval: 86400
+  rule_Streaming:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_streaming.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/Stream.yaml
+    interval: 86400
+  rule_Whatsapp:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/helmiau/clashrules/main/rule_provider/Social_WhatsApp.yaml
+    path: "./rule_provider/rule_Whatsapp.yaml"
+    interval: 86400
+  rule_basicads:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_basicads.yaml
+    path: "./rule_provider/rule_basicads.yaml"
+    interval: 43200
+  Basicads:
+    type: http
+    behavior: classical
+    path: "./rule_provider/Basicads.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_Classical.yaml"
+    interval: 43200
+  Personalads:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_personalads.yaml
+    path: "./rule_provider/personalads.yaml"
+    interval: 43200
+  rule_malicious:
+    type: http
+    behavior: domain
+    path: "./rule_provider/rule_malicious.yaml"
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_malicious.yaml
+    interval: 43200
+  rule_maliciousip:
+    type: http
+    behavior: ipcidr
+    path: "./rule_provider/rule_maliciousip.yaml"
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_maliciousip.yaml
+    interval: 43200
+  rule_hijacking:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_hijacking.yaml"
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_hijacking.yaml
+    interval: 43200
+  rule_privacy:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_privacy.yaml
+    path: "./rule_provider/rule_privacy.yaml"
+    interval: 43200
+
+rules:
+- IP-CIDR,198.18.0.1/16,REJECT,no-resolve
+- DOMAIN-SUFFIX,googlesyndication.com,📶SELECT-VPN📶
+- GEOIP,ID,🇮🇩IND🇮🇩
+- RULE-SET,rule_maliciousip,REJECT,no-resolve
+- RULE-SET,rule_malicious,🛡AD•MALICIOUS🛡
+- RULE-SET,Personalads,🛡ADS•BLOCK🛡
+- RULE-SET,Basicads,🛡AD•BLOCK🛡
+- RULE-SET,rule_basicads,🛡AD•BLOCK🛡
+- RULE-SET,rule_privacy,🛡ADS•BLOCK🛡
+- RULE-SET,rule_hijacking,🛡ADS•BLOCK🛡
+- RULE-SET,rule_Streaming,🎞STREAMING🎞
+- RULE-SET,rule_Indo,🇮🇩IND🇮🇩
+- RULE-SET,E-Banking,🏧M•BANKING🏧
+- RULE-SET,Bank,🏧M•BANKING🏧
+- RULE-SET,rule_Whatsapp,💬WHATSAPP💬
+- RULE-SET,rule_Sosmed,📱SOSMED📱
+- RULE-SET,rule_portgames,BYPASS
+- RULE-SET,rule_Direct,BYPASS
+- MATCH,🔍TEST-AKUN-SGP🔍
+tun:
+  enable: true
+  stack: system
+  auto-route: false
+  auto-detect-interface: false
+  dns-hijack:
+  - tcp://any:53
+profile:
+  store-selected: true
+  store-fake-ip: true
+secret: '123456'
+bind-address: "*"
