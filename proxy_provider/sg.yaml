@@ -54,14 +54,14 @@ proxies:
     <<: *basevmess
     name: 99 🇸🇬 AKAMAI  1
     server: *bug-ip1
-    port: 80
-    tls: false
-    uuid: c7442852-5a48-4456-8783-b7b8eebbca6c
-    servername: sg1.mlxg.org
+    port: 443
+    tls: true
+    uuid: f04d48b8-a4e3-49be-8707-1589892aa3ca
+    servername: free.rizyulstorevpn.site
     ws-opts: 
-      path: /
+      path: /vmess
       headers: 
-        Host: sg1.mlxg.org
+        Host: free.rizyulstorevpn.site
       Early-Data: 1
   - <<: *sshkit
     name: 99 🇸🇬 AKAMAI  2
