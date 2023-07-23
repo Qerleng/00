@@ -346,12 +346,7 @@ rule-providers:
     url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/gametcp.yaml
     interval: 86400
     
-script:
-  shortcuts:
-    YouTube: network == "udp" and match_provider("rule_Streaming")
-    TIME: network == "udp" and match_provider("rule_Direct")
-    GAME: network == "udp" and match_provider("rule_gametcp")
-    
+
 rules:
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
 - DOMAIN-SUFFIX,googlesyndication.com,📶SELECT-VPN📶
@@ -362,9 +357,6 @@ rules:
 - RULE-SET,rule_portgames,DIRECT
 - RULE-SET,rule_gametcp,DIRECT
 - RULE-SET,rule_lancidr,REJECT
-- SCRIPT,YouTube,DIRECT
-- SCRIPT,TIME,DIRECT
-- SCRIPT,GAME,DIRECT
 - MATCH,📶SELECT-VPN📶
 
 tun:
