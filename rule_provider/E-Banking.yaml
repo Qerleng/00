@@ -28,18 +28,9 @@ payload:
 #LinkAja
   - DOMAIN-SUFFIX,linkaja.com
 #Dana
-  - DOMAIN,danaindonesia.app.link
-  - DOMAIN,events.split.io
-  - DOMAIN,sdk.split.io
-  - DOMAIN,auth.split.io
-  - DOMAIN,cdn.branch.io
-  - DOMAIN,streaming.split.io
-  - DOMAIN,api2.branch.io
-  - DOMAIN-SUFFIX,aliapp.org
-  - DOMAIN-KEYWORD,-ac.alipay.com
-  - DOMAIN-KEYWORD,-sea.alipay.com
-  - DOMAIN-KEYWORD,gw-dana.ebuckler
-  - DOMAIN-KEYWORD,dana.threatcast
+  - DOMAIN-SUFFIX,split.io
+  - DOMAIN-SUFFIX,dana.id
+  - DOMAIN-SUFFIX,innov8.id
 #Doku
   - DOMAIN-SUFFIX,dokuwallet.com
 #BCA
