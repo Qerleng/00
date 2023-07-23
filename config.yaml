@@ -324,14 +324,33 @@ rule-providers:
   rule_Whatsapp:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/helmiau/clashrules/main/rule_provider/Social_WhatsApp.yaml
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/whatsapp.yaml
     path: "./rule_provider/rule_Whatsapp.yaml"
+    interval: 86400
+  rule_lancidr:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/rule_lancidr.yaml
+    path: "./rule_provider/rule_Whatsapp.yaml"
+    interval: 86400
+  rule_portgames:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_portgames.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/portgames.yaml
+    interval: 86400
+  rule_gametcp:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_portgames.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/gametcp.yaml
     interval: 86400
     
 script:
   shortcuts:
     YouTube: network == "udp" and match_provider("rule_Streaming")
     TIME: network == "udp" and match_provider("rule_Direct")
+    GAME: network == "udp" and match_provider("rule_gametcp")
     
 rules:
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
@@ -340,8 +359,12 @@ rules:
 - RULE-SET,rule_Sosmed,TEST-AKUN
 - RULE-SET,rule_Streaming,TEST-AKUN-SGP
 - RULE-SET,rule_Indo,TEST-AKUN-ID
+- RULE-SET,rule_portgames,DIRECT
+- RULE-SET,rule_gametcp,DIRECT
+- RULE-SET,rule_lancidr,REJECT
 - SCRIPT,YouTube,DIRECT
 - SCRIPT,TIME,DIRECT
+- SCRIPT,GAME,DIRECT
 - MATCH,📶SELECT-VPN📶
 
 tun:
