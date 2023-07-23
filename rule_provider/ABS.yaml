@@ -1,14 +1,10 @@
 payload:
-
   # TIME & WA
   - DST-PORT,123
   - DST-PORT,136
   - DST-PORT,137
   - DST-PORT,138
   - DST-PORT,139
-  - DST-PORT,5228
-  - DST-PORT,5229
-  - DST-PORT,5230
   
   #ABS
   - DOMAIN,alt1-mtalk.google.com
@@ -26,8 +22,6 @@ payload:
   - DOMAIN-SUFFIX,ipv6.google.com
   - DOMAIN-SUFFIX,ds.metric.gstatic.com
   - DOMAIN-SUFFIX,v4.metric.gstatic.com
-  
- 
   #DNS
   - DOMAIN,1dot1dot1dot1.cloudflare-dns.com
   - DOMAIN,8888.google
@@ -136,7 +130,3 @@ payload:
   - IP-CIDR,8.8.4.4/32
   - IP-CIDR,8.8.8.8/32
   - IP-CIDR,9.9.9.9/32
-  
-
-  
-  

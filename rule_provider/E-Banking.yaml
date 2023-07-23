@@ -1,5 +1,5 @@
 payload:
-  # E-Wallet / Dompet Digital
+# E-Wallet / Dompet Digital
   - DOMAIN-SUFFIX,gojek.com
   - DOMAIN-SUFFIX,gobiz.co.id
   - DOMAIN-SUFFIX,ovo.id
@@ -22,18 +22,12 @@ payload:
   - DOMAIN-KEYWORD,shopeepay
   - DOMAIN-KEYWORD,grab
   - DOMAIN-KEYWORD,grabtaxi
-
-  #Go-Pay [Go-Jek]
+#Go-Pay [Go-Jek]
   - DOMAIN-KEYWORD,gopay-topup
-
-  #OVO
-  - DOMAIN-SUFFIX,ovo.id
-
-  #LinkAja
+#OVO
+#LinkAja
   - DOMAIN-SUFFIX,linkaja.com
-
-  #Dana
-  - DOMAIN-SUFFIX,dana.id
+#Dana
   - DOMAIN,danaindonesia.app.link
   - DOMAIN,events.split.io
   - DOMAIN,sdk.split.io
@@ -46,27 +40,20 @@ payload:
   - DOMAIN-KEYWORD,-sea.alipay.com
   - DOMAIN-KEYWORD,gw-dana.ebuckler
   - DOMAIN-KEYWORD,dana.threatcast
-
-  #Doku
+#Doku
   - DOMAIN-SUFFIX,dokuwallet.com
-
-  #BCA
+#BCA
   - DOMAIN-SUFFIX,klikbca.com
   - DST-PORT,33303
-
-  #BRI (BRI Link,  BRImo, BRIcredit)
+#BRI (BRI Link,  BRImo, BRIcredit)
   - DOMAIN-SUFFIX,bri.co.id
-
-  #Mandiri
+#Mandiri
   - DOMAIN-SUFFIX,mandiri.co.id
-
-  #Bank Syariah Mandiri
+#Bank Syariah Mandiri
   - DOMAIN-SUFFIX,bsm.co.id
-
-  #Muamalat
+#Muamalat
   - DOMAIN-SUFFIX,bankmuamalat.co.id
-  
-  # MARKET PLACE
+# MARKET PLACE
   - DOMAIN-SUFFIX,shopee.co.id
   - DOMAIN-SUFFIX,shopeemobile.com
   - DOMAIN-SUFFIX,bukalapak.com
@@ -84,9 +71,7 @@ payload:
   - DOMAIN-KEYWORD,ralali
   - DOMAIN-KEYWORD,bhinneka
   - DOMAIN-KEYWORD,zalora
-  
-
-  # Shopee
+# Shopee
   - DOMAIN-KEYWORD,shopee
   - DOMAIN-SUFFIX,shopee.com
   - DOMAIN-SUFFIX,shopee.com.br
@@ -95,68 +80,49 @@ payload:
   - DOMAIN-SUFFIX,shopee.sg
   - DOMAIN-SUFFIX,shopee.tw
   - DOMAIN-SUFFIX,shopee.vn
-  - DOMAIN-SUFFIX,shopeemobile.com
   - DOMAIN-SUFFIX,shp.ee
   - DOMAIN-SUFFIX,app.appsflyer.com
-  # Shopee mall, rincian pesanan
-  - DOMAIN-KEYWORD,mall.shopee 
-  # Rule screenshot bukti barang sampai
+# Shopee mall, rincian pesanan
+  - DOMAIN-KEYWORD,mall.shopee
+# Rule screenshot bukti barang sampai
   - DOMAIN-KEYWORD,electronicproof.ssc.shopee
-  # Shopee LIVE
+# Shopee LIVE
   - DOMAIN-KEYWORD,livestream.shopee
   - DOMAIN-KEYWORD,live.shopee
   - DOMAIN-KEYWORD,livetech.shopee
   - DOMAIN-KEYWORD,chatroom-live.shopee
-  #- IP-CIDR,202.179.138.114
-  #- IP-CIDR,128.1.61.66
-  #- IP-CIDR,150.109.91.8
-  #- IP-CIDR,36.66.3.172
-  #- IP-CIDR,138.113.116.5
-  #- IP-CIDR,36.66.223.235
-  #- IP-CIDR,150.109.91.7
-  #- IP-CIDR,117.103.116.29
-  #- DST-PORT,61947
-  #- DST-PORT,64355
-  #- DST-PORT,61948
-  #- DST-PORT,61947
-  #- DST-PORT,61947
-  #- DST-PORT,61947
-  #- DST-PORT,61947
-  #- DST-PORT,61947
-  # ShopeePay
+#- IP-CIDR,202.179.138.114
+#- IP-CIDR,128.1.61.66
+#- IP-CIDR,150.109.91.8
+#- IP-CIDR,36.66.3.172
+#- IP-CIDR,138.113.116.5
+#- IP-CIDR,36.66.223.235
+#- IP-CIDR,150.109.91.7
+#- IP-CIDR,117.103.116.29
+#- DST-PORT,61947
+#- DST-PORT,64355
+#- DST-PORT,61948
+# ShopeePay
   - DOMAIN-KEYWORD,wallet.airpay
   - DOMAIN-KEYWORD,gw.airpay
-  # Shopee Login Reward
+# Shopee Login Reward
   - DOMAIN-KEYWORD,games.shopee
   - DOMAIN-KEYWORD,play.shopee
-  # ShopeeFood
+# ShopeeFood
   - DOMAIN-KEYWORD,foody.shopee
-  # Rule nilai produk
+# Rule nilai produk
   - DOMAIN-KEYWORD,rating.shopee
-  # Shopee login, logout and checkout
+# Shopee login, logout and checkout
   - DOMAIN-KEYWORD,api.shopee
   - DOMAIN-KEYWORD,c-api-bit.shopeemobile
   - DOMAIN-KEYWORD,cf.shopee
   - DOMAIN-KEYWORD,frd.shopee
-  # ShopeePay
-  - DOMAIN-KEYWORD,wallet.airpay
-  - DOMAIN-KEYWORD,gw.airpay
-  # Shopee SPinjam dan SPayLater
+# Shopee SPinjam dan SPayLater
   - DOMAIN-KEYWORD,shopeekredit
   - DOMAIN-KEYWORD,cdn.scredit
   - DOMAIN-KEYWORD,sentry.paylater.scredit
   - DOMAIN-KEYWORD,spl-h5.cmf.co.id
-  # Shopee login, logout and checkout
-  - DOMAIN-KEYWORD,api.shopee
-  - DOMAIN-KEYWORD,c-api-bit.shopeemobile
-  # - DOMAIN-KEYWORD,cf.shopee
-  - DOMAIN-KEYWORD,frd.shopee
-  - DOMAIN-SUFFIX,shp.ee
-  - DOMAIN-SUFFIX,app.appsflyer.com
-  
-  
-  # Tokopedia
+# - DOMAIN-KEYWORD,cf.shopee
+# Tokopedia
   - DOMAIN-KEYWORD,tokopedia.link
   - DOMAIN-KEYWORD,tokopedia.com
-  
-  

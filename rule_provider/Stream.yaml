@@ -1,7 +1,7 @@
 payload:
+  #FB_VIDEO
   - DOMAIN-KEYWORD,xx.fbcdn.net
   - DOMAIN-KEYWORD,fna.fbcdn.net
-
   #IFLIX_WeTV
   - DOMAIN-SUFFIX,webrtcpunch.video.qq.com
   - DOMAIN-SUFFIX,api.weathercn.com
@@ -13,9 +13,7 @@ payload:
   - DOMAIN-SUFFIX,wetv.vip
   - DOMAIN-SUFFIX,wetvinfo.com
   - IP-CIDR,150.109.28.51/32,no-resolve
-  
-  
-  # > Spotify  
+  # &gt; Spotify
   - DOMAIN-SUFFIX,audio-ak-spotify-com.akamaized.net
   - DOMAIN-SUFFIX,byspotify.com
   - DOMAIN-SUFFIX,heads4-ak-spotify-com.akamaized.net
@@ -37,7 +35,6 @@ payload:
   - DST-PORT,4070
   - IP-CIDR,35.186.224.47/32
   #- PROCESS-NAM,com.spotify.music
-  
   # - VIDIO.COM
   - DOMAIN-SUFFIX,vidio.com
   - DOMAIN-SUFFIX,vidiocdn.com
@@ -55,25 +52,15 @@ payload:
   #- DOMAIN,api.youngle.tech
   - DOMAIN,imasdk.googleapis.com
   - DOMAIN,soup.wetvinfo.com
-  
   #VISIONPLUS
   - DOMAIN-SUFFIX,visionplus.id
   - DOMAIN-SUFFIX,dtaarjaj1diy9.cloudfront.net
   - DOMAIN-SUFFIX,mrpw.ptmnc01.verspective.net
   - DOMAIN-SUFFIX,rmp-data.com
-  
    # WE TV
-  - DOMAIN-SUFFIX,iflix-images.akamaized.net
-  - DOMAIN-SUFFIX,iflix.com
-  - DOMAIN-SUFFIX,v.smtcdns.com
-  - DOMAIN-SUFFIX,v.smtcdns.net
-  - DOMAIN-SUFFIX,vv.video.qq.com
-  - DOMAIN-SUFFIX,wetv.vip
-  - DOMAIN-SUFFIX,wetvinfo.com
   - IP-CIDR,150.109.28.51/32
   #- PROCESS-NAME,com.tencent.qqlivei18n
   #- PROCESS-NAME,com.tencent.qqlivei18n.us
-  
   # Youtube
   - DOMAIN-KEYWORD,youtube
   - DOMAIN-KEYWORD,googlevideo
