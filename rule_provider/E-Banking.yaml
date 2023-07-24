@@ -1,5 +1,113 @@
 payload:
-# E-Wallet / Dompet Digital
+  # Bank-ID
+  - DOMAIN-SUFFIX,bri.co.id
+  - DOMAIN-SUFFIX,bankmandiri.co.id
+  - DOMAIN-SUFFIX,bni.co.id
+  - DOMAIN-SUFFIX,btn.co.id
+  - DOMAIN-SUFFIX,danamon.co.id
+  - DOMAIN-SUFFIX,permatabank.com
+  - DOMAIN-SUFFIX,bca.co.id
+  - DOMAIN-SUFFIX,maybank.co.id
+  - DOMAIN-SUFFIX,panin.co.id
+  - DOMAIN-SUFFIX,cimbniaga.com
+  - DOMAIN-SUFFIX,uob.co.id
+  - DOMAIN-SUFFIX,ocbcnisp.com
+  - DOMAIN-SUFFIX,arthagraha.com
+  - DOMAIN-SUFFIX,bankbba.co.id
+  - DOMAIN-SUFFIX,hsbc.co.id
+  - DOMAIN-SUFFIX,jtrustbank.co.id
+  - DOMAIN-SUFFIX,bankmayapada.com
+  - DOMAIN-SUFFIX,boiindonesia.co.id
+  - DOMAIN-SUFFIX,muamalatbank.com
+  - DOMAIN-SUFFIX,bankmestika.co.id
+  - DOMAIN-SUFFIX,shinhan.co.id
+  - DOMAIN-SUFFIX,banksinarmas.co.id
+  - DOMAIN-SUFFIX,bankmaspion.co.id
+  - DOMAIN-SUFFIX,bankganesha.co.id
+  - DOMAIN-SUFFIX,icbcindo.com
+  - DOMAIN-SUFFIX,qnb.co.id
+  - DOMAIN-SUFFIX,banksaudara.com
+  - DOMAIN-SUFFIX,bankmega.com
+  - DOMAIN-SUFFIX,bankbsi.co.id
+  - DOMAIN-SUFFIX,bukopin.co.id
+  - DOMAIN-SUFFIX,hanabank.co.id
+  - DOMAIN-SUFFIX,mncbank.co.id
+  - DOMAIN-SUFFIX,bankraya.co.id
+  - DOMAIN-SUFFIX,sbiindo.com
+  - DOMAIN-SUFFIX,megasyariah.co.id
+  - DOMAIN-SUFFIX,bankindex.co.id
+  - DOMAIN-SUFFIX,bankmayora.com
+  - DOMAIN-SUFFIX,ccb.com
+  - DOMAIN-SUFFIX,dbs.com
+  - DOMAIN-SUFFIX,perdania.co.id
+  - DOMAIN-SUFFIX,mizuhocbk.co.id
+  - DOMAIN-SUFFIX,bankcapital.co.id
+  - DOMAIN-SUFFIX,bnpparibas.co.id
+  - DOMAIN-SUFFIX,anz.com
+  - DOMAIN-SUFFIX,bankagris.co.id
+  - DOMAIN-SUFFIX,aladinbank.id
+  - DOMAIN-SUFFIX,chinatrust.co.id
+  - DOMAIN-SUFFIX,commbank.co.id
+  - DOMAIN-SUFFIX,btpn.com
+  - DOMAIN-SUFFIX,bankvictoriasyariah.co.id
+  - DOMAIN-SUFFIX,bjbsyariah.co.id
+  - DOMAIN-SUFFIX,bankbisnis.com
+  - DOMAIN-SUFFIX,bjj.co.id
+  - DOMAIN-SUFFIX,bankneocommerce.co.id
+  - DOMAIN-SUFFIX,bcadigital.co.id
+  - DOMAIN-SUFFIX,nobubank.com
+  - DOMAIN-SUFFIX,bankina.co.id
+  - DOMAIN-SUFFIX,paninbanksyariah.co.id
+  - DOMAIN-SUFFIX,primamasterbank.co.id
+  - DOMAIN-SUFFIX,syariahbukopin.co.id
+  - DOMAIN-SUFFIX,banksampoerna.com
+  - DOMAIN-SUFFIX,bankdinar.co.id
+  - DOMAIN-SUFFIX,amarbank.co.id
+  - DOMAIN-SUFFIX,bankkesejahteraan.co.id
+  - DOMAIN-SUFFIX,bcasyariah.co.id
+  - DOMAIN-SUFFIX,jago.com
+  - DOMAIN-SUFFIX,btpnsyariah.com
+  - DOMAIN-SUFFIX,bankmas.co.id
+  - DOMAIN-SUFFIX,superbank.id
+  - DOMAIN-SUFFIX,bankmantap.co.id
+  - DOMAIN-SUFFIX,victoriabank.co.id
+  - DOMAIN-SUFFIX,allobank.com
+  - DOMAIN-SUFFIX,bankjabar.co.id
+  - DOMAIN-SUFFIX,bankdki.co.id
+  - DOMAIN-SUFFIX,bpddiy.co.id
+  - DOMAIN-SUFFIX,bankjateng.co.id
+  - DOMAIN-SUFFIX,bankjatim.co.id
+  - DOMAIN-SUFFIX,bankjambi.co.id
+  - DOMAIN-SUFFIX,bankaceh.co.id
+  - DOMAIN-SUFFIX,banksumut.com
+  - DOMAIN-SUFFIX,banknagari.co.id
+  - DOMAIN-SUFFIX,brksyariah.co.id
+  - DOMAIN-SUFFIX,banksumselbabel.com
+  - DOMAIN-SUFFIX,banklampung.co.id
+  - DOMAIN-SUFFIX,bankbpdkalsel.co.id
+  - DOMAIN-SUFFIX,bankkalbar.co.id
+  - DOMAIN-SUFFIX,bankkaltim.com
+  - DOMAIN-SUFFIX,bp-kalteng.com
+  - DOMAIN-SUFFIX,banksulsel.co.id
+  - DOMAIN-SUFFIX,banksulutgo.co.id
+  - DOMAIN-SUFFIX,bankntb.co.id
+  - DOMAIN-SUFFIX,bpdbali.co.id
+  - DOMAIN-SUFFIX,bpdntt.co.id
+  - DOMAIN-SUFFIX,bankmaluku.co.id
+  - DOMAIN-SUFFIX,bankpapua.com
+  - DOMAIN-SUFFIX,bankbengkulu.co.id
+  - DOMAIN-SUFFIX,sulteng.go.id
+  - DOMAIN-SUFFIX,banksultra.co.id
+  - DOMAIN-SUFFIX,bankbanten.co.id
+  - DOMAIN-SUFFIX,citibank.co.id
+  - DOMAIN-SUFFIX,jpmorganchase.com
+  - DOMAIN-SUFFIX,bankofamerica.com
+  - DOMAIN-SUFFIX,mufg.co.id
+  - DOMAIN-SUFFIX,standardchartered.com
+  - DOMAIN-SUFFIX,deutsche-bank.co.id
+  - DOMAIN-SUFFIX,bankofchina.co.id
+  
+  # E-Wallet / Dompet Digital
   - DOMAIN-SUFFIX,gojek.com
   - DOMAIN-SUFFIX,gobiz.co.id
   - DOMAIN-SUFFIX,ovo.id
@@ -22,32 +130,65 @@ payload:
   - DOMAIN-KEYWORD,shopeepay
   - DOMAIN-KEYWORD,grab
   - DOMAIN-KEYWORD,grabtaxi
-#Go-Pay [Go-Jek]
+  
+  # Go-Pay [Go-Jek]
   - DOMAIN-KEYWORD,gopay-topup
-#OVO
-#LinkAja
+  - DOMAIN-KEYWORD,gopayapi
+  
+  # LinkAja
   - DOMAIN-SUFFIX,linkaja.com
-#Dana
-  - DOMAIN-SUFFIX,split.io
-  - DOMAIN-SUFFIX,dana.id
+  
+  # Dana
+  - DOMAIN,danaindonesia.app.link
+  - DOMAIN,events.split.io
+  - DOMAIN,sdk.split.io
+  - DOMAIN,auth.split.io
+  - DOMAIN,cdn.branch.io
+  - DOMAIN,streaming.split.io
+  - DOMAIN,api2.branch.io
+  - DOMAIN-SUFFIX,aliapp.org
+  - DOMAIN-KEYWORD,-ac.alipay.com
+  - DOMAIN-KEYWORD,-sea.alipay.com
+  - DOMAIN-KEYWORD,gw-dana.ebuckler
+  - DOMAIN-KEYWORD,dana.threatcast
   - DOMAIN-SUFFIX,innov8.id
-#Doku
+  
+  # Doku
   - DOMAIN-SUFFIX,dokuwallet.com
-#BCA
+  
+  # BCA
   - DOMAIN-SUFFIX,klikbca.com
   - DST-PORT,33303
-#BRI (BRI Link,  BRImo, BRIcredit)
-  - DOMAIN-SUFFIX,bri.co.id
-#Mandiri
+  
+  # Mandiri
   - DOMAIN-SUFFIX,mandiri.co.id
-#Bank Syariah Mandiri
+  
+  # Bank Syariah Mandiri
   - DOMAIN-SUFFIX,bsm.co.id
-#Muamalat
+  
+  # Muamalat
   - DOMAIN-SUFFIX,bankmuamalat.co.id
-# MARKET PLACE
+  
+  # Maxim
+  - DOMAIN-SUFFIX,taxsee.org
+  - DOMAIN-KEYWORD,taxsee
+  - DOMAIN-SUFFIX,taximaxim.com
+  - DOMAIN-KEYWORD,taximaxim
+  
+  # Indriver
+  - DOMAIN-SUFFIX,indrive.tech
+  - DOMAIN-KEYWORD,indrive
+  - DOMAIN-SUFFIX,indriverapp.com
+  - DOMAIN-KEYWORD,indriverapp
+  
+  # PLN-Mobile
+  - DOMAIN-SUFFIX,pln.co.id
+  - DOMAIN-SUFFIX,plndigital.id
+  - DOMAIN-SUFFIX,beyondkwh.id
+  
+  # MARKET PLACE
   - DOMAIN-SUFFIX,shopee.co.id
   - DOMAIN-SUFFIX,shopeemobile.com
-  - DOMAIN-SUFFIX,bukalapak.com
   - DOMAIN-SUFFIX,lazada.co.id
   - DOMAIN-SUFFIX,blibli.com
   - DOMAIN-SUFFIX,orami.co.id
@@ -62,58 +203,23 @@ payload:
   - DOMAIN-KEYWORD,ralali
   - DOMAIN-KEYWORD,bhinneka
   - DOMAIN-KEYWORD,zalora
-# Shopee
+  - DOMAIN-KEYWORD,bukalapak
   - DOMAIN-KEYWORD,shopee
-  - DOMAIN-SUFFIX,shopee.com
-  - DOMAIN-SUFFIX,shopee.com.br
-  - DOMAIN-SUFFIX,shopee.com.my
-  - DOMAIN-SUFFIX,shopee.ph
-  - DOMAIN-SUFFIX,shopee.sg
-  - DOMAIN-SUFFIX,shopee.tw
-  - DOMAIN-SUFFIX,shopee.vn
-  - DOMAIN-SUFFIX,shp.ee
-  - DOMAIN-SUFFIX,app.appsflyer.com
-# Shopee mall, rincian pesanan
+  
+  # Shopee mall, rincian pesanan
   - DOMAIN-KEYWORD,mall.shopee
-# Rule screenshot bukti barang sampai
-  - DOMAIN-KEYWORD,electronicproof.ssc.shopee
-# Shopee LIVE
-  - DOMAIN-KEYWORD,livestream.shopee
-  - DOMAIN-KEYWORD,live.shopee
-  - DOMAIN-KEYWORD,livetech.shopee
-  - DOMAIN-KEYWORD,chatroom-live.shopee
-#- IP-CIDR,202.179.138.114
-#- IP-CIDR,128.1.61.66
-#- IP-CIDR,150.109.91.8
-#- IP-CIDR,36.66.3.172
-#- IP-CIDR,138.113.116.5
-#- IP-CIDR,36.66.223.235
-#- IP-CIDR,150.109.91.7
-#- IP-CIDR,117.103.116.29
-#- DST-PORT,61947
-#- DST-PORT,64355
-#- DST-PORT,61948
-# ShopeePay
+  
+  # ShopeePay
   - DOMAIN-KEYWORD,wallet.airpay
   - DOMAIN-KEYWORD,gw.airpay
-# Shopee Login Reward
-  - DOMAIN-KEYWORD,games.shopee
-  - DOMAIN-KEYWORD,play.shopee
-# ShopeeFood
-  - DOMAIN-KEYWORD,foody.shopee
-# Rule nilai produk
-  - DOMAIN-KEYWORD,rating.shopee
-# Shopee login, logout and checkout
+  
+  # Shopee SPinjam dan SPayLater
+  - DOMAIN-KEYWORD,shopeekredit
+  - DOMAIN-KEYWORD,cdn.scredit
+  
+  # Shopee login, logout and checkout
   - DOMAIN-KEYWORD,api.shopee
   - DOMAIN-KEYWORD,c-api-bit.shopeemobile
   - DOMAIN-KEYWORD,cf.shopee
   - DOMAIN-KEYWORD,frd.shopee
-# Shopee SPinjam dan SPayLater
-  - DOMAIN-KEYWORD,shopeekredit
-  - DOMAIN-KEYWORD,cdn.scredit
-  - DOMAIN-KEYWORD,sentry.paylater.scredit
-  - DOMAIN-KEYWORD,spl-h5.cmf.co.id
-# - DOMAIN-KEYWORD,cf.shopee
-# Tokopedia
-  - DOMAIN-KEYWORD,tokopedia.link
-  - DOMAIN-KEYWORD,tokopedia.com
+  - DOMAIN-SUFFIX,shp.ee
