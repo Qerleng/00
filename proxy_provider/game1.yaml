@@ -69,7 +69,6 @@ proxies:
     port: 443
     password: e47d4270-e1d7-42cd-83d9-617328d123cb
     sni: id-rysaputra18n19xz.me
-    network: grpc
     grpc-opts:
       grpc-service-name: trojan
         Early-Data: 1
