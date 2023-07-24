@@ -632,7 +632,7 @@ rules:
 - RULE-SET,rule_Sosmed,📱SOSMED📱
 - RULE-SET,rule_Direct,DIRECT
 - RULE-SET,rule_portgames,🎮GAME•UDP🎮
-- RULE-SET,rule_gaming,🎰GAME•TCP🎰
+- RULE-SET,Gaming,🎰GAME•TCP🎰
 - RULE-SET,rule_gametcp,🎮GAME•UDP🎮
 - MATCH,🤖ABS🤖
 
