@@ -357,7 +357,6 @@ rules:
 - RULE-SET,rule_portgames,DIRECT
 - RULE-SET,rule_gametcp,DIRECT
 - RULE-SET,rule_lancidr,REJECT
-- IN-TYPE,INNER,📶SELECT-VPN📶
 - MATCH,📶SELECT-VPN📶
 
 tun:
