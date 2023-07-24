@@ -61,71 +61,71 @@ proxies:
 
   - &sshkit
     <<: *basevmess
-    name: 00 🇸🇬 ORACLE 1
+    name: 00 🇮🇩 Rumahweb 1
     server: *bug-ip1
-    port: 443
-    tls: true
-    uuid: a869c557-5c7d-426f-9039-0279c16352bc
-    servername: linkedin.disnet.gq
+    port: 80
+    tls: false
+    uuid: cdc55752-4a66-417a-a8bb-c9f6470550f7
+    servername: id-rweb1.estebuh.my.id
     ws-opts: 
-      path: /vmessws
+      path: /vmess
       headers: 
-        Host: linkedin.disnet.gq
+        Host: id-rweb1.estebuh.my.id
         Early-Data: 1
   - <<: *sshkit
-    name: 00 🇸🇬 ORACLE 2
+    name: 00 🇮🇩 Rumahweb 2
     server: *bug-ip2
   - <<: *sshkit
-    name: 00 🇸🇬 ORACLE 3
+    name: 00 🇮🇩 Rumahweb 3
     server: *bug-ip3
   - <<: *sshkit
-    name: 00 🇸🇬 ORACLE 4
+    name: 00 🇮🇩 Rumahweb 4
     server: *bug-ip4
   - <<: *sshkit
-    name: 00 🇸🇬 ORACLE 5
+    name: 00 🇮🇩 Rumahweb 5
     server: *bug-ip5
   - <<: *sshkit
-    name: 00 🇸🇬 ORACLE 6
+    name: 00 🇮🇩 Rumahweb 6
     server: *bug-ip6
   - <<: *sshkit
-    name: 00 🇸🇬 ORACLE 7
+    name: 00 🇮🇩 Rumahweb 7
     server: *bug-ip7
   - <<: *sshkit
-    name: 00 🇸🇬 ORACLE 8
+    name: 00 🇮🇩 Rumahweb 8
     server: *bug-ip8
   - <<: *sshkit
-    name: 00 🇸🇬 ORACLE 9
+    name: 00 🇮🇩 Rumahweb 9
     server: *bug-ip9
   - <<: *sshkit
-    name: 00 🇸🇬 ORACLE 10
+    name: 00 🇮🇩 Rumahweb 10
     server: *bug-ip10
   - <<: *sshkit
-    name: 00 🇸🇬 ORACLE 11
+    name: 00 🇮🇩 Rumahweb 11
     server: *bug-ip11
   - <<: *sshkit
-    name: 00 🇸🇬 ORACLE 12
+    name: 00 🇮🇩 Rumahweb 12
     server: *bug-ip12
   - <<: *sshkit
-    name: 00 🇸🇬 ORACLE 13
+    name: 00 🇮🇩 Rumahweb 13
     server: *bug-ip13
   - <<: *sshkit
-    name: 00 🇸🇬 ORACLE 14
+    name: 00 🇮🇩 Rumahweb 14
     server: *bug-ip14
   - <<: *sshkit
-    name: 00 🇸🇬 ORACLE 15
+    name: 00 🇮🇩 Rumahweb 15
     server: *bug-ip15
   - <<: *sshkit
-    name: 00 🇸🇬 ORACLE 16
+    name: 00 🇮🇩 Rumahweb 16
     server: *bug-ip16
   - <<: *sshkit
-    name: 00 🇸🇬 ORACLE 17
+    name: 00 🇮🇩 Rumahweb 17
     server: *bug-ip17
   - <<: *sshkit
-    name: 00 🇸🇬 ORACLE 18
+    name: 00 🇮🇩 Rumahweb 18
     server: *bug-ip18
   - <<: *sshkit
-    name: 00 🇸🇬 ORACLE 19
+    name: 00 🇮🇩 Rumahweb 19
     server: *bug-ip19
   - <<: *sshkit
-    name: 00 🇸🇬 ORACLE 20
+    name: 00 🇮🇩 Rumahweb 20
     server: *bug-ip20
