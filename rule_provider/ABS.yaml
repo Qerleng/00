@@ -1,5 +1,5 @@
 payload:
-  # TIME & WA
+  # TIME 
   - DST-PORT,123
   - DST-PORT,136
   - DST-PORT,137
