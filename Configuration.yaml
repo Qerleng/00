@@ -223,24 +223,23 @@ proxy-providers:
       interval: 300
 proxy-groups:
 - name: 📶SELECT-VPN📶
-  type: select
+  type: url-test
+  strategy: consistent-hashing
   disable-udp: false
   proxies:
-  - 🔍TEST-AKUN-SGP🔍
-  - 🔄BALANCE🔄
-  - ✅MANUAL✅
   - 🚥PING+🚥
   - 🔂FALLBACK🔂
+  - 🔄BALANCE🔄
   - 🚥BALANCE SG+ID🚥
-  - 🔍TEST-AKUN🔍
-  - 🔍TEST-AKUN_INDO🔍
   - 🇮🇩ID-ONLY🇮🇩
   - 🇸🇬SG-ONLY🇸🇬
   - 🇮🇩IND🇮🇩
   - 🇸🇬SG🇸🇬
+  url: http://www.gstatic.com/generate_204
+  interval: 300
 - name: 🇮🇩IND🇮🇩
-  type: url-test
-  strategy: round-robin
+  type: load-balance
+  strategy: consistent-hashing
   disable-udp: false
   proxies:
   - 🔍TEST-AKUN_INDO🔍
@@ -248,8 +247,8 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 🇸🇬SG🇸🇬
-  type: url-test
-  strategy: round-robin
+  type: load-balance
+  strategy: consistent-hashing
   disable-udp: false
   proxies:
   - 🔍TEST-AKUN🔍
@@ -278,7 +277,7 @@ proxy-groups:
   interval: 300
 - name: 🔍TEST-AKUN-ID🔍
   type: load-balance
-  strategy: consistent-hashing
+  strategy: round-robin
   disable-udp: false
   use:
   - TEST-AKUN-ID
@@ -286,7 +285,7 @@ proxy-groups:
   interval: 300
 - name: 🔍TEST-AKUN-SG🔍
   type: load-balance
-  strategy: consistent-hashing
+  strategy: round-robin
   disable-udp: false
   use:
   - TEST-AKUN-SG
@@ -307,8 +306,8 @@ proxy-groups:
   proxies:
   - 🔄BALANCE🔄
   - 🔄BALANCE ID🔄
-  - 🚥PING+🚥
   - 🔄BALANCE SG🔄
+  - 🚥PING+🚥
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 🔄BALANCE ID🔄
@@ -329,6 +328,7 @@ proxy-groups:
   interval: 300
 - name: 🇮🇩ID-ONLY🇮🇩
   type: url-test
+  strategy: round-robin
   disable-udp: false
   use:
   - TEST-AKUN-ID
@@ -337,18 +337,13 @@ proxy-groups:
   interval: 300
 - name: 🇸🇬SG-ONLY🇸🇬
   type: url-test
+  strategy: round-robin
   disable-udp: false
   use:
   - TEST-AKUN-SG
   - TEST-AKUN
   url: http://www.gstatic.com/generate_204
   interval: 300
-- name: ✅MANUAL✅
-  type: select
-  disable-udp: false
-  use:
-  - SERVER-ID
-  - SERVER-SG
 - name: 🚥PING+🚥
   type: url-test
   strategy: round-robin
@@ -364,7 +359,7 @@ proxy-groups:
   use:
   - TEST-AKUN-ID
   - TEST-AKUN-IND
-  url: http://hi.bonds.id/ping
+  url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 🔄BALANCE🔄
   type: load-balance
@@ -375,73 +370,137 @@ proxy-groups:
   - SERVER-SG
   url: http://www.gstatic.com/generate_204
   interval: 300
+- name: 🎰GAME•TCP🎰
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - 🚥BALANCE SG+ID🚥
+  - 🇮🇩IND🇮🇩
+  - 🇸🇬SG🇸🇬
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🎮GAME•UDP🎮
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  use:
+  - GAME-ONLY
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 👻UDP👻
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - GAME-ONLY
+  - TEST-AKUN-SGP
+  url: http://www.gstatic.com/generate_204
+  interval: 300
 - name: 🏧M•BANKING🏧
   type: select
   disable-udp: false
   proxies:
   - 🔂FALLBACK🔂
-  - DIRECT
   - 🇮🇩ID-ONLY🇮🇩
   - 🇮🇩IND🇮🇩
+  - DIRECT
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇮🇩 INDONESIA 🇮🇩
+  type: url-test
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - 🔂FALLBACK🔂
+  - 🚥PING+🚥
+  - 🇮🇩ID-ONLY🇮🇩
+  - 🇮🇩IND🇮🇩
+  url: http://www.gstatic.com/generate_204
+  interval: 300
 - name: 💬WHATSAPP💬
   type: select
   disable-udp: false
   proxies:
-  - BYPASS
-  - ✅MANUAL✅
+  - DIRECT
   - 🚥PING+🚥
   - 🔂FALLBACK🔂
-  - 🔄BALANCE🔄
   - 🇮🇩ID-ONLY🇮🇩
   - 🇮🇩IND🇮🇩
+  url: http://www.gstatic.com/generate_204
+  interval: 300
 - name: 📱SOSMED📱
   type: select
   disable-udp: false
   proxies:
-  - 🇸🇬SG🇸🇬
-  - ✅MANUAL✅
   - 🚥PING+🚥
-  - 🔂FALLBACK🔂
   - 🔄BALANCE🔄
   - 🚥BALANCE SG+ID🚥
   - 🔍TEST-AKUN🔍
   - 🔍TEST-AKUN_INDO🔍
-  - 📶SELECT-VPN📶
+  - 🇮🇩IND🇮🇩
+  - 🇸🇬SG🇸🇬
+  url: http://www.gstatic.com/generate_204
+  interval: 300
 - name: 🎞STREAMING🎞
   type: select
   disable-udp: false
   proxies:
-  - 🚥BALANCE SG+ID🚥
-  - ✅MANUAL✅
   - 🚥PING+🚥
-  - 🔂FALLBACK🔂
   - 🔄BALANCE🔄
+  - 🚥BALANCE SG+ID🚥
   - 🔍TEST-AKUN🔍
   - 🔍TEST-AKUN_INDO🔍
-  - 📶SELECT-VPN📶
+  - 🇮🇩IND🇮🇩
+  - 🇸🇬SG🇸🇬
+  url: http://www.gstatic.com/generate_204
+  interval: 300
 - name: 🛡AD•BLOCK🛡
   type: select
   disable-udp: false
   proxies:
   - REJECT
   - 📶SELECT-VPN📶
+  url: http://www.gstatic.com/generate_204
+  interval: 300
 - name: 🛡ADS•BLOCK🛡
   type: select
   disable-udp: false
   proxies:
   - REJECT
   - 📶SELECT-VPN📶
+  url: http://www.gstatic.com/generate_204
+  interval: 300
 - name: 🛡AD•MALICIOUS🛡
   type: select
   disable-udp: false
   proxies:
   - REJECT
   - 📶SELECT-VPN📶
-- name: BYPASS
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🚫18+🚫
   type: url-test
+  strategy: round-robin
   disable-udp: false
   proxies:
-  - DIRECT
+  - 🚥PING+🚥
+  - 🔄BALANCE🔄
+  - 🚥BALANCE SG+ID🚥
+  - 🔍TEST-AKUN🔍
+  - 🔍TEST-AKUN_INDO🔍
+  - 🇮🇩IND🇮🇩
+  - 🇸🇬SG🇸🇬
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🤖ABS🤖
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - 🔍TEST-AKUN-SGP🔍
+  - 👻UDP👻
   url: http://www.gstatic.com/generate_204
   interval: 300
 rule-providers:
@@ -456,12 +515,6 @@ rule-providers:
     behavior: classical
     path: "./rule_provider/E-Banking.yaml"
     url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/E-Banking.yaml
-    interval: 86400
-  Bank:
-    type: http
-    behavior: domain
-    path: "./rule_provider/Banking.yaml"
-    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_bank-id.yaml
     interval: 86400
   rule_portgames:
     type: http
@@ -511,12 +564,6 @@ rule-providers:
     url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_basicads.yaml
     path: "./rule_provider/rule_basicads.yaml"
     interval: 43200
-  Basicads:
-    type: http
-    behavior: classical
-    path: "./rule_provider/Basicads.yaml"
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_Classical.yaml"
-    interval: 43200
   Personalads:
     type: http
     behavior: classical
@@ -547,29 +594,49 @@ rule-providers:
     url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_privacy.yaml
     path: "./rule_provider/rule_privacy.yaml"
     interval: 43200
-
+  18+:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_porn.yaml
+    path: "./rule_provider/18+.yaml"
+    interval: 43200
+  Nsfw:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_nsfw.yaml
+    path: "./rule_provider/nsfw.yaml"
+    interval: 43200
+  Gaming:
+    type: http
+    behavior: classical
+    path: "./rule_provider/gaming.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/gaming.yaml
+    interval: 43200
 
 rules:
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
-- DOMAIN-SUFFIX,googlesyndication.com,📶SELECT-VPN📶
+- DOMAIN-SUFFIX,googlesyndication.com,🤖ABS🤖
 - RULE-SET,rule_maliciousip,REJECT,no-resolve
+- RULE-SET,rule_lancidr,REJECT
 - RULE-SET,rule_malicious,🛡AD•MALICIOUS🛡
-- RULE-SET,Personalads,🛡ADS•BLOCK🛡
-- RULE-SET,Basicads,🛡AD•BLOCK🛡
+- RULE-SET,Personalads,🛡AD•BLOCK🛡
 - RULE-SET,rule_basicads,🛡AD•BLOCK🛡
 - RULE-SET,rule_privacy,🛡ADS•BLOCK🛡
 - RULE-SET,rule_hijacking,🛡ADS•BLOCK🛡
+- RULE-SET,18+,🚫18+🚫
+- RULE-SET,Nsfw,🚫18+🚫
 - RULE-SET,rule_Streaming,🎞STREAMING🎞
-- RULE-SET,rule_Indo,🇮🇩IND🇮🇩
+- RULE-SET,rule_Indo,🇮🇩 INDONESIA 🇮🇩
 - RULE-SET,E-Banking,🏧M•BANKING🏧
-- RULE-SET,Bank,🏧M•BANKING🏧
 - RULE-SET,rule_Whatsapp,💬WHATSAPP💬
 - RULE-SET,rule_Sosmed,📱SOSMED📱
 - RULE-SET,rule_Direct,DIRECT
-- RULE-SET,rule_portgames,DIRECT
-- RULE-SET,rule_gametcp,DIRECT
-- RULE-SET,rule_lancidr,REJECT
-- MATCH,🔍TEST-AKUN-SGP🔍
+- RULE-SET,rule_portgames,🎮GAME•UDP🎮
+- RULE-SET,rule_gaming,🎰GAME•TCP🎰
+- RULE-SET,rule_gametcp,🎮GAME•UDP🎮
+- IN-TYPE,INNER,🤖ABS🤖
+- MATCH,🤖ABS🤖
+
 tun:
   enable: false
   stack: system
