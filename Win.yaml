@@ -216,7 +216,7 @@ proxy-providers:
   TEST-AKUN-SGP:
     type: http
     path: "./proxy_provider/test-sgp.yaml"
-    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/game1.yaml
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/test-sgp.yaml
     interval: 600
     health-check:
       enable: true
