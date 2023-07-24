@@ -634,7 +634,6 @@ rules:
 - RULE-SET,rule_portgames,🎮GAME•UDP🎮
 - RULE-SET,rule_gaming,🎰GAME•TCP🎰
 - RULE-SET,rule_gametcp,🎮GAME•UDP🎮
-- IN-TYPE,INNER,🤖ABS🤖
 - MATCH,🤖ABS🤖
 
 tun:
