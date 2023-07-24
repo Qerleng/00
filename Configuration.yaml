@@ -489,7 +489,7 @@ rule-providers:
     interval: 86400
   rule_Streaming:
     type: http
-    behavior: domain
+    behavior: classical
     path: "./rule_provider/rule_streaming.yaml"
     url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/Stream.yaml
     interval: 86400
