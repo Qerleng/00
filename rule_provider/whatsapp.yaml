@@ -24,7 +24,6 @@ payload:
   - DOMAIN-SUFFIX,mmg.whatsapp.net
   - DOMAIN-SUFFIX,media.fbdj2-1.fna.whatsapp.net
   - DOMAIN-SUFFIX,media-xsp1-2.cdn.whatsapp.net
-  - DST-PORT,3478
   - DST-PORT,5222
   - DST-PORT,5228
   - PROCESS-NAME,com.delta
