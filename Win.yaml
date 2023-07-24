@@ -1,0 +1,381 @@
+---
+port: 7890
+socks-port: 7891
+redir-port: 7892
+tproxy-port: 7895
+mixed-port: 7893
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  listen: 0.0.0.0:7874
+  fallback-filter:
+    geoip: true
+    geoip-code: ID
+    ipcidr:
+    - 0.0.0.0/8
+    - 10.0.0.0/8
+    - 100.64.0.0/10
+    - 127.0.0.0/8
+    - 169.254.0.0/16
+    - 172.24.0.0/16
+    - 172.16.0.0/12
+    - 192.0.0.0/24
+    - 192.0.2.0/24
+    - 192.88.99.0/24
+    - 192.168.0.0/16
+    - 198.18.0.0/15
+    - 198.51.100.0/24
+    - 203.0.113.0/24
+    - 224.0.0.0/4
+    - 240.0.0.0/4
+    - 255.255.255.255/32
+    domain:
+    - "+.google.com"
+    - "+.netflix.com"
+    - "+.facebook.com"
+    - "+.youtube.com"
+    - "+.githubusercontent.com"
+    - "+.googlevideo.com"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - msftconnecttest.com
+    - msftncsi.com
+    fake-ip-filter:
+    - "+.pool.ntp.org"
+    - ntp7.*.com
+    - ntp6.*.com
+    - ntp5.*.com
+    - ntp4.*.com
+    - ntp3.*.com
+    - ntp2.*.com
+    - ntp1.*.com
+    - ntp.*.com
+    - time7.*.com
+    - time6.*.com
+    - time5.*.com
+    - time4.*.com
+    - time3.*.com
+    - time2.*.com
+    - time1.*.com
+    - time.*.apple.com
+    - time.*.edu.cn
+    - time.*.gov
+    - time.*.com
+    - "*.home.arpa"
+    - "*.local"
+    - "*.test"
+    - "*.localhost"
+    - "*.invalid"
+    - "*.example"
+    - "*.localdomain"
+    - time1.cloud.tencent.com
+    - "*.ntp.org"
+    - "*.time.edu"
+    - "*.lan"
+    - "*.ntp.org.cn"
+    - "*.time.edu.cn"
+    - "+.*"
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+  - '8.8.8.8#📶SELECT-VPN📶'
+  - '1.1.1.1#📶SELECT-VPN📶'
+  - 180.131.144.144
+  - 180.131.145.145
+  - https://dns.google/dns-query
+  - tls://dns.google
+  default-nameserver:
+  - '8.8.8.8#📶SELECT-VPN📶'
+  - '1.1.1.1#📶SELECT-VPN📶'
+  fake-ip-filter:
+  - "*.lan"
+  - "*.localdomain"
+  - "*.example"
+  - "*.invalid"
+  - "*.localhost"
+  - "*.test"
+  - "*.local"
+  - "*.home.arpa"
+  - time.*.com
+  - time.*.gov
+  - time.*.edu.cn
+  - time.*.apple.com
+  - time-ios.apple.com
+  - time1.*.com
+  - time2.*.com
+  - time3.*.com
+  - time4.*.com
+  - time5.*.com
+  - time6.*.com
+  - time7.*.com
+  - ntp.*.com
+  - ntp1.*.com
+  - ntp2.*.com
+  - ntp3.*.com
+  - ntp4.*.com
+  - ntp5.*.com
+  - ntp6.*.com
+  - ntp7.*.com
+  - "*.time.edu.cn"
+  - "*.ntp.org.cn"
+  - "+.pool.ntp.org"
+  - time1.cloud.tencent.com
+  - "+.msftconnecttest.com"
+  - "+.msftncsi.com"
+  - "+.msftconnecttest.com"
+  - "+.msftncsi.com"
+  - stun.*.*
+  - stun.*.*.*
+  - "+.stun.*.*"
+  - "+.stun.*.*.*"
+  - "+.stun.*.*.*.*"
+  - "+.stun.*.*.*.*.*"
+  - "*.linksys.com"
+  - "*.linksyssmartwifi.com"
+  - "*.router.asus.com"
+  - mesu.apple.com
+  - swscan.apple.com
+  - swquery.apple.com
+  - swdownload.apple.com
+  - swcdn.apple.com
+  - swdist.apple.com
+  - lens.l.google.com
+  - "+.google.com"
+  - Mijia Cloud
+  - "+.cmbchina.com"
+  - "+.cmbimg.com"
+  
+proxy-providers:
+  SERVER-ID:
+    type: http
+    path: "./proxy_provider/id.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/id.yaml
+    interval: 600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  SERVER-SG:
+    type: http
+    path: "./proxy_provider/sg.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/sg.yaml
+    interval: 600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  GAME-ONLY:
+    type: http
+    path: "./proxy_provider/game.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/game.yaml
+    interval: 600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN:
+    type: http
+    path: "./proxy_provider/test.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/test.yaml
+    interval: 600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN-ID:
+    type: http
+    path: "./proxy_provider/test-id.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/test-id.yaml
+    interval: 600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN-IND:
+    type: http
+    path: "./proxy_provider/test-idn.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/test-idn.yaml
+    interval: 600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN-SG:
+    type: http
+    path: "./proxy_provider/test-sg.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/test-sg.yaml
+    interval: 600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN-SGP:
+    type: http
+    path: "./proxy_provider/test-sgp.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/proxy_provider/game1.yaml
+    interval: 600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+proxy-groups:
+- name: 📶SELECT-VPN📶
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  disable-udp: false
+  proxies:
+  - TEST-AKUN-SG
+  - TEST-AKUN-ID
+  - TEST-AKUN-IND
+  - TEST-AKUN
+  - TEST-AKUN-SGP
+  - GAME-ONLY
+  - SERVER-SG
+  - SERVER-ID
+- name: TEST-AKUN-SGP
+  type: load-balance
+  strategy: round-robin
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  disable-udp: false
+  use:
+  - TEST-AKUN-SGP
+- name: TEST-AKUN-SG
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  disable-udp: false
+  use:
+  - TEST-AKUN-SG
+- name: TEST-AKUN
+  type: load-balance
+  strategy: round-robin
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  disable-udp: false
+  use:
+  - TEST-AKUN
+- name: TEST-AKUN-ID
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  disable-udp: false
+  use:
+  - TEST-AKUN-ID
+- name: TEST-AKUN-IND
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  disable-udp: false
+  use:
+  - TEST-AKUN-IND
+- name: GAME-ONLY
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  disable-udp: false
+  use:
+  - GAME-ONLY
+- name: SERVER-SG
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  disable-udp: false
+  use:
+  - SERVER-SG
+- name: SERVER-ID
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  disable-udp: false
+  use:
+  - SERVER-ID
+
+rule-providers:
+  rule_Direct:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_direct.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/ABS.yaml
+    interval: 86400
+  rule_Indo:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_Indo.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/rule_indo.yaml
+    interval: 86400
+  rule_Sosmed:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_sosmed.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/Sosmed.yaml
+    interval: 86400
+  rule_Streaming:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_streaming.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/Stream.yaml
+    interval: 86400
+  rule_Whatsapp:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/whatsapp.yaml
+    path: "./rule_provider/rule_Whatsapp.yaml"
+    interval: 86400
+  rule_lancidr:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/rule_lancidr.yaml
+    path: "./rule_provider/rule_Whatsapp.yaml"
+    interval: 86400
+  rule_portgames:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_portgames.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/portgames.yaml
+    interval: 86400
+  rule_gametcp:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_portgames.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/gametcp.yaml
+    interval: 86400
+    
+
+rules:
+  - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
+  - DOMAIN-SUFFIX,googlesyndication.com,📶SELECT-VPN📶
+  - RULE-SET,rule_Whatsapp,DIRECT
+  - RULE-SET,rule_Sosmed,TEST-AKUN-ID
+  - RULE-SET,rule_Streaming,TEST-AKUN-SGP
+  - RULE-SET,rule_Indo,TEST-AKUN-ID
+  - RULE-SET,rule_portgames,DIRECT
+  - RULE-SET,rule_gametcp,DIRECT
+  - RULE-SET,rule_lancidr,REJECT
+
+  # Local Area Network
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT
+  - IP-CIDR,224.0.0.0/4,DIRECT
+ 
+  - MATCH,📶SELECT-VPN📶
+
+tun:
+  enable: false
+  stack: system
+  dns-hijack:
+    - any:53
+    - tcp://any:53
+profile:
+  store-selected: true
+  store-fake-ip: false
+# secret: '123456'
+bind-address: "*"
