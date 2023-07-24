@@ -28,7 +28,14 @@ base-proxy:
       type: vmess
       alterId: 0
       cipher: auto
-      udp: true
+      udp-over-tcp: true
+      network: ws
+      skip-cert-verify: true
+  vless:
+    - &basevless
+      type: vless
+      alterId: 0
+      cipher: auto
       udp-over-tcp: true
       network: ws
       skip-cert-verify: true

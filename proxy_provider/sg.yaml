@@ -28,16 +28,24 @@ base-proxy:
       type: vmess
       alterId: 0
       cipher: auto
-      udp: true
+      udp-over-tcp: true
+      network: ws
+      skip-cert-verify: true
+  vless:
+    - &basevless
+      type: vless
+      alterId: 0
+      cipher: auto
       udp-over-tcp: true
       network: ws
       skip-cert-verify: true
   trojan:
     - &basetrojan
       type: trojan
+      port: 443
       udp: true
-      network: ws
       skip-cert-verify: true
+      network: ws
   gfw:
     - &basegrpc
       type: trojan
@@ -52,7 +60,7 @@ proxies:
 
   - &sshkit
     <<: *basevmess
-    name: 99 🇸🇬 AKAMAI  1
+    name: Sg 🇸🇬 DO  1
     server: *bug-ip1
     port: 80
     tls: false
@@ -64,59 +72,59 @@ proxies:
         Host: aginvpn.com
       Early-Data: 1
   - <<: *sshkit
-    name: 99 🇸🇬 AKAMAI  2
+    name: Sg 🇸🇬 DO  2
     server: *bug-ip2
   - <<: *sshkit
-    name: 99 🇸🇬 AKAMAI  3
+    name: Sg 🇸🇬 DO  3
     server: *bug-ip3
   - <<: *sshkit
-    name: 99 🇸🇬 AKAMAI  4
+    name: Sg 🇸🇬 DO  4
     server: *bug-ip4
   - <<: *sshkit
-    name: 99 🇸🇬 AKAMAI  5
+    name: Sg 🇸🇬 DO  5
     server: *bug-ip5
   - <<: *sshkit
-    name: 99 🇸🇬 AKAMAI  6
+    name: Sg 🇸🇬 DO  6
     server: *bug-ip6
   - <<: *sshkit
-    name: 99 🇸🇬 AKAMAI  7
+    name: Sg 🇸🇬 DO  7
     server: *bug-ip7
   - <<: *sshkit
-    name: 99 🇸🇬 AKAMAI  8
+    name: Sg 🇸🇬 DO  8
     server: *bug-ip8
   - <<: *sshkit
-    name: 99 🇸🇬 AKAMAI  9
+    name: Sg 🇸🇬 DO  9
     server: *bug-ip9
   - <<: *sshkit
-    name: 99 🇸🇬 AKAMAI  10
+    name: Sg 🇸🇬 DO  10
     server: *bug-ip10
   - <<: *sshkit
-    name: 99 🇸🇬 AKAMAI  11
+    name: Sg 🇸🇬 DO  11
     server: *bug-ip11
   - <<: *sshkit
-    name: 99 🇸🇬 AKAMAI  12
+    name: Sg 🇸🇬 DO  12
     server: *bug-ip12
   - <<: *sshkit
-    name: 99 🇸🇬 AKAMAI  13
+    name: Sg 🇸🇬 DO  13
     server: *bug-ip13
   - <<: *sshkit
-    name: 99 🇸🇬 AKAMAI  14
+    name: Sg 🇸🇬 DO  14
     server: *bug-ip14
   - <<: *sshkit
-    name: 99 🇸🇬 AKAMAI  15
+    name: Sg 🇸🇬 DO  15
     server: *bug-ip15
   - <<: *sshkit
-    name: 99 🇸🇬 AKAMAI  16
+    name: Sg 🇸🇬 DO  16
     server: *bug-ip16
   - <<: *sshkit
-    name: 99 🇸🇬 AKAMAI  17
+    name: Sg 🇸🇬 DO  17
     server: *bug-ip17
   - <<: *sshkit
-    name: 99 🇸🇬 AKAMAI  18
+    name: Sg 🇸🇬 DO  18
     server: *bug-ip18
   - <<: *sshkit
-    name: 99 🇸🇬 AKAMAI  19
+    name: Sg 🇸🇬 DO  19
     server: *bug-ip19
   - <<: *sshkit
-    name: 99 🇸🇬 AKAMAI  20
+    name: Sg 🇸🇬 DO  20
     server: *bug-ip20

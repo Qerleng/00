@@ -62,7 +62,7 @@ proxies:
 
   - &sshkit
     <<: *basevmess
-    name: 88 🇸🇬 AKAMAI  1
+    name: S'g 🇸🇬 DO  1
     server: *bug-ip1
     port: 443
     tls: true
@@ -74,59 +74,59 @@ proxies:
         Host: aginvpn.com
         Early-Data: 1
   - <<: *sshkit
-    name: 88 🇸🇬 AKAMAI  2
+    name: S'g 🇸🇬 DO  2
     server: *bug-ip2
   - <<: *sshkit
-    name: 88 🇸🇬 AKAMAI  3
+    name: S'g 🇸🇬 DO  3
     server: *bug-ip3
   - <<: *sshkit
-    name: 88 🇸🇬 AKAMAI  4
+    name: S'g 🇸🇬 DO  4
     server: *bug-ip4
   - <<: *sshkit
-    name: 88 🇸🇬 AKAMAI  5
+    name: S'g 🇸🇬 DO  5
     server: *bug-ip5
   - <<: *sshkit
-    name: 88 🇸🇬 AKAMAI  6
+    name: S'g 🇸🇬 DO  6
     server: *bug-ip6
   - <<: *sshkit
-    name: 88 🇸🇬 AKAMAI  7
+    name: S'g 🇸🇬 DO  7
     server: *bug-ip7
   - <<: *sshkit
-    name: 88 🇸🇬 AKAMAI  8
+    name: S'g 🇸🇬 DO  8
     server: *bug-ip8
   - <<: *sshkit
-    name: 88 🇸🇬 AKAMAI  9
+    name: S'g 🇸🇬 DO  9
     server: *bug-ip9
   - <<: *sshkit
-    name: 88 🇸🇬 AKAMAI  10
+    name: S'g 🇸🇬 DO  10
     server: *bug-ip10
   - <<: *sshkit
-    name: 88 🇸🇬 AKAMAI  11
+    name: S'g 🇸🇬 DO  11
     server: *bug-ip11
   - <<: *sshkit
-    name: 88 🇸🇬 AKAMAI  12
+    name: S'g 🇸🇬 DO  12
     server: *bug-ip12
   - <<: *sshkit
-    name: 88 🇸🇬 AKAMAI  13
+    name: S'g 🇸🇬 DO  13
     server: *bug-ip13
   - <<: *sshkit
-    name: 88 🇸🇬 AKAMAI  14
+    name: S'g 🇸🇬 DO  14
     server: *bug-ip14
   - <<: *sshkit
-    name: 88 🇸🇬 AKAMAI  15
+    name: S'g 🇸🇬 DO  15
     server: *bug-ip15
   - <<: *sshkit
-    name: 88 🇸🇬 AKAMAI  16
+    name: S'g 🇸🇬 DO  16
     server: *bug-ip16
   - <<: *sshkit
-    name: 88 🇸🇬 AKAMAI  17
+    name: S'g 🇸🇬 DO  17
     server: *bug-ip17
   - <<: *sshkit
-    name: 88 🇸🇬 AKAMAI  18
+    name: S'g 🇸🇬 DO  18
     server: *bug-ip18
   - <<: *sshkit
-    name: 88 🇸🇬 AKAMAI  19
+    name: S'g 🇸🇬 DO  19
     server: *bug-ip19
   - <<: *sshkit
-    name: 88 🇸🇬 AKAMAI  20
+    name: S'g 🇸🇬 DO  20
     server: *bug-ip20

@@ -28,10 +28,16 @@ base-proxy:
       type: vmess
       alterId: 0
       cipher: auto
-      udp: true
       udp-over-tcp: true
       network: ws
-      tls: false
+      skip-cert-verify: true
+  vless:
+    - &basevless
+      type: vless
+      alterId: 0
+      cipher: auto
+      udp-over-tcp: true
+      network: ws
       skip-cert-verify: true
   trojan:
     - &basetrojan
@@ -54,7 +60,7 @@ proxies:
 
   - &sshkit
     <<: *basevmess
-    name: ID 🇮🇩 NATA 1
+    name: IND 🇮🇩 NATA 1
     server: *bug-ip1
     port: 80
     tls: false
@@ -66,59 +72,59 @@ proxies:
         Host: id1.foolvpn.tech
         Early-Data: 1
   - <<: *sshkit
-    name: ID 🇮🇩 NATA 2
+    name: IND 🇮🇩 NATA 2
     server: *bug-ip2
   - <<: *sshkit
-    name: ID 🇮🇩 NATA 3
+    name: IND 🇮🇩 NATA 3
     server: *bug-ip3
   - <<: *sshkit
-    name: ID 🇮🇩 NATA 4
+    name: IND 🇮🇩 NATA 4
     server: *bug-ip4
   - <<: *sshkit
-    name: ID 🇮🇩 NATA 5
+    name: IND 🇮🇩 NATA 5
     server: *bug-ip5
   - <<: *sshkit
-    name: ID 🇮🇩 NATA 6
+    name: IND 🇮🇩 NATA 6
     server: *bug-ip6
   - <<: *sshkit
-    name: ID 🇮🇩 NATA 7
+    name: IND 🇮🇩 NATA 7
     server: *bug-ip7
   - <<: *sshkit
-    name: ID 🇮🇩 NATA 8
+    name: IND 🇮🇩 NATA 8
     server: *bug-ip8
   - <<: *sshkit
-    name: ID 🇮🇩 NATA 9
+    name: IND 🇮🇩 NATA 9
     server: *bug-ip9
   - <<: *sshkit
-    name: ID 🇮🇩 NATA 10
+    name: IND 🇮🇩 NATA 10
     server: *bug-ip10
   - <<: *sshkit
-    name: ID 🇮🇩 NATA 11
+    name: IND 🇮🇩 NATA 11
     server: *bug-ip11
   - <<: *sshkit
-    name: ID 🇮🇩 NATA 12
+    name: IND 🇮🇩 NATA 12
     server: *bug-ip12
   - <<: *sshkit
-    name: ID 🇮🇩 NATA 13
+    name: IND 🇮🇩 NATA 13
     server: *bug-ip13
   - <<: *sshkit
-    name: ID 🇮🇩 NATA 14
+    name: IND 🇮🇩 NATA 14
     server: *bug-ip14
   - <<: *sshkit
-    name: ID 🇮🇩 NATA 15
+    name: IND 🇮🇩 NATA 15
     server: *bug-ip15
   - <<: *sshkit
-    name: ID 🇮🇩 NATA 16
+    name: IND 🇮🇩 NATA 16
     server: *bug-ip16
   - <<: *sshkit
-    name: ID 🇮🇩 NATA 17
+    name: IND 🇮🇩 NATA 17
     server: *bug-ip17
   - <<: *sshkit
-    name: ID 🇮🇩 NATA 18
+    name: IND 🇮🇩 NATA 18
     server: *bug-ip18
   - <<: *sshkit
-    name: ID 🇮🇩 NATA 19
+    name: IND 🇮🇩 NATA 19
     server: *bug-ip19
   - <<: *sshkit
-    name: ID 🇮🇩 NATA 20
+    name: IND 🇮🇩 NATA 20
     server: *bug-ip20
