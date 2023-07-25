@@ -66,7 +66,7 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: df253746-f3b1-40db-b544-8df78f8dcbab
+    uuid: 0d73a2a6-fa1e-4ff9-bb2b-147aee2e7e98
     servername: aginvpn.com
     ws-opts: 
       path: /whatever/vmess
