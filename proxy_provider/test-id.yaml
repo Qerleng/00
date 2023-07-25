@@ -1,26 +1,26 @@
 base-bug:
   bug:
     # AKRAB
-    - &bug-ip1 noice.dnstore.my.id
-    - &bug-ip2 cdn.noice.id
-    - &bug-ip3 104.18.2.198
-    - &bug-ip4 104.18.3.198
-    - &bug-ip5 xlakrab.superspeed.my.id
-    - &bug-ip6 open.noice.id
-    - &bug-ip7 akrab.bugku.my.id
-    - &bug-ip8 fvck.love
-    - &bug-ip9 akrab2.v-pn.my.id
-    - &bug-ip10 104.18.0.196
-    - &bug-ip11 104.18.1.196
+    - &bug-ip1 104.18.2.198
+    - &bug-ip2 104.18.3.198
+    - &bug-ip3 104.18.28.22
+    - &bug-ip4 104.18.0.196
+    - &bug-ip5 104.18.1.196
+    - &bug-ip6 noice.dnstore.my.id
+    - &bug-ip7 akrab.nyarigratisan.software
+    - &bug-ip8 xlakrab.superspeed.my.id
+    - &bug-ip9 f2pool.com
+    - &bug-ip10 akrab.bugku.my.id
+    - &bug-ip11 akrab2.v-pn.my.id
     - &bug-ip12 akrab.natanvpn.my.id
-    - &bug-ip13 infile.com
-    - &bug-ip14 cdn.noiceid.cc
-    - &bug-ip15 assets.noiceid.cc
-    - &bug-ip16 meetdory.com
-    - &bug-ip17 www.keldif.com
-    - &bug-ip18 slotvibe24.com
+    - &bug-ip13 akrab1.v-pn.my.id
+    - &bug-ip14 akrab2.v-pn.my.id
+    - &bug-ip15 akrab.boychongzen.online
+    - &bug-ip16 sonymusic.it
+    - &bug-ip17 qienzxl.mooo.com
+    - &bug-ip18 www.sonymusic.it
     - &bug-ip19 www.fpool.com
-    - &bug-ip20 cdn.noiceid.cc
+    - &bug-ip20 marketplace.neustar.com
     
 
 base-proxy:
