@@ -67,7 +67,7 @@ proxies:
     uuid: 0d73a2a6-fa1e-4ff9-bb2b-147aee2e7e98
     servername: aginvpn.com
     ws-opts: 
-      path: /whatever/vmess
+      path: /vmess
       headers: 
         Host: aginvpn.com
       Early-Data: 1

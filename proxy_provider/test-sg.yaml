@@ -64,12 +64,12 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: d93bdaae-e890-4b09-acbc-ce855668e974
-    servername: pro.waroengvpn.cloud
+    uuid: cef48584-4098-4dc5-a40c-9b053a2e5f69
+    servername: yzqsvip.stvpn.app
     ws-opts: 
       path: /vmess
       headers: 
-        Host: pro.waroengvpn.cloud
+        Host: yzqsvip.stvpn.app
         Early-Data: 1
   - <<: *sshkit
     name: 01 🇮🇩 CTN, Inc  2
