@@ -70,12 +70,12 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: cef48584-4098-4dc5-a40c-9b053a2e5f69
-    servername: yzqsvip.stvpn.app
+    uuid: ccb2b692-d41d-4f11-9fa7-9fa7059fb47d
+    servername: r9jc9.ftvpn.xyz
     ws-opts: 
       path: /vmess
       headers: 
-        Host: yzqsvip.stvpn.app
+        Host: r9jc9.ftvpn.xyz
         Early-Data: 1
   - <<: *sshkit
     name: 01 🇮🇩 CTN, Inc  2
