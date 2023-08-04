@@ -66,71 +66,71 @@ proxies:
 
   - &sshkit
     <<: *basevmess
-    name: Sg 🇸🇬 DO  1
+    name: Sg 🇸🇬 ORACLE  1
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: 0d73a2a6-fa1e-4ff9-bb2b-147aee2e7e98
-    servername: aginvpn.com
+    uuid: 1ddfdc42-41e1-42e1-b419-517f9834c1ed
+    servername: xjp.shabijichang.com
     ws-opts: 
-      path: /vmess
+      path: /
       headers: 
-        Host: aginvpn.com
+        Host: xjp.shabijichang.com
       Early-Data: 1
   - <<: *sshkit
-    name: Sg 🇸🇬 DO  2
+    name: Sg 🇸🇬 ORACLE  2
     server: *bug-ip2
   - <<: *sshkit
-    name: Sg 🇸🇬 DO  3
+    name: Sg 🇸🇬 ORACLE  3
     server: *bug-ip3
   - <<: *sshkit
-    name: Sg 🇸🇬 DO  4
+    name: Sg 🇸🇬 ORACLE  4
     server: *bug-ip4
   - <<: *sshkit
-    name: Sg 🇸🇬 DO  5
+    name: Sg 🇸🇬 ORACLE  5
     server: *bug-ip5
   - <<: *sshkit
-    name: Sg 🇸🇬 DO  6
+    name: Sg 🇸🇬 ORACLE  6
     server: *bug-ip6
   - <<: *sshkit
-    name: Sg 🇸🇬 DO  7
+    name: Sg 🇸🇬 ORACLE  7
     server: *bug-ip7
   - <<: *sshkit
-    name: Sg 🇸🇬 DO  8
+    name: Sg 🇸🇬 ORACLE  8
     server: *bug-ip8
   - <<: *sshkit
-    name: Sg 🇸🇬 DO  9
+    name: Sg 🇸🇬 ORACLE  9
     server: *bug-ip9
   - <<: *sshkit
-    name: Sg 🇸🇬 DO  10
+    name: Sg 🇸🇬 ORACLE  10
     server: *bug-ip10
   - <<: *sshkit
-    name: Sg 🇸🇬 DO  11
+    name: Sg 🇸🇬 ORACLE  11
     server: *bug-ip11
   - <<: *sshkit
-    name: Sg 🇸🇬 DO  12
+    name: Sg 🇸🇬 ORACLE  12
     server: *bug-ip12
   - <<: *sshkit
-    name: Sg 🇸🇬 DO  13
+    name: Sg 🇸🇬 ORACLE  13
     server: *bug-ip13
   - <<: *sshkit
-    name: Sg 🇸🇬 DO  14
+    name: Sg 🇸🇬 ORACLE  14
     server: *bug-ip14
   - <<: *sshkit
-    name: Sg 🇸🇬 DO  15
+    name: Sg 🇸🇬 ORACLE  15
     server: *bug-ip15
   - <<: *sshkit
-    name: Sg 🇸🇬 DO  16
+    name: Sg 🇸🇬 ORACLE  16
     server: *bug-ip16
   - <<: *sshkit
-    name: Sg 🇸🇬 DO  17
+    name: Sg 🇸🇬 ORACLE  17
     server: *bug-ip17
   - <<: *sshkit
-    name: Sg 🇸🇬 DO  18
+    name: Sg 🇸🇬 ORACLE  18
     server: *bug-ip18
   - <<: *sshkit
-    name: Sg 🇸🇬 DO  19
+    name: Sg 🇸🇬 ORACLE  19
     server: *bug-ip19
   - <<: *sshkit
-    name: Sg 🇸🇬 DO  20
+    name: Sg 🇸🇬 ORACLE  20
     server: *bug-ip20
