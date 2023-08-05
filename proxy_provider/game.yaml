@@ -74,12 +74,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: 88925417-da79-4920-9dce-85adcd6c6dc8
-    servername: r9jc9.ftvpn.xyz
+    uuid: ded4aa08-07d7-470d-8648-1f96c36cf797
+    servername: wijaya.vpnvip.cloud
     ws-opts: 
       path: /vmess
       headers: 
-        Host: r9jc9.ftvpn.xyz
+        Host: wijaya.vpnvip.cloud
         Early-Data: 1
   - <<: *sshkit
     name: ID 🇮🇩 PT PC24 2

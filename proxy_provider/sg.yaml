@@ -70,12 +70,12 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: 1ddfdc42-41e1-42e1-b419-517f9834c1ed
-    servername: xjp.shabijichang.com
+    uuid: dd7206d2-ad3e-4595-916a-63e570c87d60
+    servername: vpne5dhiza.scpotato.me
     ws-opts: 
-      path: /
+      path: /whatever/vmess
       headers: 
-        Host: xjp.shabijichang.com
+        Host: vpne5dhiza.scpotato.me
       Early-Data: 1
   - <<: *sshkit
     name: Sg 🇸🇬 ORACLE  2

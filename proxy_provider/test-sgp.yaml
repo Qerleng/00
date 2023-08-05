@@ -58,6 +58,14 @@ base-proxy:
       port: 443
       udp: true
       skip-cert-verify: true
+  ss:
+    - &basess
+      type: ss
+      cipher: aes-128-gcm
+      udp: true
+      skip-cert-verify: true
+      udp-over-tcp: true
+      plugin: v2ray-plugin
 base-proxy-group:
   url:
     - &url-gg http://www.gstatic.com/generate_204
@@ -70,12 +78,12 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: 88925417-da79-4920-9dce-85adcd6c6dc8
-    servername: r9jc9.ftvpn.xyz
+    uuid: ded4aa08-07d7-470d-8648-1f96c36cf797
+    servername: wijaya.vpnvip.cloud
     ws-opts: 
       path: /vmess
       headers: 
-        Host: r9jc9.ftvpn.xyz
+        Host: wijaya.vpnvip.cloud
         Early-Data: 1
   - <<: *sshkit
     name: IN 🇮🇩 P.T PC24 2
