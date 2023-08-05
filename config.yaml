@@ -104,17 +104,16 @@ proxy-groups:
   interval: 300
   disable-udp: false
   proxies:
-  - TEST-AKUN-SG
   - TEST-AKUN-ID
   - TEST-AKUN-IND
   - TEST-AKUN
+  - TEST-AKUN-SG
   - TEST-AKUN-SGP
   - GAME-ONLY
   - SERVER-SG
   - SERVER-ID
 - name: TEST-AKUN-SGP
-  type: load-balance
-  strategy: round-robin
+  type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   disable-udp: false
@@ -128,8 +127,7 @@ proxy-groups:
   use:
   - TEST-AKUN-SG
 - name: TEST-AKUN
-  type: load-balance
-  strategy: round-robin
+  type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   disable-udp: false
@@ -177,15 +175,16 @@ proxy-groups:
   disable-udp: false
   proxies:
   - TEST-AKUN
-  - TEST-AKUN-SGP
+  - TEST-AKUN-SG
 - name: 📶VxPN📶
   type: load-balance
+  strategy: round-robin
   url: http://www.gstatic.com/generate_204
   interval: 300
   disable-udp: false
   proxies:
-  - TEST-AKUN-SGP
-  - TEST-AKUN
+  - SERVER-ID
+  - SERVER-SG
 
 rule-providers:
   rule_Direct:
@@ -241,13 +240,14 @@ rule-providers:
 rules:
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
 - DOMAIN-SUFFIX,googlesyndication.com,📶SELECT-VPN📶
-- RULE-SET,rule_Whatsapp,DIRECT
+- RULE-SET,rule_portgames,DIRECT
+- RULE-SET,rule_gametcp,DIRECT
+- RULE-SET,rule_Direct,DIRECT
+- RULE-SET,rule_lancidr,REJECT,no-resolve
 - RULE-SET,rule_Sosmed,📶VPN📶
 - RULE-SET,rule_Streaming,📶VxPN📶
 - RULE-SET,rule_Indo,TEST-AKUN-ID
-- RULE-SET,rule_portgames,DIRECT
-- RULE-SET,rule_gametcp,DIRECT
-- RULE-SET,rule_lancidr,REJECT,no-resolve
+- RULE-SET,rule_Whatsapp,DIRECT
 - MATCH,📶SELECT-VPN📶
 
 tun:
