@@ -68,14 +68,14 @@ proxies:
     <<: *basevmess
     name: Sg 🇸🇬 ORACLE  1
     server: *bug-ip1
-    port: 80
-    tls: false
-    uuid: dd7206d2-ad3e-4595-916a-63e570c87d60
-    servername: vpne5dhiza.scpotato.me
+    port: 443
+    tls: true
+    uuid: 910f297c-0e8e-4016-9db2-2415f14cd28d
+    servername: do.premiumserver.me
     ws-opts: 
-      path: /whatever/vmess
+      path: /vmess
       headers: 
-        Host: vpne5dhiza.scpotato.me
+        Host: do.premiumserver.me
       Early-Data: 1
   - <<: *sshkit
     name: Sg 🇸🇬 ORACLE  2

@@ -70,12 +70,12 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: 07a80c8f-d4ec-4e39-b746-4b21e927be0d
-    servername: vpn002.lynzstore.com
+    uuid: dd7206d2-ad3e-4595-916a-63e570c87d60
+    servername: vpne5dhiza.scpotato.me
     ws-opts: 
       path: /whatever/vmess
       headers: 
-        Host: vpn002.lynzstore.com
+        Host: vpne5dhiza.scpotato.me
         Early-Data: 1
   - <<: *sshkit
     name: 01 🇮🇩 CTN, Inc  2

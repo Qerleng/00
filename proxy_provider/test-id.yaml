@@ -71,12 +71,12 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: 46ffa3e3-0f17-4f37-a20a-8fdccd18ce3e
-    servername: id-rysaputra18n19xz.me
+    uuid: ded4aa08-07d7-470d-8648-1f96c36cf797
+    servername: wijaya.vpnvip.cloud
     ws-opts: 
       path: /vmess
       headers: 
-        Host: id-rysaputra18n19xz.me
+        Host: wijaya.vpnvip.cloud
         Early-Data: 1
   - <<: *sshkit
     name: 00 🇮🇩 GIO 2
