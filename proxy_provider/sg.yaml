@@ -70,12 +70,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: 910f297c-0e8e-4016-9db2-2415f14cd28d
-    servername: do.premiumserver.me
+    uuid: 7d88e941-c396-45c8-babb-ac589a72e32c
+    servername: id1.foolvpn.tech
     ws-opts: 
       path: /vmess
       headers: 
-        Host: do.premiumserver.me
+        Host: id1.foolvpn.tech
       Early-Data: 1
   - <<: *sshkit
     name: Sg 🇸🇬 ORACLE  2

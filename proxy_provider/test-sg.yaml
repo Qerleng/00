@@ -70,12 +70,12 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: dd7206d2-ad3e-4595-916a-63e570c87d60
-    servername: vpne5dhiza.scpotato.me
+    uuid: 50c2c636-8000-495f-8095-28723d2a70d7
+    servername: ftvps2.vpnvip.app
     ws-opts: 
-      path: /whatever/vmess
+      path: /vmess
       headers: 
-        Host: vpne5dhiza.scpotato.me
+        Host: ftvps2.vpnvip.app
         Early-Data: 1
   - <<: *sshkit
     name: 01 🇮🇩 CTN, Inc  2
