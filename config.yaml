@@ -113,21 +113,24 @@ proxy-groups:
   - SERVER-SG
   - SERVER-ID
 - name: TEST-AKUN-SGP
-  type: url-test
+  type: load-balance
+  strategy: round-robin
   url: http://www.gstatic.com/generate_204
   interval: 300
   disable-udp: false
   use:
   - TEST-AKUN-SGP
 - name: TEST-AKUN-SG
-  type: url-test
+  type: load-balance
+  strategy: round-robin
   url: http://www.gstatic.com/generate_204
   interval: 300
   disable-udp: false
   use:
   - TEST-AKUN-SG
 - name: TEST-AKUN
-  type: url-test
+  type: load-balance
+  strategy: round-robin
   url: http://www.gstatic.com/generate_204
   interval: 300
   disable-udp: false
@@ -148,27 +151,64 @@ proxy-groups:
   use:
   - TEST-AKUN-IND
 - name: GAME-ONLY
-  type: url-test
+  type: load-balance
+  strategy: round-robin
   url: http://www.gstatic.com/generate_204
   interval: 300
   disable-udp: false
   use:
   - GAME-ONLY
 - name: SERVER-SG
-  type: url-test
+  type: load-balance
+  strategy: round-robin
   url: http://www.gstatic.com/generate_204
   interval: 300
   disable-udp: false
   use:
   - SERVER-SG
 - name: SERVER-ID
-  type: url-test
+  type: load-balance
+  strategy: round-robin
   url: http://www.gstatic.com/generate_204
   interval: 300
   disable-udp: false
   use:
   - SERVER-ID
-
+- name: 📱SOSMED📱
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - TEST-AKUN-SG
+  - TEST-AKUN
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🎞STREAMING🎞
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - SERVER-ID
+  - SERVER-SG
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🤖ABS🤖
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - TEST-AKUN-SGP
+  - GAME-ONLY
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇮🇩ID🇮🇩
+  type: url-test
+  disable-udp: false
+  proxies:
+  - TEST-AKUN-IND
+  - TEST-AKUN-ID
+  url: http://www.gstatic.com/generate_204
+  interval: 300
 
 rule-providers:
   rule_Direct:
@@ -225,14 +265,14 @@ rules:
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
 - DOMAIN-SUFFIX,googlesyndication.com,📶SELECT-VPN📶
 - RULE-SET,rule_portgames,DIRECT
-- RULE-SET,rule_gametcp,DIRECT
 - RULE-SET,rule_Direct,DIRECT
+- RULE-SET,rule_gametcp,DIRECT
 - RULE-SET,rule_lancidr,REJECT,no-resolve
-- RULE-SET,rule_Sosmed,📶SELECT-VPN📶
-- RULE-SET,rule_Streaming,📶SELECT-VPN📶
-- RULE-SET,rule_Indo,TEST-AKUN-ID
+- RULE-SET,rule_Sosmed,📱SOSMED📱
+- RULE-SET,rule_Streaming,🎞STREAMING🎞
+- RULE-SET,rule_Indo,🇮🇩ID🇮🇩
 - RULE-SET,rule_Whatsapp,DIRECT
-- MATCH,TEST-AKUN-SGP
+- MATCH,🤖ABS🤖
 
 tun:
   enable: false
