@@ -168,23 +168,7 @@ proxy-groups:
   disable-udp: false
   use:
   - SERVER-ID
-- name: 📶VPN📶
-  type: url-test
-  url: http://www.gstatic.com/generate_204
-  interval: 300
-  disable-udp: false
-  proxies:
-  - TEST-AKUN
-  - TEST-AKUN-SG
-- name: 📶VxPN📶
-  type: load-balance
-  strategy: round-robin
-  url: http://www.gstatic.com/generate_204
-  interval: 300
-  disable-udp: false
-  proxies:
-  - SERVER-ID
-  - SERVER-SG
+
 
 rule-providers:
   rule_Direct:
@@ -244,11 +228,11 @@ rules:
 - RULE-SET,rule_gametcp,DIRECT
 - RULE-SET,rule_Direct,DIRECT
 - RULE-SET,rule_lancidr,REJECT,no-resolve
-- RULE-SET,rule_Sosmed,📶VPN📶
-- RULE-SET,rule_Streaming,📶VxPN📶
+- RULE-SET,rule_Sosmed,📶SELECT-VPN📶
+- RULE-SET,rule_Streaming,📶SELECT-VPN📶
 - RULE-SET,rule_Indo,TEST-AKUN-ID
 - RULE-SET,rule_Whatsapp,DIRECT
-- MATCH,📶SELECT-VPN📶
+- MATCH,TEST-AKUN-SGP
 
 tun:
   enable: false
