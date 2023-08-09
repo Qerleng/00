@@ -78,12 +78,12 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: ded4aa08-07d7-470d-8648-1f96c36cf797
-    servername: wijaya.vpnvip.cloud
+    uuid: 5233e623-22ab-4b9c-9322-1622eb5061fe
+    servername: 8fx3w.ftvpn.me
     ws-opts: 
       path: /vmess
       headers: 
-        Host: wijaya.vpnvip.cloud
+        Host: 8fx3w.ftvpn.me
         Early-Data: 1
   - <<: *sshkit
     name: IN 🇮🇩 P.T PC24 2
