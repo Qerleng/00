@@ -267,11 +267,11 @@ rules:
 - RULE-SET,rule_portgames,DIRECT
 - RULE-SET,rule_Direct,DIRECT
 - RULE-SET,rule_gametcp,DIRECT
+- RULE-SET,rule_Whatsapp,DIRECT
 - RULE-SET,rule_lancidr,REJECT,no-resolve
 - RULE-SET,rule_Sosmed,📱SOSMED📱
 - RULE-SET,rule_Streaming,🎞STREAMING🎞
 - RULE-SET,rule_Indo,🇮🇩ID🇮🇩
-- RULE-SET,rule_Whatsapp,DIRECT
 - MATCH,🤖ABS🤖
 
 tun:
