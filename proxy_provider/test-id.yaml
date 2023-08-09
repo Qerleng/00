@@ -71,12 +71,12 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: ded4aa08-07d7-470d-8648-1f96c36cf797
-    servername: wijaya.vpnvip.cloud
+    uuid: d415eef2-443b-4e7b-a67c-ebcb87070cd7
+    servername: nana.rerechan02.com
     ws-opts: 
       path: /vmess
       headers: 
-        Host: wijaya.vpnvip.cloud
+        Host: nana.rerechan02.com
         Early-Data: 1
   - <<: *sshkit
     name: 00 🇮🇩 GIO 2
