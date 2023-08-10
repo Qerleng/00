@@ -69,14 +69,14 @@ proxies:
     <<: *basevmess
     name: 00 🇮🇩 GIO 1
     server: *bug-ip1
-    port: 80
-    tls: false
-    uuid: d415eef2-443b-4e7b-a67c-ebcb87070cd7
-    servername: nana.rerechan02.com
+    port: 443
+    tls: true
+    uuid: 7d88e941-c396-45c8-babb-ac589a72e32c
+    servername: id1.foolvpn.tech
     ws-opts: 
       path: /vmess
       headers: 
-        Host: nana.rerechan02.com
+        Host: id1.foolvpn.tech
         Early-Data: 1
   - <<: *sshkit
     name: 00 🇮🇩 GIO 2
