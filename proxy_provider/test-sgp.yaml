@@ -78,12 +78,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: 5436474d-13a9-47ef-898a-7101c2921be9
-    servername: do-sg.lzz.app
+    uuid: bb14353d-7112-48bd-b53a-e98aa9a31f13
+    servername: linode1-prem.rzs.my.id
     ws-opts: 
-      path: /re
+      path: /vmess
       headers: 
-        Host: do-sg.lzz.app
+        Host: linode1-prem.rzs.my.id
         Early-Data: 1
   - <<: *sshkit
     name: IN 🇮🇩 P.T PC24 2
