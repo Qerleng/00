@@ -70,12 +70,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: a087c606-edfc-4b42-b96b-60e523552d6c
-    servername: 8fx3w.ftvpn.me
+    uuid: 1319f0ef-f216-4580-a87d-deb03c5b2616
+    servername: gratis1.vpnvip.tech
     ws-opts: 
       path: /vmess
       headers: 
-        Host: 8fx3w.ftvpn.me
+        Host: gratis1.vpnvip.tech
         Early-Data: 1
   - <<: *sshkit
     name: 00 🇮🇩 CTN, Inc 2

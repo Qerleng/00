@@ -72,12 +72,12 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: 7d88e941-c396-45c8-babb-ac589a72e32c
-    servername: id1.foolvpn.tech
+    uuid: 8d270231-d78d-4651-b790-4c3a230d3129
+    servername: r9jc9.ftvpn.xyz
     ws-opts: 
       path: /vmess
       headers: 
-        Host: id1.foolvpn.tech
+        Host: r9jc9.ftvpn.xyz
         Early-Data: 1
   - <<: *sshkit
     name: S'g 🇸🇬 ORACLE  2
