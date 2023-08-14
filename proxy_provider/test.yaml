@@ -70,12 +70,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: 1319f0ef-f216-4580-a87d-deb03c5b2616
-    servername: gratis1.vpnvip.tech
+    uuid: 9b784de5-e013-4dbf-9809-6a0b9fa3fdb5
+    servername: sgdo01.slowapp.dev
     ws-opts: 
       path: /vmess
       headers: 
-        Host: gratis1.vpnvip.tech
+        Host: sgdo01.slowapp.dev
         Early-Data: 1
   - <<: *sshkit
     name: 00 🇮🇩 CTN, Inc 2

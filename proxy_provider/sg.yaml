@@ -70,12 +70,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: 8d270231-d78d-4651-b790-4c3a230d3129
-    servername: r9jc9.ftvpn.xyz
+    uuid: e12f6aaa-0d0c-437d-a046-0f82d59aaa37
+    servername: dc.vpnwuzz.com
     ws-opts: 
-      path: /vmess
+      path: /vmessws
       headers: 
-        Host: r9jc9.ftvpn.xyz
+        Host: dc.vpnwuzz.com
       Early-Data: 1
   - <<: *sshkit
     name: Sg 🇸🇬 ORACLE  2
