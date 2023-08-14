@@ -217,6 +217,12 @@ rule-providers:
     path: "./rule_provider/rule_direct.yaml"
     url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/ABS.yaml
     interval: 86400
+  E-Banking:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_direct.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/E-Banking.yaml
+    interval: 86400
   rule_Indo:
     type: http
     behavior: classical
@@ -271,6 +277,7 @@ rules:
 - RULE-SET,rule_lancidr,REJECT,no-resolve
 - RULE-SET,rule_Sosmed,📱SOSMED📱
 - RULE-SET,rule_Streaming,🎞STREAMING🎞
+- RULE-SET,E-Banking,🇮🇩ID🇮🇩
 - RULE-SET,rule_Indo,🇮🇩ID🇮🇩
 - MATCH,🤖ABS🤖
 
