@@ -1,26 +1,15 @@
 payload:
-  # TIME 
-  - DST-PORT,123
-  - DST-PORT,136
-  - DST-PORT,137
-  - DST-PORT,138
-  - DST-PORT,139
-
   
   #ABS
-  - DOMAIN,alt1-mtalk.google.com
-  - DOMAIN,alt2-mtalk.google.com
-  - DOMAIN,alt3-mtalk.google.com
-  - DOMAIN,alt4-mtalk.google.com
-  - DOMAIN,alt5-mtalk.google.com
-  - DOMAIN,alt6-mtalk.google.com
-  - DOMAIN,alt7-mtalk.google.com
-  - DOMAIN,alt8-mtalk.google.com
+
+  - DOMAIN-SUFFIX,telkomsel.com
+  - DOMAIN-SUFFIX,my.telkomsel.com
+  - DOMAIN-KEYWORD,telkomsel.com
+  - PROCESS-NAME,com.whatsapp
+  - PROCESS-NAME,com.delta
+  - DOMAIN-KEYWORD,xl.axiata
+  - DOMAIN-KEYWORD,axis.net
   - DOMAIN,xlaxiata-resources.digital-cloud-sin1.medallia.com
   - DOMAIN-SUFFIX,medallia.com
   - DOMAIN-KEYWORD,medallia
   - DOMAIN-KEYWORD,notifications-pa.googleapis
-  - DOMAIN-SUFFIX,ipv4.google.com
-  - DOMAIN-SUFFIX,ipv6.google.com
-  - DOMAIN-SUFFIX,ds.metric.gstatic.com
-  - DOMAIN-SUFFIX,v4.metric.gstatic.com
