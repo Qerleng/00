@@ -41,6 +41,6 @@ payload:
   - IP-CIDR,34.224.0.0/12
   - IP-CIDR,50.22.198.204/30
   - IP-CIDR,54.242.0.0/15
-  - PROCESS-NAME,com.delta
-  - PROCESS-NAME,com.whatsapp
+  #- PROCESS-NAME,com.delta
+  $- PROCESS-NAME,com.whatsapp
   
