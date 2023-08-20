@@ -1,10 +1,10 @@
 base-bug:
   bug:
     # AKRAB
-    - &bug-ip1 104.18.2.198
-    - &bug-ip2 104.18.3.198
-    - &bug-ip3 akrab2.natanvpn.my.id
-    - &bug-ip4 104.18.0.196
+    - &bug-ip1 104.21.235.171
+    - &bug-ip2 104.21.235.172
+    - &bug-ip3 104.21.73.208
+    - &bug-ip4 172.67.192.40
     - &bug-ip5 104.18.1.196
     - &bug-ip6 noice.dnstore.my.id
     - &bug-ip7 akrab.nyarigratisan.software
