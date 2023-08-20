@@ -70,12 +70,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: 9b784de5-e013-4dbf-9809-6a0b9fa3fdb5
-    servername: sgdo01.slowapp.dev
+    uuid: 7d88e941-c396-45c8-babb-ac589a72e32c
+    servername: id1.foolvpn.tech
     ws-opts: 
       path: /vmess
       headers: 
-        Host: sgdo01.slowapp.dev
+        Host: id1.foolvpn.tech
         Early-Data: 1
   - <<: *sshkit
     name: 00 🇮🇩 CTN, Inc 2
@@ -86,51 +86,3 @@ proxies:
   - <<: *sshkit
     name: 00 🇮🇩 CTN, Inc 4
     server: *bug-ip4
-  - <<: *sshkit
-    name: 00 🇮🇩 CTN, Inc 5
-    server: *bug-ip5
-  - <<: *sshkit
-    name: 00 🇮🇩 CTN, Inc 6
-    server: *bug-ip6
-  - <<: *sshkit
-    name: 00 🇮🇩 CTN, Inc 7
-    server: *bug-ip7
-  - <<: *sshkit
-    name: 00 🇮🇩 CTN, Inc 8
-    server: *bug-ip8
-  - <<: *sshkit
-    name: 00 🇮🇩 CTN, Inc 9
-    server: *bug-ip9
-  - <<: *sshkit
-    name: 00 🇮🇩 CTN, Inc 10
-    server: *bug-ip10
-  - <<: *sshkit
-    name: 00 🇮🇩 CTN, Inc 11
-    server: *bug-ip11
-  - <<: *sshkit
-    name: 00 🇮🇩 CTN, Inc 12
-    server: *bug-ip12
-  - <<: *sshkit
-    name: 00 🇮🇩 CTN, Inc 13
-    server: *bug-ip13
-  - <<: *sshkit
-    name: 00 🇮🇩 CTN, Inc 14
-    server: *bug-ip14
-  - <<: *sshkit
-    name: 00 🇮🇩 CTN, Inc 15
-    server: *bug-ip15
-  - <<: *sshkit
-    name: 00 🇮🇩 CTN, Inc 16
-    server: *bug-ip16
-  - <<: *sshkit
-    name: 00 🇮🇩 CTN, Inc 17
-    server: *bug-ip17
-  - <<: *sshkit
-    name: 00 🇮🇩 CTN, Inc 18
-    server: *bug-ip18
-  - <<: *sshkit
-    name: 00 🇮🇩 CTN, Inc 19
-    server: *bug-ip19
-  - <<: *sshkit
-    name: 00 🇮🇩 CTN, Inc 20
-    server: *bug-ip20

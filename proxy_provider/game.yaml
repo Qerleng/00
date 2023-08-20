@@ -74,12 +74,12 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: 9b784de5-e013-4dbf-9809-6a0b9fa3fdb5
-    servername: sgdo01.slowapp.dev
+    uuid: f6491e7f-fb4c-4294-a2ae-21042b038af0
+    servername: indravpn.kabarbhezing.my.id
     ws-opts: 
       path: /vmess
       headers: 
-        Host: sgdo01.slowapp.dev
+        Host: indravpn.kabarbhezing.my.id
         Early-Data: 1
   - <<: *sshkit
     name: ID 🇮🇩 PT PC24 2
@@ -90,69 +90,3 @@ proxies:
   - <<: *sshkit
     name: ID 🇮🇩 PT PC24 4
     server: *bug-ip4
-  - <<: *sshkit
-    name: ID 🇮🇩 PT PC24 5
-    server: *bug-ip5
-  - <<: *sshkit
-    name: ID 🇮🇩 PT PC24 6
-    server: *bug-ip6
-  - <<: *sshkit
-    name: ID 🇮🇩 PT PC24 7
-    server: *bug-ip7
-  - <<: *sshkit
-    name: ID 🇮🇩 PT PC24 8
-    server: *bug-ip8
-  - <<: *sshkit
-    name: ID 🇮🇩 PT PC24 9
-    server: *bug-ip9
-  - <<: *sshkit
-    name: ID 🇮🇩 PT PC24 10
-    server: *bug-ip10
-  - <<: *sshkit
-    name: ID 🇮🇩 PT PC24 11
-    server: *bug-ip11
-  - <<: *sshkit
-    name: ID 🇮🇩 PT PC24 12
-    server: *bug-ip12
-  - <<: *sshkit
-    name: ID 🇮🇩 PT PC24 13
-    server: *bug-ip13
-  - <<: *sshkit
-    name: ID 🇮🇩 PT PC24 14
-    server: *bug-ip14
-  - <<: *sshkit
-    name: ID 🇮🇩 PT PC24 15
-    server: *bug-ip15
-  - <<: *sshkit
-    name: ID 🇮🇩 PT PC24 16
-    server: *bug-ip16
-  - <<: *sshkit
-    name: ID 🇮🇩 PT PC24 17
-    server: *bug-ip17
-  - <<: *sshkit
-    name: ID 🇮🇩 PT PC24 18
-    server: *bug-ip18
-  - <<: *sshkit
-    name: ID 🇮🇩 PT PC24 19
-    server: *bug-ip19
-  - <<: *sshkit
-    name: ID 🇮🇩 PT PC24 20
-    server: *bug-ip20
-  - <<: *sshkit
-    name: ID 🇮🇩 PT PC24 21
-    server: *bug-ip21
-  - <<: *sshkit
-    name: ID 🇮🇩 PT PC24 22
-    server: *bug-ip22
-  - <<: *sshkit
-    name: ID 🇮🇩 PT PC24 23
-    server: *bug-ip23
-  - <<: *sshkit
-    name: ID 🇮🇩 PT PC24 24
-    server: *bug-ip24
-  - <<: *sshkit
-    name: ID 🇮🇩 PT PC24 25
-    server: *bug-ip25
-  - <<: *sshkit
-    name: ID 🇮🇩 PT PC24 26
-    server: *bug-ip26
