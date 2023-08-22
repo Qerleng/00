@@ -279,7 +279,7 @@ rules:
 - RULE-SET,rule_Streaming,🎞STREAMING🎞
 - RULE-SET,E-Banking,🇮🇩ID🇮🇩
 - RULE-SET,rule_Indo,🇮🇩ID🇮🇩
-- MATCH,🤖ABS🤖
+- MATCH,📶SELECT-VPN📶
 
 tun:
   enable: false
