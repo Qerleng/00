@@ -1,32 +1,10 @@
 base-bug:
   bug:
-    # AKRAB
+    # Vision +
     - &bug-ip1 104.21.235.171
     - &bug-ip2 104.21.235.172
     - &bug-ip3 104.21.73.208
     - &bug-ip4 172.67.192.40
-    - &bug-ip5 104.18.1.196
-    - &bug-ip6 noice.dnstore.my.id
-    - &bug-ip7 akrab.nyarigratisan.software
-    - &bug-ip8 xlakrab.superspeed.my.id
-    - &bug-ip9 f2pool.com
-    - &bug-ip10 akrab.bugku.my.id
-    - &bug-ip11 akrab2.v-pn.my.id
-    - &bug-ip12 akrab.natanvpn.my.id
-    - &bug-ip13 akrab1.v-pn.my.id
-    - &bug-ip14 akrab2.v-pn.my.id
-    - &bug-ip15 akrab.boychongzen.online
-    - &bug-ip16 akrab2.natanvpn.my.id
-    - &bug-ip17 qienzxl.mooo.com
-    - &bug-ip18 akrab2.natanvpn.my.id
-    - &bug-ip19 www.fpool.com
-    - &bug-ip20 akrab2.natanvpn.my.id
-    - &bug-ip21 ::ffff:6812:1c4
-    - &bug-ip22 fpool.com
-    - &bug-ip23 nc1.vpnprem.me
-    - &bug-ip24 akrabproxy.vipdns.my.id
-    - &bug-ip25 ::ffff:6812:3c6
-    - &bug-ip26 akrab2.natanvpn.my.id
     
 base-proxy:
   vmess:
@@ -65,17 +43,16 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevmess
+    <<: *basetrojan
     name: 01 🇮🇩 CTN, Inc  1
     server: *bug-ip1
-    port: 80
-    tls: false
-    uuid: 0807f93f-4953-4be6-adb9-4f2ee70e0999
-    servername: vip-id.casper.my.id
-    ws-opts: 
-      path: /vmess
-      headers: 
-        Host: vip-id.casper.my.id
+    port: 443
+    password: b9912f49-96f5-4d3f-9691-7cd4245a4573
+    sni: ikd.vpnstore28.my.id
+    ws-opts:
+      path: /trojan-ws
+      headers:
+        Host: ikd.vpnstore28.my.id
         Early-Data: 1
   - <<: *sshkit
     name: 01 🇮🇩 CTN, Inc  2

@@ -1,32 +1,11 @@
 base-bug:
   bug:
-    # AKRAB
+    # Vision +
     - &bug-ip1 104.21.235.171
     - &bug-ip2 104.21.235.172
     - &bug-ip3 104.21.73.208
     - &bug-ip4 172.67.192.40
-    - &bug-ip5 104.18.1.196
-    - &bug-ip6 noice.dnstore.my.id
-    - &bug-ip7 akrab.nyarigratisan.software
-    - &bug-ip8 xlakrab.superspeed.my.id
-    - &bug-ip9 f2pool.com
-    - &bug-ip10 akrab.bugku.my.id
-    - &bug-ip11 akrab2.v-pn.my.id
-    - &bug-ip12 akrab.natanvpn.my.id
-    - &bug-ip13 akrab1.v-pn.my.id
-    - &bug-ip14 akrab2.v-pn.my.id
-    - &bug-ip15 akrab.boychongzen.online
-    - &bug-ip16 akrab2.natanvpn.my.id
-    - &bug-ip17 qienzxl.mooo.com
-    - &bug-ip18 akrab2.natanvpn.my.id
-    - &bug-ip19 www.fpool.com
-    - &bug-ip20 akrab2.natanvpn.my.id
-    - &bug-ip21 ::ffff:6812:1c4
-    - &bug-ip22 fpool.com
-    - &bug-ip23 nc1.vpnprem.me
-    - &bug-ip24 akrabproxy.vipdns.my.id
-    - &bug-ip25 ::ffff:6812:3c6
-    - &bug-ip26 akrab2.natanvpn.my.id
+
     
 base-proxy:
   vmess:
@@ -70,12 +49,12 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: 7d88e941-c396-45c8-babb-ac589a72e32c
-    servername: id1.foolvpn.tech
+    uuid: 9e02e286-a1b4-413a-8d6f-1049665ac1bf
+    servername: ikd.vpnstore28.my.id
     ws-opts: 
       path: /vmess
       headers: 
-        Host: id1.foolvpn.tech
+        Host: ikd.vpnstore28.my.id
         Early-Data: 1
   - <<: *sshkit
     name: IND 🇮🇩 NATA 2
