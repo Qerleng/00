@@ -28,6 +28,7 @@ payload:
   - DOMAIN-SUFFIX,mmg.whatsapp.net
   - DOMAIN-SUFFIX,media.fbdj2-1.fna.whatsapp.net
   - DOMAIN-SUFFIX,media-xsp1-2.cdn.whatsapp.net
+  - DOMAIN-KEYWORD,notifications-pa.googleapis
   - DST-PORT,5222
   - DST-PORT,5228
   - IP-CIDR,158.85.224.160/27
@@ -41,6 +42,5 @@ payload:
   - IP-CIDR,34.224.0.0/12
   - IP-CIDR,50.22.198.204/30
   - IP-CIDR,54.242.0.0/15
-  #- PROCESS-NAME,com.delta
-  #- PROCESS-NAME,com.whatsapp
+
   
