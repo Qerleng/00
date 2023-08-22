@@ -277,9 +277,9 @@ rules:
 - RULE-SET,rule_lancidr,REJECT,no-resolve
 - RULE-SET,rule_Sosmed,📱SOSMED📱
 - RULE-SET,rule_Streaming,🎞STREAMING🎞
-- RULE-SET,E-Banking,🇮🇩ID🇮🇩
+- RULE-SET,E-Banking,TEST-AKUN-IND
 - RULE-SET,rule_Indo,🇮🇩ID🇮🇩
-- MATCH,📶SELECT-VPN📶
+- MATCH,🤖ABS🤖
 
 tun:
   enable: false
