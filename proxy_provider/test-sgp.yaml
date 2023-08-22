@@ -73,17 +73,17 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevless
+    <<: *basevmess
     name: IN 🇮🇩 P.T PC24 1
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: c8122a3e-6964-4f6b-aaeb-952c9ffb2ebb
-    servername: vip.ultrassh.my.id
+    uuid: f6491e7f-fb4c-4294-a2ae-21042b038af0
+    servername: indravpn.kabarbhezing.my.id
     ws-opts: 
-      path: /vless
+      path: /vmess
       headers: 
-        Host: vip.ultrassh.my.id
+        Host: indravpn.kabarbhezing.my.id
         Early-Data: 1
   - <<: *sshkit
     name: IN 🇮🇩 P.T PC24 2
