@@ -56,12 +56,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: b655be0e-4b1a-4e3e-b63f-22a928a6e808
-    servername: sg1-v.sshmax.xyz
+    uuid: 9e5ae934-9b1a-4f35-8c5b-35cfa7c4d93c
+    servername: putranew.online
     ws-opts: 
       path: /vmess
       headers: 
-        Host: sg1-v.sshmax.xyz
+        Host: putranew.online
         Early-Data: 1
   - <<: *sshkit
     name: IN 🇮🇩 P.T PC24 2
