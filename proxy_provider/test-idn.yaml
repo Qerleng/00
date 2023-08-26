@@ -5,7 +5,6 @@ base-bug:
     - &bug-ip2 104.21.235.172
     - &bug-ip3 104.21.73.208
     - &bug-ip4 172.67.192.40
-
     
 base-proxy:
   vmess:
@@ -44,17 +43,16 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevmess
+    <<: *basetrojan
     name: IND 🇮🇩 NATA 1
     server: *bug-ip1
-    port: 80
-    tls: false
-    uuid: 9e02e286-a1b4-413a-8d6f-1049665ac1bf
-    servername: ikd.vpnstore28.my.id
-    ws-opts: 
-      path: /vmess
-      headers: 
-        Host: ikd.vpnstore28.my.id
+    port: 443
+    password: fbc015c0-443b-11ee-af92-1239d0255272
+    sni: id-1.test3.net
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: id-1.test3.net
         Early-Data: 1
   - <<: *sshkit
     name: IND 🇮🇩 NATA 2

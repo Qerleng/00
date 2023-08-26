@@ -5,6 +5,7 @@ base-bug:
     - &bug-ip2 104.21.235.172
     - &bug-ip3 104.21.73.208
     - &bug-ip4 172.67.192.40
+
     
 base-proxy:
   vmess:
@@ -44,23 +45,23 @@ proxies:
 
   - &sshkit
     <<: *basevmess
-    name: Sg 🇸🇬 ORACLE  1
+    name: 22 🇸🇬 ORACLE  1
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: f6491e7f-fb4c-4294-a2ae-21042b038af0
-    servername: indravpn.kabarbhezing.my.id
+    uuid: 15ed51e5-6d6b-48d6-a284-574cc41d642d
+    servername: goceng.lyzaa.icu
     ws-opts: 
       path: /vmess
       headers: 
-        Host: indravpn.kabarbhezing.my.id
+        Host: goceng.lyzaa.icu
       Early-Data: 1
   - <<: *sshkit
-    name: Sg 🇸🇬 ORACLE  2
+    name: 22 🇸🇬 ORACLE  2
     server: *bug-ip2
   - <<: *sshkit
-    name: Sg 🇸🇬 ORACLE  3
+    name: 22 🇸🇬 ORACLE  3
     server: *bug-ip3
   - <<: *sshkit
-    name: Sg 🇸🇬 ORACLE  4
+    name: 22 🇸🇬 ORACLE  4
     server: *bug-ip4

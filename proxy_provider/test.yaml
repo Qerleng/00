@@ -47,12 +47,12 @@ proxies:
     name: 00 🇮🇩 CTN, Inc 1
     server: *bug-ip1
     port: 443
-    password: b9912f49-96f5-4d3f-9691-7cd4245a4573
-    sni: ikd.vpnstore28.my.id
+    password: ff147260-4439-11ee-8742-1239d0255272
+    sni: sg3-trojan.bonds.id
     ws-opts:
-      path: /trojan-ws
+      path: /howdy
       headers:
-        Host: ikd.vpnstore28.my.id
+        Host: sg3-trojan.bonds.id
         Early-Data: 1
   - <<: *sshkit
     name: 00 🇮🇩 CTN, Inc 2
