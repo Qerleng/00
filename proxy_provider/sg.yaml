@@ -49,12 +49,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: 15ed51e5-6d6b-48d6-a284-574cc41d642d
-    servername: goceng.lyzaa.icu
+    uuid: 24d4f8fa-078e-48cf-9691-747b6099ef02
+    servername: premium.vpnstore28.my.id
     ws-opts: 
       path: /vmess
       headers: 
-        Host: goceng.lyzaa.icu
+        Host: premium.vpnstore28.my.id
       Early-Data: 1
   - <<: *sshkit
     name: 22 🇸🇬 ORACLE  2

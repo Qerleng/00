@@ -49,7 +49,7 @@ proxies:
     name: 00 🇮🇩 GIO 1
     server: *bug-ip1
     port: 443
-    password: fbc015c0-443b-11ee-af92-1239d0255272
+    password: 02f7da90-4823-11ee-959c-1239d0255272
     sni: id-1.test3.net
     ws-opts:
       path: /howdy
