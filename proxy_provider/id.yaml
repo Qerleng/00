@@ -52,7 +52,7 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: 24d4f8fa-078e-48cf-9691-747b6099ef02
+    uuid: 9f44e8dc-98e7-4996-b036-1848446205e2
     servername: premium.vpnstore28.my.id
     ws-opts: 
       path: /vmess
