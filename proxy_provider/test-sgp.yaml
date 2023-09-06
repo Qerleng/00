@@ -51,17 +51,16 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevmess
+    <<: *basetrojan
     name: IN 🇮🇩 P.T PC24 1
     server: *bug-ip1
     port: 443
-    tls: true
-    uuid: 9e5ae934-9b1a-4f35-8c5b-35cfa7c4d93c
-    servername: putranew.online
-    ws-opts: 
-      path: /vmess
-      headers: 
-        Host: putranew.online
+    password: 35b31f50-4cf4-11ee-ad57-1239d0255272
+    sni: sg-4.test3.net
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg-4.test3.net
         Early-Data: 1
   - <<: *sshkit
     name: IN 🇮🇩 P.T PC24 2
