@@ -51,13 +51,12 @@ proxies:
     name: 11 🇸🇬 ORACLE  1
     server: *bug-ip1
     port: 80
-    tls: false
-    uuid: 2d5d3ee6-3ac2-428e-86eb-d1bbb14ee9d3
-    servername: dc.vpnwuzz.com
-    ws-opts: 
-      path: /vmessws
-      headers: 
-        Host: dc.vpnwuzz.com
+    password: fade3f40-4cf4-11ee-be26-1239d0255272
+    sni: sgp.duniavpn.site
+    ws-opts:
+      path: /trojan-ws
+      headers:
+        Host: sgp.duniavpn.site
         Early-Data: 1
   - <<: *sshkit
     name: 11 🇸🇬 ORACLE  2
