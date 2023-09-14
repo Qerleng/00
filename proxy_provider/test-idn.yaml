@@ -47,12 +47,12 @@ proxies:
     name: IND 🇮🇩 NATA 1
     server: *bug-ip1
     port: 443
-    password: fbc015c0-443b-11ee-af92-1239d0255272
-    sni: id-1.test3.net
+    password: 101ce67f-58af-4234-a0d4-0f5b6b8fc4c1
+    sni: idt1.sshocean.net
     ws-opts:
-      path: /howdy
+      path: /websocket
       headers:
-        Host: id-1.test3.net
+        Host: idt1.sshocean.net
         Early-Data: 1
   - <<: *sshkit
     name: IND 🇮🇩 NATA 2
