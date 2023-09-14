@@ -49,12 +49,12 @@ proxies:
     name: 00 🇮🇩 GIO 1
     server: *bug-ip1
     port: 443
-    password: 02f7da90-4823-11ee-959c-1239d0255272
-    sni: id-1.test3.net
+    password: b860826b-13bb-4721-9eb6-81294bd87d53
+    sni: idt2.sshocean.net
     ws-opts:
-      path: /howdy
+      path: /websocket
       headers:
-        Host: id-1.test3.net
+        Host: idt2.sshocean.net
         Early-Data: 1
   - <<: *sshkit
     name: 00 🇮🇩 GIO 2
