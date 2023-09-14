@@ -43,16 +43,17 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basetrojan
+    <<: *basevmess
     name: 00 🇮🇩 CTN, Inc 1
     server: *bug-ip1
-    port: 443
-    password: fade3f40-4cf4-11ee-be26-1239d0255272
-    sni: sg2-trojan.bonds.id
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg2-trojan.bonds.id
+    port: 80
+    tls: false
+    uuid: 8d59c92c-0653-4bf8-b832-37dc852b41de
+    servername: xjp2.shabijichang.com
+    ws-opts: 
+      path: /
+      headers: 
+        Host: xjp2.shabijichang.com
         Early-Data: 1
   - <<: *sshkit
     name: 00 🇮🇩 CTN, Inc 2

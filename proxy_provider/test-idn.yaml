@@ -43,16 +43,17 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basetrojan
+    <<: *basevmess
     name: IND 🇮🇩 NATA 1
     server: *bug-ip1
     port: 443
-    password: 101ce67f-58af-4234-a0d4-0f5b6b8fc4c1
-    sni: idt1.sshocean.net
-    ws-opts:
-      path: /websocket
-      headers:
-        Host: idt1.sshocean.net
+    tls: true
+    uuid: 9e3fba28-3bdd-47a9-baf5-722f99c8a809
+    servername: pro.vpnstore28.my.id
+    ws-opts: 
+      path: /vmess
+      headers: 
+        Host: pro.vpnstore28.my.id
         Early-Data: 1
   - <<: *sshkit
     name: IND 🇮🇩 NATA 2

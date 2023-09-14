@@ -45,16 +45,17 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basetrojan
+    <<: *basevmess
     name: 00 🇮🇩 GIO 1
     server: *bug-ip1
-    port: 443
-    password: b860826b-13bb-4721-9eb6-81294bd87d53
-    sni: idt2.sshocean.net
-    ws-opts:
-      path: /websocket
-      headers:
-        Host: idt2.sshocean.net
+    port: 80
+    tls: false
+    uuid: 9e3fba28-3bdd-47a9-baf5-722f99c8a809
+    servername: pro.vpnstore28.my.id
+    ws-opts: 
+      path: /vmess
+      headers: 
+        Host: pro.vpnstore28.my.id
         Early-Data: 1
   - <<: *sshkit
     name: 00 🇮🇩 GIO 2
