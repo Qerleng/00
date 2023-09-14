@@ -51,7 +51,7 @@ proxies:
     name: 11 🇸🇬 ORACLE  1
     server: *bug-ip1
     port: 443
-    password: fade3f40-4cf4-11ee-be26-1239d0255272
+    password: 9adb5140-707d-4190-b8a3-2aa81ec18c54
     sni: sgp.duniavpn.site
     ws-opts:
       path: /trojan-ws
