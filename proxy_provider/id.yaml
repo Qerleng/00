@@ -5,6 +5,8 @@ base-bug:
     - &bug-ip2 104.21.235.172
     - &bug-ip3 104.21.73.208
     - &bug-ip4 172.67.192.40
+    - &bug-ip5 104.21.233.133
+    - &bug-ip6 104.21.233.134
 
     
     
@@ -67,3 +69,9 @@ proxies:
   - <<: *sshkit
     name: 11 🇸🇬 ORACLE  4
     server: *bug-ip4
+  - <<: *sshkit
+    name: 11 🇸🇬 ORACLE  5
+    server: *bug-ip5
+  - <<: *sshkit
+    name: 11 🇸🇬 ORACLE  6
+    server: *bug-ip6

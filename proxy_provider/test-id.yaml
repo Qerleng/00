@@ -5,6 +5,8 @@ base-bug:
     - &bug-ip2 104.21.235.172
     - &bug-ip3 104.21.73.208
     - &bug-ip4 172.67.192.40
+    - &bug-ip5 104.21.233.133
+    - &bug-ip6 104.21.233.134
 
     
 
@@ -45,17 +47,16 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevmess
+    <<: *basetrojan
     name: 00 🇮🇩 GIO 1
     server: *bug-ip1
-    port: 80
-    tls: false
-    uuid: 9e3fba28-3bdd-47a9-baf5-722f99c8a809
-    servername: pro.vpnstore28.my.id
-    ws-opts: 
-      path: /vmess
-      headers: 
-        Host: pro.vpnstore28.my.id
+    port: 443
+    password: 3e5a1040-53e2-11ee-87ad-1239d0255272
+    sni: id-1.test3.net
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: id-1.test3.net
         Early-Data: 1
   - <<: *sshkit
     name: 00 🇮🇩 GIO 2
@@ -66,3 +67,9 @@ proxies:
   - <<: *sshkit
     name: 00 🇮🇩 GIO 4
     server: *bug-ip4
+  - <<: *sshkit
+    name: 00 🇮🇩 GIO 5
+    server: *bug-ip5
+  - <<: *sshkit
+    name: 00 🇮🇩 GIO 6
+    server: *bug-ip6

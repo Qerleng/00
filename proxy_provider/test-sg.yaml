@@ -5,6 +5,8 @@ base-bug:
     - &bug-ip2 104.21.235.172
     - &bug-ip3 104.21.73.208
     - &bug-ip4 172.67.192.40
+    - &bug-ip5 104.21.233.133
+    - &bug-ip6 104.21.233.134
     
 base-proxy:
   vmess:
@@ -43,16 +45,17 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basetrojan
+    <<: *basevmess
     name: 01 🇮🇩 CTN, Inc  1
     server: *bug-ip1
-    port: 443
-    password: 934ae910-443a-11ee-91dc-1239d0255272
-    sni: sg6-trojan.bonds.id
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg6-trojan.bonds.id
+    port: 80
+    tls: false
+    uuid: baa2d4f8-feba-424a-8386-62f455c8f08a
+    servername: xjp2.shabijichang.com
+    ws-opts: 
+      path: /
+      headers: 
+        Host: xjp2.shabijichang.com
         Early-Data: 1
   - <<: *sshkit
     name: 01 🇮🇩 CTN, Inc  2
@@ -63,3 +66,9 @@ proxies:
   - <<: *sshkit
     name: 01 🇮🇩 CTN, Inc  4
     server: *bug-ip4
+  - <<: *sshkit
+    name: 01 🇮🇩 CTN, Inc  5
+    server: *bug-ip5
+  - <<: *sshkit
+    name: 01 🇮🇩 CTN, Inc  6
+    server: *bug-ip6

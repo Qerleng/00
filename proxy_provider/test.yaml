@@ -5,6 +5,8 @@ base-bug:
     - &bug-ip2 104.21.235.172
     - &bug-ip3 104.21.73.208
     - &bug-ip4 172.67.192.40
+    - &bug-ip5 104.21.233.133
+    - &bug-ip6 104.21.233.134
 
     
 base-proxy:
@@ -48,7 +50,7 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: 8d59c92c-0653-4bf8-b832-37dc852b41de
+    uuid: baa2d4f8-feba-424a-8386-62f455c8f08a
     servername: xjp2.shabijichang.com
     ws-opts: 
       path: /
@@ -64,3 +66,9 @@ proxies:
   - <<: *sshkit
     name: 00 🇮🇩 CTN, Inc 4
     server: *bug-ip4
+  - <<: *sshkit
+    name: 00 🇮🇩 CTN, Inc 5
+    server: *bug-ip5
+  - <<: *sshkit
+    name: 00 🇮🇩 CTN, Inc 6
+    server: *bug-ip6
