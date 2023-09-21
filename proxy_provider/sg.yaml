@@ -50,12 +50,12 @@ proxies:
     name: 22 🇸🇬 ORACLE  1
     server: *bug-ip1
     port: 443
-    password: 9adb5140-707d-4190-b8a3-2aa81ec18c54
-    sni: sgp.duniavpn.site
+    password: 0fd56d01-ec6c-45a3-baee-3204a6a1a73e
+    sni: ngecrot.nicevpn.me
     ws-opts:
       path: /trojan-ws
       headers:
-        Host: sgp.duniavpn.site
+        Host: ngecrot.nicevpn.me
         Early-Data: 1
   - <<: *sshkit
     name: 22 🇸🇬 ORACLE  2
