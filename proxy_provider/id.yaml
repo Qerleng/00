@@ -53,12 +53,12 @@ proxies:
     name: 11 🇸🇬 ORACLE  1
     server: *bug-ip1
     port: 443
-    password: 0fd56d01-ec6c-45a3-baee-3204a6a1a73e
-    sni: ngecrot.nicevpn.me
+    password: e1344df4-90ff-4c82-bb4c-cb330e1d56f1
+    sni: xsar.sarwantoo.my.id
     ws-opts:
-      path: /trojan-ws
+      path: /trojan
       headers:
-        Host: ngecrot.nicevpn.me
+        Host: xsar.sarwantoo.my.id
         Early-Data: 1
   - <<: *sshkit
     name: 11 🇸🇬 ORACLE  2

@@ -57,7 +57,7 @@ proxies:
     name: IN 🇮🇩 P.T PC24 1
     server: *bug-ip1
     port: 443
-    password: 35b31f50-4cf4-11ee-ad57-1239d0255272
+    password: 9226e7e0-578a-11ee-b838-1239d0255272
     sni: sg-4.test3.net
     ws-opts:
       path: /howdy

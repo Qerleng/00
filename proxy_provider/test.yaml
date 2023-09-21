@@ -48,14 +48,14 @@ proxies:
     <<: *basevmess
     name: 00 🇮🇩 CTN, Inc 1
     server: *bug-ip1
-    port: 80
-    tls: false
-    uuid: baa2d4f8-feba-424a-8386-62f455c8f08a
-    servername: xjp2.shabijichang.com
+    port: 443
+    tls: true
+    uuid: e1344df4-90ff-4c82-bb4c-cb330e1d56f1
+    servername: xsar.sarwantoo.my.id
     ws-opts: 
-      path: /
+      path: /vmess
       headers: 
-        Host: xjp2.shabijichang.com
+        Host: xsar.sarwantoo.my.id
         Early-Data: 1
   - <<: *sshkit
     name: 00 🇮🇩 CTN, Inc 2
