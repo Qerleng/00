@@ -50,12 +50,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: e1344df4-90ff-4c82-bb4c-cb330e1d56f1
-    servername: xsar.sarwantoo.my.id
+    uuid: d790c7dc-52e7-49a9-b3b4-bfec9adb38c2
+    servername: free.cobeksawit.xyz
     ws-opts: 
       path: /vmess
       headers: 
-        Host: xsar.sarwantoo.my.id
+        Host: free.cobeksawit.xyz
         Early-Data: 1
   - <<: *sshkit
     name: 00 🇮🇩 CTN, Inc 2

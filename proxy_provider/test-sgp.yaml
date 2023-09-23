@@ -53,16 +53,17 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basetrojan
+    <<: *basevmess
     name: IN 🇮🇩 P.T PC24 1
     server: *bug-ip1
-    port: 443
-    password: 9226e7e0-578a-11ee-b838-1239d0255272
-    sni: sg-4.test3.net
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg-4.test3.net
+    port: 80
+    tls: false
+    uuid: b655be0e-4b1a-4e3e-b63f-22a928a6e808
+    servername: sg1-v.sshmax.xyz
+    ws-opts: 
+      path: /vmess
+      headers: 
+        Host: sg1-v.sshmax.xyz
         Early-Data: 1
   - <<: *sshkit
     name: IN 🇮🇩 P.T PC24 2

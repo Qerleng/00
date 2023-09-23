@@ -53,12 +53,12 @@ proxies:
     name: 11 🇸🇬 ORACLE  1
     server: *bug-ip1
     port: 443
-    password: e1344df4-90ff-4c82-bb4c-cb330e1d56f1
-    sni: xsar.sarwantoo.my.id
+    password: 36ff9621-baf6-4fd4-b3d8-11c2a3153e95
+    sni: free.cobeksawit.xyz
     ws-opts:
-      path: /trojan
+      path: /trojan-ws
       headers:
-        Host: xsar.sarwantoo.my.id
+        Host: free.cobeksawit.xyz
         Early-Data: 1
   - <<: *sshkit
     name: 11 🇸🇬 ORACLE  2
