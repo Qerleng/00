@@ -55,12 +55,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: c833dd87-91e7-4890-95f6-498a50fdf4ba
-    servername: cloud.casper.my.id
+    uuid: b6044629-e932-41a6-b899-63fb67759db8
+    servername: vip.vpnstore28.my.id
     ws-opts: 
       path: /vmess
       headers: 
-        Host: cloud.casper.my.id
+        Host: vip.vpnstore28.my.id
         Early-Data: 1
   - <<: *sshkit
     name: ID 🇮🇩 PT PC24 2

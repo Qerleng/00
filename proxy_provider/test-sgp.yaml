@@ -58,12 +58,12 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: b655be0e-4b1a-4e3e-b63f-22a928a6e808
-    servername: sg1-v.sshmax.xyz
+    uuid: b6044629-e932-41a6-b899-63fb67759db8
+    servername: vip.vpnstore28.my.id
     ws-opts: 
       path: /vmess
       headers: 
-        Host: sg1-v.sshmax.xyz
+        Host: vip.vpnstore28.my.id
         Early-Data: 1
   - <<: *sshkit
     name: IN 🇮🇩 P.T PC24 2
