@@ -50,12 +50,12 @@ proxies:
     name: 22 🇸🇬 ORACLE  1
     server: *bug-ip1
     port: 443
-    password: 36ff9621-baf6-4fd4-b3d8-11c2a3153e95
-    sni: free.cobeksawit.xyz
+    password: 8fb87680-5b44-11ee-bb89-1239d0255272
+    sni: sg-4.test3.net
     ws-opts:
-      path: /trojan-ws
+      path: /howdy
       headers:
-        Host: free.cobeksawit.xyz
+        Host: sg-4.test3.net
         Early-Data: 1
   - <<: *sshkit
     name: 22 🇸🇬 ORACLE  2

@@ -55,12 +55,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: b6044629-e932-41a6-b899-63fb67759db8
-    servername: vip.vpnstore28.my.id
+    uuid: bcf8dff1-dc90-4073-8b63-86eefadd4cad
+    servername: sg.revanya.my.id
     ws-opts: 
       path: /vmess
       headers: 
-        Host: vip.vpnstore28.my.id
+        Host: sg.revanya.my.id
         Early-Data: 1
   - <<: *sshkit
     name: ID 🇮🇩 PT PC24 2

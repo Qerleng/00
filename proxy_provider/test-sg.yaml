@@ -50,12 +50,12 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: d790c7dc-52e7-49a9-b3b4-bfec9adb38c2
-    servername: free.cobeksawit.xyz
+    uuid: fdb5f6a2-4cbd-4c26-b06e-9c5b2404788b
+    servername: sg.dunia-vpn.com
     ws-opts: 
       path: /vmess
       headers: 
-        Host: free.cobeksawit.xyz
+        Host: sg.dunia-vpn.com
         Early-Data: 1
   - <<: *sshkit
     name: 01 🇮🇩 CTN, Inc  2

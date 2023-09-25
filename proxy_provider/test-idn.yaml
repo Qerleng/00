@@ -45,17 +45,16 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevmess
+    <<: *basetrojan
     name: IND 🇮🇩 NATA 1
     server: *bug-ip1
-    port: 80
-    tls: false
-    uuid: 198b1de7-5a55-4fda-8c35-f2b75c053b1c
-    servername: bsi.vpnstore28.my.id
-    ws-opts: 
-      path: /vmessws
-      headers: 
-        Host: bsi.vpnstore28.my.id
+    port: 443
+    password: 0a877170-5b74-11ee-91b6-1239d0255272
+    sni: id-1.test3.net
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: id-1.test3.net
         Early-Data: 1
   - <<: *sshkit
     name: IND 🇮🇩 NATA 2
