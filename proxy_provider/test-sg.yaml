@@ -50,12 +50,12 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: fdb5f6a2-4cbd-4c26-b06e-9c5b2404788b
-    servername: sg.dunia-vpn.com
+    uuid: b951a89e-6145-4ef3-9bac-39c9a3afb219
+    servername: sg1.vipcasper.com
     ws-opts: 
       path: /vmess
       headers: 
-        Host: sg.dunia-vpn.com
+        Host: sg1.vipcasper.com
         Early-Data: 1
   - <<: *sshkit
     name: 01 🇮🇩 CTN, Inc  2

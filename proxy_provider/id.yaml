@@ -53,12 +53,12 @@ proxies:
     name: 11 🇸🇬 ORACLE  1
     server: *bug-ip1
     port: 443
-    password: 8fb87680-5b44-11ee-bb89-1239d0255272
-    sni: sg-4.test3.net
+    password: abd93273-2091-4871-9a78-f4e7158d631d
+    sni: ida1.duniavpn.site
     ws-opts:
-      path: /howdy
+      path: /trojan-ws
       headers:
-        Host: sg-4.test3.net
+        Host: ida1.duniavpn.site
         Early-Data: 1
   - <<: *sshkit
     name: 11 🇸🇬 ORACLE  2

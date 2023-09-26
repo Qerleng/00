@@ -47,16 +47,17 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basetrojan
+    <<: *basevmess
     name: 00 🇮🇩 GIO 1
     server: *bug-ip1
     port: 443
-    password: 0a877170-5b74-11ee-91b6-1239d0255272
-    sni: id-1.test3.net
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: id-1.test3.net
+    tls: true
+    uuid: f6071ff6-ce29-4555-8682-9eb94acefe31
+    servername: indo-vip.vpnstore28.my.id
+    ws-opts: 
+      path: /vmess
+      headers: 
+        Host: indo-vip.vpnstore28.my.id
         Early-Data: 1
   - <<: *sshkit
     name: 00 🇮🇩 GIO 2

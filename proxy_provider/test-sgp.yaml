@@ -58,12 +58,12 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: bcf8dff1-dc90-4073-8b63-86eefadd4cad
-    servername: sg.revanya.my.id
+    uuid: aaf85c70-6bfd-4a11-a67e-90662b4d93f0
+    servername: aws.vipcasper.com
     ws-opts: 
       path: /vmess
       headers: 
-        Host: sg.revanya.my.id
+        Host: aws.vipcasper.com
         Early-Data: 1
   - <<: *sshkit
     name: IN 🇮🇩 P.T PC24 2
