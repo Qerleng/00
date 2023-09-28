@@ -50,12 +50,12 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: f6071ff6-ce29-4555-8682-9eb94acefe31
-    servername: indo-vip.vpnstore28.my.id
+    uuid: 23b40e5e-d3b8-4e21-b821-009247dc85a1
+    servername: id2.v2-ray.us
     ws-opts: 
       path: /vmess
       headers: 
-        Host: indo-vip.vpnstore28.my.id
+        Host: id2.v2-ray.us
         Early-Data: 1
   - <<: *sshkit
     name: IND 🇮🇩 NATA 2

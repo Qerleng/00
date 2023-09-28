@@ -56,14 +56,14 @@ proxies:
     <<: *basevmess
     name: IN 🇮🇩 P.T PC24 1
     server: *bug-ip1
-    port: 80
-    tls: false
-    uuid: aaf85c70-6bfd-4a11-a67e-90662b4d93f0
-    servername: aws.vipcasper.com
+    port: 443
+    tls: true
+    uuid: 0bb0124e-22a4-440d-b825-d5a3c106391d
+    servername: sg3mws.mainssh.xyz
     ws-opts: 
       path: /vmess
       headers: 
-        Host: aws.vipcasper.com
+        Host: sg3mws.mainssh.xyz
         Early-Data: 1
   - <<: *sshkit
     name: IN 🇮🇩 P.T PC24 2
