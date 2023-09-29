@@ -50,12 +50,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: b951a89e-6145-4ef3-9bac-39c9a3afb219
-    servername: sg1.vipcasper.com
+    uuid: 57e0017e-0f60-4562-8640-3f70c311713d
+    servername: DuniaVPN.mypremium.biz.id
     ws-opts: 
       path: /vmess
       headers: 
-        Host: sg1.vipcasper.com
+        Host: DuniaVPN.mypremium.biz.id
         Early-Data: 1
   - <<: *sshkit
     name: 00 🇮🇩 CTN, Inc 2
