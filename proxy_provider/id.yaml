@@ -54,12 +54,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: 76b60ef9-9879-4253-bd92-fc40c69476cc
-    servername: 500b69.scwill.my.id
+    uuid: b501a0ec-ce3b-4cdf-b962-3c0e4def22d2
+    servername: freecasperq.vpnvip.app
     ws-opts: 
-      path: /vmessws
+      path: /vmess
       headers: 
-        Host: 500b69.scwill.my.id
+        Host: freecasperq.vpnvip.app
         Early-Data: 1
   - <<: *sshkit
     name: 11 🇸🇬 ORACLE  2
