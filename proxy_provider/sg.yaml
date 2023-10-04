@@ -46,17 +46,16 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevmess
+    <<: *basetrojan
     name: 22 🇸🇬 ORACLE  1
     server: *bug-ip1
-    port: 80
-    tls: false
-    uuid: b501a0ec-ce3b-4cdf-b962-3c0e4def22d2
-    servername: freecasperq.vpnvip.app
-    ws-opts: 
-      path: /vmess
-      headers: 
-        Host: freecasperq.vpnvip.app
+    port: 443
+    password: DuniaVPN-duniavpn
+    sni: biznet.duniavpn.org
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: biznet.duniavpn.org
         Early-Data: 1
   - <<: *sshkit
     name: 22 🇸🇬 ORACLE  2

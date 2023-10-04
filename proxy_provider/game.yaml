@@ -43,6 +43,7 @@ base-proxy:
       port: 443
       udp: true
       skip-cert-verify: true
+      network: grpc
 base-proxy-group:
   url:
     - &url-gg http://www.gstatic.com/generate_204
@@ -50,17 +51,16 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevmess
+    <<: *basetrojan
     name: ID 🇮🇩 PT PC24 1
     server: *bug-ip1
     port: 443
-    tls: true
-    uuid: 8571c8a2-3b4f-40c9-ac31-6175645eaa4f
-    servername: sg3mws.mainssh.xyz
-    ws-opts: 
-      path: /vmess
-      headers: 
-        Host: sg3mws.mainssh.xyz
+    password: 78468137-117b-4a83-9e06-d17edb734ced
+    sni: pdk.hypertunnel.biz.id
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: pdk.hypertunnel.biz.id
         Early-Data: 1
   - <<: *sshkit
     name: ID 🇮🇩 PT PC24 2

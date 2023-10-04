@@ -53,17 +53,16 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevmess
+    <<: *basetrojan
     name: IN 🇮🇩 P.T PC24 1
     server: *bug-ip1
     port: 443
-    tls: true
-    uuid: 0bb0124e-22a4-440d-b825-d5a3c106391d
-    servername: sg3mws.mainssh.xyz
-    ws-opts: 
-      path: /vmess
-      headers: 
-        Host: sg3mws.mainssh.xyz
+    password: 78468137-117b-4a83-9e06-d17edb734ced
+    sni: pdk.hypertunnel.biz.id
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: pdk.hypertunnel.biz.id
         Early-Data: 1
   - <<: *sshkit
     name: IN 🇮🇩 P.T PC24 2
