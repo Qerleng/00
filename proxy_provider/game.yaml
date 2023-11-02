@@ -55,12 +55,12 @@ proxies:
     name: ID 🇮🇩 PT PC24 1
     server: *bug-ip1
     port: 443
-    password: 78468137-117b-4a83-9e06-d17edb734ced
-    sni: pdk.hypertunnel.biz.id
+    password: 6f57e86e-2566-4168-b0c1-2bc588494892
+    sni: portal.ultra-vip.my.id
     ws-opts:
       path: /trojan
       headers:
-        Host: pdk.hypertunnel.biz.id
+        Host: portal.ultra-vip.my.id
         Early-Data: 1
   - <<: *sshkit
     name: ID 🇮🇩 PT PC24 2
