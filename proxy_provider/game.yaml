@@ -1,12 +1,12 @@
 base-bug:
   bug:
     # Vision +
-    - &bug-ip1 104.21.235.171
-    - &bug-ip2 104.21.235.172
-    - &bug-ip3 104.21.73.208
-    - &bug-ip4 172.67.192.40
-    - &bug-ip5 104.21.233.133
-    - &bug-ip6 104.21.233.134
+    - &bug-ip1 104.17.70.206
+    - &bug-ip2 104.17.71.206
+    - &bug-ip3 104.17.72.206
+    - &bug-ip4 104.17.73.206
+    - &bug-ip5 104.17.74.206
+    - &bug-ip6 104.17.73.206
 
     
 base-proxy:
@@ -55,12 +55,12 @@ proxies:
     name: ID 🇮🇩 PT PC24 1
     server: *bug-ip1
     port: 443
-    password: 6f57e86e-2566-4168-b0c1-2bc588494892
-    sni: portal.ultra-vip.my.id
+    password: 78468137-117b-4a83-9e06-d17edb734ced
+    sni: pdk.hypertunnel.biz.id
     ws-opts:
       path: /trojan
       headers:
-        Host: portal.ultra-vip.my.id
+        Host: pdk.hypertunnel.biz.id
         Early-Data: 1
   - <<: *sshkit
     name: ID 🇮🇩 PT PC24 2

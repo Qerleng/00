@@ -1,12 +1,12 @@
 base-bug:
   bug:
     # Vision +
-    - &bug-ip1 104.21.235.171
-    - &bug-ip2 104.21.235.172
-    - &bug-ip3 104.21.73.208
-    - &bug-ip4 172.67.192.40
-    - &bug-ip5 104.21.233.133
-    - &bug-ip6 104.21.233.134
+    - &bug-ip1 104.17.70.206
+    - &bug-ip2 104.17.71.206
+    - &bug-ip3 104.17.72.206
+    - &bug-ip4 104.17.73.206
+    - &bug-ip5 104.17.74.206
+    - &bug-ip6 104.17.73.206
 
     
 
@@ -52,12 +52,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: 05bf9147-09e3-4970-9fcd-ab215d8950d7
-    servername: vip.duniavpn.me
+    uuid: a247fa53-8964-4387-9bef-7e49e6b0ccb1
+    servername: vip.vpnstore28.my.id
     ws-opts: 
       path: /vmess
       headers: 
-        Host: vip.duniavpn.me
+        Host: vip.vpnstore28.my.id
         Early-Data: 1
   - <<: *sshkit
     name: 00 🇮🇩 GIO 2
