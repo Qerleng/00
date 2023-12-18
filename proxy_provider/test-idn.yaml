@@ -50,12 +50,12 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: a247fa53-8964-4387-9bef-7e49e6b0ccb1
-    servername: vip.vpnstore28.my.id
+    uuid: 88dadbeb-51cd-4c64-8a86-ec4634d739ee
+    servername: ultra-server.fds1.my.id
     ws-opts: 
       path: /vmess
       headers: 
-        Host: vip.vpnstore28.my.id
+        Host: ultra-server.fds1.my.id
         Early-Data: 1
   - <<: *sshkit
     name: IND 🇮🇩 NATA 2
