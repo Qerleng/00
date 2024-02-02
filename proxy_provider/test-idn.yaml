@@ -1,12 +1,26 @@
 base-bug:
   bug:
     # Vision +
-    - &bug-ip1 104.17.70.206
-    - &bug-ip2 104.17.71.206
-    - &bug-ip3 104.17.72.206
-    - &bug-ip4 104.17.73.206
-    - &bug-ip5 104.17.74.206
-    - &bug-ip6 104.17.73.206
+    - &bug-ip1 104.21.235.171
+    - &bug-ip2 104.21.235.172
+    - &bug-ip3 104.21.73.208
+    - &bug-ip4 172.67.192.40
+    - &bug-ip5 104.18.214.59
+    - &bug-ip6 104.18.215.59
+    - &bug-ip7 104.21.233.133
+    - &bug-ip8 104.21.233.134
+    - &bug-ip9 104.21.235.171
+    - &bug-ip10 104.21.235.172
+    - &bug-ip11 104.21.73.208
+    - &bug-ip12 172.67.192.40
+    - &bug-ip13 104.18.214.59
+    - &bug-ip14 104.18.215.59
+    - &bug-ip15 104.21.233.134
+    - &bug-ip16 104.21.233.133
+    - &bug-ip17 104.21.235.171
+    - &bug-ip18 104.21.235.172
+    - &bug-ip19 104.18.214.59
+    - &bug-ip20 104.18.215.59
     
 base-proxy:
   vmess:
@@ -38,6 +52,14 @@ base-proxy:
       port: 443
       udp: true
       skip-cert-verify: true
+  ss:
+    - &basess
+      type: ss
+      cipher: aes-128-gcm
+      udp: true
+      skip-cert-verify: true
+      udp-over-tcp: true
+      plugin: v2ray-plugin
 base-proxy-group:
   url:
     - &url-gg http://www.gstatic.com/generate_204
@@ -45,30 +67,72 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevmess
-    name: IND 🇮🇩 NATA 1
+    <<: *basevless
+    name: ID 🇮🇩 PC24 1
     server: *bug-ip1
-    port: 80
-    tls: false
-    uuid: 88dadbeb-51cd-4c64-8a86-ec4634d739ee
-    servername: ultra-server.fds1.my.id
+    port: 443
+    tls: true
+    uuid: df93d4b2-1936-4ee7-ab11-c65284a502dd
+    servername: cxio.pages.dev
     ws-opts: 
-      path: /vmess
+      path: /ohmyinjector
       headers: 
-        Host: ultra-server.fds1.my.id
+        Host: cxio.pages.dev
         Early-Data: 1
   - <<: *sshkit
-    name: IND 🇮🇩 NATA 2
+    name: ID 🇮🇩 PC24 2
     server: *bug-ip2
   - <<: *sshkit
-    name: IND 🇮🇩 NATA 3
+    name: ID 🇮🇩 PC24 3
     server: *bug-ip3
   - <<: *sshkit
-    name: IND 🇮🇩 NATA 4
+    name: ID 🇮🇩 PC24 4
     server: *bug-ip4
   - <<: *sshkit
-    name: IND 🇮🇩 NATA 5
+    name: ID 🇮🇩 PC24 5
     server: *bug-ip5
   - <<: *sshkit
-    name: IND 🇮🇩 NATA 6
+    name: ID 🇮🇩 PC24 6
     server: *bug-ip6
+  - <<: *sshkit
+    name: ID 🇮🇩 PC24 7
+    server: *bug-ip7
+  - <<: *sshkit
+    name: ID 🇮🇩 PC24 8
+    server: *bug-ip8
+  - <<: *sshkit
+    name: ID 🇮🇩 PC24 9
+    server: *bug-ip9
+  - <<: *sshkit
+    name: ID 🇮🇩 PC24 10
+    server: *bug-ip10
+  - <<: *sshkit
+    name: ID 🇮🇩 PC24 11
+    server: *bug-ip11
+  - <<: *sshkit
+    name: ID 🇮🇩 PC24 12
+    server: *bug-ip12
+  - <<: *sshkit
+    name: ID 🇮🇩 PC24 13
+    server: *bug-ip13
+  - <<: *sshkit
+    name: ID 🇮🇩 PC24 14
+    server: *bug-ip14
+  - <<: *sshkit
+    name: ID 🇮🇩 PC24 15
+    server: *bug-ip15
+  - <<: *sshkit
+    name: ID 🇮🇩 PC24 16
+    server: *bug-ip16
+  - <<: *sshkit
+    name: ID 🇮🇩 PC24 17
+    server: *bug-ip17
+  - <<: *sshkit
+    name: ID 🇮🇩 PC24 18
+    server: *bug-ip18
+  - <<: *sshkit
+    name: ID 🇮🇩 PC24 19
+    server: *bug-ip19
+  - <<: *sshkit
+    name: ID 🇮🇩 PC24 20
+    server: *bug-ip20

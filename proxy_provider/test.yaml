@@ -1,13 +1,26 @@
 base-bug:
   bug:
     # Vision +
-    - &bug-ip1 104.17.70.206
-    - &bug-ip2 104.17.71.206
-    - &bug-ip3 104.17.72.206
-    - &bug-ip4 104.17.73.206
-    - &bug-ip5 104.17.74.206
-    - &bug-ip6 104.17.73.206
-
+    - &bug-ip1 104.21.235.171
+    - &bug-ip2 104.21.235.172
+    - &bug-ip3 104.21.73.208
+    - &bug-ip4 172.67.192.40
+    - &bug-ip5 104.18.214.59
+    - &bug-ip6 104.18.215.59
+    - &bug-ip7 104.21.233.133
+    - &bug-ip8 104.21.233.134
+    - &bug-ip9 104.21.235.171
+    - &bug-ip10 104.21.235.172
+    - &bug-ip11 104.21.73.208
+    - &bug-ip12 172.67.192.40
+    - &bug-ip13 104.18.214.59
+    - &bug-ip14 104.18.215.59
+    - &bug-ip15 104.21.233.134
+    - &bug-ip16 104.21.233.133
+    - &bug-ip17 104.21.235.171
+    - &bug-ip18 104.21.235.172
+    - &bug-ip19 104.18.214.59
+    - &bug-ip20 104.18.215.59
     
 base-proxy:
   vmess:
@@ -29,6 +42,7 @@ base-proxy:
   trojan:
     - &basetrojan
       type: trojan
+      port: 443
       udp: true
       skip-cert-verify: true
       network: ws
@@ -38,6 +52,14 @@ base-proxy:
       port: 443
       udp: true
       skip-cert-verify: true
+  ss:
+    - &basess
+      type: ss
+      cipher: aes-128-gcm
+      udp: true
+      skip-cert-verify: true
+      udp-over-tcp: true
+      plugin: v2ray-plugin
 base-proxy-group:
   url:
     - &url-gg http://www.gstatic.com/generate_204
@@ -46,29 +68,71 @@ proxies:
 
   - &sshkit
     <<: *basevmess
-    name: 00 🇮🇩 CTN, Inc 1
+    name: Tst 🇸🇬     1
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: 0ea2c386-3b0e-404e-a207-337ce6c33500
-    servername: mw-zvp.scvip.my.id
+    uuid: ae098835-62e1-4827-8c8a-520a3538db7c
+    servername: sdc.lovelyvpns.my.id
     ws-opts: 
       path: /vmess
       headers: 
-        Host: mw-zvp.scvip.my.id
+        Host: sdc.lovelyvpns.my.id
         Early-Data: 1
   - <<: *sshkit
-    name: 00 🇮🇩 CTN, Inc 2
+    name: Tst 🇸🇬     2
     server: *bug-ip2
   - <<: *sshkit
-    name: 00 🇮🇩 CTN, Inc 3
+    name: Tst 🇸🇬     3
     server: *bug-ip3
   - <<: *sshkit
-    name: 00 🇮🇩 CTN, Inc 4
+    name: Tst 🇸🇬     4
     server: *bug-ip4
   - <<: *sshkit
-    name: 00 🇮🇩 CTN, Inc 5
+    name: Tst 🇸🇬     5
     server: *bug-ip5
   - <<: *sshkit
-    name: 00 🇮🇩 CTN, Inc 6
+    name: Tst 🇸🇬     6
     server: *bug-ip6
+  - <<: *sshkit
+    name: Tst 🇸🇬     7
+    server: *bug-ip7
+  - <<: *sshkit
+    name: Tst 🇸🇬     8
+    server: *bug-ip8
+  - <<: *sshkit
+    name: Tst 🇸🇬     9
+    server: *bug-ip9
+  - <<: *sshkit
+    name: Tst 🇸🇬     10
+    server: *bug-ip10
+  - <<: *sshkit
+    name: Tst 🇸🇬     11
+    server: *bug-ip11
+  - <<: *sshkit
+    name: Tst 🇸🇬     12
+    server: *bug-ip12
+  - <<: *sshkit
+    name: Tst 🇸🇬     13
+    server: *bug-ip13
+  - <<: *sshkit
+    name: Tst 🇸🇬     14
+    server: *bug-ip14
+  - <<: *sshkit
+    name: Tst 🇸🇬     15
+    server: *bug-ip15
+  - <<: *sshkit
+    name: Tst 🇸🇬     16
+    server: *bug-ip16
+  - <<: *sshkit
+    name: Tst 🇸🇬     17
+    server: *bug-ip17
+  - <<: *sshkit
+    name: Tst 🇸🇬     18
+    server: *bug-ip18
+  - <<: *sshkit
+    name: Tst 🇸🇬     19
+    server: *bug-ip19
+  - <<: *sshkit
+    name: Tst 🇸🇬     20
+    server: *bug-ip20

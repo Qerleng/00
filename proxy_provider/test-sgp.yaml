@@ -1,12 +1,26 @@
 base-bug:
   bug:
     # Vision +
-    - &bug-ip1 104.17.70.206
-    - &bug-ip2 104.17.71.206
-    - &bug-ip3 104.17.72.206
-    - &bug-ip4 104.17.73.206
-    - &bug-ip5 104.17.74.206
-    - &bug-ip6 104.17.73.206
+    - &bug-ip1 104.21.235.171
+    - &bug-ip2 104.21.235.172
+    - &bug-ip3 104.21.73.208
+    - &bug-ip4 172.67.192.40
+    - &bug-ip5 104.18.214.59
+    - &bug-ip6 104.18.215.59
+    - &bug-ip7 104.21.233.133
+    - &bug-ip8 104.21.233.134
+    - &bug-ip9 104.21.235.171
+    - &bug-ip10 104.21.235.172
+    - &bug-ip11 104.21.73.208
+    - &bug-ip12 172.67.192.40
+    - &bug-ip13 104.18.214.59
+    - &bug-ip14 104.18.215.59
+    - &bug-ip15 104.21.233.134
+    - &bug-ip16 104.21.233.133
+    - &bug-ip17 104.21.235.171
+    - &bug-ip18 104.21.235.172
+    - &bug-ip19 104.18.214.59
+    - &bug-ip20 104.18.215.59
     
 base-proxy:
   vmess:
@@ -53,29 +67,72 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basetrojan
-    name: IN 🇮🇩 P.T PC24 1
+    <<: *basevless
+    name: SGP 🇸🇬 1
     server: *bug-ip1
     port: 443
-    password: 78468137-117b-4a83-9e06-d17edb734ced
-    sni: pdk.hypertunnel.biz.id
-    ws-opts:
-      path: /trojan
-      headers:
-        Host: pdk.hypertunnel.biz.id
+    tls: true
+    uuid: 88b1a1d1-27ab-4e15-b173-8115565efe29
+    servername: sg1.tingkehvpn.my.id
+    ws-opts: 
+      path: /vless
+      headers: 
+        Host: sg1.tingkehvpn.my.id
         Early-Data: 1
   - <<: *sshkit
-    name: IN 🇮🇩 P.T PC24 2
+    name: SGP 🇸🇬 2
     server: *bug-ip2
   - <<: *sshkit
-    name: IN 🇮🇩 P.T PC24 3
+    name: SGP 🇸🇬 3
     server: *bug-ip3
   - <<: *sshkit
-    name: IN 🇮🇩 P.T PC24 4
+    name: SGP 🇸🇬 4
     server: *bug-ip4
   - <<: *sshkit
-    name: IN 🇮🇩 P.T PC24 5
+    name: SGP 🇸🇬 5
     server: *bug-ip5
   - <<: *sshkit
-    name: IN 🇮🇩 P.T PC24 6
+    name: SGP 🇸🇬 6
     server: *bug-ip6
+  - <<: *sshkit
+    name: SGP 🇸🇬 7
+    server: *bug-ip7
+  - <<: *sshkit
+    name: SGP 🇸🇬 8
+    server: *bug-ip8
+  - <<: *sshkit
+    name: SGP 🇸🇬 9
+    server: *bug-ip9
+  - <<: *sshkit
+    name: SGP 🇸🇬 10
+    server: *bug-ip10
+  - <<: *sshkit
+    name: SGP 🇸🇬 11
+    server: *bug-ip11
+  - <<: *sshkit
+    name: SGP 🇸🇬 12
+    server: *bug-ip12
+  - <<: *sshkit
+    name: SGP 🇸🇬 13
+    server: *bug-ip13
+  - <<: *sshkit
+    name: SGP 🇸🇬 14
+    server: *bug-ip14
+  - <<: *sshkit
+    name: SGP 🇸🇬 15
+    server: *bug-ip15
+  - <<: *sshkit
+    name: SGP 🇸🇬 16
+    server: *bug-ip16
+  - <<: *sshkit
+    name: SGP 🇸🇬 17
+    server: *bug-ip17
+  - <<: *sshkit
+    name: SGP 🇸🇬 18
+    server: *bug-ip18
+  - <<: *sshkit
+    name: SGP 🇸🇬 19
+    server: *bug-ip19
+  - <<: *sshkit
+    name: SGP 🇸🇬 20
+    server: *bug-ip20
