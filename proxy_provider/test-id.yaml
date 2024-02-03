@@ -67,17 +67,16 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevless
+    <<: *basetrojan
     name: ID 🇮🇩 P.T PC24 1
     server: *bug-ip1
     port: 443
-    tls: true
-    uuid: df93d4b2-1936-4ee7-ab11-c65284a502dd
-    servername: cxio.pages.dev
-    ws-opts: 
-      path: /ohmyinjector
-      headers: 
-        Host: cxio.pages.dev
+    password: afdb8655-dd46-415e-a96f-2e57ccf6279b
+    sni: jst.my.id
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: jst.my.id
         Early-Data: 1
   - <<: *sshkit
     name: ID 🇮🇩 PT PC24 2

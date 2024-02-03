@@ -67,17 +67,17 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevless
+    <<: *basevmess
     name: SGP 🇸🇬 1
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: 88b1a1d1-27ab-4e15-b173-8115565efe29
-    servername: sg1.tingkehvpn.my.id
+    uuid: e905e0de-36a9-441d-ab3f-1085e3246e2e
+    servername: ead.ahmadwrt.site
     ws-opts: 
-      path: /vless
+      path: /vmessws
       headers: 
-        Host: sg1.tingkehvpn.my.id
+        Host: ead.ahmadwrt.site
         Early-Data: 1
   - <<: *sshkit
     name: SGP 🇸🇬 2
