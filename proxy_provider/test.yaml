@@ -9,18 +9,18 @@ base-bug:
     - &bug-ip6 104.18.215.59
     - &bug-ip7 104.21.233.133
     - &bug-ip8 104.21.233.134
-    - &bug-ip9 104.21.235.171
-    - &bug-ip10 104.21.235.172
-    - &bug-ip11 104.21.73.208
-    - &bug-ip12 172.67.192.40
-    - &bug-ip13 104.18.214.59
-    - &bug-ip14 104.18.215.59
-    - &bug-ip15 104.21.233.134
-    - &bug-ip16 104.21.233.133
-    - &bug-ip17 104.21.235.171
-    - &bug-ip18 104.21.235.172
-    - &bug-ip19 104.18.214.59
-    - &bug-ip20 104.18.215.59
+    - &bug-ip9 cdnodeb.visionplus.id
+    - &bug-ip10 www.zeri.info
+    - &bug-ip11 simpleyoutubeconverter.com
+    - &bug-ip12 visionplus-stream.visionplus.id
+    - &bug-ip13 apprating.visionplus.id
+    - &bug-ip14 xlv1.v-pn.my.id
+    - &bug-ip15 visionplus.id
+    - &bug-ip16 stream-cdn.mncnow.id
+    - &bug-ip17 m.luqizi.com
+    - &bug-ip18 luqizi.com
+    - &bug-ip19 www.luqizi.com
+    - &bug-ip20 www.tv510.com
     
 base-proxy:
   vmess:
@@ -67,72 +67,72 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevmess
-    name: Tst 🇸🇬     1
+    <<: *basevless
+    name: " 🇸🇬 ovh"
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: ae098835-62e1-4827-8c8a-520a3538db7c
-    servername: sdc.lovelyvpns.my.id
+    uuid: 989d33c1-7671-48c5-8a9e-88d891f42ac8
+    servername: ddng1.pages.dev
     ws-opts: 
-      path: /vmess
+      path: /kwetiaw
       headers: 
-        Host: sdc.lovelyvpns.my.id
+        Host: ddng1.pages.dev
         Early-Data: 1
   - <<: *sshkit
-    name: Tst 🇸🇬     2
+    name: " 🇸🇬 ovh 2"
     server: *bug-ip2
   - <<: *sshkit
-    name: Tst 🇸🇬     3
+    name: " 🇸🇬 ovh 3"
     server: *bug-ip3
   - <<: *sshkit
-    name: Tst 🇸🇬     4
+    name: " 🇸🇬 ovh 4"
     server: *bug-ip4
   - <<: *sshkit
-    name: Tst 🇸🇬     5
+    name: " 🇸🇬 ovh 5"
     server: *bug-ip5
   - <<: *sshkit
-    name: Tst 🇸🇬     6
+    name: " 🇸🇬 ovh 6"
     server: *bug-ip6
   - <<: *sshkit
-    name: Tst 🇸🇬     7
+    name: " 🇸🇬 ovh 7"
     server: *bug-ip7
   - <<: *sshkit
-    name: Tst 🇸🇬     8
+    name: " 🇸🇬 ovh 8"
     server: *bug-ip8
   - <<: *sshkit
-    name: Tst 🇸🇬     9
+    name: " 🇸🇬 ovh 9"
     server: *bug-ip9
   - <<: *sshkit
-    name: Tst 🇸🇬     10
+    name: " 🇸🇬 ovh 10"
     server: *bug-ip10
   - <<: *sshkit
-    name: Tst 🇸🇬     11
+    name: " 🇸🇬 ovh 11"
     server: *bug-ip11
   - <<: *sshkit
-    name: Tst 🇸🇬     12
+    name: " 🇸🇬 ovh 12"
     server: *bug-ip12
   - <<: *sshkit
-    name: Tst 🇸🇬     13
+    name: " 🇸🇬 ovh 13"
     server: *bug-ip13
   - <<: *sshkit
-    name: Tst 🇸🇬     14
+    name: " 🇸🇬 ovh 14"
     server: *bug-ip14
   - <<: *sshkit
-    name: Tst 🇸🇬     15
+    name: " 🇸🇬 ovh 15"
     server: *bug-ip15
   - <<: *sshkit
-    name: Tst 🇸🇬     16
+    name: " 🇸🇬 ovh 16"
     server: *bug-ip16
   - <<: *sshkit
-    name: Tst 🇸🇬     17
+    name: " 🇸🇬 ovh 17"
     server: *bug-ip17
   - <<: *sshkit
-    name: Tst 🇸🇬     18
+    name: " 🇸🇬 ovh 18"
     server: *bug-ip18
   - <<: *sshkit
-    name: Tst 🇸🇬     19
+    name: " 🇸🇬 ovh 19"
     server: *bug-ip19
   - <<: *sshkit
-    name: Tst 🇸🇬     20
+    name: " 🇸🇬 ovh 20"
     server: *bug-ip20
