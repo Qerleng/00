@@ -1,6 +1,6 @@
 proxies:
 - name: 🏁RELAY-104.21.25.94-0131
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 4d74f126-0ef1-4579-b0a3-78e7b48ef067
@@ -15,7 +15,7 @@ proxies:
       Host: de2-vmess.sshmax.xyz
   udp: true
 - name: 🏁RELAY-172.67.71.122-0134
-  server: circles.asia
+  server: 104.22.5.240
   port: 8880
   type: vmess
   uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
@@ -30,7 +30,7 @@ proxies:
       Host: ssrsub.v03.ssrsub.com
   udp: true
 - name: 🏁RELAY-104.21.25.8-0135
-  server: circles.asia
+  server: 104.22.5.240
   port: 2096
   type: vmess
   uuid: 22999f0a-20b0-485d-b000-fa59586940f9
@@ -45,7 +45,7 @@ proxies:
       Host: fr2-vmess.sshmax.xyz
   udp: true
 - name: 🏁RELAY-185.221.160.163-0146
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -60,7 +60,7 @@ proxies:
       Host: worker-lingering-fog-c021.gesofog870.workers.dev
   udp: true
 - name: 🏁RELAY-172.67.204.84-3681
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 20862c9f-2dfa-4a01-9734-7a139bf92a3c
@@ -76,7 +76,7 @@ proxies:
       Host: zula.ir
   udp: true
 - name: 🏁RELAY-162.159.137.232-2482
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 65599e84-c384-40eb-a00c-c6ee01bf8665
@@ -91,7 +91,7 @@ proxies:
       Host: nl2-vmess.sshmax.xyz
   udp: true
 - name: 🏁RELAY-172.67.204.84-1321
-  server: circles.asia
+  server: 104.22.5.240
   port: 2096
   type: vmess
   uuid: 6a91ce2e-c570-4fa4-a497-c6386fb48a15
@@ -106,7 +106,7 @@ proxies:
       Host: nl1-vmess.sshmax.xyz
   udp: true
 - name: 🏁RELAY-172.64.80.1-8892
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
@@ -121,7 +121,7 @@ proxies:
       Host: ming2.kiwireich.com
   udp: true
 - name: 🏁RELAY-104.21.31.87-1301
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: e3872a5b-ee93-4a42-b85b-a785c31e5b80
@@ -136,7 +136,7 @@ proxies:
       Host: ch1-vmess.sshmax.xyz
   udp: true
 - name: 🏁RELAY-104.21.25.68-1300
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: a6caa850-8043-403a-bbcf-589cea2c1656
@@ -151,7 +151,7 @@ proxies:
       Host: uk1-vmess.sshmax.xyz
   udp: true
 - name: 🏁RELAY-172.67.132.15-1649
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
@@ -166,7 +166,7 @@ proxies:
       Host: ming2.kiwireich.com
   udp: true
 - name: 🏁RELAY-172.64.80.1-1623
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
@@ -181,7 +181,7 @@ proxies:
       Host: ming2.kiwireich.com
   udp: true
 - name: 🏁RELAY-172.67.183.55-0880
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 7142b543-45a8-4274-b80d-f401e7892f5c
@@ -196,7 +196,7 @@ proxies:
       Host: de3-vmess.sshmax.xyz
   udp: true
 - name: 🏁RELAY-104.21.25.94-0874
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 4d74f126-0ef1-4579-b0a3-78e7b48ef067
@@ -211,7 +211,7 @@ proxies:
       Host: de2-vmess.sshmax.xyz
   udp: true
 - name: 🏁RELAY-172.67.183.55-0199
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 7142b543-45a8-4274-b80d-f401e7892f5c
@@ -226,7 +226,7 @@ proxies:
       Host: de3-vmess.sshmax.xyz
   udp: true
 - name: 🏁RELAY-188.114.97.43-0197
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 0e4d17ea-1332-481a-aae2-ef9b790201cf
@@ -241,7 +241,7 @@ proxies:
       Host: ua2-vmess.sshmax.xyz
   udp: true
 - name: 🏁RELAY-104.21.31.87-0174
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: e3872a5b-ee93-4a42-b85b-a785c31e5b80
@@ -256,7 +256,7 @@ proxies:
       Host: ch1-vmess.sshmax.xyz
   udp: true
 - name: 🏁RELAY-172.67.204.84-0169
-  server: circles.asia
+  server: 104.22.5.240
   port: 2096
   type: vmess
   uuid: 6a91ce2e-c570-4fa4-a497-c6386fb48a15
@@ -271,7 +271,7 @@ proxies:
       Host: nl1-vmess.sshmax.xyz
   udp: true
 - name: 🏁RELAY-104.21.25.68-0151
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: a6caa850-8043-403a-bbcf-589cea2c1656
@@ -286,7 +286,7 @@ proxies:
       Host: uk1-vmess.sshmax.xyz
   udp: true
 - name: 🏁RELAY-173.245.59.8-0159
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -302,7 +302,7 @@ proxies:
       Host: 77h2quiet-dream-5c34.foratay741.workers.dev
   udp: true
 - name: 🏁RELAY-104.26.12.140-0354
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e
@@ -317,7 +317,7 @@ proxies:
       Host: ssrsub.v006.ssrsub.com
   udp: true
 - name: 🏁RELAY-172.66.213.67-0355
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e
@@ -332,7 +332,7 @@ proxies:
       Host: ssrsub.v006.ssrsub.com
   udp: true
 - name: 🏁RELAY-172.67.110.134-0356
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e
@@ -347,7 +347,7 @@ proxies:
       Host: ssrsub.v006.ssrsub.com
   udp: true
 - name: 🏁RELAY-172.67.184.53-2533
-  server: circles.asia
+  server: 104.22.5.240
   port: 8443
   type: vmess
   uuid: aa0c4744-9568-4bee-a08b-73668a9b2a42
@@ -363,7 +363,7 @@ proxies:
       Host: cloudconebbb.gorgorchicken.one
   udp: true
 - name: 🏁RELAY-104.27.97.42-2531
-  server: circles.asia
+  server: 104.22.5.240
   port: 8443
   type: vmess
   uuid: aa0c4744-9568-4bee-a08b-73668a9b2a42
@@ -379,7 +379,7 @@ proxies:
       Host: cloudconebbb.gorgorchicken.one
   udp: true
 - name: 🏁RELAY-104.21.36.26-2525
-  server: circles.asia
+  server: 104.22.5.240
   port: 8443
   type: vmess
   uuid: 1cec1ebc-b489-4769-f2d9-e079b5832a60
@@ -395,7 +395,7 @@ proxies:
       Host: cloudconeaaa.gorgorchicken.one
   udp: true
 - name: 🏁RELAY-172.67.75.194-0357
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e
@@ -410,7 +410,7 @@ proxies:
       Host: ssrsub.v03.ssrsub.com
   udp: true
 - name: 🏁RELAY-172.66.213.86-0358
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e
@@ -425,7 +425,7 @@ proxies:
       Host: ssrsub.v03.ssrsub.com
   udp: true
 - name: 🏁RELAY-172.67.150.250-0359
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e
@@ -440,7 +440,7 @@ proxies:
       Host: ssrsub.v03.ssrsub.com
   udp: true
 - name: 🏁RELAY-172.67.75.194-0360
-  server: circles.asia
+  server: 104.22.5.240
   port: 8880
   type: vmess
   uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e
@@ -455,7 +455,7 @@ proxies:
       Host: ssrsub.v001.ssrsub.com
   udp: true
 - name: 🏁RELAY-172.67.218.39-8951
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: DDC2A29D-1A41-4CEB-B520-197356099B83
@@ -470,7 +470,7 @@ proxies:
       Host: dbr3fqf4y53gd4uydq82nu4x.fq83h3g4g4221vh5dn9.workers.dev
   udp: true
 - name: 🏁RELAY-172.67.179.114-8944
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: F591CE71-33F8-4B12-824A-0167FA839ED9
@@ -485,7 +485,7 @@ proxies:
       Host: fake.id.workers.dev
   udp: true
 - name: 🏁RELAY-104.26.4.57-1327
-  server: circles.asia
+  server: 104.22.5.240
   port: 2095
   type: vmess
   uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
@@ -500,7 +500,7 @@ proxies:
       Host: ssrsub.v03.ssrsub.com
   udp: true
 - name: 🏁RELAY-172.66.213.87-0361
-  server: circles.asia
+  server: 104.22.5.240
   port: 8880
   type: vmess
   uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e
@@ -515,7 +515,7 @@ proxies:
       Host: ssrsub.v001.ssrsub.com
   udp: true
 - name: 🏁RELAY-172.67.156.22-0362
-  server: circles.asia
+  server: 104.22.5.240
   port: 8880
   type: vmess
   uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e
@@ -530,7 +530,7 @@ proxies:
       Host: ssrsub.v001.ssrsub.com
   udp: true
 - name: 🏁RELAY-172.67.75.194-0363
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e
@@ -545,7 +545,7 @@ proxies:
       Host: ssrsub.v004.ssrsub.com
   udp: true
 - name: 🏁RELAY-172.67.71.122-0889
-  server: circles.asia
+  server: 104.22.5.240
   port: 2095
   type: vmess
   uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
@@ -560,7 +560,7 @@ proxies:
       Host: ssrsub.v03.ssrsub.com
   udp: true
 - name: 🏁RELAY-45.85.119.29-2521
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 06A762E9-4BC9-405A-810E-B94AC078C772
@@ -576,7 +576,7 @@ proxies:
       Host: fragrant-pond-b786.salehielham2366007.workers.dev
   udp: true
 - name: 🏁RELAY-172.66.213.86-0364
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e
@@ -591,7 +591,7 @@ proxies:
       Host: ssrsub.v004.ssrsub.com
   udp: true
 - name: 🏁RELAY-104.19.36.160-2164
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: ad806487-2d26-4636-98b6-ab85cc8521f7
@@ -606,7 +606,7 @@ proxies:
       Host: restless-haze-599b.zjjcool.workers.dev
   udp: true
 - name: 🏁RELAY-172.67.156.22-0365
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e
@@ -621,7 +621,7 @@ proxies:
       Host: ssrsub.v004.ssrsub.com
   udp: true
 - name: 🏁RELAY-172.67.156.22-0368
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e
@@ -636,7 +636,7 @@ proxies:
       Host: ssrsub.v005.ssrsub.com
   udp: true
 - name: 🏁RELAY-172.66.213.64-0367
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e
@@ -651,7 +651,7 @@ proxies:
       Host: ssrsub.v005.ssrsub.com
   udp: true
 - name: 🏁RELAY-104.26.12.140-0366
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e
@@ -666,7 +666,7 @@ proxies:
       Host: ssrsub.v005.ssrsub.com
   udp: true
 - name: 🇸🇬SG-206.238.236.36-0754
-  server: circles.asia
+  server: 104.22.5.240
   port: 2052
   type: vmess
   uuid: f584de15-2034-4170-a723-f48c2bae5e0f
@@ -682,7 +682,7 @@ proxies:
       Host: mysan2.jaquay22.workers.dev
   udp: true
 - name: 🏁RELAY-104.18.202.250-0792
-  server: circles.asia
+  server: 104.22.5.240
   port: 2082
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -697,7 +697,7 @@ proxies:
       Host: erfannewfreenodes.vdmmswyzmzigonvnjk443.workers.dev
   udp: true
 - name: 🏁RELAY-185.221.160.163-1180
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -712,7 +712,7 @@ proxies:
       Host: worker-lingering-fog-c021.gesofog870.workers.dev
   udp: true
 - name: 🏁RELAY-104.20.39.186-1179
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
@@ -727,7 +727,7 @@ proxies:
       Host: vmess.taxar71054.workers.dev
   udp: true
 - name: 🏁RELAY-104.18.202.250-1160
-  server: circles.asia
+  server: 104.22.5.240
   port: 2082
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -742,7 +742,7 @@ proxies:
       Host: erfannewfreenodes.vdmmswyzmzigonvnjk443.workers.dev
   udp: true
 - name: 🏁RELAY-104.20.39.186-0794
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
@@ -757,7 +757,7 @@ proxies:
       Host: vmess.taxar71054.workers.dev
   udp: true
 - name: 🏁RELAY-1.0.0.4-8973
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 4a47e680-d860-4e63-9fa6-813857fb0f42
@@ -772,7 +772,7 @@ proxies:
       Host: cdn.anycast.eu.org
   udp: true
 - name: 🏁RELAY-103.21.244.169-6390
-  server: circles.asia
+  server: 104.22.5.240
   port: 8443
   type: vmess
   uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b
@@ -787,7 +787,7 @@ proxies:
       Host: SG-244-255.shoptunnel.live
   udp: true
 - name: 🏁RELAY-104.16.115.137-3834
-  server: circles.asia
+  server: 104.22.5.240
   port: 2052
   type: vmess
   uuid: d0a3e08a-d26f-45bd-ba3c-6387f9182633
@@ -802,7 +802,7 @@ proxies:
       Host: 7nAi74jJsg1.yofnhkfc.xyz
   udp: true
 - name: 🏁RELAY-104.16.119.47-2547
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -818,7 +818,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-104.16.120.85-2467
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: e6be09fb-b8f9-4f98-add0-7d450812e622
@@ -833,7 +833,7 @@ proxies:
       Host: is2.xv2ray.net
   udp: true
 - name: 🏁RELAY-104.16.148.244-0120
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: ef8c954e-014f-4b36-8273-9b5086afab34
@@ -848,7 +848,7 @@ proxies:
       Host: fbi.gov
   udp: true
 - name: 🏁RELAY-104.16.148.244-0212
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: ef8c954e-014f-4b36-8273-9b5086afab34
@@ -863,7 +863,7 @@ proxies:
       Host: bibliographic-sword-sequence-advertisers.trycloudflare.com
   udp: true
 - name: 🏁RELAY-104.16.148.244-1417
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
@@ -878,7 +878,7 @@ proxies:
       Host: larger-marketing-amounts-skin.trycloudflare.com
   udp: true
 - name: 🏁RELAY-104.16.149.244-0772
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
@@ -893,7 +893,7 @@ proxies:
       Host: nest-emily-healing-h.trycloudflare.com
   udp: true
 - name: 🏁RELAY-104.16.149.244-0803
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
@@ -908,7 +908,7 @@ proxies:
       Host: larger-marketing-amounts-skin.trycloudflare.com
   udp: true
 - name: 🏁RELAY-104.16.149.244-0875
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: ef8c954e-014f-4b36-8273-9b5086afab34
@@ -923,7 +923,7 @@ proxies:
       Host: bibliographic-sword-sequence-advertisers.trycloudflare.com
   udp: true
 - name: 🏁RELAY-104.16.162.16-0085
-  server: circles.asia
+  server: 104.22.5.240
   port: 2053
   type: vmess
   uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
@@ -938,7 +938,7 @@ proxies:
       Host: foxus.fovi.tk
   udp: true
 - name: 🏁RELAY-104.16.183.101-9946
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: trojan
   password: a0514d9b-d109-47fd-b173-1e7f83268f21
@@ -951,7 +951,7 @@ proxies:
       Host: tws23.kallepache.store
   udp: true
 - name: 🏁RELAY-104.16.192.146-2085
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
@@ -964,7 +964,7 @@ proxies:
       Host: jobscareertoday.com
   udp: true
 - name: 🏁RELAY-104.16.216.241-0196
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -979,7 +979,7 @@ proxies:
       Host: nelly.homes
   udp: true
 - name: 🏁RELAY-104.16.216.241-1191
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -994,7 +994,7 @@ proxies:
       Host: nelly.homes
   udp: true
 - name: 🏁RELAY-104.16.217.241-0152
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1009,7 +1009,7 @@ proxies:
       Host: nelly.homes
   udp: true
 - name: 🏁RELAY-104.16.217.241-1193
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1024,7 +1024,7 @@ proxies:
       Host: nelly.homes
   udp: true
 - name: 🏁RELAY-104.16.219.230-2492
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -1040,7 +1040,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-104.16.219.230-2503
-  server: circles.asia
+  server: 104.22.5.240
   port: 8880
   type: vmess
   uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb
@@ -1055,7 +1055,7 @@ proxies:
       Host: fr7.tehme100.fun
   udp: true
 - name: 🏁RELAY-104.16.60.8-2327
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
@@ -1070,7 +1070,7 @@ proxies:
       Host: speed.cloudflare.com
   udp: true
 - name: 🏁RELAY-104.16.60.8-5664
-  server: circles.asia
+  server: 104.22.5.240
   port: 8443
   type: vmess
   uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b
@@ -1085,7 +1085,7 @@ proxies:
       Host: speed.cloudflare.com
   udp: true
 - name: 🏁RELAY-104.16.60.8-6698
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
@@ -1100,7 +1100,7 @@ proxies:
       Host: v2.chigua.tk
   udp: true
 - name: 🏁RELAY-104.16.67.38-0176
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: f8c92b3b-5447-44a5-9e54-23cdc269cb93
@@ -1115,7 +1115,7 @@ proxies:
       Host: aq.daozhang.link
   udp: true
 - name: 🏁RELAY-104.16.67.38-1228
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: f8c92b3b-5447-44a5-9e54-23cdc269cb93
@@ -1130,7 +1130,7 @@ proxies:
       Host: aq.daozhang.link
   udp: true
 - name: 🏁RELAY-104.16.8.3-2501
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -1146,7 +1146,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-104.16.89.44-2354
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 9a18cbb1-81d2-4720-9f09-46ea276b6ddb
@@ -1161,7 +1161,7 @@ proxies:
       Host: 104.16.89.44
   udp: true
 - name: 🏁RELAY-104.16.89.44-6667
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 9a18cbb1-81d2-4720-9f09-46ea276b6ddb
@@ -1176,7 +1176,7 @@ proxies:
       Host: zhuyong.hucloud-dns.xyz
   udp: true
 - name: 🏁RELAY-104.17.101.35-2526
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -1192,7 +1192,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-104.17.175.159-1161
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: trojan
   password: 8c4c1021-3352-4c76-b4b6-26c38a137f92
@@ -1205,7 +1205,7 @@ proxies:
       Host: jnl1.jsjc.sbs
   udp: true
 - name: 🏁RELAY-104.17.177.224-2499
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -1221,7 +1221,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-104.17.21.243-2222
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 4cdb016f-f14e-30b3-97d6-453c741a5c80
@@ -1236,7 +1236,7 @@ proxies:
       Host: free.frli.xyz
   udp: true
 - name: 🏁RELAY-104.17.21.243-2309
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 4cdb016f-f14e-30b3-97d6-453c741a5c80
@@ -1251,7 +1251,7 @@ proxies:
       Host: 104.17.21.243
   udp: true
 - name: 🏁RELAY-104.17.229.103-2548
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -1267,7 +1267,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-104.17.232.114-2556
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -1283,7 +1283,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-104.17.247.213-8969
-  server: circles.asia
+  server: 104.22.5.240
   port: 8880
   type: vmess
   uuid: 4b5e4565-322f-4223-a891-78a84f189726
@@ -1298,7 +1298,7 @@ proxies:
       Host: cdn.narutos.top
   udp: true
 - name: 🏁RELAY-104.17.247.213-8971
-  server: circles.asia
+  server: 104.22.5.240
   port: 8880
   type: vmess
   uuid: 4b5e4565-322f-4223-a891-78a84f189726
@@ -1313,7 +1313,7 @@ proxies:
       Host: cdn.narutos.top
   udp: true
 - name: 🏁RELAY-104.17.25.1-3807
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 92aa3000-5758-41f5-9b7d-6a8394382931
@@ -1328,7 +1328,7 @@ proxies:
       Host: njzvpn.inekokkk.top
   udp: true
 - name: 🏁RELAY-104.17.25.1-3820
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 83c19463-f966-4adb-a7d8-b127825ffab2
@@ -1343,7 +1343,7 @@ proxies:
       Host: kr.catnipballs.gay
   udp: true
 - name: 🏁RELAY-104.18.13.15-2162
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 7a70e0f7-170d-4ab0-82a0-c40554bfb320
@@ -1358,7 +1358,7 @@ proxies:
       Host: buyvm.proxypool.ga
   udp: true
 - name: 🏁RELAY-104.18.13.15-2286
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 7a70e0f7-170d-4ab0-82a0-c40554bfb320
@@ -1373,7 +1373,7 @@ proxies:
       Host: workers.dev
   udp: true
 - name: 🏁RELAY-104.18.15.147-1265
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: e184e964-518c-4ddf-ab05-f0a2ecff2f42
@@ -1388,7 +1388,7 @@ proxies:
       Host: ydmmamd2.mac2win.top
   udp: true
 - name: 🏁RELAY-104.18.15.229-8886
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
@@ -1403,7 +1403,7 @@ proxies:
       Host: nestle.ir
   udp: true
 - name: 🏁RELAY-104.18.155.42-2163
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 3a3e263d-223f-49cc-bbdb-f7e07a55e6fe
@@ -1418,7 +1418,7 @@ proxies:
       Host: by.6111.online
   udp: true
 - name: 🏁RELAY-104.18.155.42-2389
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 3a3e263d-223f-49cc-bbdb-f7e07a55e6fe
@@ -1433,7 +1433,7 @@ proxies:
       Host: www.digitalocean.com
   udp: true
 - name: 🏁RELAY-104.18.200.220-2488
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1449,7 +1449,7 @@ proxies:
       Host: octavi.cfd
   udp: true
 - name: 🏁RELAY-104.18.202.232-2472
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 1cc7d6ae-3124-464b-931d-db7027a68a40
@@ -1464,7 +1464,7 @@ proxies:
       Host: it1.xv2ray.net
   udp: true
 - name: 🏁RELAY-104.18.202.232-2474
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1480,7 +1480,7 @@ proxies:
       Host: ophelia.mom
   udp: true
 - name: 🏁RELAY-104.18.203.232-2495
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1496,7 +1496,7 @@ proxies:
       Host: edeen.makeup
   udp: true
 - name: 🏁RELAY-104.18.239.202-2558
-  server: circles.asia
+  server: 104.22.5.240
   port: 2052
   type: vmess
   uuid: e6967d17-f3db-4e25-8e6f-2db8a8149f73
@@ -1511,7 +1511,7 @@ proxies:
       Host: de6.biqibao.site
   udp: true
 - name: 🏁RELAY-104.18.27.8-2470
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -1527,7 +1527,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-104.18.29.94-1266
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: e184e964-518c-4ddf-ab05-f0a2ecff2f42
@@ -1542,7 +1542,7 @@ proxies:
       Host: ydmmamd1.mac2win.top
   udp: true
 - name: 🏁RELAY-104.18.31.95-3818
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: d0a3e08a-d26f-45bd-ba3c-6387f9182633
@@ -1557,7 +1557,7 @@ proxies:
       Host: agzbjszujp4.yofnhkfc.xyz
   udp: true
 - name: 🏁RELAY-104.18.37.69-2546
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -1573,7 +1573,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-104.18.6.138-2183
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
@@ -1588,7 +1588,7 @@ proxies:
       Host: cdnde.irteyz.today
   udp: true
 - name: 🏁RELAY-104.18.6.138-2371
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
@@ -1603,7 +1603,7 @@ proxies:
       Host: 104.18.6.138
   udp: true
 - name: 🏁RELAY-104.18.7.138-2181
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
@@ -1618,7 +1618,7 @@ proxies:
       Host: cdnde.irteyz.today
   udp: true
 - name: 🏁RELAY-104.18.7.138-2407
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
@@ -1633,7 +1633,7 @@ proxies:
       Host: 104.18.7.138
   udp: true
 - name: 🏁RELAY-104.19.110.34-2204
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 4cdb016f-f14e-30b3-97d6-453c741a5c80
@@ -1648,7 +1648,7 @@ proxies:
       Host: free.frli.xyz
   udp: true
 - name: 🏁RELAY-104.19.110.34-2330
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 4cdb016f-f14e-30b3-97d6-453c741a5c80
@@ -1663,7 +1663,7 @@ proxies:
       Host: 104.19.110.34
   udp: true
 - name: 🏁RELAY-104.19.155.92-2543
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -1679,7 +1679,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-104.19.208.207-8967
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 64480f4c-61c2-4d88-89c3-fc0045229bfc
@@ -1694,7 +1694,7 @@ proxies:
       Host: cf.dalazhi.eu.org
   udp: true
 - name: 🏁RELAY-104.19.250.132-1298
-  server: circles.asia
+  server: 104.22.5.240
   port: 2052
   type: vmess
   uuid: 6ad77d6b-7a45-4ed3-b65d-1c3ec0226603
@@ -1709,7 +1709,7 @@ proxies:
       Host: us1cPZiz8nb.fzbqfrse.xyz
   udp: true
 - name: 🏁RELAY-104.19.36.160-2329
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: ad806487-2d26-4636-98b6-ab85cc8521f7
@@ -1724,7 +1724,7 @@ proxies:
       Host: 104.19.36.160
   udp: true
 - name: 🏁RELAY-104.19.45.117-2174
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
@@ -1739,7 +1739,7 @@ proxies:
       Host: cdnde.irteyz.today
   udp: true
 - name: 🏁RELAY-104.19.45.117-2271
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
@@ -1754,7 +1754,7 @@ proxies:
       Host: 104.19.45.117
   udp: true
 - name: 🏁RELAY-104.19.7.84-2186
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 4cdb016f-f14e-30b3-97d6-453c741a5c80
@@ -1769,7 +1769,7 @@ proxies:
       Host: free.frli.xyz
   udp: true
 - name: 🏁RELAY-104.19.7.84-2322
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 4cdb016f-f14e-30b3-97d6-453c741a5c80
@@ -1784,7 +1784,7 @@ proxies:
       Host: 104.19.7.84
   udp: true
 - name: 🏁RELAY-104.20.191.42-2542
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -1800,7 +1800,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-104.21.12.173-0181
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1816,7 +1816,7 @@ proxies:
       Host: meroiy.icu
   udp: true
 - name: 🏁RELAY-104.21.12.173-0791
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1832,7 +1832,7 @@ proxies:
       Host: meroiy.icu
   udp: true
 - name: 🏁RELAY-104.21.12.87-8861
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: trojan
   password: 0b65bb06-6b28-487a-8e3c-820dda51e977
@@ -1845,7 +1845,7 @@ proxies:
       Host: series-v1.samanehha.co
   udp: true
 - name: 🏁RELAY-104.21.12.87-8862
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 0b65bb06-6b28-487a-8e3c-820dda51e977
@@ -1860,7 +1860,7 @@ proxies:
       Host: series-v1.samanehha.co
   udp: true
 - name: 🏁RELAY-104.21.12.87-9905
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: trojan
   password: 0b65bb06-6b28-487a-8e3c-820dda51e977
@@ -1873,7 +1873,7 @@ proxies:
       Host: series-v1.samanehha.co
   udp: true
 - name: 🏁RELAY-104.21.2.141-0492
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 97bba5ca-185c-4e6a-ac64-96e920d4eeda
@@ -1888,7 +1888,7 @@ proxies:
       Host: moon.chanell.mci.v-x4ssd.space
   udp: true
 - name: 🏁RELAY-104.21.21.147-4194
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
@@ -1903,7 +1903,7 @@ proxies:
       Host: hohm.microsoft.com
   udp: true
 - name: 🏁RELAY-104.21.224.23-1433
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -1918,7 +1918,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.224.3-1401
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -1933,7 +1933,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.225.25-1355
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -1948,7 +1948,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.225.28-1362
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -1963,7 +1963,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.225.5-1428
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -1978,7 +1978,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.225.6-1393
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -1993,7 +1993,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.225.7-1425
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2008,7 +2008,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.225.8-1429
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2023,7 +2023,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.226.11-1418
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2038,7 +2038,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.226.12-1350
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2053,7 +2053,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.226.32-1409
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2068,7 +2068,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.226.34-2060
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2083,7 +2083,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.227.17-1392
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2098,7 +2098,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.227.18-0205
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2113,7 +2113,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.227.18-2073
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2128,7 +2128,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.227.38-2064
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2143,7 +2143,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.228.22-2086
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2158,7 +2158,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.228.24-1421
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2173,7 +2173,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.228.40-1434
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2188,7 +2188,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.228.41-1431
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2203,7 +2203,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.228.43-1373
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2218,7 +2218,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.229.25-1396
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2233,7 +2233,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.229.28-0198
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2248,7 +2248,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.229.28-2061
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2263,7 +2263,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.229.28-3779
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2278,7 +2278,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.229.46-1400
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2293,7 +2293,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.229.46-2079
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2308,7 +2308,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.229.47-1359
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2323,7 +2323,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.229.48-1347
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2338,7 +2338,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.229.48-1419
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2353,7 +2353,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.23.231-0184
-  server: circles.asia
+  server: 104.22.5.240
   port: 2052
   type: vmess
   uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16
@@ -2368,7 +2368,7 @@ proxies:
       Host: onea.flha.ru
   udp: true
 - name: 🏁RELAY-104.21.23.231-0186
-  server: circles.asia
+  server: 104.22.5.240
   port: 2052
   type: vmess
   uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16
@@ -2383,7 +2383,7 @@ proxies:
       Host: onea.flha.ru
   udp: true
 - name: 🏁RELAY-104.21.230.32-1437
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2398,7 +2398,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.230.51-2082
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2413,7 +2413,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.230.52-1404
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2428,7 +2428,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.230.54-1438
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2443,7 +2443,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.231.36-1440
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2458,7 +2458,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.231.38-1346
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2473,7 +2473,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.231.39-0202
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2488,7 +2488,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.231.39-1397
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2503,7 +2503,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.231.57-1422
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2518,7 +2518,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.231.58-1345
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2533,7 +2533,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.232.40-1361
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2548,7 +2548,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.232.43-1343
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2563,7 +2563,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.232.44-1394
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2578,7 +2578,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.232.63-1357
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2593,7 +2593,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.232.64-2062
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2608,7 +2608,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.233.69-0158
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2623,7 +2623,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.234.50-1439
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2638,7 +2638,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.234.52-2078
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2653,7 +2653,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.234.53-1364
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2668,7 +2668,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.234.73-1360
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2683,7 +2683,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.234.74-1365
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2698,7 +2698,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.235.55-1420
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2713,7 +2713,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.235.56-3641
-  server: circles.asia
+  server: 104.22.5.240
   port: 2053
   type: vmess
   uuid: 94898122-6f57-3272-8ccf-87ab366b29ed
@@ -2728,7 +2728,7 @@ proxies:
       Host: namer-us-sea-01-edgecast.qdns.live
   udp: true
 - name: 🏁RELAY-104.21.235.59-2063
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2743,7 +2743,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.235.61-3120
-  server: circles.asia
+  server: 104.22.5.240
   port: 2053
   type: vmess
   uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
@@ -2759,7 +2759,7 @@ proxies:
       Host: foxpol2.fovi.tk
   udp: true
 - name: 🏁RELAY-104.21.236.60-2081
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2774,7 +2774,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.236.64-1337
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2789,7 +2789,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.236.80-1436
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2804,7 +2804,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.236.81-1370
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2819,7 +2819,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.237.65-1432
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2834,7 +2834,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.237.89-1427
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2849,7 +2849,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.238.71-1435
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2864,7 +2864,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.238.72-1399
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2879,7 +2879,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.238.74-1414
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2894,7 +2894,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.238.90-1339
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2909,7 +2909,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.239.75-1424
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2924,7 +2924,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.239.96-1372
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -2939,7 +2939,7 @@ proxies:
       Host: a.prapt1.ir
   udp: true
 - name: 🏁RELAY-104.21.27.139-0856
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -2955,7 +2955,7 @@ proxies:
       Host: edeen.makeup
   udp: true
 - name: 🏁RELAY-104.21.27.139-2528
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -2971,7 +2971,7 @@ proxies:
       Host: edeen.makeup
   udp: true
 - name: 🏁RELAY-104.21.27.34-4187
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: f4ef14c4-d811-455c-a4c3-c63dfeffb0a6
@@ -2986,7 +2986,7 @@ proxies:
       Host: vfly3.win
   udp: true
 - name: 🏁RELAY-104.21.31.183-0807
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3002,7 +3002,7 @@ proxies:
       Host: octavi.cfd
   udp: true
 - name: 🏁RELAY-104.21.31.183-0850
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3018,7 +3018,7 @@ proxies:
       Host: octavi.cfd
   udp: true
 - name: 🏁RELAY-104.21.31.183-2500
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3034,7 +3034,7 @@ proxies:
       Host: octavi.cfd
   udp: true
 - name: 🏁RELAY-104.21.31.183-7009
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3050,7 +3050,7 @@ proxies:
       Host: octavi.cfd
   udp: true
 - name: 🏁RELAY-104.21.31.189-0147
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3066,7 +3066,7 @@ proxies:
       Host: kittiy.sbs
   udp: true
 - name: 🏁RELAY-104.21.33.32-0141
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3082,7 +3082,7 @@ proxies:
       Host: nelly.homes
   udp: true
 - name: 🏁RELAY-104.21.33.32-0764
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3098,7 +3098,7 @@ proxies:
       Host: nelly.homes
   udp: true
 - name: 🏁RELAY-104.21.38.60-1259
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 9ad49ff7-de2d-3b71-af59-9ca1d47a174b
@@ -3113,7 +3113,7 @@ proxies:
       Host: jp.sstank.top
   udp: true
 - name: 🏁RELAY-104.21.4.29-0861
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3129,7 +3129,7 @@ proxies:
       Host: oliv.beauty
   udp: true
 - name: 🏁RELAY-104.21.4.29-2541
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3145,7 +3145,7 @@ proxies:
       Host: oliv.beauty
   udp: true
 - name: 🏁RELAY-104.21.40.14-1288
-  server: circles.asia
+  server: 104.22.5.240
   port: 2082
   type: vmess
   uuid: 23337bcf-ea22-4efe-a0bc-8be84706c8bd
@@ -3160,7 +3160,7 @@ proxies:
       Host: us-01.cococloud.online
   udp: true
 - name: 🏁RELAY-104.21.43.51-6610
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 46bfdb59-83c6-4710-877e-c809b5a90dff
@@ -3175,7 +3175,7 @@ proxies:
       Host: exa.nextvpn.cc
   udp: true
 - name: 🏁RELAY-104.21.47.170-1317
-  server: circles.asia
+  server: 104.22.5.240
   port: 2087
   type: vmess
   uuid: 8ad792bd-c4ea-460f-c015-8e05ec5bc968
@@ -3190,7 +3190,7 @@ proxies:
       Host: rw.b4a-devs.org
   udp: true
 - name: 🏁RELAY-104.21.48.161-2165
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
@@ -3205,7 +3205,7 @@ proxies:
       Host: cdnde.irteyz.today
   udp: true
 - name: 🏁RELAY-104.21.48.161-2374
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
@@ -3220,7 +3220,7 @@ proxies:
       Host: 104.21.48.161
   udp: true
 - name: 🏁RELAY-104.21.49.121-4517
-  server: circles.asia
+  server: 104.22.5.240
   port: 8443
   type: vmess
   uuid: 430b6895-2e0f-4716-9410-e1339d0f9af6
@@ -3235,7 +3235,7 @@ proxies:
       Host: cf-us01-90.clashzone.xyz
   udp: true
 - name: 🏁RELAY-104.21.49.121-4644
-  server: circles.asia
+  server: 104.22.5.240
   port: 8443
   type: vmess
   uuid: 430b6895-2e0f-4716-9410-e1339d0f9af6
@@ -3250,7 +3250,7 @@ proxies:
       Host: cf-az01-81.clashzone.xyz
   udp: true
 - name: 🏁RELAY-104.21.49.65-6430
-  server: circles.asia
+  server: 104.22.5.240
   port: 2083
   type: vmess
   uuid: 8a21b84d-183e-450d-ec82-8d45855d8180
@@ -3265,7 +3265,7 @@ proxies:
       Host: xui.mycf.ml
   udp: true
 - name: 🏁RELAY-104.21.50.177-0780
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3281,7 +3281,7 @@ proxies:
       Host: alvvin.click
   udp: true
 - name: 🏁RELAY-104.21.53.12-0767
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3297,7 +3297,7 @@ proxies:
       Host: ophelia.mom
   udp: true
 - name: 🏁RELAY-104.21.53.12-2515
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3313,7 +3313,7 @@ proxies:
       Host: ophelia.mom
   udp: true
 - name: 🏁RELAY-104.21.54.252-0119
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
@@ -3328,7 +3328,7 @@ proxies:
       Host: www.velvetmountain.shop
   udp: true
 - name: 🏁RELAY-104.21.54.252-0217
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
@@ -3343,7 +3343,7 @@ proxies:
       Host: www.velvetmountain.shop
   udp: true
 - name: 🏁RELAY-104.21.55.223-0164
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3359,7 +3359,7 @@ proxies:
       Host: jader.fun
   udp: true
 - name: 🏁RELAY-104.21.55.223-0776
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3375,7 +3375,7 @@ proxies:
       Host: jader.fun
   udp: true
 - name: 🏁RELAY-104.21.58.68-0166
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3391,7 +3391,7 @@ proxies:
       Host: maggiy.shop
   udp: true
 - name: 🏁RELAY-104.21.58.68-0785
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3407,7 +3407,7 @@ proxies:
       Host: maggiy.shop
   udp: true
 - name: 🏁RELAY-104.21.60.120-8953
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: trojan
   password: 0ad5e311-7189-4124-ac8f-f828b681f10e
@@ -3420,7 +3420,7 @@ proxies:
       Host: c5mt.cdncisco.org
   udp: true
 - name: 🏁RELAY-104.21.60.120-8958
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: trojan
   password: 0ad5e311-7189-4124-ac8f-f828b681f10e
@@ -3433,7 +3433,7 @@ proxies:
       Host: c5mc.cdncisco.org
   udp: true
 - name: 🏁RELAY-104.21.61.214-1352
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
@@ -3448,7 +3448,7 @@ proxies:
       Host: www.darkroom.lol
   udp: true
 - name: 🏁RELAY-104.21.63.52-0165
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 60f12435-bb55-4da2-cb7d-4fea34ecfa37
@@ -3463,7 +3463,7 @@ proxies:
       Host: us65.netfilx.live
   udp: true
 - name: 🏁RELAY-104.21.67.88-2057
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 3853a2ab-6bec-4503-89b9-d3cbcc6b69c9
@@ -3478,7 +3478,7 @@ proxies:
       Host: hkd1.quickerlink.xyz
   udp: true
 - name: 🏁RELAY-104.21.67.88-6879
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 3853a2ab-6bec-4503-89b9-d3cbcc6b69c9
@@ -3493,7 +3493,7 @@ proxies:
       Host: hkd1.quickerlink.xyz
   udp: true
 - name: 🏁RELAY-104.21.69.44-2088
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: trojan
   password: 14025f10-101f-445d-a27a-692f8da3d4e7
@@ -3506,7 +3506,7 @@ proxies:
       Host: at1.trojanvpn.de
   udp: true
 - name: 🏁RELAY-104.21.69.44-3799
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -3521,7 +3521,7 @@ proxies:
       Host: a.prapt4.ir
   udp: true
 - name: 🏁RELAY-104.21.75.244-0788
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3537,7 +3537,7 @@ proxies:
       Host: janett.click
   udp: true
 - name: 🏁RELAY-104.21.75.246-0175
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3553,7 +3553,7 @@ proxies:
       Host: cf.tonyluk.link
   udp: true
 - name: 🏁RELAY-104.21.75.246-0806
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3569,7 +3569,7 @@ proxies:
       Host: cf.tonyluk.link
   udp: true
 - name: 🏁RELAY-104.21.75.246-6897
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -3584,7 +3584,7 @@ proxies:
       Host: sbl2.shabijichang.com
   udp: true
 - name: 🏁RELAY-104.21.75.246-6899
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590
@@ -3599,7 +3599,7 @@ proxies:
       Host: jd2.shabijichang.com
   udp: true
 - name: 🏁RELAY-104.21.75.246-6904
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -3614,7 +3614,7 @@ proxies:
       Host: ld2.shabijichang.com
   udp: true
 - name: 🏁RELAY-104.21.75.246-6909
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -3629,7 +3629,7 @@ proxies:
       Host: jd3.shabijichang.com
   udp: true
 - name: 🏁RELAY-104.21.78.137-2148
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 6c7c5e3a-73ad-467a-1241-206987daa04f
@@ -3644,7 +3644,7 @@ proxies:
       Host: /ws
   udp: true
 - name: 🏁RELAY-104.21.78.137-2149
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 25ec39f7-7cdd-4c3c-bc3c-60e9a8927b4a
@@ -3659,7 +3659,7 @@ proxies:
       Host: /ws
   udp: true
 - name: 🏁RELAY-104.21.79.246-9884
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: trojan
   password: e35026da-e985-49ca-b43b-276062a535a6
@@ -3672,7 +3672,7 @@ proxies:
       Host: notdirect.howhealthyistoomajreally.homes
   udp: true
 - name: 🏁RELAY-104.21.8.157-1368
-  server: circles.asia
+  server: 104.22.5.240
   port: 2082
   type: vmess
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
@@ -3687,7 +3687,7 @@ proxies:
       Host: s1c.v2.v001sss.xyz
   udp: true
 - name: 🏁RELAY-104.21.82.183-1381
-  server: circles.asia
+  server: 104.22.5.240
   port: 8880
   type: vmess
   uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
@@ -3702,7 +3702,7 @@ proxies:
       Host: server31.beheshtbaneh.com
   udp: true
 - name: 🏁RELAY-104.21.82.183-1384
-  server: circles.asia
+  server: 104.22.5.240
   port: 8880
   type: vmess
   uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
@@ -3717,7 +3717,7 @@ proxies:
       Host: server26.beheshtbaneh.com
   udp: true
 - name: 🏁RELAY-104.21.82.183-1389
-  server: circles.asia
+  server: 104.22.5.240
   port: 8880
   type: vmess
   uuid: 044ba8ed-7285-472a-bc14-fb91dc6be4c9
@@ -3732,7 +3732,7 @@ proxies:
       Host: server32.beheshtbaneh.com
   udp: true
 - name: 🏁RELAY-104.21.84.60-2511
-  server: circles.asia
+  server: 104.22.5.240
   port: 8443
   type: vmess
   uuid: 865897ad-8d07-4021-b7c3-d8eb4a29ee8d
@@ -3748,7 +3748,7 @@ proxies:
       Host: brcf.duaaoped.xyz
   udp: true
 - name: 🏁RELAY-104.21.84.81-3273
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 68fe8d27-cbc8-4e72-90b7-70d3bb69dfd3
@@ -3763,7 +3763,7 @@ proxies:
       Host: cdn.xia.me
   udp: true
 - name: 🏁RELAY-104.21.90.210-3358
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 3eb05cb6-d2e1-4a31-9f82-514cfa98fe15
@@ -3778,7 +3778,7 @@ proxies:
       Host: icook.hk
   udp: true
 - name: 🏁RELAY-104.21.91.254-0859
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3794,7 +3794,7 @@ proxies:
       Host: waynn.makeup
   udp: true
 - name: 🏁RELAY-104.21.91.254-2484
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3810,7 +3810,7 @@ proxies:
       Host: waynn.makeup
   udp: true
 - name: 🏁RELAY-104.21.91.254-7005
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3825,7 +3825,7 @@ proxies:
       Host: waynn.makeup
   udp: true
 - name: 🏁RELAY-104.22.75.105-2491
-  server: circles.asia
+  server: 104.22.5.240
   port: 8880
   type: vmess
   uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb
@@ -3840,7 +3840,7 @@ proxies:
       Host: fr7.tehme100.fun
   udp: true
 - name: 🏁RELAY-104.24.0.11-0160
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3855,7 +3855,7 @@ proxies:
       Host: vip2323.cfd
   udp: true
 - name: 🏁RELAY-104.24.0.11-1226
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3870,7 +3870,7 @@ proxies:
       Host: vip2323.cfd
   udp: true
 - name: 🏁RELAY-104.24.145.43-2496
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -3886,7 +3886,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-104.24.176.7-2552
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -3902,7 +3902,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-104.24.177.7-2502
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -3918,7 +3918,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-104.24.185.137-2481
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -3934,7 +3934,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-104.25.105.122-2519
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -3950,7 +3950,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-104.25.249.45-0899
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 6c6b7018-654f-42cc-bbbc-2ff6e5be8cd4
@@ -3965,7 +3965,7 @@ proxies:
       Host: hkv62.agagag.link
   udp: true
 - name: 🏁RELAY-104.25.249.45-1290
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 6c6b7018-654f-42cc-bbbc-2ff6e5be8cd4
@@ -3980,7 +3980,7 @@ proxies:
       Host: hkv62.agagag.link
   udp: true
 - name: 🏁RELAY-104.25.52.187-2170
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 4cdb016f-f14e-30b3-97d6-453c741a5c80
@@ -3995,7 +3995,7 @@ proxies:
       Host: free.frli.xyz
   udp: true
 - name: 🏁RELAY-104.25.52.187-2308
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 4cdb016f-f14e-30b3-97d6-453c741a5c80
@@ -4010,7 +4010,7 @@ proxies:
       Host: 104.25.52.187
   udp: true
 - name: 🏁RELAY-104.25.99.169-2557
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -4026,7 +4026,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-104.26.0.26-0494
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 010c265f-5455-4141-ca23-4d69357ded0d
@@ -4041,7 +4041,7 @@ proxies:
       Host: aktw.daozhang.love
   udp: true
 - name: 🏁RELAY-104.26.0.26-1889
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 9c4a3ad3-4f1d-4138-e7ee-8bb5325b411d
@@ -4056,7 +4056,7 @@ proxies:
       Host: hytron.io
   udp: true
 - name: 🏁RELAY-104.26.5.10-1472
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
@@ -4071,7 +4071,7 @@ proxies:
       Host: sg1-v2ray.sshkit.org
   udp: true
 - name: 🏁RELAY-104.26.8.179-2198
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 3a3e263d-223f-49cc-bbdb-f7e07a55e6fe
@@ -4086,7 +4086,7 @@ proxies:
       Host: by.6111.online
   udp: true
 - name: 🏁RELAY-104.26.8.179-2281
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 3a3e263d-223f-49cc-bbdb-f7e07a55e6fe
@@ -4101,7 +4101,7 @@ proxies:
       Host: ping.pe
   udp: true
 - name: 🏁RELAY-104.26.8.76-2350
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 0764a598-82c4-4b41-ba10-551a625beed5
@@ -4116,7 +4116,7 @@ proxies:
       Host: powerservice.com
   udp: true
 - name: 🏁RELAY-104.26.8.76-6694
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 0764a598-82c4-4b41-ba10-551a625beed5
@@ -4131,7 +4131,7 @@ proxies:
       Host: uk2.v2rayserv.com
   udp: true
 - name: 🏁RELAY-104.26.9.112-1651
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 8763e625-929a-43da-b7bf-7e7bc2e57615
@@ -4146,7 +4146,7 @@ proxies:
       Host: lv.awsbest.com
   udp: true
 - name: 🏁RELAY-104.26.9.74-1326
-  server: circles.asia
+  server: 104.22.5.240
   port: 2052
   type: vmess
   uuid: 6ad77d6b-7a45-4ed3-b65d-1c3ec0226603
@@ -4161,7 +4161,7 @@ proxies:
       Host: jpafzyhfsg3.yofnhkfc.xyz
   udp: true
 - name: 🏁RELAY-104.27.203.169-2553
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -4177,7 +4177,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-104.27.38.85-2549
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -4193,7 +4193,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-104.27.97.174-2554
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -4209,7 +4209,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-104.27.97.42-2550
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -4225,7 +4225,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-104.29.64.2-1481
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5
@@ -4240,7 +4240,7 @@ proxies:
       Host: fr2.cfcdn4.xyz
   udp: true
 - name: 🏁RELAY-104.29.64.25-6471
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
@@ -4255,7 +4255,7 @@ proxies:
       Host: lg30.cfcdn3.xyz
   udp: true
 - name: 🏁RELAY-104.29.64.30-6461
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: a2c5ba68-e86a-4959-b7f3-8f8801d6370e
@@ -4270,7 +4270,7 @@ proxies:
       Host: de1.kuainiao.buzz
   udp: true
 - name: 🏁RELAY-104.29.64.36-6463
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: a2c5ba68-e86a-4959-b7f3-8f8801d6370e
@@ -4285,7 +4285,7 @@ proxies:
       Host: de1.kuainiao.buzz
   udp: true
 - name: 🏁RELAY-104.29.64.5-6472
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: a1b16d10-4f43-4dd9-8c4f-52065b2b0910
@@ -4300,7 +4300,7 @@ proxies:
       Host: us3.guolicheng.cyou
   udp: true
 - name: 🏁RELAY-104.31.16.28-2538
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -4315,7 +4315,7 @@ proxies:
       Host: ca4.tehme2.fun
   udp: true
 - name: 🏁RELAY-104.31.16.46-2514
-  server: circles.asia
+  server: 104.22.5.240
   port: 2082
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -4330,7 +4330,7 @@ proxies:
       Host: ca5.tehme100.fun
   udp: true
 - name: 🏁RELAY-108.162.193.100-0132
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
@@ -4345,7 +4345,7 @@ proxies:
       Host: per-essex-patterns-bowling.trycloudflare.com
   udp: true
 - name: 🏁RELAY-108.162.193.100-2236
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
@@ -4360,7 +4360,7 @@ proxies:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
   udp: true
 - name: 🏁RELAY-141.101.114.100-1450
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933
@@ -4375,7 +4375,7 @@ proxies:
       Host: lg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-141.101.114.102-1460
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
@@ -4390,7 +4390,7 @@ proxies:
       Host: clash6.ssr-free.xyz
   udp: true
 - name: 🏁RELAY-141.101.114.111-1478
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5
@@ -4405,7 +4405,7 @@ proxies:
       Host: fr2.cfcdn4.xyz
   udp: true
 - name: 🏁RELAY-141.101.114.120-1452
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
@@ -4420,7 +4420,7 @@ proxies:
       Host: clash6.ssr-free.xyz
   udp: true
 - name: 🏁RELAY-141.101.114.120-6491
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 33aa57df-1c93-4318-9fce-e850437ee781
@@ -4435,7 +4435,7 @@ proxies:
       Host: lg1.cfcdn3.xyz
   udp: true
 - name: 🏁RELAY-141.101.114.121-1522
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5
@@ -4450,7 +4450,7 @@ proxies:
       Host: fr2.cfcdn4.xyz
   udp: true
 - name: 🏁RELAY-141.101.114.133-1499
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: fcfaec91-6096-44d8-956c-7868d9e874b1
@@ -4465,7 +4465,7 @@ proxies:
       Host: lg1.cfcdn1.xyz
   udp: true
 - name: 🏁RELAY-141.101.114.150-1454
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
@@ -4480,7 +4480,7 @@ proxies:
       Host: clash6.ssr-free.xyz
   udp: true
 - name: 🏁RELAY-141.101.114.17-1510
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
@@ -4495,7 +4495,7 @@ proxies:
       Host: clash6.ssr-free.xyz
   udp: true
 - name: 🏁RELAY-141.101.114.20-1489
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a
@@ -4510,7 +4510,7 @@ proxies:
       Host: clash1.trump2023.net
   udp: true
 - name: 🏁RELAY-141.101.114.25-1470
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
@@ -4525,7 +4525,7 @@ proxies:
       Host: lg30.cfcdn3.xyz
   udp: true
 - name: 🏁RELAY-141.101.114.30-1524
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
@@ -4540,7 +4540,7 @@ proxies:
       Host: lg1.trump2023.us
   udp: true
 - name: 🏁RELAY-141.101.114.31-1535
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
@@ -4555,7 +4555,7 @@ proxies:
       Host: oplg1.zhujicn2.com
   udp: true
 - name: 🏁RELAY-141.101.114.32-2296
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
@@ -4570,7 +4570,7 @@ proxies:
       Host: 141.101.114.32
   udp: true
 - name: 🏁RELAY-141.101.114.32-6394
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
@@ -4585,7 +4585,7 @@ proxies:
       Host: lg10.cfcdn1.xyz
   udp: true
 - name: 🏁RELAY-141.101.115.111-1500
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5
@@ -4600,7 +4600,7 @@ proxies:
       Host: fr2.cfcdn4.xyz
   udp: true
 - name: 🏁RELAY-141.101.115.120-1579
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
@@ -4615,7 +4615,7 @@ proxies:
       Host: clash6.ssr-free.xyz
   udp: true
 - name: 🏁RELAY-141.101.115.121-1467
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
@@ -4630,7 +4630,7 @@ proxies:
       Host: lg30.cfcdn3.xyz
   udp: true
 - name: 🏁RELAY-141.101.115.133-1496
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: fcfaec91-6096-44d8-956c-7868d9e874b1
@@ -4645,7 +4645,7 @@ proxies:
       Host: lg1.cfcdn1.xyz
   udp: true
 - name: 🏁RELAY-141.101.115.136-1501
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: fcfaec91-6096-44d8-956c-7868d9e874b1
@@ -4660,7 +4660,7 @@ proxies:
       Host: lg1.cfcdn1.xyz
   udp: true
 - name: 🏁RELAY-141.101.115.140-1493
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
@@ -4675,7 +4675,7 @@ proxies:
       Host: clash6.ssr-free.xyz
   udp: true
 - name: 🏁RELAY-141.101.115.160-1516
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
@@ -4690,7 +4690,7 @@ proxies:
       Host: clash6.ssr-free.xyz
   udp: true
 - name: 🏁RELAY-141.101.115.2-1136
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: a5ba8b2b-8fc5-4521-a35e-9281be61c1c3
@@ -4705,7 +4705,7 @@ proxies:
       Host: lg1.zhujicn2.com
   udp: true
 - name: 🏁RELAY-141.101.115.30-1552
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
@@ -4720,7 +4720,7 @@ proxies:
       Host: lg1.trump2023.us
   udp: true
 - name: 🏁RELAY-141.101.123.96-1289
-  server: circles.asia
+  server: 104.22.5.240
   port: 2082
   type: vmess
   uuid: 390b2bed-db19-45c1-9dbd-d42c987765e6
@@ -4735,7 +4735,7 @@ proxies:
       Host: cf-us4.fanqiecloud.top
   udp: true
 - name: 🏁RELAY-141.193.213.20-1531
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
@@ -4750,7 +4750,7 @@ proxies:
       Host: oplg1.zhujicn2.com
   udp: true
 - name: 🏁RELAY-141.193.213.20-2356
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a
@@ -4765,7 +4765,7 @@ proxies:
       Host: 141.193.213.20
   udp: true
 - name: 🏁RELAY-141.193.213.20-3170
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
@@ -4780,7 +4780,7 @@ proxies:
       Host: news.microsoft.com
   udp: true
 - name: 🏁RELAY-141.193.213.20-6341
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c
@@ -4795,7 +4795,7 @@ proxies:
       Host: fr1.trump2023.org
   udp: true
 - name: 🏁RELAY-141.193.213.20-6393
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a
@@ -4810,7 +4810,7 @@ proxies:
       Host: opfr1.v2rayfree1.xyz
   udp: true
 - name: 🏁RELAY-141.193.213.20-6695
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 0764a598-82c4-4b41-ba10-551a625beed5
@@ -4825,7 +4825,7 @@ proxies:
       Host: uk2.v2rayserv.com
   udp: true
 - name: 🏁RELAY-141.193.213.21-1079
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 615a1285-5848-42a1-9859-d4cb37b1fbd8
@@ -4841,7 +4841,7 @@ proxies:
       Host: news.microsoft.com
   udp: true
 - name: 🏁RELAY-141.193.213.21-1539
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
@@ -4856,7 +4856,7 @@ proxies:
       Host: oplg1.zhujicn2.com
   udp: true
 - name: 🏁RELAY-141.193.213.21-1644
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c
@@ -4871,7 +4871,7 @@ proxies:
       Host: fr1.trump2023.org
   udp: true
 - name: 🏁RELAY-141.193.213.21-2293
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 0764a598-82c4-4b41-ba10-551a625beed5
@@ -4886,7 +4886,7 @@ proxies:
       Host: news.microsoft.com
   udp: true
 - name: 🏁RELAY-141.193.213.21-2331
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c
@@ -4901,7 +4901,7 @@ proxies:
       Host: 141.193.213.21
   udp: true
 - name: 🏁RELAY-141.193.213.21-2411
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
@@ -4916,7 +4916,7 @@ proxies:
       Host: news.microsoft.com
   udp: true
 - name: 🏁RELAY-141.193.213.21-6373
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 781be00e-1e09-4e27-a464-e14197418c8f
@@ -4931,7 +4931,7 @@ proxies:
       Host: id5.v2rayserv.com
   udp: true
 - name: 🏁RELAY-141.193.213.21-6699
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 615a1285-5848-42a1-9859-d4cb37b1fbd8
@@ -4946,7 +4946,7 @@ proxies:
       Host: us.awsbest.com
   udp: true
 - name: 🏁RELAY-162.159.0.33-0879
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
@@ -4961,7 +4961,7 @@ proxies:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
   udp: true
 - name: 🏁RELAY-162.159.0.33-1405
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
@@ -4976,7 +4976,7 @@ proxies:
       Host: nest-emily-healing-h.trycloudflare.com
   udp: true
 - name: 🏁RELAY-162.159.1.33-0209
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
@@ -4991,7 +4991,7 @@ proxies:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
   udp: true
 - name: 🏁RELAY-162.159.1.33-0775
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
@@ -5006,7 +5006,7 @@ proxies:
       Host: nest-emily-healing-h.trycloudflare.com
   udp: true
 - name: 🏁RELAY-162.159.1.33-0918
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
@@ -5021,7 +5021,7 @@ proxies:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
   udp: true
 - name: 🏁RELAY-162.159.11.32-0837
-  server: circles.asia
+  server: 104.22.5.240
   port: 2052
   type: vmess
   uuid: 8e0fc6e0-1313-4767-b51c-5506680d534e
@@ -5036,7 +5036,7 @@ proxies:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
   udp: true
 - name: 🏁RELAY-162.159.11.32-0838
-  server: circles.asia
+  server: 104.22.5.240
   port: 2052
   type: vmess
   uuid: 8e0fc6e0-1313-4767-b51c-5506680d534e
@@ -5051,7 +5051,7 @@ proxies:
       Host: us3AJ8biuQx.fzbqfrse.xyz
   udp: true
 - name: 🏁RELAY-162.159.11.32-1318
-  server: circles.asia
+  server: 104.22.5.240
   port: 2052
   type: vmess
   uuid: 6ad77d6b-7a45-4ed3-b65d-1c3ec0226603
@@ -5066,7 +5066,7 @@ proxies:
       Host: us1cPZiz8nb.fzbqfrse.xyz
   udp: true
 - name: 🏁RELAY-162.159.11.32-3794
-  server: circles.asia
+  server: 104.22.5.240
   port: 2052
   type: vmess
   uuid: 8e0fc6e0-1313-4767-b51c-5506680d534e
@@ -5081,7 +5081,7 @@ proxies:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
   udp: true
 - name: 🏁RELAY-162.159.11.32-3802
-  server: circles.asia
+  server: 104.22.5.240
   port: 2052
   type: vmess
   uuid: 8e0fc6e0-1313-4767-b51c-5506680d534e
@@ -5096,7 +5096,7 @@ proxies:
       Host: us3AJ8biuQx.fzbqfrse.xyz
   udp: true
 - name: 🏁RELAY-162.159.128.7-6297
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8
@@ -5111,7 +5111,7 @@ proxies:
       Host: gcssjp.sylu.cyou
   udp: true
 - name: 🏁RELAY-162.159.128.7-6299
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
@@ -5126,7 +5126,7 @@ proxies:
       Host: hk.sharecentre.online
   udp: true
 - name: 🏁RELAY-162.159.13.8-2512
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 1F7C900A-6AD7-41CF-A37E-85873E566C40
@@ -5142,7 +5142,7 @@ proxies:
       Host: Kansas.gafn.online
   udp: true
 - name: 🏁RELAY-162.159.130.208-0215
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 55021a7c-bd6c-418e-be95-ceac8ba27b45
@@ -5157,7 +5157,7 @@ proxies:
       Host: widescreen-instruction-breakdown-postage.trycloudflare.com
   udp: true
 - name: 🏁RELAY-162.159.130.208-0931
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 55021a7c-bd6c-418e-be95-ceac8ba27b45
@@ -5172,7 +5172,7 @@ proxies:
       Host: widescreen-instruction-breakdown-postage.trycloudflare.com
   udp: true
 - name: 🏁RELAY-162.159.130.234-2539
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -5188,7 +5188,7 @@ proxies:
       Host: octavi.cfd
   udp: true
 - name: 🏁RELAY-162.159.133.169-1503
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 8d0bbf13-e1ef-419d-b054-20815774233b
@@ -5203,7 +5203,7 @@ proxies:
       Host: hinet.guolicheng.cyou
   udp: true
 - name: 🏁RELAY-162.159.134.23-0226
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
@@ -5218,7 +5218,7 @@ proxies:
       Host: championship-bidding-oxygen-brochure.trycloudflare.com
   udp: true
 - name: 🏁RELAY-162.159.134.23-0953
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
@@ -5233,7 +5233,7 @@ proxies:
       Host: championship-bidding-oxygen-brochure.trycloudflare.com
   udp: true
 - name: 🏁RELAY-162.159.135.232-8950
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
@@ -5248,7 +5248,7 @@ proxies:
       Host: discord.com
   udp: true
 - name: 🏁RELAY-162.159.135.42-6350
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4
@@ -5263,7 +5263,7 @@ proxies:
       Host: la.awsbest.com
   udp: true
 - name: 🏁RELAY-162.159.135.42-6354
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8
@@ -5278,7 +5278,7 @@ proxies:
       Host: gcsde.sylu.cyou
   udp: true
 - name: 🏁RELAY-162.159.135.42-6356
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a
@@ -5293,7 +5293,7 @@ proxies:
       Host: opfr1.v2rayfree1.xyz
   udp: true
 - name: 🏁RELAY-162.159.135.42-6358
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8
@@ -5308,7 +5308,7 @@ proxies:
       Host: gcoresg.sylu.cyou
   udp: true
 - name: 🏁RELAY-162.159.136.234-2505
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -5324,7 +5324,7 @@ proxies:
       Host: octavi.cfd
   udp: true
 - name: 🏁RELAY-162.159.136.253-1374
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: ade73e62-7554-40a8-9314-195a372bae28
@@ -5339,7 +5339,7 @@ proxies:
       Host: xentain.kmoljklj.top
   udp: true
 - name: 🏁RELAY-162.159.137.232-8949
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 824c58b1-65ba-4680-a609-663a000dbb92
@@ -5354,7 +5354,7 @@ proxies:
       Host: discord.com
   udp: true
 - name: 🏁RELAY-162.159.152.2-6306
-  server: circles.asia
+  server: 104.22.5.240
   port: 2086
   type: vmess
   uuid: 75f51c8f-4045-4e58-bd94-598df26e6bfc
@@ -5369,7 +5369,7 @@ proxies:
       Host: indo.cloudflare.quest
   udp: true
 - name: 🏁RELAY-162.159.153.2-6295
-  server: circles.asia
+  server: 104.22.5.240
   port: 2086
   type: vmess
   uuid: 00bcc99b-7dc1-4dba-a4c4-ccb46dbd72a2
@@ -5384,7 +5384,7 @@ proxies:
       Host: waw.cloudflare.quest
   udp: true
 - name: 🏁RELAY-162.159.2.9-0222
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
@@ -5399,7 +5399,7 @@ proxies:
       Host: per-essex-patterns-bowling.trycloudflare.com
   udp: true
 - name: 🏁RELAY-162.159.2.9-0800
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
@@ -5414,7 +5414,7 @@ proxies:
       Host: larger-marketing-amounts-skin.trycloudflare.com
   udp: true
 - name: 🏁RELAY-162.159.2.9-0871
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: ef8c954e-014f-4b36-8273-9b5086afab34
@@ -5429,7 +5429,7 @@ proxies:
       Host: bibliographic-sword-sequence-advertisers.trycloudflare.com
   udp: true
 - name: 🏁RELAY-162.159.240.99-3684
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
@@ -5444,7 +5444,7 @@ proxies:
       Host: eu3.openxai.link
   udp: true
 - name: 🏁RELAY-162.159.246.214-3683
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c
@@ -5459,7 +5459,7 @@ proxies:
       Host: eu2.openxai.link
   udp: true
 - name: 🏁RELAY-162.159.4.8-0208
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
@@ -5474,7 +5474,7 @@ proxies:
       Host: larger-marketing-amounts-skin.trycloudflare.com
   udp: true
 - name: 🏁RELAY-162.159.5.6-0943
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
@@ -5489,7 +5489,7 @@ proxies:
       Host: per-essex-patterns-bowling.trycloudflare.com
   udp: true
 - name: 🏁RELAY-162.159.7.226-0117
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
@@ -5504,7 +5504,7 @@ proxies:
       Host: yh1.dtku41.xyz
   udp: true
 - name: 🏁RELAY-162.251.82.64-2480
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -5520,7 +5520,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-172.64.128.63-3682
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194
@@ -5535,7 +5535,7 @@ proxies:
       Host: eu1.openxai.link
   udp: true
 - name: 🏁RELAY-172.64.141.75-3589
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 6fea1649-425b-4092-bf53-29792152c925
@@ -5550,7 +5550,7 @@ proxies:
       Host: uicdn.cf
   udp: true
 - name: 🏁RELAY-172.64.141.75-5688
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
@@ -5565,7 +5565,7 @@ proxies:
       Host: uicdn.cf
   udp: true
 - name: 🏁RELAY-172.64.144.100-1132
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 6e9217de-ad7e-4a67-bd17-a6dca951733b
@@ -5580,7 +5580,7 @@ proxies:
       Host: lg3.zhujicn2.com
   udp: true
 - name: 🏁RELAY-172.64.144.200-2544
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -5596,7 +5596,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-172.64.146.48-8976
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: be74ca03-6a7c-4c88-edc2-c6434ead0cfa
@@ -5611,7 +5611,7 @@ proxies:
       Host: bluehost.com
   udp: true
 - name: 🏁RELAY-172.64.147.71-6243
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 3eadc957-f6d5-3a3b-9289-c985ef4c8322
@@ -5626,7 +5626,7 @@ proxies:
       Host: testgroup2.091.se
   udp: true
 - name: 🏁RELAY-172.64.150.170-1521
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 65218fe8-d9c2-4e07-95bb-cb6e379a440b
@@ -5641,7 +5641,7 @@ proxies:
       Host: 001frg.pages.dev
   udp: true
 - name: 🏁RELAY-172.64.150.2-2506
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -5657,7 +5657,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-172.64.152.150-1466
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
@@ -5672,7 +5672,7 @@ proxies:
       Host: clash6.ssr-free.xyz
   udp: true
 - name: 🏁RELAY-172.64.153.150-1133
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: bf4619e4-01dc-48ca-be08-0976b54968ce
@@ -5687,7 +5687,7 @@ proxies:
       Host: lg5.zhujicn2.com
   udp: true
 - name: 🏁RELAY-172.64.154.102-1479
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
@@ -5702,7 +5702,7 @@ proxies:
       Host: clash6.ssr-free.xyz
   udp: true
 - name: 🏁RELAY-172.64.154.107-2545
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -5718,7 +5718,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-172.64.154.150-1508
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
@@ -5733,7 +5733,7 @@ proxies:
       Host: clash6.ssr-free.xyz
   udp: true
 - name: 🏁RELAY-172.64.154.155-1483
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
@@ -5748,7 +5748,7 @@ proxies:
       Host: clash6.ssr-free.xyz
   udp: true
 - name: 🏁RELAY-172.64.154.222-1488
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: fcfaec91-6096-44d8-956c-7868d9e874b1
@@ -5763,7 +5763,7 @@ proxies:
       Host: lg1.cfcdn1.xyz
   udp: true
 - name: 🏁RELAY-172.64.155.200-1140
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4
@@ -5778,7 +5778,7 @@ proxies:
       Host: lg4.zhujicn2.com
   udp: true
 - name: 🏁RELAY-172.64.161.60-1287
-  server: circles.asia
+  server: 104.22.5.240
   port: 2052
   type: vmess
   uuid: 6ad77d6b-7a45-4ed3-b65d-1c3ec0226603
@@ -5793,7 +5793,7 @@ proxies:
       Host: us1cPZiz8nb.fzbqfrse.xyz
   udp: true
 - name: 🏁RELAY-172.64.163.13-0490
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 65ae35d1-01b8-42e4-8373-00d01623c6ed
@@ -5808,7 +5808,7 @@ proxies:
       Host: icu.mac2win.top
   udp: true
 - name: 🏁RELAY-172.64.169.171-1229
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
@@ -5823,7 +5823,7 @@ proxies:
       Host: de11.xn--mes53ddysu0o3gl.top
   udp: true
 - name: 🏁RELAY-172.64.33.100-0892
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
@@ -5838,7 +5838,7 @@ proxies:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
   udp: true
 - name: 🏁RELAY-172.64.33.100-1099
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
@@ -5853,7 +5853,7 @@ proxies:
       Host: yh2.freeh1.xyz
   udp: true
 - name: 🏁RELAY-172.64.80.1-0150
-  server: circles.asia
+  server: 104.22.5.240
   port: 2083
   type: vmess
   uuid: 1016cbc0-03c2-4e11-b590-296b01f269ac
@@ -5869,7 +5869,7 @@ proxies:
       Host: nine.b4a-devs.org
   udp: true
 - name: 🏁RELAY-172.64.80.1-0195
-  server: circles.asia
+  server: 104.22.5.240
   port: 8443
   type: vmess
   uuid: b33155f0-7429-4f1c-97c4-a9ba24a3b1cf
@@ -5884,7 +5884,7 @@ proxies:
       Host: kp.funhub.cc
   udp: true
 - name: 🏁RELAY-172.64.80.1-1398
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -5899,7 +5899,7 @@ proxies:
       Host: yhnsb3.shabijichang.com
   udp: true
 - name: 🏁RELAY-172.64.80.1-1471
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
@@ -5914,7 +5914,7 @@ proxies:
       Host: surongwei.eu.org
   udp: true
 - name: 🏁RELAY-172.64.80.1-2561
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590
@@ -5929,7 +5929,7 @@ proxies:
       Host: cc2.shabijichang.com
   udp: true
 - name: 🏁RELAY-172.64.80.1-6902
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -5944,7 +5944,7 @@ proxies:
       Host: mm2.shabijichang.com
   udp: true
 - name: 🏁RELAY-172.64.81.13-0929
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
@@ -5959,7 +5959,7 @@ proxies:
       Host: eu3.openxai.link
   udp: true
 - name: 🏁RELAY-172.66.213.84-8872
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
@@ -5974,7 +5974,7 @@ proxies:
       Host: ns1.v2-vip.fun
   udp: true
 - name: 🏁RELAY-172.66.213.88-8873
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
@@ -5989,7 +5989,7 @@ proxies:
       Host: ns1.v2-vip.fun
   udp: true
 - name: 🏁RELAY-172.66.40.10-1449
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e
@@ -6004,7 +6004,7 @@ proxies:
       Host: 38.72img.xyz
   udp: true
 - name: 🏁RELAY-172.66.40.114-6700
-  server: circles.asia
+  server: 104.22.5.240
   port: 2086
   type: vmess
   uuid: c2a55def-e91e-4132-c504-0f276c4c3a1e
@@ -6019,7 +6019,7 @@ proxies:
       Host: br.cloudflare.quest
   udp: true
 - name: 🏁RELAY-172.66.43.1-1456
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e
@@ -6034,7 +6034,7 @@ proxies:
       Host: 38.72img.xyz
   udp: true
 - name: 🏁RELAY-172.66.43.142-2344
-  server: circles.asia
+  server: 104.22.5.240
   port: 2086
   type: vmess
   uuid: c2a55def-e91e-4132-c504-0f276c4c3a1e
@@ -6049,7 +6049,7 @@ proxies:
       Host: RACKNERD.COM
   udp: true
 - name: 🏁RELAY-172.66.44.197-1631
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: fa4cb529-3ac9-4268-bb04-ed4253813508
@@ -6064,7 +6064,7 @@ proxies:
       Host: d.pgypgykmoljklj.xyz
   udp: true
 - name: 🏁RELAY-172.67.110.134-0124
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
@@ -6079,7 +6079,7 @@ proxies:
       Host: yh3.freeh1.xyz
   udp: true
 - name: 🏁RELAY-172.67.110.134-0771
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
@@ -6094,7 +6094,7 @@ proxies:
       Host: nest-emily-healing-h.trycloudflare.com
   udp: true
 - name: 🏁RELAY-172.67.110.134-1185
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 05b06b66-f860-40d9-8186-0ce8cbdc814b
@@ -6109,7 +6109,7 @@ proxies:
       Host: us11.xn--mes53ddysu0o3gl.top
   udp: true
 - name: 🏁RELAY-172.67.110.134-1186
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 05b06b66-f860-40d9-8186-0ce8cbdc814b
@@ -6124,7 +6124,7 @@ proxies:
       Host: de11.xn--mes53ddysu0o3gl.top
   udp: true
 - name: 🏁RELAY-172.67.110.134-1211
-  server: circles.asia
+  server: 104.22.5.240
   port: 2052
   type: vmess
   uuid: a72196df-d41a-4bc7-89a7-b2d173106eb2
@@ -6139,7 +6139,7 @@ proxies:
       Host: asdfas.qkhbyf.tech
   udp: true
 - name: 🏁RELAY-172.67.125.28-1474
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e
@@ -6154,7 +6154,7 @@ proxies:
       Host: 38.72img.xyz
   udp: true
 - name: 🏁RELAY-172.67.130.140-0225
-  server: circles.asia
+  server: 104.22.5.240
   port: 2082
   type: vmess
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
@@ -6169,7 +6169,7 @@ proxies:
       Host: s1c.v2.v001sss.xyz
   udp: true
 - name: 🏁RELAY-172.67.131.150-0860
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -6185,7 +6185,7 @@ proxies:
       Host: oliv.beauty
   udp: true
 - name: 🏁RELAY-172.67.131.150-2518
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -6201,7 +6201,7 @@ proxies:
       Host: oliv.beauty
   udp: true
 - name: 🏁RELAY-172.67.131.245-8860
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 0b65bb06-6b28-487a-8e3c-820dda51e977
@@ -6216,7 +6216,7 @@ proxies:
       Host: series-v1.samanehha.co
   udp: true
 - name: 🏁RELAY-172.67.131.245-8863
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 0b65bb06-6b28-487a-8e3c-820dda51e977
@@ -6231,7 +6231,7 @@ proxies:
       Host: series-v1.samanehha.co
   udp: true
 - name: 🏁RELAY-172.67.133.78-1589
-  server: circles.asia
+  server: 104.22.5.240
   port: 2083
   type: vmess
   uuid: c28ba523-64d3-4059-a9b7-a5f0f74527f7
@@ -6246,7 +6246,7 @@ proxies:
       Host: v2ray.ibgfw.top
   udp: true
 - name: 🏁RELAY-172.67.135.195-8980
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
@@ -6261,7 +6261,7 @@ proxies:
       Host: b2n.ir
   udp: true
 - name: 🏁RELAY-172.67.135.55-1619
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -6276,7 +6276,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-172.67.136.12-1163
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
@@ -6291,7 +6291,7 @@ proxies:
       Host: www.ywnouvbale.biz
   udp: true
 - name: 🏁RELAY-172.67.136.12-2090
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
@@ -6306,7 +6306,7 @@ proxies:
       Host: www.ywnouvbale.biz
   udp: true
 - name: 🏁RELAY-172.67.142.191-0852
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -6322,7 +6322,7 @@ proxies:
       Host: edeen.makeup
   udp: true
 - name: 🏁RELAY-172.67.142.191-2508
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -6338,7 +6338,7 @@ proxies:
       Host: edeen.makeup
   udp: true
 - name: 🏁RELAY-172.67.143.192-0218
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
@@ -6353,7 +6353,7 @@ proxies:
       Host: www.velvetmountain.shop
   udp: true
 - name: 🏁RELAY-172.67.143.74-1129
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: A9A56660-4554-4278-863A-D3CE30294B59
@@ -6368,7 +6368,7 @@ proxies:
       Host: pure.daycat.space
   udp: true
 - name: 🏁RELAY-172.67.145.166-1607
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -6383,7 +6383,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-172.67.147.168-8803
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: d3a24be8-c847-4c7f-ba32-8dd6e79e52b2
@@ -6398,7 +6398,7 @@ proxies:
       Host: www.sttlink.cc
   udp: true
 - name: 🏁RELAY-172.67.150.250-0128
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 22a13aa2-4854-44cb-e090-ec71ab84b1ff
@@ -6413,7 +6413,7 @@ proxies:
       Host: cloudflare.cfgo.cc
   udp: true
 - name: 🏁RELAY-172.67.150.250-0182
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
@@ -6428,7 +6428,7 @@ proxies:
       Host: nest-emily-healing-h.trycloudflare.com
   udp: true
 - name: 🏁RELAY-172.67.150.250-0818
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
@@ -6443,7 +6443,7 @@ proxies:
       Host: larger-marketing-amounts-skin.trycloudflare.com
   udp: true
 - name: 🏁RELAY-172.67.150.250-0865
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: ef8c954e-014f-4b36-8273-9b5086afab34
@@ -6458,7 +6458,7 @@ proxies:
       Host: bibliographic-sword-sequence-advertisers.trycloudflare.com
   udp: true
 - name: 🏁RELAY-172.67.150.250-1062
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
@@ -6474,7 +6474,7 @@ proxies:
       Host: cf-lt.sharecentre.online
   udp: true
 - name: 🏁RELAY-172.67.150.250-1210
-  server: circles.asia
+  server: 104.22.5.240
   port: 2052
   type: vmess
   uuid: a72196df-d41a-4bc7-89a7-b2d173106eb2
@@ -6489,7 +6489,7 @@ proxies:
       Host: spikehk.cxzntq.tech
   udp: true
 - name: 🏁RELAY-172.67.150.250-1632
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 6c46e17d-4f90-4fda-8484-98f192524bc7
@@ -6504,7 +6504,7 @@ proxies:
       Host: ssrsub.v10.asuka.buzz
   udp: true
 - name: 🏁RELAY-172.67.152.214-0786
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -6520,7 +6520,7 @@ proxies:
       Host: meroiy.icu
   udp: true
 - name: 🏁RELAY-172.67.155.82-0157
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -6536,7 +6536,7 @@ proxies:
       Host: kristin.makeup
   udp: true
 - name: 🏁RELAY-172.67.156.22-0210
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
@@ -6551,7 +6551,7 @@ proxies:
       Host: larger-marketing-amounts-skin.trycloudflare.com
   udp: true
 - name: 🏁RELAY-172.67.156.22-0214
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 22a13aa2-4854-44cb-e090-ec71ab84b1ff
@@ -6566,7 +6566,7 @@ proxies:
       Host: wap.hostmjj.com
   udp: true
 - name: 🏁RELAY-172.67.156.22-0876
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
@@ -6581,7 +6581,7 @@ proxies:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
   udp: true
 - name: 🏁RELAY-172.67.164.125-1624
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -6596,7 +6596,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-172.67.164.184-7007
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -6612,7 +6612,7 @@ proxies:
       Host: alvvin.click
   udp: true
 - name: 🏁RELAY-172.67.166.170-0787
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -6628,7 +6628,7 @@ proxies:
       Host: irene.lat
   udp: true
 - name: 🏁RELAY-172.67.168.34-0758
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -6644,7 +6644,7 @@ proxies:
       Host: marien.motorcycles
   udp: true
 - name: 🏁RELAY-172.67.169.131-1530
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -6659,7 +6659,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-172.67.169.158-0111
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0
@@ -6674,7 +6674,7 @@ proxies:
       Host: de-01.cloudlion.me
   udp: true
 - name: 🏁RELAY-172.67.169.245-0191
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 60f12435-bb55-4da2-cb7d-4fea34ecfa37
@@ -6689,7 +6689,7 @@ proxies:
       Host: us65.netfilx.live
   udp: true
 - name: 🏁RELAY-172.67.170.169-1520
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 6fb9a750-55b8-4e6e-857b-242b795399dc
@@ -6704,7 +6704,7 @@ proxies:
       Host: buyvm.imkcp.eu.org
   udp: true
 - name: 🏁RELAY-172.67.171.175-1320
-  server: circles.asia
+  server: 104.22.5.240
   port: 2087
   type: vmess
   uuid: 8ad792bd-c4ea-460f-c015-8e05ec5bc968
@@ -6719,7 +6719,7 @@ proxies:
       Host: rw.b4a-devs.org
   udp: true
 - name: 🏁RELAY-172.67.171.244-8907
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: b15ee8ec-0b0e-4ce2-b35c-f4be265ba217
@@ -6734,7 +6734,7 @@ proxies:
       Host: ip.saintink.eu.org
   udp: true
 - name: 🏁RELAY-172.67.171.244-8908
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: d4b6f48f-7474-44dc-9492-8fa3f63db887
@@ -6749,7 +6749,7 @@ proxies:
       Host: ip.saintink.eu.org
   udp: true
 - name: 🏁RELAY-172.67.178.127-1643
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 26b5fbcf-d199-407e-e8bf-96d7489d247d
@@ -6764,7 +6764,7 @@ proxies:
       Host: en1.wanwushenghua.me
   udp: true
 - name: 🏁RELAY-172.67.178.55-6088
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 0145bfef-aa53-416f-90d4-8634295dab57
@@ -6780,7 +6780,7 @@ proxies:
       Host: www.aoopmiss.cf
   udp: true
 - name: 🏁RELAY-172.67.183.110-0170
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -6796,7 +6796,7 @@ proxies:
       Host: waynn.makeup
   udp: true
 - name: 🏁RELAY-172.67.183.110-0846
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -6812,7 +6812,7 @@ proxies:
       Host: waynn.makeup
   udp: true
 - name: 🏁RELAY-172.67.183.110-0857
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -6827,7 +6827,7 @@ proxies:
       Host: waynn.makeup
   udp: true
 - name: 🏁RELAY-172.67.183.26-1319
-  server: circles.asia
+  server: 104.22.5.240
   port: 8443
   type: vmess
   uuid: b33155f0-7429-4f1c-97c4-a9ba24a3b1cf
@@ -6842,7 +6842,7 @@ proxies:
       Host: hk-b.funhub.cc
   udp: true
 - name: 🏁RELAY-172.67.183.35-1485
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e
@@ -6857,7 +6857,7 @@ proxies:
       Host: 38.72img.xyz
   udp: true
 - name: 🏁RELAY-172.67.184.13-6889
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -6872,7 +6872,7 @@ proxies:
       Host: wnd3.shabijichang.com
   udp: true
 - name: 🏁RELAY-172.67.184.13-6908
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -6887,7 +6887,7 @@ proxies:
       Host: asb2.shabijichang.com
   udp: true
 - name: 🏁RELAY-172.67.184.13-6910
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -6902,7 +6902,7 @@ proxies:
       Host: mm3.shabijichang.com
   udp: true
 - name: 🏁RELAY-172.67.190.140-0352
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 424afb77-4724-4ddc-f4c0-35de9c2239f5
@@ -6917,7 +6917,7 @@ proxies:
       Host: vfly4.win
   udp: true
 - name: 🏁RELAY-172.67.190.72-3126
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 05ab5fed-281d-4882-c29c-3c6dc8434fb0
@@ -6932,7 +6932,7 @@ proxies:
       Host: cf.515188.xyz
   udp: true
 - name: 🏁RELAY-172.67.193.36-0190
-  server: circles.asia
+  server: 104.22.5.240
   port: 2053
   type: vmess
   uuid: ead55026-8af4-4731-a2bf-1926185f4be7
@@ -6948,7 +6948,7 @@ proxies:
       Host: nl1-vmess.realssh.xyz
   udp: true
 - name: 🏁RELAY-172.67.196.0-1153
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 4db99e96-3ee3-419c-b1fb-856975801380
@@ -6963,7 +6963,7 @@ proxies:
       Host: localhoster.ml
   udp: true
 - name: 🏁RELAY-172.67.196.110-0168
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -6979,7 +6979,7 @@ proxies:
       Host: kellie.makeup
   udp: true
 - name: 🏁RELAY-172.67.196.110-0848
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -6994,7 +6994,7 @@ proxies:
       Host: kellie.makeup
   udp: true
 - name: 🏁RELAY-172.67.196.112-0201
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -7010,7 +7010,7 @@ proxies:
       Host: kellie.makeup
   udp: true
 - name: 🏁RELAY-172.67.196.112-0854
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -7026,7 +7026,7 @@ proxies:
       Host: kellie.makeup
   udp: true
 - name: 🏁RELAY-172.67.197.82-0853
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -7041,7 +7041,7 @@ proxies:
       Host: odelia.autos
   udp: true
 - name: 🏁RELAY-172.67.197.82-7004
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -7056,7 +7056,7 @@ proxies:
       Host: odelia.autos
   udp: true
 - name: 🏁RELAY-172.67.199.34-1564
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
@@ -7071,7 +7071,7 @@ proxies:
       Host: lu.sharecentre.online
   udp: true
 - name: 🏁RELAY-172.67.199.34-2338
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c
@@ -7086,7 +7086,7 @@ proxies:
       Host: hohm.microsoft.com
   udp: true
 - name: 🏁RELAY-172.67.199.34-6291
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8
@@ -7101,7 +7101,7 @@ proxies:
       Host: gcssg.sylu.cyou
   udp: true
 - name: 🏁RELAY-172.67.199.34-6304
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4
@@ -7116,7 +7116,7 @@ proxies:
       Host: la.awsbest.com
   udp: true
 - name: 🏁RELAY-172.67.199.34-6342
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 6fea1649-425b-4092-bf53-29792152c925
@@ -7131,7 +7131,7 @@ proxies:
       Host: us-lb.sshkit.org
   udp: true
 - name: 🏁RELAY-172.67.199.34-6344
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda
@@ -7146,7 +7146,7 @@ proxies:
       Host: lu1.gogogoo.cyou
   udp: true
 - name: 🏁RELAY-172.67.199.34-6357
-  server: circles.asia
+  server: 104.22.5.240
   port: 2053
   type: vmess
   uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
@@ -7161,7 +7161,7 @@ proxies:
       Host: foxdeovz1.fovi.tk
   udp: true
 - name: 🏁RELAY-172.67.199.34-6362
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
@@ -7176,7 +7176,7 @@ proxies:
       Host: lvryzenkvm1gb.sharecentre.online
   udp: true
 - name: 🏁RELAY-172.67.199.34-6363
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 8763e625-929a-43da-b7bf-7e7bc2e57615
@@ -7191,7 +7191,7 @@ proxies:
       Host: lv.awsbest.com
   udp: true
 - name: 🏁RELAY-172.67.199.34-6364
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 6fea1649-425b-4092-bf53-29792152c925
@@ -7206,7 +7206,7 @@ proxies:
       Host: us-lb.sshkit.org
   udp: true
 - name: 🏁RELAY-172.67.199.34-6368
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 3f52e850-b697-4f61-c82c-6d1ca0e6d1b1
@@ -7221,7 +7221,7 @@ proxies:
       Host: 51vfly1.win
   udp: true
 - name: 🏁RELAY-172.67.199.34-6370
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8
@@ -7236,7 +7236,7 @@ proxies:
       Host: gcorehk.sylu.cyou
   udp: true
 - name: 🏁RELAY-172.67.199.34-6371
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8
@@ -7251,7 +7251,7 @@ proxies:
       Host: gcoresgg.sylu.cyou
   udp: true
 - name: 🏁RELAY-172.67.199.34-6372
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 781be00e-1e09-4e27-a464-e14197418c8f
@@ -7266,7 +7266,7 @@ proxies:
       Host: id5.v2rayserv.com
   udp: true
 - name: 🏁RELAY-172.67.199.34-6374
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8
@@ -7281,7 +7281,7 @@ proxies:
       Host: gcsssg.sylu.cyou
   udp: true
 - name: 🏁RELAY-172.67.199.34-6375
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 6fea1649-425b-4092-bf53-29792152c925
@@ -7296,7 +7296,7 @@ proxies:
       Host: us-lb.sshkit.org
   udp: true
 - name: 🏁RELAY-172.67.199.34-6387
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
@@ -7311,7 +7311,7 @@ proxies:
       Host: sg-gcore.sharecentre.online
   udp: true
 - name: 🏁RELAY-172.67.199.34-6396
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
@@ -7326,7 +7326,7 @@ proxies:
       Host: lg1.trump2023.us
   udp: true
 - name: 🏁RELAY-172.67.199.34-6691
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c
@@ -7341,7 +7341,7 @@ proxies:
       Host: fr1.trump2023.org
   udp: true
 - name: 🏁RELAY-172.67.200.30-1156
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 3fad3b4c-8691-42f2-a46d-9875cacaeeb2
@@ -7356,7 +7356,7 @@ proxies:
       Host: linode.sharecentre.xyz
   udp: true
 - name: 🏁RELAY-172.67.201.14-1635
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -7371,7 +7371,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-172.67.204.84-8894
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
@@ -7386,7 +7386,7 @@ proxies:
       Host: mci.bamarambash.monster
   udp: true
 - name: 🏁RELAY-172.67.207.114-0761
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -7402,7 +7402,7 @@ proxies:
       Host: ophelia.mom
   udp: true
 - name: 🏁RELAY-172.67.207.114-0777
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -7418,7 +7418,7 @@ proxies:
       Host: ophelia.mom
   udp: true
 - name: 🏁RELAY-172.67.207.114-2498
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -7434,7 +7434,7 @@ proxies:
       Host: ophelia.mom
   udp: true
 - name: 🏁RELAY-172.67.207.114-7008
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -7450,7 +7450,7 @@ proxies:
       Host: ophelia.mom
   udp: true
 - name: 🏁RELAY-172.67.207.209-1636
-  server: circles.asia
+  server: 104.22.5.240
   port: 2082
   type: vmess
   uuid: 082122a2-8479-4089-82f0-f32ba5fc5426
@@ -7465,7 +7465,7 @@ proxies:
       Host: hao.huaqian.icu
   udp: true
 - name: 🏁RELAY-172.67.214.33-0200
-  server: circles.asia
+  server: 104.22.5.240
   port: 2052
   type: vmess
   uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16
@@ -7480,7 +7480,7 @@ proxies:
       Host: onea.flha.ru
   udp: true
 - name: 🏁RELAY-172.67.215.202-0855
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -7496,7 +7496,7 @@ proxies:
       Host: octavi.cfd
   udp: true
 - name: 🏁RELAY-172.67.215.202-2487
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -7512,7 +7512,7 @@ proxies:
       Host: octavi.cfd
   udp: true
 - name: 🏁RELAY-172.67.218.162-1152
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 70d9bf20-3e6b-4cd3-ff28-b62567ff5a23
@@ -7527,7 +7527,7 @@ proxies:
       Host: eu.ptuu.tk
   udp: true
 - name: 🏁RELAY-172.67.219.141-1256
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 9ad49ff7-de2d-3b71-af59-9ca1d47a174b
@@ -7542,7 +7542,7 @@ proxies:
       Host: backcn.rmanluo.top
   udp: true
 - name: 🏁RELAY-172.67.219.141-1257
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 9ad49ff7-de2d-3b71-af59-9ca1d47a174b
@@ -7557,7 +7557,7 @@ proxies:
       Host: mel.rmanluo.top
   udp: true
 - name: 🏁RELAY-172.67.222.27-6100
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
@@ -7572,7 +7572,7 @@ proxies:
       Host: sg-gcore.sharecentre.online
   udp: true
 - name: 🏁RELAY-172.67.222.27-6101
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
@@ -7587,7 +7587,7 @@ proxies:
       Host: lvryzenkvm1gb.sharecentre.online
   udp: true
 - name: 🏁RELAY-172.67.222.27-8968
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 4a47e680-d860-4e63-9fa6-813857fb0f42
@@ -7602,7 +7602,7 @@ proxies:
       Host: cf-lt.sharecentre.online
   udp: true
 - name: 🏁RELAY-172.67.222.46-2287
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 6fea1649-425b-4092-bf53-29792152c925
@@ -7617,7 +7617,7 @@ proxies:
       Host: 172.67.222.46
   udp: true
 - name: 🏁RELAY-172.67.222.46-6677
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 6fea1649-425b-4092-bf53-29792152c925
@@ -7632,7 +7632,7 @@ proxies:
       Host: us-lb.sshkit.org
   udp: true
 - name: 🏁RELAY-172.67.228.200-6099
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
@@ -7647,7 +7647,7 @@ proxies:
       Host: lu.sharecentre.online
   udp: true
 - name: 🏁RELAY-172.67.228.200-6102
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
@@ -7662,7 +7662,7 @@ proxies:
       Host: us-dp.sharecentre.online
   udp: true
 - name: 🏁RELAY-172.67.229.13-0950
-  server: circles.asia
+  server: 104.22.5.240
   port: 2086
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -7677,7 +7677,7 @@ proxies:
       Host: ca6.tehme100.fun
   udp: true
 - name: 🏁RELAY-172.67.229.13-2483
-  server: circles.asia
+  server: 104.22.5.240
   port: 8880
   type: vmess
   uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb
@@ -7692,7 +7692,7 @@ proxies:
       Host: fr7.tehme100.fun
   udp: true
 - name: 🏁RELAY-172.67.229.13-2524
-  server: circles.asia
+  server: 104.22.5.240
   port: 2086
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -7707,7 +7707,7 @@ proxies:
       Host: ca6.tehme100.fun
   udp: true
 - name: 🏁RELAY-172.67.229.25-2494
-  server: circles.asia
+  server: 104.22.5.240
   port: 8880
   type: vmess
   uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb
@@ -7722,7 +7722,7 @@ proxies:
       Host: fr7.tehme100.fun
   udp: true
 - name: 🏁RELAY-172.67.229.25-2509
-  server: circles.asia
+  server: 104.22.5.240
   port: 2086
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -7737,7 +7737,7 @@ proxies:
       Host: ca6.tehme100.fun
   udp: true
 - name: 🏁RELAY-172.67.229.28-2490
-  server: circles.asia
+  server: 104.22.5.240
   port: 8880
   type: vmess
   uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb
@@ -7752,7 +7752,7 @@ proxies:
       Host: fr7.tehme100.fun
   udp: true
 - name: 🏁RELAY-172.67.229.29-2522
-  server: circles.asia
+  server: 104.22.5.240
   port: 8880
   type: vmess
   uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb
@@ -7767,7 +7767,7 @@ proxies:
       Host: fr7.tehme100.fun
   udp: true
 - name: 🏁RELAY-172.67.229.31-2476
-  server: circles.asia
+  server: 104.22.5.240
   port: 8880
   type: vmess
   uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb
@@ -7782,7 +7782,7 @@ proxies:
       Host: fr7.tehme100.fun
   udp: true
 - name: 🏁RELAY-172.67.229.33-0920
-  server: circles.asia
+  server: 104.22.5.240
   port: 2086
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -7797,7 +7797,7 @@ proxies:
       Host: ca6.tehme100.fun
   udp: true
 - name: 🏁RELAY-172.67.229.33-2493
-  server: circles.asia
+  server: 104.22.5.240
   port: 2086
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -7812,7 +7812,7 @@ proxies:
       Host: ca6.tehme100.fun
   udp: true
 - name: 🏁RELAY-172.67.229.34-2529
-  server: circles.asia
+  server: 104.22.5.240
   port: 2086
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -7827,7 +7827,7 @@ proxies:
       Host: ca6.tehme100.fun
   udp: true
 - name: 🏁RELAY-172.67.229.35-2485
-  server: circles.asia
+  server: 104.22.5.240
   port: 2086
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -7842,7 +7842,7 @@ proxies:
       Host: ca6.tehme100.fun
   udp: true
 - name: 🏁RELAY-172.67.229.38-0926
-  server: circles.asia
+  server: 104.22.5.240
   port: 2086
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -7857,7 +7857,7 @@ proxies:
       Host: ca6.tehme100.fun
   udp: true
 - name: 🏁RELAY-172.67.229.38-2530
-  server: circles.asia
+  server: 104.22.5.240
   port: 2086
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -7872,7 +7872,7 @@ proxies:
       Host: ca6.tehme100.fun
   udp: true
 - name: 🏁RELAY-172.67.229.39-2523
-  server: circles.asia
+  server: 104.22.5.240
   port: 2086
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -7887,7 +7887,7 @@ proxies:
       Host: ca6.tehme100.fun
   udp: true
 - name: 🏁RELAY-172.67.26.173-2471
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -7903,7 +7903,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-172.67.44.74-1026
-  server: circles.asia
+  server: 104.22.5.240
   port: 2053
   type: vmess
   uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
@@ -7919,7 +7919,7 @@ proxies:
       Host: cf.fovi.tk
   udp: true
 - name: 🏁RELAY-172.67.5.100-5675
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
@@ -7934,7 +7934,7 @@ proxies:
       Host: cf-dx-dns.sharecentre.online
   udp: true
 - name: 🏁RELAY-172.67.66.46-1166
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c
@@ -7949,7 +7949,7 @@ proxies:
       Host: eu2.openxai.link
   udp: true
 - name: 🏁RELAY-172.67.67.17-0203
-  server: circles.asia
+  server: 104.22.5.240
   port: 2086
   type: vmess
   uuid: 900ceafc-30b8-4581-a305-31854f563e4f
@@ -7964,7 +7964,7 @@ proxies:
       Host: stuff-rd-refused-conditioning.trycloudflare.com
   udp: true
 - name: 🏁RELAY-172.67.70.98-1411
-  server: circles.asia
+  server: 104.22.5.240
   port: 2086
   type: vmess
   uuid: 900ceafc-30b8-4581-a305-31854f563e4f
@@ -7979,7 +7979,7 @@ proxies:
       Host: context-sing-pennsylvania-photography.trycloudflare.com
   udp: true
 - name: 🏁RELAY-172.67.72.172-6096
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 1bff15f1-a71d-4f07-b8bf-9471708eff8b
@@ -7994,7 +7994,7 @@ proxies:
       Host: nat.998808.xyz
   udp: true
 - name: 🏁RELAY-172.67.73.208-3300
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 8763e625-929a-43da-b7bf-7e7bc2e57615
@@ -8009,7 +8009,7 @@ proxies:
       Host: get.tech
   udp: true
 - name: 🏁RELAY-172.67.75.242-1309
-  server: circles.asia
+  server: 104.22.5.240
   port: 2052
   type: vmess
   uuid: 6ad77d6b-7a45-4ed3-b65d-1c3ec0226603
@@ -8024,7 +8024,7 @@ proxies:
       Host: jpafzyhfsg3.yofnhkfc.xyz
   udp: true
 - name: 🏁RELAY-172.67.77.95-1656
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 1bff15f1-a71d-4f07-b8bf-9471708eff8b
@@ -8039,7 +8039,7 @@ proxies:
       Host: nat.998808.xyz
   udp: true
 - name: 🏁RELAY-172.67.79.117-6098
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: bd014532-1f8b-4d33-b79d-50131d8d4633
@@ -8054,7 +8054,7 @@ proxies:
       Host: www.998808.xyz
   udp: true
 - name: 🏁RELAY-172.67.81.238-2527
-  server: circles.asia
+  server: 104.22.5.240
   port: 8880
   type: vmess
   uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb
@@ -8069,7 +8069,7 @@ proxies:
       Host: fr7.tehme100.fun
   udp: true
 - name: 🏁RELAY-172.67.84.21-1544
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
@@ -8084,7 +8084,7 @@ proxies:
       Host: cf-lt-dns.sharecentre.online
   udp: true
 - name: 🏁RELAY-172.67.84.21-6680
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
@@ -8099,7 +8099,7 @@ proxies:
       Host: us-dp.sharecentre.online
   udp: true
 - name: 🏁RELAY-173.245.49.10-2303
-  server: circles.asia
+  server: 104.22.5.240
   port: 8443
   type: vmess
   uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b
@@ -8115,7 +8115,7 @@ proxies:
       Host: 173.245.49.10
   udp: true
 - name: 🏁RELAY-173.245.49.10-6687
-  server: circles.asia
+  server: 104.22.5.240
   port: 8443
   type: vmess
   uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b
@@ -8131,7 +8131,7 @@ proxies:
       Host: us-171-78.shoptunnel.live
   udp: true
 - name: 🏁RELAY-173.245.49.23-2399
-  server: circles.asia
+  server: 104.22.5.240
   port: 8443
   type: vmess
   uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b
@@ -8147,7 +8147,7 @@ proxies:
       Host: 173.245.49.23
   udp: true
 - name: 🏁RELAY-173.245.49.23-6688
-  server: circles.asia
+  server: 104.22.5.240
   port: 8443
   type: vmess
   uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b
@@ -8163,7 +8163,7 @@ proxies:
       Host: us-171-78.shoptunnel.live
   udp: true
 - name: 🏁RELAY-173.245.58.100-0125
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
@@ -8178,7 +8178,7 @@ proxies:
       Host: yh1.freeh1.xyz
   udp: true
 - name: 🏁RELAY-173.245.58.100-0773
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
@@ -8193,7 +8193,7 @@ proxies:
       Host: nest-emily-healing-h.trycloudflare.com
   udp: true
 - name: 🏁RELAY-173.245.59.100-0110
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
@@ -8208,7 +8208,7 @@ proxies:
       Host: yh2.dtku41.xyz
   udp: true
 - name: 🏁RELAY-185.148.105.52-8895
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 79770a32-9607-4919-9483-0f1794559390
@@ -8223,7 +8223,7 @@ proxies:
       Host: mbt.ircf.space
   udp: true
 - name: 🏁RELAY-185.162.228.110-1585
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -8238,7 +8238,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-185.162.228.228-1532
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
@@ -8253,7 +8253,7 @@ proxies:
       Host: lg1.trump2023.us
   udp: true
 - name: 🏁RELAY-185.162.228.229-1527
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -8268,7 +8268,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-185.162.228.229-6317
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a
@@ -8283,7 +8283,7 @@ proxies:
       Host: opfr1.v2rayfree1.xyz
   udp: true
 - name: 🏁RELAY-185.162.228.229-6335
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
@@ -8298,7 +8298,7 @@ proxies:
       Host: oplg1.zhujicn2.com
   udp: true
 - name: 🏁RELAY-185.162.228.230-1592
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
@@ -8313,7 +8313,7 @@ proxies:
       Host: lg10.cfcdn1.xyz
   udp: true
 - name: 🏁RELAY-185.193.31.201-2520
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -8329,7 +8329,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-188.114.96.2-0762
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -8345,7 +8345,7 @@ proxies:
       Host: ophelia.mom
   udp: true
 - name: 🏁RELAY-188.114.96.2-2534
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -8361,7 +8361,7 @@ proxies:
       Host: ophelia.mom
   udp: true
 - name: 🏁RELAY-188.114.96.3-0864
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -8377,7 +8377,7 @@ proxies:
       Host: oliv.beauty
   udp: true
 - name: 🏁RELAY-188.114.96.3-2560
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -8393,7 +8393,7 @@ proxies:
       Host: oliv.beauty
   udp: true
 - name: 🏁RELAY-188.114.96.7-0796
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -8409,7 +8409,7 @@ proxies:
       Host: octavi.cfd
   udp: true
 - name: 🏁RELAY-188.114.96.7-2507
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -8425,7 +8425,7 @@ proxies:
       Host: octavi.cfd
   udp: true
 - name: 🏁RELAY-188.114.97.1-0867
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -8441,7 +8441,7 @@ proxies:
       Host: odelia.autos
   udp: true
 - name: 🏁RELAY-188.114.97.1-2489
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -8457,7 +8457,7 @@ proxies:
       Host: odelia.autos
   udp: true
 - name: 🏁RELAY-188.114.97.3-0138
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: f584de15-2034-4170-a723-f48c2bae5e0f
@@ -8473,7 +8473,7 @@ proxies:
       Host: afrhms16v.bestxray.buzz
   udp: true
 - name: 🏁RELAY-188.114.97.3-0790
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: f584de15-2034-4170-a723-f48c2bae5e0f
@@ -8489,7 +8489,7 @@ proxies:
       Host: afrhms16v.bestxray.buzz
   udp: true
 - name: 🏁RELAY-188.114.97.7-0862
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -8505,7 +8505,7 @@ proxies:
       Host: waynn.makeup
   udp: true
 - name: 🏁RELAY-188.114.97.7-2478
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -8521,7 +8521,7 @@ proxies:
       Host: waynn.makeup
   udp: true
 - name: 🏁RELAY-188.114.98.0-0851
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -8537,7 +8537,7 @@ proxies:
       Host: odelia.autos
   udp: true
 - name: 🏁RELAY-188.114.98.0-2532
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -8553,7 +8553,7 @@ proxies:
       Host: odelia.autos
   udp: true
 - name: 🏁RELAY-188.114.99.0-0769
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -8569,7 +8569,7 @@ proxies:
       Host: ophelia.mom
   udp: true
 - name: 🏁RELAY-188.114.99.0-2475
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -8585,7 +8585,7 @@ proxies:
       Host: ophelia.mom
   udp: true
 - name: 🏁RELAY-188.114.99.10-1605
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
@@ -8600,7 +8600,7 @@ proxies:
       Host: oplg1.zhujicn2.com
   udp: true
 - name: 🏁RELAY-188.114.99.150-1183
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: e4c7e0ce-ed93-40d9-8f38-90497cb83864
@@ -8615,7 +8615,7 @@ proxies:
       Host: fi1.xv2ray.net
   udp: true
 - name: 🏁RELAY-188.114.99.9-1525
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
@@ -8630,7 +8630,7 @@ proxies:
       Host: lg1.trump2023.us
   udp: true
 - name: 🏁RELAY-188.42.88.227-2468
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -8646,7 +8646,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-190.93.244.2-1542
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
@@ -8661,7 +8661,7 @@ proxies:
       Host: lg1.trump2023.us
   udp: true
 - name: 🏁RELAY-190.93.244.2-2364
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
@@ -8676,7 +8676,7 @@ proxies:
       Host: 190.93.244.2
   udp: true
 - name: 🏁RELAY-190.93.244.3-1578
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
@@ -8691,7 +8691,7 @@ proxies:
       Host: oplg1.zhujicn2.com
   udp: true
 - name: 🏁RELAY-190.93.245.2-1580
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
@@ -8706,7 +8706,7 @@ proxies:
       Host: lg1.trump2023.us
   udp: true
 - name: 🏁RELAY-190.93.245.3-1549
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
@@ -8721,7 +8721,7 @@ proxies:
       Host: oplg1.zhujicn2.com
   udp: true
 - name: 🏁RELAY-190.93.246.2-1541
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
@@ -8736,7 +8736,7 @@ proxies:
       Host: lg1.trump2023.us
   udp: true
 - name: 🏁RELAY-190.93.246.3-1576
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
@@ -8751,7 +8751,7 @@ proxies:
       Host: oplg1.zhujicn2.com
   udp: true
 - name: 🏁RELAY-192.65.217.247-1159
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: trojan
   password: b59ee60f-9fa4-4770-b6a7-288620147f60
@@ -8764,7 +8764,7 @@ proxies:
       Host: k5us2.yfjc.sbs
   udp: true
 - name: 🏁RELAY-195.85.59.161-6465
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 3a9c0d0c-e0fd-3145-a414-ec265e7010b7
@@ -8779,7 +8779,7 @@ proxies:
       Host: tw02.nttkk.com
   udp: true
 - name: 🏁RELAY-198.41.203.5-1455
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
@@ -8794,7 +8794,7 @@ proxies:
       Host: lg30.cfcdn3.xyz
   udp: true
 - name: 🏁RELAY-198.41.203.5-6327
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a
@@ -8809,7 +8809,7 @@ proxies:
       Host: opfr1.v2rayfree1.xyz
   udp: true
 - name: 🏁RELAY-198.41.203.6-1457
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5
@@ -8824,7 +8824,7 @@ proxies:
       Host: fr2.cfcdn4.xyz
   udp: true
 - name: 🏁RELAY-198.41.203.6-6326
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c
@@ -8839,7 +8839,7 @@ proxies:
       Host: fr1.trump2023.org
   udp: true
 - name: 🏁RELAY-198.41.208.200-6366
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
@@ -8854,7 +8854,7 @@ proxies:
       Host: sg1-v2ray.sshkit.org
   udp: true
 - name: 🏁RELAY-198.41.209.25-6103
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
@@ -8869,7 +8869,7 @@ proxies:
       Host: us-east.sharecentre.online
   udp: true
 - name: 🏁RELAY-198.41.209.25-6359
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
@@ -8885,7 +8885,7 @@ proxies:
       Host: hk.sharecentre.online
   udp: true
 - name: 🏁RELAY-198.41.212.100-1504
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
@@ -8900,7 +8900,7 @@ proxies:
       Host: lg30.cfcdn3.xyz
   udp: true
 - name: 🏁RELAY-198.41.212.12-1602
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -8915,7 +8915,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-198.41.212.122-1512
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5
@@ -8930,7 +8930,7 @@ proxies:
       Host: fr2.cfcdn4.xyz
   udp: true
 - name: 🏁RELAY-198.41.212.145-1480
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 33aa57df-1c93-4318-9fce-e850437ee781
@@ -8945,7 +8945,7 @@ proxies:
       Host: lg1.cfcdn3.xyz
   udp: true
 - name: 🏁RELAY-198.41.212.30-1144
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 105c635f-918d-4b2a-8c9d-d5426e94eb4b
@@ -8960,7 +8960,7 @@ proxies:
       Host: lg2.zhujicn2.com
   udp: true
 - name: 🏁RELAY-198.41.212.92-6095
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: bd014532-1f8b-4d33-b79d-50131d8d4633
@@ -8975,7 +8975,7 @@ proxies:
       Host: www.998808.xyz
   udp: true
 - name: 🏁RELAY-198.41.221.169-0073
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60
@@ -8990,7 +8990,7 @@ proxies:
       Host: zero1.a-yu.xyz
   udp: true
 - name: 🏁RELAY-203.24.108.10-1586
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
@@ -9005,7 +9005,7 @@ proxies:
       Host: lg10.cfcdn1.xyz
   udp: true
 - name: 🏁RELAY-203.24.108.8-1633
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -9020,7 +9020,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-203.24.108.8-2302
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
@@ -9035,7 +9035,7 @@ proxies:
       Host: 203.24.108.8
   udp: true
 - name: 🏁RELAY-203.24.108.8-6337
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
@@ -9050,7 +9050,7 @@ proxies:
       Host: lg1.trump2023.us
   udp: true
 - name: 🏁RELAY-203.24.108.9-1608
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
@@ -9065,7 +9065,7 @@ proxies:
       Host: oplg1.zhujicn2.com
   udp: true
 - name: 🏁RELAY-203.29.53.252-8804
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 927094d3-d678-4763-8591-e240d0bcae87
@@ -9080,7 +9080,7 @@ proxies:
       Host: wi.saintink.eu.org
   udp: true
 - name: 🏁RELAY-203.30.188.120-6319
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a
@@ -9095,7 +9095,7 @@ proxies:
       Host: opfr1.v2rayfree1.xyz
   udp: true
 - name: 🏁RELAY-203.30.188.121-1638
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -9110,7 +9110,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-203.30.188.188-1538
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
@@ -9125,7 +9125,7 @@ proxies:
       Host: lg1.trump2023.us
   udp: true
 - name: 🏁RELAY-203.30.188.189-1629
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
@@ -9140,7 +9140,7 @@ proxies:
       Host: oplg1.zhujicn2.com
   udp: true
 - name: 🏁RELAY-203.30.188.190-1596
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
@@ -9155,7 +9155,7 @@ proxies:
       Host: lg10.cfcdn1.xyz
   udp: true
 - name: 🏁RELAY-203.30.189.189-1588
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
@@ -9170,7 +9170,7 @@ proxies:
       Host: lg1.trump2023.us
   udp: true
 - name: 🏁RELAY-203.30.189.190-1593
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
@@ -9185,7 +9185,7 @@ proxies:
       Host: oplg1.zhujicn2.com
   udp: true
 - name: 🏁RELAY-203.30.189.190-2355
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
@@ -9200,7 +9200,7 @@ proxies:
       Host: 203.30.189.190
   udp: true
 - name: 🏁RELAY-203.30.189.191-1591
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
@@ -9215,7 +9215,7 @@ proxies:
       Host: lg10.cfcdn1.xyz
   udp: true
 - name: 🏁RELAY-203.30.190.190-1537
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
@@ -9230,7 +9230,7 @@ proxies:
       Host: lg1.trump2023.us
   udp: true
 - name: 🏁RELAY-203.30.190.191-1572
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
@@ -9245,7 +9245,7 @@ proxies:
       Host: oplg1.zhujicn2.com
   udp: true
 - name: 🏁RELAY-203.30.190.192-1614
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
@@ -9260,7 +9260,7 @@ proxies:
       Host: lg10.cfcdn1.xyz
   udp: true
 - name: 🏁RELAY-203.30.191.10-1582
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -9275,7 +9275,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-203.30.191.18-1536
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
@@ -9290,7 +9290,7 @@ proxies:
       Host: clash6.ssr-free.xyz
   udp: true
 - name: 🏁RELAY-203.30.191.19-1526
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
@@ -9305,7 +9305,7 @@ proxies:
       Host: clash6.ssr-free.xyz
   udp: true
 - name: 🏁RELAY-203.30.191.191-1558
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -9320,7 +9320,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-203.30.191.192-1625
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
@@ -9335,7 +9335,7 @@ proxies:
       Host: oplg1.zhujicn2.com
   udp: true
 - name: 🏁RELAY-203.30.191.193-6339
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
@@ -9350,7 +9350,7 @@ proxies:
       Host: lg10.cfcdn1.xyz
   udp: true
 - name: 🏁RELAY-203.30.191.2-1640
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -9365,7 +9365,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-203.30.191.20-1551
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
@@ -9380,7 +9380,7 @@ proxies:
       Host: clash6.ssr-free.xyz
   udp: true
 - name: 🏁RELAY-203.30.191.3-1570
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -9395,7 +9395,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-203.30.191.4-1556
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -9410,7 +9410,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-203.30.191.5-1622
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -9425,7 +9425,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-203.30.191.6-1555
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -9440,7 +9440,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-203.30.191.7-1597
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -9455,7 +9455,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-203.30.191.9-1540
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -9470,7 +9470,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-23.227.38.100-1303
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 7b1b2fa3-e361-48cc-b73d-2c9636c76f4b
@@ -9485,7 +9485,7 @@ proxies:
       Host: v2ray1.zhujicn2.org
   udp: true
 - name: 🏁RELAY-23.227.38.11-0126
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: trojan
   password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
@@ -9498,7 +9498,7 @@ proxies:
       Host: syndication-statutes-wanted-logo.trycloudflare.com
   udp: true
 - name: 🏁RELAY-23.227.38.11-0243
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: trojan
   password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
@@ -9511,7 +9511,7 @@ proxies:
       Host: syndication-statutes-wanted-logo.trycloudflare.com
   udp: true
 - name: 🏁RELAY-23.227.38.20-1550
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -9526,7 +9526,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-23.227.38.21-1601
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -9541,7 +9541,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-23.227.38.22-0220
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
@@ -9556,7 +9556,7 @@ proxies:
       Host: per-essex-patterns-bowling.trycloudflare.com
   udp: true
 - name: 🏁RELAY-23.227.38.22-1545
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -9571,7 +9571,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-23.227.38.23-0177
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b
@@ -9586,7 +9586,7 @@ proxies:
       Host: uh-lawyers-instruments-kernel.trycloudflare.com
   udp: true
 - name: 🏁RELAY-23.227.38.23-1529
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -9601,7 +9601,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-23.227.38.24-1610
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -9616,7 +9616,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-23.227.38.25-1604
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -9631,7 +9631,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-23.227.38.26-1637
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -9646,7 +9646,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-23.227.38.27-1618
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -9661,7 +9661,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-23.227.38.33-1120
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 353bbf5f-a264-4731-e735-984e611c2e01
@@ -9676,7 +9676,7 @@ proxies:
       Host: tgus.cloudflare.quest
   udp: true
 - name: 🏁RELAY-23.227.38.33-1138
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 4397d066-f753-4300-e7ed-44797ddfcd24
@@ -9691,7 +9691,7 @@ proxies:
       Host: linode.cloudflare.quest
   udp: true
 - name: 🏁RELAY-23.227.38.33-1142
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 36bd9969-bb96-4bdd-a6df-960bbd8e4439
@@ -9706,7 +9706,7 @@ proxies:
       Host: tguk.cloudflare.quest
   udp: true
 - name: 🏁RELAY-23.227.38.33-6328
-  server: circles.asia
+  server: 104.22.5.240
   port: 2086
   type: vmess
   uuid: ddcd66fd-c716-439c-9ab8-2adb1400ff48
@@ -9721,7 +9721,7 @@ proxies:
       Host: scw.cloudflare.quest
   udp: true
 - name: 🏁RELAY-23.227.38.33-6484
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 353bbf5f-a264-4731-e735-984e611c2e01
@@ -9736,7 +9736,7 @@ proxies:
       Host: tgus.cloudflare.quest
   udp: true
 - name: 🏁RELAY-23.227.38.38-1642
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
@@ -9751,7 +9751,7 @@ proxies:
       Host: oplg1.cfcdn2.xyz
   udp: true
 - name: 🏁RELAY-23.227.38.39-1613
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
@@ -9766,7 +9766,7 @@ proxies:
       Host: oplg1.zhujicn2.com
   udp: true
 - name: 🏁RELAY-23.227.38.40-1627
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
@@ -9781,7 +9781,7 @@ proxies:
       Host: lg10.cfcdn1.xyz
   udp: true
 - name: 🏁RELAY-23.227.39.166-2486
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -9797,7 +9797,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-45.131.209.32-2479
-  server: circles.asia
+  server: 104.22.5.240
   port: 8880
   type: vmess
   uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb
@@ -9812,7 +9812,7 @@ proxies:
       Host: fr7.tehme100.fun
   udp: true
 - name: 🏁RELAY-45.131.5.27-2497
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -9828,7 +9828,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-66.235.200.21-1571
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
@@ -9843,7 +9843,7 @@ proxies:
       Host: oplg1.zhujicn2.com
   udp: true
 - name: 🏁RELAY-66.235.200.22-1595
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
@@ -9858,7 +9858,7 @@ proxies:
       Host: lg10.cfcdn1.xyz
   udp: true
 - name: 🏁RELAY-66.81.247.49-8984
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
@@ -9873,7 +9873,7 @@ proxies:
       Host: arvancloud.ir-Uc.snappfood.SO.ddns001.net
   udp: true
 - name: 🏁RELAY-66.81.247.58-2516
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: c8abf66a-1903-4638-a448-9c86733e4254
@@ -9889,7 +9889,7 @@ proxies:
       Host: sand.blanku.me
   udp: true
 - name: 🏁RELAY-94.140.0.110-0223
-  server: circles.asia
+  server: 104.22.5.240
   port: 8880
   type: vmess
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
@@ -9904,7 +9904,7 @@ proxies:
       Host: food.zhaal.ir
   udp: true
 - name: 🇸🇬SG-103.253.26.134-0342
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
@@ -9919,7 +9919,7 @@ proxies:
       Host: eeh7iewe.com
   udp: true
 - name: 🇸🇬SG-103.253.26.20-0347
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
@@ -9934,7 +9934,7 @@ proxies:
       Host: zecjk.com
   udp: true
 - name: 🇸🇬SG-103.83.156.89-2203
-  server: circles.asia
+  server: 104.22.5.240
   port: 8888
   type: vmess
   uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89
@@ -9949,7 +9949,7 @@ proxies:
       Host: 103.83.156.89
   udp: true
 - name: 🇸🇬SG-104.248.148.147-2208
-  server: circles.asia
+  server: 104.22.5.240
   port: 21888
   type: vmess
   uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89
@@ -9964,7 +9964,7 @@ proxies:
       Host: 104.248.148.147
   udp: true
 - name: 🇸🇬SG-128.199.125.230-0178
-  server: circles.asia
+  server: 104.22.5.240
   port: 56896
   type: vmess
   uuid: 37493524-73c8-4e67-ba27-2d1908c385eb
@@ -9979,7 +9979,7 @@ proxies:
       Host: linkedin.com
   udp: true
 - name: 🇸🇬SG-129.150.49.84-1253
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 6b772c91-a7e1-36a5-aa59-1b12f4339508
@@ -9994,7 +9994,7 @@ proxies:
       Host: sgoracle1.sstank.top
   udp: true
 - name: 🇸🇬SG-13.250.127.244-1244
-  server: circles.asia
+  server: 104.22.5.240
   port: 23331
   type: trojan
   password: mikuu404
@@ -10007,7 +10007,7 @@ proxies:
       Host: bing.com
   udp: true
 - name: 🇸🇬SG-139.99.61.154-2319
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 932a1f0d-f5ce-418d-8560-c88f53c534b9
@@ -10022,7 +10022,7 @@ proxies:
       Host: 139.99.61.154
   udp: true
 - name: 🇸🇬SG-139.99.61.53-2272
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: ce3868a4-e2ca-4a6f-8731-e7e88d098886
@@ -10037,7 +10037,7 @@ proxies:
       Host: 139.99.61.53
   udp: true
 - name: 🇸🇬SG-146.190.97.8-0489
-  server: circles.asia
+  server: 104.22.5.240
   port: 20552
   type: vmess
   uuid: 48cbd108-fd2a-4fb7-b46d-9982b9de9c6e
@@ -10052,7 +10052,7 @@ proxies:
       Host: m.linkedin.com
   udp: true
 - name: 🇸🇬SG-15.235.147.186-1080
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 6fea1649-425b-4092-bf53-29792152c925
@@ -10067,7 +10067,7 @@ proxies:
       Host: sg-lb.vhax.net
   udp: true
 - name: 🇸🇬SG-15.235.147.186-6343
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 6fea1649-425b-4092-bf53-29792152c925
@@ -10082,7 +10082,7 @@ proxies:
       Host: zoom.us
   udp: true
 - name: 🇸🇬SG-15.235.147.186-6352
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 6fea1649-425b-4092-bf53-29792152c925
@@ -10097,7 +10097,7 @@ proxies:
       Host: 15.235.147.186
   udp: true
 - name: 🇸🇬SG-15.235.202.196-2347
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: 66f7af16-9d20-4df2-9849-0f65a8bb5527
@@ -10112,7 +10112,7 @@ proxies:
       Host: 15.235.202.196
   udp: true
 - name: 🇸🇬SG-158.178.235.22-1251
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 9ad49ff7-de2d-3b71-af59-9ca1d47a174b
@@ -10127,7 +10127,7 @@ proxies:
       Host: sgoracle3.sstank.top
   udp: true
 - name: 🇸🇬SG-158.178.247.82-1258
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 9ad49ff7-de2d-3b71-af59-9ca1d47a174b
@@ -10142,7 +10142,7 @@ proxies:
       Host: sgoracle2.sstank.top
   udp: true
 - name: 🇸🇬SG-159.223.32.230-0253
-  server: circles.asia
+  server: 104.22.5.240
   port: 8080
   type: vmess
   uuid: 7002330d-fe27-4b56-b22f-d7e3eb825fdb
@@ -10157,7 +10157,7 @@ proxies:
       Host: 159.223.32.230
   udp: true
 - name: 🇸🇬SG-172.105.123.4-3437
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc
@@ -10172,7 +10172,7 @@ proxies:
       Host: sg2.safepn.net
   udp: true
 - name: 🇸🇬SG-172.105.123.4-3440
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc
@@ -10188,7 +10188,7 @@ proxies:
       Host: sg2.safepn.net
   udp: true
 - name: 🇸🇬SG-174.138.22.186-3394
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: f664d429-84f6-47b9-aaa8-39bde191c897
@@ -10204,7 +10204,7 @@ proxies:
       Host: 6ofj69.scvps.my.id
   udp: true
 - name: 🇸🇬SG-180.215.130.123-0343
-  server: circles.asia
+  server: 104.22.5.240
   port: 46452
   type: vmess
   uuid: c5414fe0-018b-473a-aa3b-f210f2ba42f5
@@ -10219,7 +10219,7 @@ proxies:
       Host: 180.215.130.123
   udp: true
 - name: 🇸🇬SG-180.215.130.123-0348
-  server: circles.asia
+  server: 104.22.5.240
   port: 11584
   type: vmess
   uuid: 181472ed-0bb7-43be-dccb-74aca2b33ed5
@@ -10234,7 +10234,7 @@ proxies:
       Host: 180.215.130.123
   udp: true
 - name: 🇸🇬SG-202.61.141.130-0346
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
@@ -10249,7 +10249,7 @@ proxies:
       Host: 202.61.141.130
   udp: true
 - name: 🇸🇬SG-202.61.141.130-6644
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
@@ -10264,7 +10264,7 @@ proxies:
       Host: 202.61.141.130
   udp: true
 - name: 🇸🇬SG-43.159.52.16-5661
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: 776352ac-0a91-3d71-8450-d3b3a2b43c73
@@ -10279,7 +10279,7 @@ proxies:
       Host: do5.yyhm9.com
   udp: true
 - name: 🇸🇬SG-51.79.146.225-3235
-  server: circles.asia
+  server: 104.22.5.240
   port: 443
   type: vmess
   uuid: b7200fb0-b107-11ed-b233-205c6d5f5d78
@@ -10295,7 +10295,7 @@ proxies:
       Host: sg-5.0rd.net
   udp: true
 - name: 🇸🇬SG-8.214.33.158-0344
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: cb81e6ab-1d83-4ac1-f0ad-ae5c2a7c29ef
@@ -10310,7 +10310,7 @@ proxies:
       Host: 8.214.33.158
   udp: true
 - name: 🇸🇬SG-8.222.235.92-2513
-  server: circles.asia
+  server: 104.22.5.240
   port: 80
   type: vmess
   uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
