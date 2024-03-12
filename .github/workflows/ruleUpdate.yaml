@@ -168,10 +168,6 @@ jobs:
           curl -s https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Disney/Disney.yaml -o rule_disneyplus.yaml
           rm -fr rule_disneyplus.yamle
 
-          echo "Downloading rule_games source list..."
-          curl -s https://rules.kr328.app/category-games.yaml -o rule_games.yaml
-          rm -fr rule_games.yamle
-
           echo "Downloading rule_hbo source list..."
           curl -s https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/HBO/HBO.yaml -o rule_hbo.yaml
           rm -fr rule_hbo.yamle
@@ -192,41 +188,6 @@ jobs:
           curl -s https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/iQIYI/iQIYI.yaml -o rule_iqiyi.yaml
           rm -fr rule_iqiyi.yamle
 
-          echo "Downloading rule_iqiyiinter source list..."
-          curl -s https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/iQIYIIntl/iQIYIIntl.yaml -o rule_iqiyiinter.yaml
-          rm -fr rule_iqiyiinter.yamle
-
-          echo "Downloading rule_line source list..."
-          curl -s https://rules.kr328.app/line.yaml -o rule_line.yaml
-          rm -fr rule_line.yamle
-
-          echo "Downloading rule_metaverse source list..."
-          curl -s https://rules.kr328.app/facebook.yaml -o rule_metaverse.yaml
-          rm -fr rule_metaverse.yamle
-
-          echo "Downloading rule_netflix source list..."
-          curl -s https://rules.kr328.app/netflix.yaml -o rule_netflix.yaml
-          rm -fr rule_netflix.yamle
-
-          echo "Downloading rule_primevideo source list..."
-          curl -s https://rules.kr328.app/primevideo.yaml -o rule_primevideo.yaml
-          rm -fr rule_primevideo.yamle
-
-          echo "Downloading rule_tiktok source list..."
-          curl -s https://rules.kr328.app/tiktok.yaml -o rule_tiktok.yaml
-          rm -fr rule_tiktok.yamle
-
-          echo "Downloading rule_twitch source list..."
-          curl -s https://rules.kr328.app/twitch.yaml -o rule_twitch.yaml
-          rm -fr rule_twitch.yamle
-
-          echo "Downloading rule_twitter source list..."
-          curl -s https://rules.kr328.app/twitter.yaml -o rule_twitter.yaml
-          rm -fr rule_twitter.yamle
-
-          echo "Downloading rule_youtube source list..."
-          curl -s https://rules.kr328.app/youtube.yaml -o rule_youtube.yaml
-          rm -fr rule_youtube.yamle
 
 
       - uses: stefanzweifel/git-auto-commit-action@v4
