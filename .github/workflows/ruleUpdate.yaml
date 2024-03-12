@@ -148,10 +148,6 @@ jobs:
           curl -s https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Privacy/Privacy_Classical.yaml -o rule_privacy.yaml
           rm -fr rule_privacy.yamle
 
-          echo "Downloading rule_porn source list..."
-          curl -s https://rules.kr328.app/category-porn.yaml -o rule_porn.yaml
-          rm -fr rule_porn.yamle
-
           echo "Downloading rule_lancidr source list..."
           curl -s https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt -o rule_lancidr.yaml
           rm -fr rule_lancidr.yamle
@@ -159,10 +155,6 @@ jobs:
           echo "Downloading rule_telegramcidr source list..."
           curl -s https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt -o rule_telegramcidr.yaml
           rm -fr rule_telegramcidr.yamle
-
-          echo "Downloading rule_telegram source list..."
-          curl -s https://rules.kr328.app/telegram.yaml -o rule_telegram.yaml
-          rm -fr rule_telegram.yamle
 
           echo "Downloading rule_disneyplus source list..."
           curl -s https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Disney/Disney.yaml -o rule_disneyplus.yaml
