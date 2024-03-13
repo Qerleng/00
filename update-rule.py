@@ -60,6 +60,6 @@ if update_rule_ABPindo:
 
 update_rule_AdAway = get_update_rule("https://raw.githubusercontent.com/rfxcll/v2ray-rules-dat/rule/rule_ads.txt")
 if update_rule_AdAway:
-    with open("rule_AdAway", "w", encoding='utf-8') as file:
+    with open("rule_AdAway.yaml", "w", encoding='utf-8') as file:
         file.write("\n".join(update_rule_AdAway))
 
