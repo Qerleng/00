@@ -37,9 +37,9 @@ def get_update_rule(url):
                     elif domain.startswith("://"):
                         domain_suffix = domain + ""
                         domains.append("  - DOMAIN-SUFFIX,*." + domain_suffix)
-                    # jika domain memiliki karakter "tiktok", "pinterest" dkk maka domain tersebut tidak akan ditambahkan
-                    elif any(prefix in domain for prefix in ("autodesk", "tiktok", "pinterest", "pinimg", "twitter", "twimg", "linkedin", "facebook", "fbcdn.net", "fbcdn.com", "fbcdn-a", "instagram", "whatsapp")):
-                        continue
+           #         jika domain memiliki karakter "tiktok", "pinterest" dkk maka domain tersebut tidak akan ditambahkan
+           #         elif any(prefix in domain for prefix in ("autodesk", "tiktok", "pinterest", "pinimg", "twitter", "twimg", "linkedin", "facebook", "fbcdn.net", "fbcdn.com", "fbcdn-a", "instagram", "whatsapp")):
+           #             continue
                     else:
                         domains.append("  - DOMAIN," + domain)
         rules = domains + ["  - IP-CIDR," + ip for ip in ips]
