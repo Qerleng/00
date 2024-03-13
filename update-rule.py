@@ -57,14 +57,14 @@ def get_update_rule(url):
     yaml_data_2 = yaml.dump({"proxies": formatted_accounts_2}, sort_keys=False, allow_unicode=True)
 
     # Write the filtered accounts to the YAML files with UTF-8 encoding
-    output_dir_1 = "backup/proxy_provider"
-    output_dir_2 = "backup/proxy_provider"
-    output_path_1 = os.path.join(output_dir_1, "filter-liv.yaml")
-    output_path_2 = os.path.join(output_dir_2, "filter-XL.yaml")
+output_dir_1 = "backup/rule_provider"
+output_dir_2 = "backup/rule_provider"
+output_path_1 = os.path.join(output_dir_1, "filter-liv.yaml")
+output_path_2 = os.path.join(output_dir_2, "filter-XL.yaml")
 
     # Create the folders if they don't exist
-    os.makedirs(output_dir_1, exist_ok=True)
-    os.makedirs(output_dir_2, exist_ok=True)
+os.makedirs(output_dir_1, exist_ok=True)
+os.makedirs(output_dir_2, exist_ok=True)
 
 update_rule_ABPindo = get_update_rule("https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt")
 if update_rule_ABPindo:
