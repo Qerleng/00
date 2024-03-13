@@ -1,5 +1,7 @@
 import requests
 import ipaddress
+import yaml
+import os
 
 def get_update_rule(url):
     try:
@@ -49,13 +51,23 @@ def get_update_rule(url):
         print(e)
         return None
 
+
+ # Write the filtered accounts to the YAML files with UTF-8 encoding
+    output_dir_1 = "backup/rule_provider"
+    output_path_1 = os.path.join(output_dir_1, "filter-liv.yaml")
+    output_path_2 = os.path.join(output_dir_1, "filter-XL.yaml")
+
+    # Create the folders if they don't exist
+    os.makedirs(output_dir_1, exist_ok=True)
+
+
 update_rule_ABPindo = get_update_rule("https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt")
 if update_rule_ABPindo:
-    with open("rule_ABPindo.yaml", "w", encoding='utf-8') as f:
-        f.write("\n".join(update_rule_ABPindo))
+    with open(output_path_1, "w", encoding='utf-8') as file:
+        file.write("\n".join(update_rule_ABPindo))
 
 update_rule_AdAway = get_update_rule("https://raw.githubusercontent.com/rfxcll/v2ray-rules-dat/rule/rule_ads.txt")
 if update_rule_AdAway:
-    with open("rule_AdAway.yaml", "w", encoding='utf-8') as f:
-        f.write("\n".join(update_rule_AdAway))
+    with open(output_path_2, "w", encoding='utf-8') as file:
+        file.write("\n".join(update_rule_AdAway))
 
