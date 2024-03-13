@@ -1,206 +1,591 @@
-# config.yaml
-```yaml
----
-rule-providers:
-# ================= RULE SET DIRECT==================
-  Direct:
-    type: file
-    behavior: classical
-    path: "./rule_provider/direct.yaml"
-  xl-akrab:
-    type: http
-    behavior: classical
-    path: "./rule_provider/xl-akrab.yaml"
-    url: https://raw.githubusercontent.com/miracle-desk/openclash/main/backup/rule_provider/xl-akrab.yaml
-    interval: 86400
-#
-#
-# ================= RULE SET REJECT =================
-  Reject:
-    type: file
-    behavior: classical
-    path: "./rule_provider/reject.yaml"
-  rule_AdAway:
-    type: http
-    behavior: classical
-    path: "./rule_provider/rule_AdAway.yaml"
-    url: https://raw.githubusercontent.com/miracle-desk/clash_rule-provider/main/rule_AdAway.yaml
-    interval: 43200
-  rule_Malicious-URLhaus:
-    type: http
-    behavior: classical
-    path: "./rule_provider/rule_Malicious-URLhaus.yaml"
-    url: https://raw.githubusercontent.com/miracle-desk/clash_rule-provider/main/rule_Malicious-URLhaus.yaml
-    interval: 43200
-  rule_Malware-Websites:
-    type: http
-    behavior: classical
-    path: "./rule_provider/rule_Malware-Websites.yaml"
-    url: https://raw.githubusercontent.com/miracle-desk/clash_rule-provider/main/rule_Malware-Websites.yaml
-    interval: 43200
-  rule_Phishing-URL:
-    type: http
-    behavior: classical
-    path: "./rule_provider/rule_Phishing-URL.yaml"
-    url: https://raw.githubusercontent.com/miracle-desk/clash_rule-provider/main/rule_Phishing-URL.yaml
-    interval: 43200
-  rule_ShadowWhisperer-Malware:
-    type: http
-    behavior: classical
-    path: "./rule_provider/rule_ShadowWhisperer-Malware.yaml"
-    url: https://raw.githubusercontent.com/miracle-desk/clash_rule-provider/main/rule_ShadowWhisperer-Malware.yaml
-    interval: 43200
-  rule_Stalkerware: # Untuk Android+iOS
-    type: http
-    behavior: classical
-    path: "./rule_provider/rule_Stalkerware.yaml"
-    url: https://raw.githubusercontent.com/miracle-desk/clash_rule-provider/main/rule_Stalkerware.yaml
-    interval: 43200
-  rule_StevenBlackList: #block: fakenews+gambling
-    type: http
-    behavior: classical
-    path: "./rule_provider/rule_StevenBlackList.yaml"
-    url: https://raw.githubusercontent.com/miracle-desk/clash_rule-provider/main/rule_StevenBlackList.yaml
-    interval: 43200
-  rule_custom:
-    type: http
-    behavior: classical
-    path: "./rule_provider/rule_custom.yaml"
-    url: https://raw.githubusercontent.com/miracle-desk/openclash/main/backup/rule_provider/rule_custom.yaml
-    interval: 43200
-#
-#
-#================= PROXY PROVIDERS =================
+# port: 7890
+# socks-port: 7891
+# mixed-port: 7890
+redir-port: 9797
+tproxy-port: 9898
+
+# rule 规则匹配
+# global 全局代理(需要在GLOBAL策略组选择代理/策略)
+# direct 全局直连
+# 此项拥有默认值，默认为规则模式
+mode: rule
+allow-lan: true
+# unified-delay: true
+bind-address: '*'
+
+# silent 静默，不输出
+# error 仅输出发生错误至无法使用的日志
+# warning 输出发生错误但不影响运行的日志，以及 error 级别内容
+# info 输出一般运行的内容，以及 error 和 warning 级别的日志
+# debug 尽可能的输出运行中所有的信息
+log-level: silent
+ipv6: false
+
+# 更改geoip使用文件,mmdb或者dat,true为dat
+# geodata-mode: true
+
+# 可选的加载模式如下
+# standard：标准加载器
+# memconservative：专为内存受限(小内存)设备优化的加载器(默认值)
+# geodata-loader: memconservative
+
+external-controller: 0.0.0.0:9090 
+# secret: "123456"
+external-ui: /data/adb/box/clash/dashboard
+# tcp-concurrent: false
+
+# 目前仅用于 API 的 https
+# tls:
+  # certificate: string # 证书 PEM 格式，或者 证书的路径
+  # private-key: string # 证书对应的私钥 PEM 格式，或者私钥路径
+
+# 全局 TLS 指纹，优先低于 proxy 内的 client-fingerprint。
+# 目前支持开启 TLS 传输的 TCP/grpc/WS/HTTP , 支持协议有 VLESS,Vmess 和 trojan.
+# global-client-fingerprint: chrome
+# Note:
+# 可选："chrome", "firefox", "safari", "iOS", "android", "edge", "360"," qq", "random"
+# 若选择 "random", 则按 Cloudflare Radar 数据按概率生成一个现代浏览器指纹。
+
+# geox-url:
+  # mmdb: "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb"
+  # geoip: "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/geoip.dat"
+  # geosite: "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/geosite.dat"
+
+# 控制是否让 Clash 去匹配进程
+# always 开启，强制匹配所有进程
+# strict 默认，由 Clash 判断是否开启
+# off 不匹配进程，推荐在路由器上使用此模式
+# find-process-mode: always
+
+profile:
+  store-selected: true
+  # 储存 API 对策略组的选择，以供下次启动时使用
+  store-fake-ip: false
+  # 储存 fakeip 映射表，域名再次发生连接时，使用原有映射地址
+
+# sniffer:                           #【Meta专属】sniffer域名嗅探器
+  # enable: false                    # 嗅探器开关
+
+                                   # # 开启后对 redir-host 类型识别的流量进行强制嗅探
+                                   # # 包含 Tun、Redir 和 TProxy 或 DNS 为 redir-host
+  # # force-dns-mapping: false
+  # # parse-pure-ip: false           # 对所有未获取到域名的流量进行强制嗅探
+
+  # override-destination: false      # 是否使用嗅探结果作为实际访问,默认 true
+                                   # # 全局配置,优先级低于 sniffer.sniff 实际配置
+  # sniff: # TLS 默认如果不配置 ports 默认嗅探 443
+    # TLS:
+      # ports: [443, 8443]
+    # HTTP: # 需要嗅探的端口, 默认嗅探 80
+      # ports: [80, 8080-8880]
+      # override-destination: true # 可覆盖 sniffer.override-destination
+  # force-domain:
+    # - +.v2ex.com
+  # # 白名单,跳过嗅探结果
+  # skip-domain:
+    # - Mijia Cloud
+
+tun:
+  enable: false
+  device: utun
+  mtu: 9000
+  stack: system # gvisor / lwip / system
+  dns-hijack:
+    - any:53
+    - tcp://any:53
+  auto-route: true
+  auto-detect-interface: true
+  # include_android_user:
+    # - 0
+    # - 10
+  # include_package:
+  # - com.android.chrome
+  # exclude_package:
+    # - com.whatsapp
+
+dns:
+  enable: true
+  # 可选值 true/false
+  # 是否解析 IPV6, 如为 false, 则回应 AAAA 的空解析
+  ipv6: true
+
+  # 可选值 true/false
+  # 是否开启 DOH 的 http/3
+  # prefer-h3: false
+
+  # 默认 dns, 用于解析 DNS 服务器 的域名
+  # 必须为 ip, 可为加密 dns
+  default-nameserver:
+    # - 114.114.114.114
+    - 8.8.8.8
+    # cloudflare
+    - 1.1.1.1
+    # - tls://223.5.5.5:853
+    # - https://223.5.5.5/dns-query
+
+  # dns 服务监听
+  listen: 0.0.0.0:1053
+  use-hosts: true
+
+  # 可选值 fake-ip / redir-host
+  # Clash 的 dns 处理模式
+  enhanced-mode: fake-ip
+
+  # 格式为 ip/掩码
+  # fakeip 下的 IP 段设置，tun 网卡的默认 ip 也使用此值
+  fake-ip-range: 198.18.0.1/16
+
+  # fakeip 过滤，以下地址不会下发 fakeip 映射用于连接
+  fake-ip-filter:
+    - '*.lan'
+    # - localhost.ptlogin2.qq.com
+
+  # 默认的域名解析服务器，如不配置 fallback/proxy-server-nameserver , 则所有域名都由 nameserver 解析
+  nameserver:
+    # google
+    - 8.8.4.4
+    - 1.1.1.1
+  # proxy-server-nameserver:
+    # - https://doh.pub/dns-query
+
+  # 指定域名查询的解析服务器，可使用 geosite, 优先于 nameserver/fallback 查询
+  # Note: 并发查询，无法保证顺序，以下仅作为书写演示，建议根据自己需求写
+  # nameserver-policy:
+    # 'www.baidu.com': '114.114.114.114'
+    # '+.internal.crop.com': '10.0.0.1'
+    # 'geosite:cn': https://doh.pub/dns-query
+
+  # 后备域名解析服务器，一般情况下使用境外 DNS, 保证结果可信
+  # 配置 fallback后默认启用 fallback-filter,geoip-code为 cn
+  # fallback:
+    # - tls://8.8.4.4
+    # - tls://1.1.1.1
+
+  # 代理节点域名解析服务器，仅用于解析代理节点的域名
+  # proxy-server-nameserver:
+    # - https://doh.pub/dns-query
+
+  # fallback-filter
+  # 后备域名解析服务器筛选，满足条件的将使用 fallback结果或只使用 fallback解析
+  # fallback-filter:
+
+    # geoip
+    # 可选值为 true/false
+    # 是否启用 fallback filter
+    # geoip: true
+
+    # geoip-code
+    # 可选值为 国家缩写，默认值为 CN
+    # 除了 geoip-code 配置的国家 IP, 其他的 IP 结果会被视为污染
+    # geoip-code 配置的国家的结果会直接采用，否则将采用 fallback结果
+    # geoip-code: ID
+
+    # geosite
+    # 可选值为对于的 geosite 内包含的集合
+    # geosite 列表的内容被视为已污染，匹配到 geosite 的域名，将只使用 fallback解析，不去使用 nameserver
+    # geosite:
+      # - gfw
+
+    # ipcidr
+    # 书写内容为 IP/掩码
+    # 这些网段的结果会被视为污染，nameserver解析出这些结果时将会采用 fallback的解析结果
+    # ipcidr:
+      # - 240.0.0.0/4
+
+    # domain
+    # 这些域名被视为已污染，匹配到这些域名，会直接使用 fallback解析，不去使用 nameserver
+    # domain:
+      # - '+.google.com'
+      # - '+.facebook.com'
+      # - '+.youtube.com'
+
+# hosts:
+  # # block update system android
+  # 'ota.googlezip.net': 127.0.0.1
+  # 'ota-cache1.googlezip.net': 127.0.0.1
+  # 'ota-cache2.googlezip.net': 127.0.0.1
+
+
+proxies:
 proxy-providers:
-  Proxy-SG:
+  SERVER-ID:
     type: file
-    path: "./proxy_provider/SG server.yaml"
-    health-check:
-      enable: true
-      url: http://cp.cloudflare.com/generate_204
-      interval: 30
-  Proxy-ID:
-    type: file
-    path: "./proxy_provider/ID server.yaml"
+    path: "./assets/provider/proxy/id.yaml"
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
-      interval: 30
-#  Proxy-fool:
-#    type: http
-#    url: "https://raw.githubusercontent.com/your_provider.yaml"
-#    path: "./proxy_provider/fool-vpn.yaml"
-#    interval: 10800
-#    health-check:
-#      enable: true
-#      url: https://cp.cloudflare.com/generate_204
-#      interval: 30
-  Proxy-filter:
-    type: http
-    url: "https://raw.githubusercontent.com/your_provider.yaml"
-    path: "./proxy_provider/filter-proxies.yaml"
-    interval: 10800
+      interval: 300
+  SERVER-SG:
+    type: file
+    path: "./assets/provider/proxy/sg.yaml"
     health-check:
       enable: true
-      url: https://cp.cloudflare.com/generate_204
+      url: http://www.gstatic.com/generate_204
       interval: 300
-#
-#
-#================= PROXY GROUPS =================
+  GAME-ONLY:
+    type: file
+    path: "./assets/provider/proxy/game.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN:
+    type: file
+    path: "./assets/provider/proxy/test.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN-ID:
+    type: file
+    path: "./assets/provider/proxy/test-id.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN-IND:
+    type: file
+    path: "./assets/provider/proxy/test-idn.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN-SG:
+    type: file
+    path: "./assets/provider/proxy/test-sg.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN-SGP:
+    type: file
+    path: "./assets/provider/proxy/test-sgp.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
 proxy-groups:
-- name: SG
-  type: fallback
+- name: 📶SELECT-VPN📶
+  type: select
   disable-udp: false
-  use:
-  - Proxy-SG
-  url: http://cp.cloudflare.com/generate_204
-  interval: '30'
-- name: ID
-  type: fallback
-  disable-udp: false
-  use:
-  - Proxy-ID
+  proxies:
+  - 🚥PING+🚥
+  - 🔂FALLBACK🔂
+  - 🔄BALANCE🔄
+  - 🎉🎉
+  - 🔄BALANCE SG🔄
+  - 🔄BALANCE SGP🔄
+  - 🤖ABS🤖
+  - 🇮🇩 ID 🇮🇩
+  - 🇮🇩 IDN 🇮🇩
+  - DIRECT
+  - REJECT
   url: http://www.gstatic.com/generate_204
-  interval: '30'
-#- name: fool
-#  type: fallback
-#  disable-udp: false
-#  use:
-#  - Proxy-fool
-#  url: http://cp.cloudflare.com/generate_204
-#  interval: '30'
-- name: filter
+  interval: 300
+- name: 🎉🎉
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - 🔄BALANCE SGP🔄
+  - 🤖ABS🤖
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🔄BALANCE SG🔄
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - TEST-AKUN-SG
+  - TEST-AKUN
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🔄BALANCE🔄
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - SERVER-ID
+  - SERVER-SG
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🔄BALANCE SGP🔄
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - TEST-AKUN-SGP
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇮🇩 ID 🇮🇩
   type: url-test
   disable-udp: false
   use:
-  - Proxy-filter
-  url: http://cp.cloudflare.com/generate_204
-  interval: '30'
-# type: fallback, url-test, loadbalance
-#
-#
-#================ DNS + FALLBACK-FILTER =================
-dns:
-  enable: true
-  ipv6: false
-  enhanced-mode: redir-host
-  listen: 0.0.0.0:7874
-  fake-ip-filter:
-    - "+.*"
-  nameserver:
-  - 1.1.1.1
-  - 8.8.8.8
-#  - 9.9.9.9
-  fallback:
-  - 1.1.1.1
-  - 8.8.8.8
-#  - 9.9.9.9
-  default-nameserver:
-  - 8.8.8.8
-  - 8.8.4.4
-  - 1.1.1.1
-  - 1.0.0.1
-#  - 9.9.9.9
-#  - 149.112.112.112
-redir-port: 7892
-tproxy-port: 7895
-port: 7890
-socks-port: 7891
-mixed-port: 7893
-mode: rule
-log-level: silent
-allow-lan: true
-external-controller: 0.0.0.0:9090
-secret: reyre
-bind-address: "*"
-external-ui: "/usr/share/openclash/ui"
-ipv6: false
-tun:
-  enable: true
-  stack: system
-  device: utun
-  auto-route: false
-  auto-detect-interface: false
-  dns-hijack:
-  - tcp://any:53
-profile:
-  store-selected: true
-  store-fake-ip: true
+  - TEST-AKUN-ID
+  - TEST-AKUN-IND
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇮🇩 IDN 🇮🇩
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - TEST-AKUN-ID
+  - TEST-AKUN-IND
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🚥PING+🚥
+  type: url-test
+  disable-udp: false
+  use:
+  - SERVER-SG
+  - SERVER-ID
+  - TEST-AKUN-SG
+  - TEST-AKUN
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🔂FALLBACK🔂
+  type: fallback
+  disable-udp: false
+  use:
+  - TEST-AKUN-ID
+  - TEST-AKUN-IND
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🤖ABS🤖
+  type: url-test
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - GAME-ONLY
+  - TEST-AKUN-SGP
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🎰GAME•TCP🎰
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - REJECT
+  - 📶SELECT-VPN📶
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🎮GAME•UDP🎮
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - REJECT
+  - 📶SELECT-VPN📶
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🏧M•BANKING🏧
+  type: select
+  disable-udp: false
+  proxies:
+  - 🇮🇩 ID 🇮🇩
+  - 🇮🇩 IDN 🇮🇩
+  - 🔂FALLBACK🔂
+  - 📶SELECT-VPN📶
+  - DIRECT
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇮🇩 INDONESIA 🇮🇩
+  type: select
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - 🇮🇩 IDN 🇮🇩
+  - 🇮🇩 ID 🇮🇩
+  - 🔂FALLBACK🔂
+  - 📶SELECT-VPN📶
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 💬WHATSAPP💬
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - 🚥PING+🚥
+  - 🇮🇩 ID 🇮🇩
+  - 📶SELECT-VPN📶
+  - REJECT
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 📱SOSMED📱
+  type: select
+  disable-udp: false
+  proxies:
+  - 🎉🎉
+  - 🔄BALANCE🔄
+  - 🔄BALANCE SG🔄
+  - 📶SELECT-VPN📶
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🎞STREAMING🎞
+  type: select
+  disable-udp: false
+  proxies:
+  - 🎉🎉
+  - 🔄BALANCE🔄
+  - 🔄BALANCE SG🔄
+  - 📶SELECT-VPN📶
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🛡AD•BLOCK🛡
+  type: select
+  disable-udp: false
+  proxies:
+  - REJECT
+  - 📶SELECT-VPN📶
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🛡ADS•BLOCK🛡
+  type: select
+  disable-udp: false
+  proxies:
+  - REJECT
+  - 📶SELECT-VPN📶
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🛡AD•MALICIOUS🛡
+  type: select
+  disable-udp: false
+  proxies:
+  - REJECT
+  - 📶SELECT-VPN📶
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🚫18+🚫
+  type: select
+  disable-udp: false
+  proxies:
+  - 🤖ABS🤖
+  - 🎉🎉
+  - 🔄BALANCE🔄
+  - 🔄BALANCE SG🔄
+  - 📶SELECT-VPN📶
+  - DIRECT
+  - REJECT
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rule-providers:
+  ABS:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/ABS.yaml"
+  Portgames:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/portgames.yaml"
+  Gaming:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/gaming.yaml"
+  Game-TCP:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/gametcp.yaml"
+  E-Banking:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/E-Banking.yaml"
+  Whatsapp:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/whatsapp.yaml"
+  Sosmed:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/Sosmed.yaml"
+  Streaming:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/Stream.yaml"
+  Lancidr:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/rule_lancidr.yaml"
+  Umum:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/rule_umum.yaml"
+  rule_indo:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/rule_indo.yaml"
+  Baypass:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/bypass-ads.yaml"
+  Basicads:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_basicads.yaml
+    path: "./assets/provider/rule/rule_basicads.yaml"
+  Personalads:
+    type: file
+    behavior: classical
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_personalads.yaml
+    path: "./assets/provider/rule/personalads.yaml"
+  rule_malicious:
+    type: http
+    behavior: domain
+    path: "./assets/provider/rule/rule_malicious.yaml"
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_malicious.yaml
+  rule_maliciousip:
+    type: http
+    behavior: ipcidr
+    path: "./assets/provider/rule/rule_maliciousip.yaml"
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_maliciousip.yaml
+  rule_hijacking:
+    type: http
+    behavior: classical
+    path: "./assets/provider/rule/rule_hijacking.yaml"
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_hijacking.yaml
+  rule_privacy:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_privacy.yaml
+    path: "./assets/provider/rule/rule_privacy.yaml"
+  18+:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_porn.yaml
+    path: "./assets/provider/rule/18+.yaml"
+  Nsfw:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_nsfw.yaml
+    path: "./assets/provider/rule/nsfw.yaml"
 rules:
-- RULE-SET,Direct,DIRECT
-#- RULE-SET,xl-akrab,DIRECT
-- RULE-SET,Reject,REJECT
-- RULE-SET,rule_AdAway,REJECT                   #general
-- RULE-SET,rule_Malicious-URLhaus,REJECT        #security
-- RULE-SET,rule_Malware-Websites,REJECT         #security
-- RULE-SET,rule_Phishing-URL,REJECT             #security
-- RULE-SET,rule_ShadowWhisperer-Malware,REJECT  #security
-- RULE-SET,rule_Stalkerware,REJECT              #security
-- RULE-SET,rule_StevenBlackList,REJECT          #security
-- RULE-SET,rule_custom,REJECT                   #general
-#================ TORAM ONLINE ===============
-#- DST-PORT,30100,DIRECT
-#- DOMAIN-KEYWORD,toram,DIRECT
-- MATCH,GLOBAL
-unified-delay: true
-```
+  - IP-CIDR,127.0.0.1/32,REJECT,no-resolve
+  - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
+  - IP-CIDR,28.0.0.1/8,REJECT,no-resolve
+  - IP-CIDR6,::1/128,REJECT,no-resolve
+  - RULE-SET,Lancidr,REJECT,no-resolve
+  - RULE-SET,Baypass,🛡AD•BLOCK🛡
+  - RULE-SET,Basicads,🛡ADS•BLOCK🛡
+  - AND,((RULE-SET,Personalads),(NOT,((RULE-SET,Baypass)))),🛡ADS•BLOCK🛡
+  - RULE-SET,rule_privacy,🛡ADS•BLOCK🛡
+  - RULE-SET,rule_hijacking,🛡ADS•BLOCK🛡
+  - AND,((RULE-SET,rule_malicious),(OR,((RULE-SET,rule_maliciousip)))),🛡AD•MALICIOUS🛡
+  - AND,((RULE-SET,rule_maliciousip),(RULE-SET,rule_malicious)),🛡AD•MALICIOUS🛡
+  - RULE-SET,18+,🚫18+🚫
+  - RULE-SET,Nsfw,🚫18+🚫
+  - AND,((NETWORK,UDP),(OR,((RULE-SET,Streaming),(RULE-SET,Sosmed)))),REJECT
+  - AND,((NETWORK,UDP),(NETWORK,TCP),(OR,((RULE-SET,ABS)))),DIRECT
+  - RULE-SET,ABS,DIRECT
+  - AND,((RULE-SET,Portgames),(RULE-SET,Game-TCP),(OR,((NETWORK,UDP)))),🎮GAME•UDP🎮
+  #- AND,((RULE-SET,Gaming),(OR,((RULE-SET,Portgames),(RULE-SET,Game-TCP)))),🎮GAME•UDP🎮
+  - RULE-SET,Portgames,🎮GAME•UDP🎮
+  - RULE-SET,Game-TCP,🎮GAME•UDP🎮
+  - AND,((NETWORK,TCP),(OR,((RULE-SET,Game-TCP),(RULE-SET,Portgames)))),🎰GAME•TCP🎰
+  #- AND,((NETWORK,TCP),(OR,((RULE-SET,Game-TCP),(RULE-SET,Gaming)))),🎰GAME•TCP🎰
+  - RULE-SET,E-Banking,🏧M•BANKING🏧
+  - RULE-SET,Streaming,🎞STREAMING🎞
+  - RULE-SET,Whatsapp,💬WHATSAPP💬
+  - RULE-SET,Sosmed,📱SOSMED📱
+  - RULE-SET,rule_indo,🇮🇩 INDONESIA 🇮🇩
+  - MATCH,GLOBAL
