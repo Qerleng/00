@@ -55,11 +55,11 @@ def get_update_rule(url):
 
 update_rule_ABPindo = get_update_rule("https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt")
 if update_rule_ABPindo:
-    with open(os.makedirs(os.path.join("backup/rule_provider", "filliv.yaml"), exist_ok=True), "w", encoding='utf-8') as file:
-        file.write("\n".join(update_rule_ABPindo))
+    with open("rule_ABPindo.yaml", "w", encoding='utf-8') as f:
+        f.write("\n".join(update_rule_ABPindo))
 
 update_rule_AdAway = get_update_rule("https://raw.githubusercontent.com/rfxcll/v2ray-rules-dat/rule/rule_ads.txt")
 if update_rule_AdAway:
-    with open(output_path_2, "w", encoding='utf-8') as file:
+    with open("rule_AdAway", "w", encoding='utf-8') as file:
         file.write("\n".join(update_rule_AdAway))
 
