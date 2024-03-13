@@ -53,12 +53,12 @@ def get_update_rule(url):
 
 
  # Write the filtered accounts to the YAML files with UTF-8 encoding
-    output_dir_1 = "backup/rule_provider"
-    output_path_1 = os.path.join(output_dir_1, "filter-liv.yaml")
-    output_path_2 = os.path.join(output_dir_1, "filter-XL.yaml")
+output_dir_1 = "backup/rule_provider"
+output_path_1 = os.path.join(output_dir_1, "filter-liv.yaml")
+output_path_2 = os.path.join(output_dir_1, "filter-XL.yaml")
 
     # Create the folders if they don't exist
-    os.makedirs(output_dir_1, exist_ok=True)
+os.makedirs(output_dir_1, exist_ok=True)
 
 
 update_rule_ABPindo = get_update_rule("https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt")
