@@ -141,7 +141,7 @@ jobs:
           rm -fr rule_discord.yamle
 
           echo "Downloading Personal_ads source list..."
-          sSf -o Personal_ads.txt https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt
+          curl -sSf -o Personal_ads.txt https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt
           python3 - <<EOF
           import re
           import yaml
