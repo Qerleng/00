@@ -140,7 +140,30 @@ jobs:
           curl -s https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Discord/Discord.yaml -o rule_discord.yaml
           rm -fr rule_discord.yamle
 
-         
+          echo "Downloading Personal_ads source list..."
+          sSf -o Personal_ads.txt https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt
+          python3 - <<EOF
+          import re
+          import yaml
+          
+          with open("Personal_ads.txt", "r") as file:
+              input_text = file.read()
+          
+          payload_lines = re.findall(r"\|\|(.+)\^", input_text)
+          payload = [f'"+.{line}"' for line in payload_lines]
+          
+          data = {
+              "payload": payload
+          }
+          
+          yaml_output = yaml.dump(data, sort_keys=False, default_flow_style=False)
+          
+          formatted_yaml = re.sub(r"(\s+-) '(.+)'", r"\1 \2", yaml_output)
+          
+          with open("Personal_ads.yaml", "w") as file:
+              file.write(formatted_yaml)
+          EOF
+          rm Personal_ads.txt
 
 
       - uses: stefanzweifel/git-auto-commit-action@v4
