@@ -18,13 +18,26 @@ jobs:
       - name: Tese
         working-directory: ./rule_provider
         run: |
+          echo "Downloading oisd full source list..."
+          curl -sSf -o oisd-full.txt https://raw.githubusercontent.com/Qerleng/00/main/rule_provider/TEST.yaml
+          curl -sSf -o oisd-full1.txt https://raw.githubusercontent.com/Qerleng/00/main/rule_provider/portgames.yaml
+          python3 - <<EOF
+          import re
+          import yaml
           
-          with open('TEST.yaml') as f1, open('portgames.yaml') as f2:
-          f1_lines = set(f1.read().splitlines())
-          f2_lines = set(f2.read().splitlines())
-          new_data = f1_lines - f2_lines
-          with open('f1.yaml', 'w') as f1:
-          f1.write("\n".join(new_data))
+          with open('oisd-full.txt') as f1, open('oisd-full1.txt') as f2:
+            file1_lines = (f1.read().splitlines())
+            file2_lines = (f2.read().splitlines())
+          
+          for line in file1_lines:
+            if line in file2_lines:
+              file1_lines.remove(line)
+          
+          with open('Removed.txt', 'w') as f3:
+            f3.write("\n".join(file1_lines))
+          EOF
+          rm oisd-full.txt
+          rm oisd-full1.txt
 
 
       - uses: stefanzweifel/git-auto-commit-action@v4
