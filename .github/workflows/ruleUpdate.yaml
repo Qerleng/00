@@ -75,7 +75,7 @@ jobs:
           import yaml
           import re
           
-          excel_url = "https://ojk.go.id/id/kanal/perbankan/data-dan-statistik/Documents/Pages/Daftar-Alamat-Kantor-Pusat-Bank-Umum-Dan-Syariah/Daftar Alamat Kantor Pusat Bank Umum Dan Syariah - Desember 2023.xlsx"
+          excel_url = "https://ojk.go.id/id/kanal/perbankan/data-dan-statistik/Documents/Pages/Daftar-Alamat-Kantor-Pusat-Bank-Umum-Dan-Syariah/Daftar%20Alamat%20Kantor%20Pusat%20Bank%20Umum%20Dan%20Syariah%20-%20Desember%202023.xlsx"
           
           # Read the Excel file
           df = pd.read_excel(excel_url)
