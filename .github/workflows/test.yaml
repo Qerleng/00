@@ -18,10 +18,6 @@ jobs:
       - name: Tese
         working-directory: ./rule_provider
         run: |
-          echo "Downloading oisd full source list..."
-          python3 - <<EOF
-          import re
-          import yaml
           
           with open('TEST.yaml') as f1, open('portgames.yaml') as f2:
           f1_lines = set(f1.read().splitlines())
