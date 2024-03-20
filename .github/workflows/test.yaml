@@ -1,0 +1,36 @@
+name: test
+
+on:
+  schedule:
+    - cron: '0 20 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas tldextract pyyaml openpyxl
+          
+      - name: Tese
+        working-directory: ./rule_provider
+        run: |
+          echo "Downloading oisd full source list..."
+          python3 - <<EOF
+          import re
+          import yaml
+          
+          with open('TEST.yaml') as f1, open('portgames.yaml') as f2:
+          f1_lines = set(f1.read().splitlines())
+          f2_lines = set(f2.read().splitlines())
+          new_data = f1_lines - f2_lines
+          with open('f1.yaml', 'w') as f1:
+          f1.write("\n".join(new_data))
+
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Automatic update Rule Provider Clash
