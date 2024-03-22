@@ -19,7 +19,7 @@ def get_update_filter_proxies(urls):
         for line in lines:
             line = line.strip()
 # variant1  if line.startswith("- ") and ("RELAY-" in line or "SG-" in line or "🇺🇸US-" in line) and "headers" in line and "Host" in line:
-            if line.startswith("- ") and ("RELAY-" in line or "SG-" in line) and "headers" in line and "Host" in line:
+            if line.startswith("- ") and ("RELAY-" in line or "SG-" in line) and "headers" in line and "path" in line and "Host" in line:
                 entry = yaml.safe_load(line[2:])
                 if entry and "xmbb.net" in line:
                     filtered_accounts.insert(0, line)
