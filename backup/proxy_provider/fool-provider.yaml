@@ -1,1 +1,16 @@
-
+proxies:
+- name: "203 \U0001F1EE\U0001F1E9 PT WARNA DATA MULTIMEDIA WS CDN NTLS"
+  server: 104.17.3.81
+  port: 80
+  type: vmess
+  uuid: 415db1e5-695d-44da-8b17-fbf2d8def97d
+  cipher: auto
+  tls: false
+  udp: true
+  network: ws
+  xudp: true
+  key: value
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: zxeeds.sannvpn.my.id
