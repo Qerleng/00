@@ -91,9 +91,9 @@ def get_update_filter_proxies(urls):
                     filtered_accounts.insert(31, line)
                 elif ".encrypted.my.id" in line:
                     filtered_accounts.insert(32, line)
-                elif "RELAY-" in line and "headers" in line and "Host" in line:
+                elif "RELAY-" in line and "path" in line and "headers" in line and "Host" in line:
                     relay_accounts.append(line)
-                elif "SG-" in line and "headers" in line and "Host" in line:
+                elif "SG-" in line and "path" in line and "headers" in line and "Host" in line:
                     sg_accounts.append(line)
 #                elif "🇺🇸US-" in line and "headers" in line and "Host" in line:
 #                    us_accounts.append(line)
