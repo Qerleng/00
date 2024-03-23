@@ -17,11 +17,6 @@ jobs:
       - name: Run script update proxy
         run: python backup/gatcha/get-update-gatcha.py
 #             python backup/proxy_provider/fool-provider.py
-      - name: Commit changes
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git commit -a -m "Automatic update"
-      - name: Push changes
-        run: |
-          git push -u origin main
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Automatic update
