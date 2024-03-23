@@ -136,10 +136,6 @@ jobs:
           sed -i 's|#payload:|payload:|' rule_maliciousip.yaml
           rm -fr rule_maliciousip.yamle
 
-          echo "Downloading Discord source list..."
-          curl -s https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Discord/Discord.yaml -o rule_discord.yaml
-          rm -fr rule_discord.yamle
-
           echo "Downloading Personal_ads source list..."
           curl -sSf -o Personal_ads.txt https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt
           python3 - <<EOF
@@ -165,6 +161,9 @@ jobs:
           EOF
           rm Personal_ads.txt
 
+          echo "Downloading Category-Porn source list..."
+          curl -s https://rules.dreamoeu.com/category-porn.yaml -o rule_18+.yaml
+          rm -fr rule_18+.yamle
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
