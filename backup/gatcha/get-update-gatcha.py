@@ -135,8 +135,8 @@ def get_update_filter_proxies(urls):
     yaml_data_2 = yaml.dump({"proxies": formatted_accounts_2}, sort_keys=False, allow_unicode=True)
 
     # Write the filtered accounts to the YAML files with UTF-8 encoding
-    output_dir_1 = "Proxy_provider"
-    output_dir_2 = "Proxy_provider"
+    output_dir_1 = "proxy_provider"
+    output_dir_2 = "proxy_provider"
     output_path_1 = os.path.join(output_dir_1, "filter-liv.yaml")
     output_path_2 = os.path.join(output_dir_2, "filter-XL.yaml")
 
