@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Show python version
         run: python --version
-      - name: Run script update provider
+      - name: Run script Update Proxy
         run:
           import requests
           import yaml
