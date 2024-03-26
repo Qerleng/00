@@ -17,7 +17,7 @@ jobs:
           
       - name: rule providers
         working-directory: ./rule_provider
-        run: 
+        run: |
           echo "Downloading oisd full source list..."
           curl -sSf -o oisd-full.txt https://big.oisd.nl/
           python3 - <<EOF
