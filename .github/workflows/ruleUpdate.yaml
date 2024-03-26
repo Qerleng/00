@@ -39,7 +39,7 @@ jobs:
             else:
                         domains.append("" + domain)
                         
-          payload = [f'+."{line}"' for line in domains]
+          payload = [f'"+.{line}"' for line in domains]
           
           data = {
               "payload": payload
@@ -64,7 +64,7 @@ jobs:
               input_text = file.read()
           
           payload_lines = re.findall(r"\|\|(.+)\^", input_text)
-          payload = [f'+."{line}"' for line in payload_lines]
+          payload = [f'"+.{line}"' for line in payload_lines]
           
           data = {
               "payload": payload
