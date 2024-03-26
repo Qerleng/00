@@ -39,7 +39,7 @@ jobs:
             else:
                         domains.append("" + domain)
                         
-          payload = [f'+."{line}"' for line in domains]
+          payload = [f'+."{line}"' for line in domain]
           
           data = {
               "payload": payload
