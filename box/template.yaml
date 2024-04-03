@@ -22,14 +22,11 @@ lan-disallowed-ips:
   - 192.168.0.3/32
 
 
-external-controller: 0.0.0.0:9090 
-# secret: "123456"
-external-ui: /data/adb/box/clash/dashboard
-
-
 profile:
   store-selected: false
   store-fake-ip: false
+external-controller: 0.0.0.0:9090 
+external-ui: /data/adb/box/clash/dashboard
 
 
 tun:
@@ -53,7 +50,7 @@ tun:
 ntp:
   enable: true
   write-to-system: true
-# server: time.android.com
+  server: time.*.com
   port: 123
   interval: 30
 
