@@ -55,7 +55,7 @@ ipv6: false # 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DN
 #      -----END CERTIFICATE-----
 
 external-controller: 0.0.0.0:9090 # RESTful API 监听地址
-#external-controller-tls: 0.0.0.0:9090 # RESTful API HTTPS 监听地址，需要配置 tls 部分配置文件
+external-controller-tls: 0.0.0.0:9090 # RESTful API HTTPS 监听地址，需要配置 tls 部分配置文件
 # secret: "123456" # `Authorization:Bearer ${secret}`
 
 # tcp-concurrent: true # TCP 并发连接所有 IP, 将使用最快握手的 TCP
@@ -86,7 +86,7 @@ external-ui: /data/adb/box/clash/dashboard
   #quic-go-disable-gso: true
 
 # 类似于 /etc/hosts, 仅支持配置单个 IP
-#hosts:
+hosts:
 # '*.mihomo.dev': 127.0.0.1
 # '.dev': 127.0.0.1
 # 'alpha.mihomo.dev': '::1'
@@ -98,7 +98,7 @@ profile: # 存储 select 选择记录
   store-selected: false
 
   # 持久化 fake-ip
-  store-fake-ip: true
+  store-fake-ip: false
 
 # Tun 配置
 tun:
@@ -220,11 +220,11 @@ dns:
   # 用于解析 nameserver，fallback 以及其他DNS服务器配置的，DNS 服务域名
   # 只能使用纯 IP 地址，可使用加密 DNS
   default-nameserver:
-    - 114.114.114.114
-    - 8.8.8.8
-    - tls://1.12.12.12:853
-    - tls://223.5.5.5:853
-    - system # append DNS server from system configuration. If not found, it would print an error log and skip.
+#    - 112.215.248.122
+#    - 8.8.8.8
+    - tls://8.8.8.8:853
+#    - tls://8.8.4.4:853
+#    - system # append DNS server from system configuration. If not found, it would print an error log and skip.
   enhanced-mode: fake-ip # or redir-host
 
   fake-ip-range: 198.18.0.1/16 # fake-ip 池设置
@@ -240,15 +240,15 @@ dns:
   # 支持 UDP，TCP，DoT，DoH，DoQ
   # 这部分为主要 DNS 配置，影响所有直连，确保使用对大陆解析精准的 DNS
   nameserver:
-    - 114.114.114.114 # default value
-    - 8.8.8.8 # default value
-    - tls://223.5.5.5:853 # DNS over TLS
-    - https://doh.pub/dns-query # DNS over HTTPS
-    - https://dns.alidns.com/dns-query#h3=true # 强制 HTTP/3，与 perfer-h3 无关，强制开启 DoH 的 HTTP/3 支持，若不支持将无法使用
-    - https://mozilla.cloudflare-dns.com/dns-query#DNS&h3=true # 指定策略组和使用 HTTP/3
-    - dhcp://en0 # dns from dhcp
-    - quic://dns.adguard.com:784 # DNS over QUIC
-    # - '8.8.8.8#en0' # 兼容指定DNS出口网卡
+#    - 114.114.114.114 # default value
+#    - 8.8.8.8 # default value
+    - tls://8.8.8.8:853 # DNS over TLS
+#    - https://doh.pub/dns-query # DNS over HTTPS
+#    - https://dns.alidns.com/dns-query#h3=true # 强制 HTTP/3，与 perfer-h3 无关，强制开启 DoH 的 HTTP/3 支持，若不支持将无法使用
+#    - https://mozilla.cloudflare-dns.com/dns-query#DNS&h3=true # 指定策略组和使用 HTTP/3
+#    - dhcp://en0 # dns from dhcp
+#    - quic://dns.adguard.com:784 # DNS over QUIC
+#     - '8.8.8.8#en0' # 兼容指定DNS出口网卡
 
   # 当配置 fallback 时，会查询 nameserver 中返回的 IP 是否为 CN，非必要配置
   # 当不是 CN，则使用 fallback 中的 DNS 查询结果
@@ -438,9 +438,9 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
+  - 🔄BALANCE SG🔄
   - 🎉🎉
   - 🔄BALANCE🔄
-  - 🔄BALANCE SG🔄
   - 📶SELECT-VPN📶
   url: http://www.gstatic.com/generate_204
   interval: 300
@@ -448,8 +448,8 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
-  - 🎉🎉
   - 🔄BALANCE🔄
+  - 🎉🎉
   - 🔄BALANCE SG🔄
   - 📶SELECT-VPN📶
   url: http://www.gstatic.com/generate_204
@@ -664,7 +664,6 @@ rules:
   - OR,((RULE-SET,rule_18+),(AND,((RULE-SET,rule_Nsfw)))),🚫18+🚫
   - RULE-SET,E-Banking,🏧M•BANKING🏧
   - RULE-SET,Streaming,🎞STREAMING🎞
-  - AND,((NETWORK,UDP),(OR,((DOMAIN-KEYWORD,whatsapp),(RULE-SET,Whatsapp)))),💬WHATSAPP💬
   - RULE-SET,Whatsapp,💬WHATSAPP💬
   - RULE-SET,Sosmed,📱SOSMED📱
   - RULE-SET,rule_indo,🇮🇩 INDONESIA 🇮🇩
