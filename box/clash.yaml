@@ -205,7 +205,7 @@ tunnels: # one line config
 ntp:
   enable: true
   write-to-system: true
-  server: time.apple.com
+  server: time.android.com
   port: 123
   interval: 30
 
