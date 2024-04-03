@@ -70,7 +70,7 @@ external-ui: /data/adb/box/clash/dashboard
 # 全局 TLS 指纹，优先低于 proxy 内的 client-fingerprint
 # 可选： "chrome","firefox","safari","ios","random","none" options.
 # Utls is currently support TLS transport in TCP/grpc/WS/HTTP for VLESS/Vmess and trojan.
-global-client-fingerprint: none
+#global-client-fingerprint: none
 
 #  TCP keep alive interval
 keep-alive-interval: 15
