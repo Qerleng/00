@@ -4,12 +4,12 @@ mixed-port: 10801 # HTTP(S) 和 SOCKS 代理混合端口
 # redir-port: 7892 # 透明代理端口，用于 Linux 和 MacOS
 
 # Transparent proxy server port for Linux (TProxy TCP and TProxy UDP)
-# tproxy-port: 7893
+tproxy-port: 7893
 
 allow-lan: true # 允许局域网连接
 bind-address: "*" # 绑定 IP 地址，仅作用于 allow-lan 为 true，'*'表示所有地址
-authentication: # http,socks入口的验证用户名，密码
-  - "username:password"
+#authentication: # http,socks入口的验证用户名，密码
+#  - "username:password"
 skip-auth-prefixes: # 设置跳过验证的IP段
   - 127.0.0.1/8
   - ::1/128
@@ -28,13 +28,13 @@ find-process-mode: strict
 mode: rule
 
 #自定义 geodata url
-geox-url:
-  geoip: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
-  geosite: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
-  mmdb: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.metadb"
+#geox-url:
+#  geoip: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
+#  geosite: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
+#  mmdb: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.metadb"
 
-geo-auto-update: false # 是否自动更新 geodata
-geo-update-interval: 24 # 更新间隔，单位：小时
+#geo-auto-update: false # 是否自动更新 geodata
+#geo-update-interval: 24 # 更新间隔，单位：小时
 
 # Matcher implementation used by GeoSite, available implementations:
 # - succinct (default, same as rule-set)
@@ -43,34 +43,34 @@ geo-update-interval: 24 # 更新间隔，单位：小时
 
 log-level: debug # 日志等级 silent/error/warning/info/debug
 
-ipv6: true # 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DNS 请求 AAAA 记录
+ipv6: false # 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DNS 请求 AAAA 记录
 
-tls:
-  certificate: string # 证书 PEM 格式，或者 证书的路径
-  private-key: string # 证书对应的私钥 PEM 格式，或者私钥路径
-  custom-certifactes:
-    - |
-      -----BEGIN CERTIFICATE-----
-      format/pem...
-      -----END CERTIFICATE-----
+#tls:
+#  certificate: string # 证书 PEM 格式，或者 证书的路径
+#  private-key: string # 证书对应的私钥 PEM 格式，或者私钥路径
+#  custom-certifactes:
+#    - |
+#      -----BEGIN CERTIFICATE-----
+#      format/pem...
+#      -----END CERTIFICATE-----
 
-external-controller: 0.0.0.0:9093 # RESTful API 监听地址
+external-controller: 0.0.0.0:9090 # RESTful API 监听地址
 external-controller-tls: 0.0.0.0:9443 # RESTful API HTTPS 监听地址，需要配置 tls 部分配置文件
 # secret: "123456" # `Authorization:Bearer ${secret}`
 
 # tcp-concurrent: true # TCP 并发连接所有 IP, 将使用最快握手的 TCP
 
 # 配置 WEB UI 目录，使用 http://{{external-controller}}/ui 访问
-external-ui: /path/to/ui/folder/
-external-ui-name: xd
-external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
+external-ui: /data/adb/box/clash/dashboard
+#external-ui-name: xd
+#external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
 
 # interface-name: en0 # 设置出口网卡
 
 # 全局 TLS 指纹，优先低于 proxy 内的 client-fingerprint
 # 可选： "chrome","firefox","safari","ios","random","none" options.
 # Utls is currently support TLS transport in TCP/grpc/WS/HTTP for VLESS/Vmess and trojan.
-global-client-fingerprint: chrome
+global-client-fingerprint: none
 
 #  TCP keep alive interval
 keep-alive-interval: 15
@@ -192,13 +192,13 @@ sniffer:
     # - 8000-9999
 
 tunnels: # one line config
-  - tcp/udp,127.0.0.1:6553,114.114.114.114:53,proxy
+  - tcp/udp,127.0.0.1:6553,112.215.248.122:53,proxy
   - tcp,127.0.0.1:6666,rds.mysql.com:3306,vpn
   # full yaml config
   - network: [tcp, udp]
     address: 127.0.0.1:7777
-    target: target.com
-    proxy: proxy
+#    target: target.com
+#    proxy: proxy
 
 # DNS配置
 dns:
