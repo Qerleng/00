@@ -1,1 +1,662 @@
+# port: 7890 # HTTP(S) 代理服务器端口
+# socks-port: 7891 # SOCKS5 代理端口
+mixed-port: 10801 # HTTP(S) 和 SOCKS 代理混合端口
+# redir-port: 7892 # 透明代理端口，用于 Linux 和 MacOS
 
+# Transparent proxy server port for Linux (TProxy TCP and TProxy UDP)
+# tproxy-port: 7893
+
+allow-lan: true # 允许局域网连接
+bind-address: "*" # 绑定 IP 地址，仅作用于 allow-lan 为 true，'*'表示所有地址
+authentication: # http,socks入口的验证用户名，密码
+  - "username:password"
+skip-auth-prefixes: # 设置跳过验证的IP段
+  - 127.0.0.1/8
+  - ::1/128
+lan-allowed-ips: # 允许连接的 IP 地址段，仅作用于 allow-lan 为 true, 默认值为0.0.0.0/0和::/0
+  - 0.0.0.0/0
+  - ::/0
+lan-disallowed-ips: # 禁止连接的 IP 地址段, 黑名单优先级高于白名单, 默认值为空
+  - 192.168.0.3/32
+
+#  find-process-mode has 3 values:always, strict, off
+#  - always, 开启，强制匹配所有进程
+#  - strict, 默认，由 mihomo 判断是否开启
+#  - off, 不匹配进程，推荐在路由器上使用此模式
+find-process-mode: strict
+
+mode: rule
+
+#自定义 geodata url
+geox-url:
+  geoip: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
+  geosite: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
+  mmdb: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.metadb"
+
+geo-auto-update: false # 是否自动更新 geodata
+geo-update-interval: 24 # 更新间隔，单位：小时
+
+# Matcher implementation used by GeoSite, available implementations:
+# - succinct (default, same as rule-set)
+# - mph (from V2Ray, also `hybrid` in Xray)
+# geosite-matcher: succinct
+
+log-level: debug # 日志等级 silent/error/warning/info/debug
+
+ipv6: true # 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DNS 请求 AAAA 记录
+
+tls:
+  certificate: string # 证书 PEM 格式，或者 证书的路径
+  private-key: string # 证书对应的私钥 PEM 格式，或者私钥路径
+  custom-certifactes:
+    - |
+      -----BEGIN CERTIFICATE-----
+      format/pem...
+      -----END CERTIFICATE-----
+
+external-controller: 0.0.0.0:9093 # RESTful API 监听地址
+external-controller-tls: 0.0.0.0:9443 # RESTful API HTTPS 监听地址，需要配置 tls 部分配置文件
+# secret: "123456" # `Authorization:Bearer ${secret}`
+
+# tcp-concurrent: true # TCP 并发连接所有 IP, 将使用最快握手的 TCP
+
+# 配置 WEB UI 目录，使用 http://{{external-controller}}/ui 访问
+external-ui: /path/to/ui/folder/
+external-ui-name: xd
+external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
+
+# interface-name: en0 # 设置出口网卡
+
+# 全局 TLS 指纹，优先低于 proxy 内的 client-fingerprint
+# 可选： "chrome","firefox","safari","ios","random","none" options.
+# Utls is currently support TLS transport in TCP/grpc/WS/HTTP for VLESS/Vmess and trojan.
+global-client-fingerprint: chrome
+
+#  TCP keep alive interval
+keep-alive-interval: 15
+
+# routing-mark:6666 # 配置 fwmark 仅用于 Linux
+experimental:
+  # Disable quic-go GSO support. This may result in reduced performance on Linux.
+  # This is not recommended for most users.
+  # Only users encountering issues with quic-go's internal implementation should enable this,
+  # and they should disable it as soon as the issue is resolved.
+  # This field will be removed when quic-go fixes all their issues in GSO.
+  # This equivalent to the environment variable QUIC_GO_DISABLE_GSO=1.
+  #quic-go-disable-gso: true
+
+# 类似于 /etc/hosts, 仅支持配置单个 IP
+hosts:
+# '*.mihomo.dev': 127.0.0.1
+# '.dev': 127.0.0.1
+# 'alpha.mihomo.dev': '::1'
+# test.com: [1.1.1.1, 2.2.2.2]
+# home.lan: lan # lan 为特别字段，将加入本地所有网卡的地址
+# baidu.com: google.com # 只允许配置一个别名
+
+profile: # 存储 select 选择记录
+  store-selected: false
+
+  # 持久化 fake-ip
+  store-fake-ip: true
+
+# Tun 配置
+tun:
+  enable: false
+  stack: system # gvisor/mixed
+  dns-hijack:
+    - 0.0.0.0:53 # 需要劫持的 DNS
+  # auto-detect-interface: true # 自动识别出口网卡
+  # auto-route: true # 配置路由表
+  # mtu: 9000 # 最大传输单元
+  # gso: false # 启用通用分段卸载, 仅支持 Linux
+  # gso-max-size: 65536 # 通用分段卸载包的最大大小
+  # strict-route: true # 将所有连接路由到tun来防止泄漏，但你的设备将无法其他设备被访问
+  inet4-route-address: # 启用 auto-route 时使用自定义路由而不是默认路由
+    - 0.0.0.0/1
+    - 128.0.0.0/1
+  inet6-route-address: # 启用 auto-route 时使用自定义路由而不是默认路由
+    - "::/1"
+    - "8000::/1"
+  # endpoint-independent-nat: false # 启用独立于端点的 NAT
+  # include-interface: # 限制被路由的接口。默认不限制, 与 `exclude-interface` 冲突
+  #   - "lan0"
+  # exclude-interface: # 排除路由的接口, 与 `include-interface` 冲突
+  #   - "lan1"
+  # include-uid: # UID 规则仅在 Linux 下被支持，并且需要 auto-route
+  # - 0
+  # include-uid-range: # 限制被路由的的用户范围
+  # - 1000:9999
+  # exclude-uid: # 排除路由的的用户
+  #- 1000
+  # exclude-uid-range: # 排除路由的的用户范围
+  # - 1000:9999
+
+  # Android 用户和应用规则仅在 Android 下被支持
+  # 并且需要 auto-route
+
+  # include-android-user: # 限制被路由的 Android 用户
+  # - 0
+  # - 10
+  # include-package: # 限制被路由的 Android 应用包名
+  # - com.android.chrome
+  # exclude-package: # 排除被路由的 Android 应用包名
+  # - com.android.captiveportallogin
+
+#ebpf配置
+ebpf:
+  auto-redir: # redirect 模式，仅支持 TCP
+    - eth0
+  redirect-to-tun: # UDP+TCP 使用该功能请勿启用 auto-route
+    - eth0
+
+# 嗅探域名 可选配置
+sniffer:
+  enable: false
+  ## 对 redir-host 类型识别的流量进行强制嗅探
+  ## 如：Tun、Redir 和 TProxy 并 DNS 为 redir-host 皆属于
+  # force-dns-mapping: false
+  ## 对所有未获取到域名的流量进行强制嗅探
+  # parse-pure-ip: false
+  # 是否使用嗅探结果作为实际访问，默认 true
+  # 全局配置，优先级低于 sniffer.sniff 实际配置
+  override-destination: false
+  sniff: # TLS 和 QUIC 默认如果不配置 ports 默认嗅探 443
+    QUIC:
+    #  ports: [ 443 ]
+    TLS:
+    #  ports: [443, 8443]
+
+    # 默认嗅探 80
+    HTTP: # 需要嗅探的端口
+      ports: [80, 8080-8880]
+      # 可覆盖 sniffer.override-destination
+      override-destination: true
+  force-domain:
+    - +.v2ex.com
+  ## 对嗅探结果进行跳过
+  # skip-domain:
+  #   - Mijia Cloud
+  # 需要嗅探协议
+  # 已废弃，若 sniffer.sniff 配置则此项无效
+  sniffing:
+    - tls
+    - http
+  # 强制对此域名进行嗅探
+
+  # 仅对白名单中的端口进行嗅探，默认为 443，80
+  # 已废弃，若 sniffer.sniff 配置则此项无效
+  port-whitelist:
+    - "80"
+    - "443"
+    # - 8000-9999
+
+tunnels: # one line config
+  - tcp/udp,127.0.0.1:6553,114.114.114.114:53,proxy
+  - tcp,127.0.0.1:6666,rds.mysql.com:3306,vpn
+  # full yaml config
+  - network: [tcp, udp]
+    address: 127.0.0.1:7777
+    target: target.com
+    proxy: proxy
+
+# DNS配置
+dns:
+  cache-algorithm: arc
+  enable: false # 关闭将使用系统 DNS
+  prefer-h3: true # 开启 DoH 支持 HTTP/3，将并发尝试
+  listen: 0.0.0.0:53 # 开启 DNS 服务器监听
+  # ipv6: false # false 将返回 AAAA 的空结果
+  # ipv6-timeout: 300 # 单位：ms，内部双栈并发时，向上游查询 AAAA 时，等待 AAAA 的时间，默认 100ms
+  # 用于解析 nameserver，fallback 以及其他DNS服务器配置的，DNS 服务域名
+  # 只能使用纯 IP 地址，可使用加密 DNS
+  default-nameserver:
+    - 114.114.114.114
+    - 8.8.8.8
+    - tls://1.12.12.12:853
+    - tls://223.5.5.5:853
+    - system # append DNS server from system configuration. If not found, it would print an error log and skip.
+  enhanced-mode: fake-ip # or redir-host
+
+  fake-ip-range: 198.18.0.1/16 # fake-ip 池设置
+
+  # use-hosts: true # 查询 hosts
+
+  # 配置不使用fake-ip的域名
+  # fake-ip-filter:
+  #   - '*.lan'
+  #   - localhost.ptlogin2.qq.com
+
+  # DNS主要域名配置
+  # 支持 UDP，TCP，DoT，DoH，DoQ
+  # 这部分为主要 DNS 配置，影响所有直连，确保使用对大陆解析精准的 DNS
+  nameserver:
+    - 114.114.114.114 # default value
+    - 8.8.8.8 # default value
+    - tls://223.5.5.5:853 # DNS over TLS
+    - https://doh.pub/dns-query # DNS over HTTPS
+    - https://dns.alidns.com/dns-query#h3=true # 强制 HTTP/3，与 perfer-h3 无关，强制开启 DoH 的 HTTP/3 支持，若不支持将无法使用
+    - https://mozilla.cloudflare-dns.com/dns-query#DNS&h3=true # 指定策略组和使用 HTTP/3
+    - dhcp://en0 # dns from dhcp
+    - quic://dns.adguard.com:784 # DNS over QUIC
+    # - '8.8.8.8#en0' # 兼容指定DNS出口网卡
+
+  # 当配置 fallback 时，会查询 nameserver 中返回的 IP 是否为 CN，非必要配置
+  # 当不是 CN，则使用 fallback 中的 DNS 查询结果
+  # 确保配置 fallback 时能够正常查询
+  # fallback:
+  #   - tcp://1.1.1.1
+  #   - 'tcp://1.1.1.1#ProxyGroupName' # 指定 DNS 过代理查询，ProxyGroupName 为策略组名或节点名，过代理配置优先于配置出口网卡，当找不到策略组或节点名则设置为出口网卡
+
+  # 专用于节点域名解析的 DNS 服务器，非必要配置项
+  # 配置服务器若查询失败将使用 nameserver，非并发查询
+  # proxy-server-nameserver:
+  # - https://dns.google/dns-query
+  # - tls://one.one.one.one
+
+  # 配置 fallback 使用条件
+  # fallback-filter:
+  #   geoip: true # 配置是否使用 geoip
+  #   geoip-code: CN # 当 nameserver 域名的 IP 查询 geoip 库为 CN 时，不使用 fallback 中的 DNS 查询结果
+  #   配置强制 fallback，优先于 IP 判断，具体分类自行查看 geosite 库
+  #   geosite:
+  #     - gfw
+  #   如果不匹配 ipcidr 则使用 nameservers 中的结果
+  #   ipcidr:
+  #     - 240.0.0.0/4
+  #   domain:
+  #     - '+.google.com'
+  #     - '+.facebook.com'
+  #     - '+.youtube.com'
+
+  # 配置查询域名使用的 DNS 服务器
+  nameserver-policy:
+    #   'www.baidu.com': '114.114.114.114'
+    #   '+.internal.crop.com': '10.0.0.1'
+    "geosite:cn,private,apple":
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query
+    "geosite:category-ads-all": rcode://success
+    "www.baidu.com,+.google.cn": [223.5.5.5, https://dns.alidns.com/dns-query]
+    ## global，dns 为 rule-providers 中的名为 global 和 dns 规则订阅，
+    ## 且 behavior 必须为 domain/classical，当为 classical 时仅会生效域名类规则
+    # "rule-set:global,dns": 8.8.8.8
+
+
+proxies:
+proxy-providers:
+  SERVER-ID:
+    type: file
+    path: "./assets/provider/proxy/id.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  SERVER-SG:
+    type: file
+    path: "./assets/provider/proxy/sg.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  GAME-ONLY:
+    type: file
+    path: "./assets/provider/proxy/game.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN:
+    type: file
+    path: "./assets/provider/proxy/test.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN-ID:
+    type: file
+    path: "./assets/provider/proxy/test-id.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN-IND:
+    type: file
+    path: "./assets/provider/proxy/test-idn.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN-SG:
+    type: file
+    path: "./assets/provider/proxy/test-sg.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN-SGP:
+    type: file
+    path: "./assets/provider/proxy/test-sgp.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN-1:
+    type: file
+    path: "./assets/provider/proxy/akun-1.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TEST-AKUN-2:
+    type: file
+    path: "./assets/provider/proxy/akun-2.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+      
+proxy-groups:
+- name: 📶SELECT-VPN📶
+  type: select
+  disable-udp: false
+  proxies:
+  - 🚥PING+🚥
+  - 🔂FALLBACK🔂
+  - 🎉🎉
+  - 🔄BALANCE🔄
+  - 🔄BALANCE SG🔄
+  - 🔄BALANCE SGP🔄
+  - 🇮🇩 ID 🇮🇩
+  - 🇮🇩 IDN 🇮🇩
+  - 🤖ABS🤖
+  - DIRECT
+  - REJECT
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🎰GAME•TCP🎰
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - REJECT
+  - 📶SELECT-VPN📶
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🎮GAME•UDP🎮
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - REJECT
+  - 📶SELECT-VPN📶
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🏧M•BANKING🏧
+  type: select
+  disable-udp: false
+  proxies:
+  - 🇮🇩 ID 🇮🇩
+  - 🇮🇩 IDN 🇮🇩
+  - 🔂FALLBACK🔂
+  - 📶SELECT-VPN📶
+  - DIRECT
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇮🇩 INDONESIA 🇮🇩
+  type: select
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - 🇮🇩 IDN 🇮🇩
+  - 🇮🇩 ID 🇮🇩
+  - 🔂FALLBACK🔂
+  - 📶SELECT-VPN📶
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 💬WHATSAPP💬
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - 🚥PING+🚥
+  - 🇮🇩 ID 🇮🇩
+  - 📶SELECT-VPN📶
+  - REJECT
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 📱SOSMED📱
+  type: select
+  disable-udp: false
+  proxies:
+  - 🎉🎉
+  - 🔄BALANCE🔄
+  - 🔄BALANCE SG🔄
+  - 📶SELECT-VPN📶
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🎞STREAMING🎞
+  type: select
+  disable-udp: false
+  proxies:
+  - 🎉🎉
+  - 🔄BALANCE🔄
+  - 🔄BALANCE SG🔄
+  - 📶SELECT-VPN📶
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🛡AD•BLOCK🛡
+  type: select
+  disable-udp: false
+  proxies:
+  - REJECT
+  - 📶SELECT-VPN📶
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🛡ADS•BLOCK🛡
+  type: select
+  disable-udp: false
+  proxies:
+  - REJECT
+  - 📶SELECT-VPN📶
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🛡AD•MALICIOUS🛡
+  type: select
+  disable-udp: false
+  proxies:
+  - REJECT
+  - 📶SELECT-VPN📶
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🚫18+🚫
+  type: select
+  disable-udp: false
+  proxies:
+  - 🤖ABS🤖
+  - 🎉🎉
+  - 🔄BALANCE🔄
+  - 🔄BALANCE SG🔄
+  - 📶SELECT-VPN📶
+  - DIRECT
+  - REJECT
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🎉🎉
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - TEST-AKUN-1
+  - TEST-AKUN-1
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🔄BALANCE SG🔄
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - TEST-AKUN-SG
+  - TEST-AKUN
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🔄BALANCE🔄
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - SERVER-ID
+  - SERVER-SG
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🔄BALANCE SGP🔄
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - TEST-AKUN-SGP
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇮🇩 ID 🇮🇩
+  type: url-test
+  disable-udp: false
+  use:
+  - TEST-AKUN-ID
+  - TEST-AKUN-IND
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇮🇩 IDN 🇮🇩
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - TEST-AKUN-ID
+  - TEST-AKUN-IND
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🚥PING+🚥
+  type: url-test
+  disable-udp: false
+  use:
+  - SERVER-SG
+  - SERVER-ID
+  - TEST-AKUN-SG
+  - TEST-AKUN
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🔂FALLBACK🔂
+  type: fallback
+  disable-udp: false
+  use:
+  - TEST-AKUN-ID
+  - TEST-AKUN-IND
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🤖ABS🤖
+  type: url-test
+  disable-udp: false
+  use:
+  - GAME-ONLY
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rule-providers:
+  ABS:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/ABS.yaml"
+  Portgames:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/portgames.yaml"
+  Gaming:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/gaming.yaml"
+  Game-TCP:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/gametcp.yaml"
+  E-Banking:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/E-Banking.yaml"
+  Whatsapp:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/whatsapp.yaml"
+  Sosmed:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/Sosmed.yaml"
+  Streaming:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/Stream.yaml"
+  Lancidr:
+    type: file
+    behavior: ipcidr
+    path: "./assets/provider/rule/rule_lancidr.yaml"
+  Umum:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/rule_umum.yaml"
+  rule_indo:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/rule_indo.yaml"
+  Baypass:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/bypass-ads.yaml"
+  Privacy:
+    type: file
+    behavior: classical
+    path: "./assets/provider/rule/rule_privacy.yaml"
+  rule_Basicads:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/Qerleng/00/main/rule_provider/rule_basicads.yaml
+    path: "./assets/provider/rule/rule_basicads.yaml"
+  rule_Personalads:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/Qerleng/00/main/rule_provider/Personal_ads.yaml
+    path: "./assets/provider/rule/personalads.yaml"
+  rule_malicious:
+    type: http
+    behavior: domain
+    path: "./assets/provider/rule/rule_malicious.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/00/main/rule_provider/rule_malicious.yaml
+  rule_maliciousip:
+    type: http
+    behavior: ipcidr
+    path: "./assets/provider/rule/rule_maliciousip.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/00/main/rule_provider/rule_maliciousip.yaml
+  rule_18+:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/Qerleng/00/main/rule_provider/rule_18+.yaml
+    path: "./assets/provider/rule/18+.yaml"
+  rule_Nsfw:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/Qerleng/00/main/rule_provider/rule_nsfw.yaml
+    path: "./assets/provider/rule/nsfw.yaml"
+rules:
+  - RULE-SET,Lancidr,REJECT,no-resolve
+  - RULE-SET,Privacy,REJECT,no-resolve
+  - RULE-SET,Baypass,🛡AD•BLOCK🛡
+  - OR,((RULE-SET,rule_Basicads),(AND,((RULE-SET,rule_Personalads)))),🛡ADS•BLOCK🛡
+  - OR,((RULE-SET,rule_malicious),(AND,((RULE-SET,rule_maliciousip)))),🛡AD•MALICIOUS🛡
+  - RULE-SET,ABS,DIRECT
+  - AND,((NETWORK,UDP),(OR,((DOMAIN-KEYWORD,youtube),(DOMAIN-KEYWORD,googlevideo)))),REJECT
+  - AND,((NETWORK,UDP),(OR,((RULE-SET,Game-TCP),(RULE-SET,Gaming)))),🎮GAME•UDP🎮
+  - AND,((NETWORK,TCP),(OR,((RULE-SET,Portgames),(RULE-SET,Gaming)))),🎰GAME•TCP🎰
+  - OR,((RULE-SET,rule_18+),(AND,((RULE-SET,rule_Nsfw)))),🚫18+🚫
+  - RULE-SET,E-Banking,🏧M•BANKING🏧
+  - RULE-SET,Streaming,🎞STREAMING🎞
+  - AND,((NETWORK,UDP),(OR,((DOMAIN-KEYWORD,whatsapp),(RULE-SET,Whatsapp)))),💬WHATSAPP💬
+  - RULE-SET,Whatsapp,💬WHATSAPP💬
+  - RULE-SET,Sosmed,📱SOSMED📱
+  - RULE-SET,rule_indo,🇮🇩 INDONESIA 🇮🇩
+  - MATCH,GLOBAL
