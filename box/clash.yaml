@@ -152,8 +152,8 @@ ebpf:
     - eth0
 
 # 嗅探域名 可选配置
-sniffer:
-  enable: false
+#sniffer:
+#  enable: false
   ## 对 redir-host 类型识别的流量进行强制嗅探
   ## 如：Tun、Redir 和 TProxy 并 DNS 为 redir-host 皆属于
   # force-dns-mapping: false
@@ -193,8 +193,8 @@ sniffer:
     # - 8000-9999
 
 tunnels: # one line config
-  - tcp/udp,127.0.0.1:6553,112.215.248.122:53,proxy
-  - tcp,127.0.0.1:6666,rds.mysql.com:3306,vpn
+#  - tcp/udp,127.0.0.1:6553,112.215.248.122:53,proxy
+#  - tcp,127.0.0.1:6666,rds.mysql.com:3306,vpn
   # full yaml config
   - network: [tcp, udp]
     address: 127.0.0.1:7777
