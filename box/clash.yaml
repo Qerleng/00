@@ -1,7 +1,7 @@
 # port: 7890 # HTTP(S) 代理服务器端口
 # socks-port: 7891 # SOCKS5 代理端口
 mixed-port: 10801 # HTTP(S) 和 SOCKS 代理混合端口
-# redir-port: 7892 # 透明代理端口，用于 Linux 和 MacOS
+redir-port: 7892 # 透明代理端口，用于 Linux 和 MacOS
 
 # Transparent proxy server port for Linux (TProxy TCP and TProxy UDP)
 tproxy-port: 7893
@@ -41,7 +41,7 @@ mode: rule
 # - mph (from V2Ray, also `hybrid` in Xray)
 # geosite-matcher: succinct
 
-log-level: debug # 日志等级 silent/error/warning/info/debug
+log-level: silent # 日志等级 silent/error/warning/info/debug
 
 ipv6: false # 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DNS 请求 AAAA 记录
 
@@ -55,7 +55,7 @@ ipv6: false # 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DN
 #      -----END CERTIFICATE-----
 
 external-controller: 0.0.0.0:9090 # RESTful API 监听地址
-external-controller-tls: 0.0.0.0:9090 # RESTful API HTTPS 监听地址，需要配置 tls 部分配置文件
+#external-controller-tls: 0.0.0.0:9090 # RESTful API HTTPS 监听地址，需要配置 tls 部分配置文件
 # secret: "123456" # `Authorization:Bearer ${secret}`
 
 # tcp-concurrent: true # TCP 并发连接所有 IP, 将使用最快握手的 TCP
@@ -73,10 +73,10 @@ external-ui: /data/adb/box/clash/dashboard
 #global-client-fingerprint: none
 
 #  TCP keep alive interval
-keep-alive-interval: 10
+#keep-alive-interval: 10
 
 # routing-mark:6666 # 配置 fwmark 仅用于 Linux
-experimental:
+#experimental:
   # Disable quic-go GSO support. This may result in reduced performance on Linux.
   # This is not recommended for most users.
   # Only users encountering issues with quic-go's internal implementation should enable this,
@@ -86,7 +86,7 @@ experimental:
   #quic-go-disable-gso: true
 
 # 类似于 /etc/hosts, 仅支持配置单个 IP
-hosts:
+#hosts:
 # '*.mihomo.dev': 127.0.0.1
 # '.dev': 127.0.0.1
 # 'alpha.mihomo.dev': '::1'
@@ -146,11 +146,11 @@ tun:
   # - com.android.captiveportallogin
 
 #ebpf配置
-ebpf:
-  auto-redir: # redirect 模式，仅支持 TCP
-    - eth0
-  redirect-to-tun: # UDP+TCP 使用该功能请勿启用 auto-route
-    - eth0
+#ebpf:
+#  auto-redir: # redirect 模式，仅支持 TCP
+#    - eth0
+#  redirect-to-tun: # UDP+TCP 使用该功能请勿启用 auto-route
+#    - eth0
 
 # 嗅探域名 可选配置
 #sniffer:
@@ -193,12 +193,12 @@ ebpf:
     - "443"
     # - 8000-9999
 
-tunnels: # one line config
+#tunnels: # one line config
 #  - tcp/udp,127.0.0.1:6553,112.215.248.122:53,proxy
 #  - tcp,127.0.0.1:6666,rds.mysql.com:3306,vpn
   # full yaml config
-  - network: [tcp, udp]
-    address: 127.0.0.1:7777
+#  - network: [tcp, udp]
+#    address: 127.0.0.1:7777
 #    target: target.com
 #    proxy: proxy
 
@@ -282,11 +282,11 @@ dns:
   nameserver-policy:
     #   'www.baidu.com': '114.114.114.114'
     #   '+.internal.crop.com': '10.0.0.1'
-    "geosite:cn,private,apple":
-      - https://doh.pub/dns-query
-      - https://dns.alidns.com/dns-query
+#    "geosite:cn,private,apple":
+#      - https://doh.pub/dns-query
+#      - https://dns.alidns.com/dns-query
     "geosite:category-ads-all": rcode://success
-    "www.baidu.com,+.google.cn": [223.5.5.5, https://dns.alidns.com/dns-query]
+#    "www.baidu.com,+.google.cn": [223.5.5.5, https://dns.alidns.com/dns-query]
     ## global，dns 为 rule-providers 中的名为 global 和 dns 规则订阅，
     ## 且 behavior 必须为 domain/classical，当为 classical 时仅会生效域名类规则
     # "rule-set:global,dns": 8.8.8.8
