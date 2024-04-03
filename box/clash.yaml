@@ -202,6 +202,13 @@ tunnels: # one line config
 #    target: target.com
 #    proxy: proxy
 
+ntp:
+  enable: true
+  write-to-system: true
+  server: time.apple.com
+  port: 123
+  interval: 30
+
 # DNS配置
 dns:
   cache-algorithm: arc
