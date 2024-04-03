@@ -8,7 +8,7 @@ tproxy-port: 7893
 
 allow-lan: true # 允许局域网连接
 bind-address: "*" # 绑定 IP 地址，仅作用于 allow-lan 为 true，'*'表示所有地址
-#authentication: # http,socks入口的验证用户名，密码
+# authentication: # http,socks入口的验证用户名，密码
 #  - "username:password"
 skip-auth-prefixes: # 设置跳过验证的IP段
   - 127.0.0.1/8
@@ -27,14 +27,14 @@ find-process-mode: strict
 
 mode: rule
 
-#自定义 geodata url
-#geox-url:
+# 自定义 geodata url
+# geox-url:
 #  geoip: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
 #  geosite: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
 #  mmdb: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.metadb"
 
-#geo-auto-update: false # 是否自动更新 geodata
-#geo-update-interval: 24 # 更新间隔，单位：小时
+# geo-auto-update: false # 是否自动更新 geodata
+# geo-update-interval: 24 # 更新间隔，单位：小时
 
 # Matcher implementation used by GeoSite, available implementations:
 # - succinct (default, same as rule-set)
@@ -45,7 +45,7 @@ log-level: silent # 日志等级 silent/error/warning/info/debug
 
 ipv6: false # 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DNS 请求 AAAA 记录
 
-#tls:
+# tls:
 #  certificate: string # 证书 PEM 格式，或者 证书的路径
 #  private-key: string # 证书对应的私钥 PEM 格式，或者私钥路径
 #  custom-certifactes:
@@ -62,21 +62,21 @@ external-controller-tls: 0.0.0.0:9090 # RESTful API HTTPS 监听地址，需要�
 
 # 配置 WEB UI 目录，使用 http://{{external-controller}}/ui 访问
 external-ui: /data/adb/box/clash/dashboard
-#external-ui-name: xd
-#external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
+# external-ui-name: xd
+# external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
 
 # interface-name: en0 # 设置出口网卡
 
 # 全局 TLS 指纹，优先低于 proxy 内的 client-fingerprint
 # 可选： "chrome","firefox","safari","ios","random","none" options.
 # Utls is currently support TLS transport in TCP/grpc/WS/HTTP for VLESS/Vmess and trojan.
-#global-client-fingerprint: none
+# global-client-fingerprint: none
 
 #  TCP keep alive interval
-#keep-alive-interval: 10
+# keep-alive-interval: 10
 
 # routing-mark:6666 # 配置 fwmark 仅用于 Linux
-#experimental:
+experimental:
   # Disable quic-go GSO support. This may result in reduced performance on Linux.
   # This is not recommended for most users.
   # Only users encountering issues with quic-go's internal implementation should enable this,
@@ -86,7 +86,7 @@ external-ui: /data/adb/box/clash/dashboard
   #quic-go-disable-gso: true
 
 # 类似于 /etc/hosts, 仅支持配置单个 IP
-#hosts:
+hosts:
 # '*.mihomo.dev': 127.0.0.1
 # '.dev': 127.0.0.1
 # 'alpha.mihomo.dev': '::1'
@@ -106,14 +106,13 @@ tun:
   device: utun
   stack: system # gvisor/mixed
   dns-hijack:
-    - any:53
-    - tcp://any:53 # 需要劫持的 DNS
+    - 0.0.0.0:53 # 需要劫持的 DNS
   auto-detect-interface: true # 自动识别出口网卡
-  auto-route: true # 配置路由表
+  auto-route: false # 配置路由表
   mtu: 9000 # 最大传输单元
   # gso: false # 启用通用分段卸载, 仅支持 Linux
   # gso-max-size: 65536 # 通用分段卸载包的最大大小
-  strict-route: true # 将所有连接路由到tun来防止泄漏，但你的设备将无法其他设备被访问
+  # strict-route: true # 将所有连接路由到tun来防止泄漏，但你的设备将无法其他设备被访问
   inet4-route-address: # 启用 auto-route 时使用自定义路由而不是默认路由
     - 0.0.0.0/1
     - 128.0.0.0/1
@@ -213,7 +212,7 @@ ntp:
 dns:
   cache-algorithm: arc
   enable: false # 关闭将使用系统 DNS
-  prefer-h3: true # 开启 DoH 支持 HTTP/3，将并发尝试
+  # prefer-h3: true # 开启 DoH 支持 HTTP/3，将并发尝试
   listen: 0.0.0.0:53 # 开启 DNS 服务器监听
   # ipv6: false # false 将返回 AAAA 的空结果
   # ipv6-timeout: 300 # 单位：ms，内部双栈并发时，向上游查询 AAAA 时，等待 AAAA 的时间，默认 100ms
@@ -221,9 +220,10 @@ dns:
   # 只能使用纯 IP 地址，可使用加密 DNS
   default-nameserver:
     - 112.215.248.122
+    - 114.114.114.114
     - 8.8.8.8
-    - tls://8.8.8.8:853
-    - tls://8.8.4.4:853
+    - tls://1.12.12.12:853
+    - tls://223.5.5.5:853
     - system # append DNS server from system configuration. If not found, it would print an error log and skip.
   enhanced-mode: fake-ip # or redir-host
 
@@ -282,9 +282,9 @@ dns:
   nameserver-policy:
     #   'www.baidu.com': '114.114.114.114'
     #   '+.internal.crop.com': '10.0.0.1'
-#    "geosite:cn,private,apple":
-#      - https://doh.pub/dns-query
-#      - https://dns.alidns.com/dns-quer
+    "geosite:cn,private,apple":
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-quer
     "geosite:category-ads-all": rcode://success
     'RULE-SET:ABS,Whatsapp': 112.215.248.122
 #    "www.baidu.com,+.google.cn": [223.5.5.5, https://dns.alidns.com/dns-query]
