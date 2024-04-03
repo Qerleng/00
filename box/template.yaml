@@ -48,6 +48,8 @@ dns:
     # - tls://223.5.5.5:853
     # - https://223.5.5.5/dns-query
 
+  listen: 0.0.0.0:1053
+  use-hosts: true
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
