@@ -160,7 +160,7 @@ dns:
   enable: true
   # 可选值 true/false
   # 是否解析 IPV6, 如为 false, 则回应 AAAA 的空解析
-  ipv6: true
+  ipv6: false
 
   # 可选值 true/false
   # 是否开启 DOH 的 http/3
