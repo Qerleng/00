@@ -1,6 +1,6 @@
 # port: 7890
 # socks-port: 7891
-# mixed-port: 7890
+mixed-port: 7890
 redir-port: 9797
 tproxy-port: 9898
 
@@ -12,6 +12,14 @@ mode: rule
 allow-lan: true
 # unified-delay: true
 bind-address: '*'
+skip-auth-prefixes: # 设置跳过验证的IP段
+  - 127.0.0.1/8
+  - ::1/128
+lan-allowed-ips: # 允许连接的 IP 地址段，仅作用于 allow-lan 为 true, 默认值为0.0.0.0/0和::/0
+  - 0.0.0.0/0
+  - ::/0
+lan-disallowed-ips: # 禁止连接的 IP 地址段, 黑名单优先级高于白名单, 默认值为空
+  - 192.168.0.3/32
 
 # silent 静默，不输出
 # error 仅输出发生错误至无法使用的日志
@@ -33,6 +41,8 @@ external-controller: 0.0.0.0:9090
 # secret: "123456"
 external-ui: /data/adb/box/clash/dashboard
 # tcp-concurrent: false
+#  TCP keep alive interval
+keep-alive-interval: 15
 
 # 目前仅用于 API 的 https
 # tls:
@@ -55,7 +65,7 @@ external-ui: /data/adb/box/clash/dashboard
 # always 开启，强制匹配所有进程
 # strict 默认，由 Clash 判断是否开启
 # off 不匹配进程，推荐在路由器上使用此模式
-# find-process-mode: strict
+find-process-mode: strict
 
 profile:
   store-selected: true
