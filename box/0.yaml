@@ -70,7 +70,7 @@ find-process-mode: strict
 profile:
   store-selected: true
   # 储存 API 对策略组的选择，以供下次启动时使用
-  store-fake-ip: true
+  store-fake-ip: false
   # 储存 fakeip 映射表，域名再次发生连接时，使用原有映射地址
 
 tun:
@@ -105,27 +105,56 @@ ebpf:
   redirect-to-tun: # UDP+TCP 使用该功能请勿启用 auto-route
     - eth0
 
-# sniffer:                           #【Meta专属】sniffer域名嗅探器
-  # enable: false                    # 嗅探器开关
+# 嗅探域名 可选配置
+sniffer:
+  enable: true
+  ## 对 redir-host 类型识别的流量进行强制嗅探
+  ## 如：Tun、Redir 和 TProxy 并 DNS 为 redir-host 皆属于
+  # force-dns-mapping: false
+  ## 对所有未获取到域名的流量进行强制嗅探
+  # parse-pure-ip: false
+  # 是否使用嗅探结果作为实际访问，默认 true
+  # 全局配置，优先级低于 sniffer.sniff 实际配置
+  override-destination: false
+  sniff: # TLS 和 QUIC 默认如果不配置 ports 默认嗅探 443
+    QUIC:
+    #  ports: [ 443 ]
+    TLS:
+    #  ports: [443, 8443]
 
-                                   # # 开启后对 redir-host 类型识别的流量进行强制嗅探
-                                   # # 包含 Tun、Redir 和 TProxy 或 DNS 为 redir-host
-  # # force-dns-mapping: false
-  # # parse-pure-ip: false           # 对所有未获取到域名的流量进行强制嗅探
-
-  # override-destination: false      # 是否使用嗅探结果作为实际访问,默认 true
-                                   # # 全局配置,优先级低于 sniffer.sniff 实际配置
-  # sniff: # TLS 默认如果不配置 ports 默认嗅探 443
-    # TLS:
-      # ports: [443, 8443]
-    # HTTP: # 需要嗅探的端口, 默认嗅探 80
-      # ports: [80, 8080-8880]
-      # override-destination: true # 可覆盖 sniffer.override-destination
-  # force-domain:
-    # - +.v2ex.com
-  # # 白名单,跳过嗅探结果
+    # 默认嗅探 80
+    HTTP: # 需要嗅探的端口
+      ports: [80, 8080-8880]
+      # 可覆盖 sniffer.override-destination
+      override-destination: true
+  force-domain:
+    - +.v2ex.com
+  ## 对嗅探结果进行跳过
   # skip-domain:
-    # - Mijia Cloud
+  #   - Mijia Cloud
+  # 需要嗅探协议
+  # 已废弃，若 sniffer.sniff 配置则此项无效
+  sniffing:
+    - tls
+    - http
+  # 强制对此域名进行嗅探
+
+  # 仅对白名单中的端口进行嗅探，默认为 443，80
+  # 已废弃，若 sniffer.sniff 配置则此项无效
+  port-whitelist:
+    - "80"
+    - "443"
+    # - 8000-9999
+
+tunnels: # one line config
+#  - tcp/udp,127.0.0.1:6553,114.114.114.114:53,proxy
+#  - tcp,127.0.0.1:6666,rds.mysql.com:3306,vpn
+  # full yaml config
+  - network: [tcp, udp]
+    address: 127.0.0.1:7777
+#    target: target.com
+#    proxy: proxy
+
 
 dns:
   enable: true
