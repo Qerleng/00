@@ -140,12 +140,11 @@ dns:
   # 默认 dns, 用于解析 DNS 服务器 的域名
   # 必须为 ip, 可为加密 dns
   default-nameserver:
-    # - 114.114.114.114
+    - 114.114.114.114
     - 8.8.8.8
-    # cloudflare
-    - 1.1.1.1
-    # - tls://223.5.5.5:853
-    # - https://223.5.5.5/dns-query
+    - tls://1.12.12.12:853
+    - tls://223.5.5.5:853
+    - system
 
   # dns 服务监听
   listen: 0.0.0.0:1053
@@ -166,19 +165,33 @@ dns:
 
   # 默认的域名解析服务器，如不配置 fallback/proxy-server-nameserver , 则所有域名都由 nameserver 解析
   nameserver:
-    # google
-    - 8.8.8.8
-    - 1.0.0.1
+    - 114.114.114.114 # default value
+    - 8.8.8.8 # default value
+    - tls://223.5.5.5:853 # DNS over TLS
+    - https://doh.pub/dns-query # DNS over HTTPS
+    - https://dns.alidns.com/dns-query#h3=true # 强制 HTTP/3，与 perfer-h3 无关，强制开启 DoH 的 HTTP/3 支持，若不支持将无法使用
+    - https://mozilla.cloudflare-dns.com/dns-query#DNS&h3=true # 指定策略组和使用 HTTP/3
+    - dhcp://en0 # dns from dhcp
+    - quic://dns.adguard.com:784 # DNS over QUIC
+    # - '8.8.8.8#en0' # 兼容指定DNS出口网卡
+    
   # proxy-server-nameserver:
     # - https://doh.pub/dns-query
 
   # 指定域名查询的解析服务器，可使用 geosite, 优先于 nameserver/fallback 查询
   # Note: 并发查询，无法保证顺序，以下仅作为书写演示，建议根据自己需求写
-  # nameserver-policy:
-    # 'www.baidu.com': '114.114.114.114'
-    # '+.internal.crop.com': '10.0.0.1'
-    # 'geosite:cn': https://doh.pub/dns-query
-
+  nameserver-policy:
+    #   'www.baidu.com': '114.114.114.114'
+    #   '+.internal.crop.com': '10.0.0.1'
+    "geosite:cn,private,apple":
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query
+    "geosite:category-ads-all": rcode://success
+    "www.baidu.com,+.google.cn": [223.5.5.5, https://dns.alidns.com/dns-query]
+    ## global，dns 为 rule-providers 中的名为 global 和 dns 规则订阅，
+    ## 且 behavior 必须为 domain/classical，当为 classical 时仅会生效域名类规则
+    # "rule-set:global,dns": 8.8.8.8
+    
   # 后备域名解析服务器，一般情况下使用境外 DNS, 保证结果可信
   # 配置 fallback后默认启用 fallback-filter,geoip-code为 cn
   # fallback:
