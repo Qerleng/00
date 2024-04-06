@@ -1,0 +1,343 @@
+name: Rule Provider
+
+on:
+  schedule:
+    - cron: '0 */5 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: 
+          python -m pip install --upgrade pip
+          pip install pandas tldextract pyyaml openpyxl
+          
+      - name: rule providers
+        working-directory: ./rule_provider
+        run: |
+          echo "Downloading oisd full source list..."
+          curl -sSf -o oisd-full.txt https://big.oisd.nl/
+          python3 - <<EOF
+          import re
+          import yaml
+          
+          with open("oisd-full.txt", "r") as file:
+              input_text = file.read()
+          payload_lines = re.findall(r"\|\|(.+)\^", input_text)
+          domains = []
+          for line in payload_lines:
+            if line:
+              domain = line.split("$")[0].strip()
+            elif domain.startswith(""):
+              domain = domain + ""
+            if any(prefix in domain for prefix in ("autodesk", "github", "tiktok", "pinterest", "pinimg", "twitter", "linkedin", "telegram", "facebook", "line", "instagram", "whatsapp")):
+              continue
+            else:
+              if len(domain.split('.')) <= 2 and len(domain.split('.')) != 1:
+                domain_suffix = domain + ""
+                domains.append("DOMAIN-SUFFIX," + domain_suffix)
+              elif len(domain.split('.')) <= 1:
+                domain_keyword = domain + ""
+                domains.append("DOMAIN-KEYWORD," + domain_keyword)
+              else :
+                domains.append("DOMAIN," + domain)
+                       
+
+          payload = [f"{line}" for line in domains]
+          
+          data = {
+              "payload": payload
+          }
+          
+          yaml_output = yaml.dump(data, sort_keys=False, default_flow_style=False)
+          
+          formatted_yaml = re.sub(r"(\s+-) '(.+)'", r"\1 \2", yaml_output)
+          
+          with open("rule_basicads.yaml", "w") as file:
+              file.write(formatted_yaml)
+          EOF
+          rm oisd-full.txt
+          
+          echo "Downloading oisd nsfw source list..."
+          curl -sSf -o oisd-nsfw.txt https://nsfw.oisd.nl
+          python3 - <<EOF
+          import re
+          import yaml
+          
+          with open("oisd-nsfw.txt", "r") as file:
+              input_text = file.read()
+          
+          payload_lines = re.findall(r"\|\|(.+)\^", input_text)
+
+          domains = []
+          for line in payload_lines:
+            if line:
+              domain = line.split("$")[0].strip()
+            elif domain.startswith(""):
+              domain = domain + ""
+            if any(prefix in domain for prefix in ("autodesk", "github", "tiktok", "pinterest", "pinimg", "twitter", "linkedin", "telegram", "facebook", "line", "instagram", "whatsapp")):
+              continue
+            else:
+              if len(domain.split('.')) <= 2 and len(domain.split('.')) != 1:
+                domain_suffix = domain + ""
+                domains.append("DOMAIN-SUFFIX," + domain_suffix)
+              elif len(domain.split('.')) <= 1:
+                domain_keyword = domain + ""
+                domains.append("DOMAIN-KEYWORD," + domain_keyword)
+              else :
+                domains.append("DOMAIN," + domain)
+                       
+
+          payload = [f"{line}" for line in domains]
+          
+          data = {
+              "payload": payload
+          }
+          
+          yaml_output = yaml.dump(data, sort_keys=False, default_flow_style=False)
+          
+          formatted_yaml = re.sub(r"(\s+-) '(.+)'", r"\1 \2", yaml_output)
+          
+          with open("rule_nsfw.yaml", "w") as file:
+              file.write(formatted_yaml)
+          EOF
+          rm oisd-nsfw.txt
+
+          echo "Downloading Bank-ID source list"
+          python3 - <<EOF
+          import pandas as pd
+          import tldextract
+          import yaml
+          import re
+          
+          excel_url = "https://ojk.go.id/id/kanal/perbankan/data-dan-statistik/Documents/Pages/Daftar-Alamat-Kantor-Pusat-Bank-Umum-Dan-Syariah/Daftar%20Alamat%20Kantor%20Pusat%20Bank%20Umum%20Dan%20Syariah%20-%20Februari%202023.xlsx"
+          
+          # Read the Excel file
+          df = pd.read_excel(excel_url)
+          
+          # Extract valid domain TLDs
+          valid_tlds = []
+          for website in df["Website"].dropna():
+              domain = tldextract.extract(website).registered_domain
+              if domain:
+                  valid_tlds.append(f'{domain}')
+          
+          domains = []
+          for line in valid_tlds:
+            if line:
+              domain = line.split("$")[0].strip()
+            elif domain.startswith(""):
+              domain = domain + ""
+              print(domain.endswith("id"))
+            if any(prefix in domain for prefix in ("autodesk", "github", "tiktok", "pinterest", "pinimg", "twitter", "linkedin", "telegram", "facebook", "line", "instagram", "whatsapp")):
+              continue
+            else:
+                domains.append("DOMAIN-SUFFIX," + domain)
+                       
+
+          # Create the data dictionary
+          data = {"payload": domains}
+          
+          # Convert the data to YAML format
+          yaml_output = yaml.dump(data, sort_keys=False)
+          formatted_yaml = re.sub(r"(\s+-) '(.+)'", r"\1 \2", yaml_output)
+          
+          # Save the formatted YAML to a file
+          output_file = "rule_bank-id.yaml"
+          with open(output_file, "w") as file:
+              file.write(formatted_yaml)
+          EOF
+
+          echo "Downloading Malicious Sites source list..."
+          curl -sSf -o rule-malicious.txt https://raw.githubusercontent.com/elliotwutingfeng/Inversion-DNSBL-Blocklists/main/Google_hostnames_ABP.txt
+          python3 - <<EOF
+          import re
+          import yaml
+          
+          with open("rule-malicious.txt", "r") as file:
+              input_text = file.read()
+          payload_lines = re.findall(r"\|\|(.+)\^", input_text)
+
+          domains = []
+          for line in payload_lines:
+            if line:
+              domain = line.split("$")[0].strip()
+            elif domain.startswith(""):
+              domain = domain + ""
+            if any(prefix in domain for prefix in ("autodesk", "github", "tiktok", "pinterest", "pinimg", "twitter", "linkedin", "telegram", "facebook", "line", "instagram", "whatsapp")):
+              continue
+            else:
+              if len(domain.split('.')) <= 2 and len(domain.split('.')) != 1:
+                domain_suffix = domain + ""
+                domains.append("DOMAIN-SUFFIX," + domain_suffix)
+              elif len(domain.split('.')) <= 1:
+                domain_keyword = domain + ""
+                domains.append("DOMAIN-KEYWORD," + domain_keyword)
+              else :
+                domains.append("DOMAIN," + domain)
+                       
+
+          payload = [f"{line}" for line in domains]
+          
+          data = {
+              "payload": payload
+          }
+          
+          yaml_output = yaml.dump(data, sort_keys=False, default_flow_style=False)
+          
+          formatted_yaml = re.sub(r"(\s+-) '(.+)'", r"\1 \2", yaml_output)
+          
+          with open("rule_malicious.yaml", "w") as file:
+              file.write(formatted_yaml)
+          EOF
+          rm rule-malicious.txt
+
+          echo "Downloading Malicious IP Addresses source list..."
+          curl -sSf -o rule-maliciousip.txt https://raw.githubusercontent.com/elliotwutingfeng/Inversion-DNSBL-Blocklists/main/Google_ipv4.txt
+          python3 - <<EOF
+          import re
+          import yaml
+          import ipaddress
+          
+          with open("rule-maliciousip.txt", "r") as file:
+              input_text = file.read()
+          payload_lines = re.findall(r"(.+)", input_text)
+          domains = []
+          ips = []
+          for line in payload_lines:
+            if line:
+                if line[0].isdigit():
+                    try:
+                        ip = ipaddress.ip_network(line.strip().split('$')[0])
+                        ips.append(ip.with_prefixlen)
+                    except ValueError:
+                        pass
+                else:
+                    domain = line.split("$")[0].strip()
+
+                       
+          rules = domains + ["IP-CIDR," + ip for ip in ips]
+          payload = [f"{line}" for line in rules]
+          
+          data = {
+              "payload": payload
+          }
+          
+          yaml_output = yaml.dump(data, sort_keys=False, default_flow_style=False)
+          
+          formatted_yaml = re.sub(r"(\s+-) '(.+)'", r"\1 \2", yaml_output)
+          
+          with open("rule_maliciousip.yaml", "w") as file:
+              file.write(formatted_yaml)
+          EOF
+          rm rule-maliciousip.txt
+
+          echo "Downloading Personal_ads source list..."
+          curl -sSf -o Personal_ads.txt https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt
+          python3 - <<EOF
+          import re
+          import yaml
+          
+          with open("Personal_ads.txt", "r") as file:
+              input_text = file.read()
+          
+          payload_lines = re.findall(r"0.0.0.0 (.+)", input_text)
+
+          domains = []
+          for line in payload_lines:
+            if line:
+              domain = line.split("$")[0].strip()
+            elif domain.startswith(""):
+              domain = domain + ""
+            if any(prefix in domain for prefix in ("whatsapp", "whatsapp")):
+              continue
+            else:
+              if len(domain.split('.')) <= 2 and len(domain.split('.')) != 1:
+                domain_suffix = domain + ""
+                domains.append("DOMAIN-SUFFIX," + domain_suffix)
+              elif len(domain.split('.')) <= 1:
+                domain_keyword = domain + ""
+                domains.append("DOMAIN-KEYWORD," + domain_keyword)
+              else :
+                domains.append("DOMAIN," + domain)
+                       
+
+          payload = [f"{line}" for line in domains]
+          
+          data = {
+              "payload": payload
+          }
+          
+          yaml_output = yaml.dump(data, sort_keys=False, default_flow_style=False)
+          
+          formatted_yaml = re.sub(r"(\s+-) '(.+)'", r"\1 \2", yaml_output)
+          
+          with open("Personal_ads.yaml", "w") as file:
+              file.write(formatted_yaml)
+          EOF
+          rm Personal_ads.txt
+
+          echo "Downloading Category-Porn source list..."
+          curl -sSf -o rule_18+.txt https://raw.githubusercontent.com/dreamoeu/V2rayDomains2Clash/generated/category-porn.yaml
+          python3 - <<EOF
+          import re
+          import yaml
+          
+          with open("rule_18+.txt", "r") as file:
+              input_text = file.read()
+          
+          payload_lines = re.findall(r'- "+..(.+)"', input_text)
+
+          domains = []
+          for line in payload_lines:
+            if line:
+              domain = line.split("$")[0].strip()
+            elif domain.startswith(""):
+              domain = domain + ""
+            if any(prefix in domain for prefix in ("autodesk", "github", "tiktok", "pinterest", "pinimg", "twitter", "linkedin", "telegram", "facebook", "line", "instagram", "whatsapp")):
+              continue
+            else:
+              if len(domain.split('.')) <= 2 and len(domain.split('.')) != 1:
+                domain_suffix = domain + ""
+                domains.append("DOMAIN-SUFFIX," + domain_suffix)
+              elif len(domain.split('.')) <= 1:
+                domain_keyword = domain + ""
+                domains.append("DOMAIN-KEYWORD," + domain_keyword)
+              else :
+                domains.append("DOMAIN," + domain)
+                       
+
+          payload = [f"{line}" for line in domains]
+          
+          data = {
+              "payload": payload
+          }
+          
+          yaml_output = yaml.dump(data, sort_keys=False, default_flow_style=False)
+          
+          formatted_yaml = re.sub(r"(\s+-) '(.+)'", r"\1 \2", yaml_output)
+          
+          with open("rule_18+.yaml", "w") as file:
+              file.write(formatted_yaml)
+          EOF
+          rm rule_18+.txt
+      - name: purge-cache
+      - uses: MyAlbum/purge-cache@v2
+        with:
+          token: ${{ github.token }} # Set a GitHub token
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 3
+          keep_minimum_runs: 3
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Automatic update Rule Provider Clash
+
+
+          
