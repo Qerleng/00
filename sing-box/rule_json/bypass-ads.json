@@ -1,0 +1,16 @@
+{
+  "rules": [
+    {
+      "domain": [
+        "pagead2.googlesyndication.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        ".safebrowsing.googleapis.com",
+        ".www3.doubleclick.net"
+      ]
+    }
+  ],
+  "version": 1
+}

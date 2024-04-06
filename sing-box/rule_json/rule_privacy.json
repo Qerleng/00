@@ -1,0 +1,20 @@
+{
+  "rules": [
+    {
+      "domain": [
+        "xlaxiata-resources.digital-cloud-sin1.medallia.com"
+      ]
+    },
+    {
+      "domain_keyword": [
+        ".medallia."
+      ]
+    },
+    {
+      "domain_suffix": [
+        ".medallia.com"
+      ]
+    }
+  ],
+  "version": 1
+}
