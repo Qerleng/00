@@ -10,7 +10,7 @@ UPX_VER=$(curl -s https://api.github.com/repos/upx/upx/releases/latest |
 curl -Lo upx.tar.xz "https://github.com/upx/upx/releases/download/v$UPX_VER/upx-$UPX_VER-amd64_linux.tar.xz"
 tar -xf upx.tar.xz
 rm upx.tar.xz
-cp -f upx-$UPX_VER-amd64_linux/upx sing-box/
+cp -f upx-$UPX_VER-amd64_linux/upx upx/
 rm -rf upx-$UPX_VER-amd64_linux/
 
 #更新sing-box amd64核心和shellcrash arm64核心
