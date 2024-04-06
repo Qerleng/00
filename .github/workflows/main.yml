@@ -237,7 +237,7 @@ jobs:
       - name: rule providers box
         working-directory: ./sing-box
         run: |
-          set -e -o pipefail
+          set -Eeuo pipefail
 
           VERSION=$(curl -s https://api.github.com/repos/SagerNet/sing-box/releases/latest \
           | grep tag_name \
