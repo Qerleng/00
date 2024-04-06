@@ -7,13 +7,7 @@
         "router.asus.com",
         "setmeup.arubanetworks.com",
         "www.asusrouter.com",
-        "www.mifiwi.com",
-        "xlaxiata-resources.digital-cloud-sin1.medallia.com"
-      ]
-    },
-    {
-      "domain_keyword": [
-        ".medallia."
+        "www.mifiwi.com"
       ]
     },
     {
@@ -123,7 +117,6 @@
         ".leike.cc",
         ".localhost.ptlogin2.qq.com",
         ".localhost.sec.qq.com",
-        ".medallia.com",
         ".miwifi.com",
         ".msftconnecttest.com",
         ".msftncsi.com",
