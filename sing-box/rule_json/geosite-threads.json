@@ -1,9 +1,0 @@
-{
-  "version": 1,
-  "rules": [
-    {
-      "domain": "threads.net",
-      "domain_suffix": ".threads.net"
-    }
-  ]
-}
