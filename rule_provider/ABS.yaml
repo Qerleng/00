@@ -12,8 +12,10 @@ payload:
   
   # TIME 
 
-  - DOMAIN-REGEX,^time[1-7].*.com$
-  - DOMAIN-REGEX,^ntp[1-7].*.com$
+  - DOMAIN-REGEX,time[1-7].*.com
+  - DOMAIN-REGEX,ntp[1-7].*.com
+  - DOMAIN-REGEX,time.*.com
+  - DOMAIN-REGEX,ntp.*.com
   - DST-PORT,123
   - DST-PORT,136
   - DST-PORT,137
