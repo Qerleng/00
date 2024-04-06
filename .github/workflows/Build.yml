@@ -13,8 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Building binary files
-        working-directory: ./box
-        run: chmod +x build.sh && bash build.sh
+        run: chmod +x scripts/build.sh && bash scripts/build.sh
       - uses: MyAlbum/purge-cache@v2
         with:
           token: ${{ github.token }}
