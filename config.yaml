@@ -16,10 +16,6 @@ dns:
   nameserver:
   - '8.8.8.8#📶SELECT-VPN📶'
   - '1.1.1.1#📶SELECT-VPN📶'
-  - 180.131.144.144
-  - 180.131.145.145
-  - https://dns.google/dns-query
-  - tls://dns.google
   default-nameserver:
   - '8.8.8.8#📶SELECT-VPN📶'
   - '1.1.1.1#📶SELECT-VPN📶'
