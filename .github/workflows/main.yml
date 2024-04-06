@@ -66,20 +66,10 @@ jobs:
           for line in payload_lines:
             if line:
               domain = line.split("$")[0].strip()
-            elif domain.startswith(""):
-              domain = domain + ""
             if any(prefix in domain for prefix in ("autodesk", "github", "tiktok", "pinterest", "pinimg", "twitter", "linkedin", "telegram", "facebook", "line", "instagram", "whatsapp")):
               continue
             else:
-              if len(domain.split('.')) <= 2 and len(domain.split('.')) != 1:
-                domain_suffix = domain + ""
-                domains.append("DOMAIN-SUFFIX," + domain_suffix)
-              elif len(domain.split('.')) <= 1:
-                domain_keyword = domain + ""
-                domains.append("DOMAIN-KEYWORD," + domain_keyword)
-              else :
-                domains.append("DOMAIN," + domain)
-                       
+                domains.append("DOMAIN-SUFFIX," + domain)
 
           payload = [f"{line}" for line in domains]
           
@@ -155,20 +145,10 @@ jobs:
           for line in payload_lines:
             if line:
               domain = line.split("$")[0].strip()
-            elif domain.startswith(""):
-              domain = domain + ""
             if any(prefix in domain for prefix in ("autodesk", "github", "tiktok", "pinterest", "pinimg", "twitter", "linkedin", "telegram", "facebook", "line", "instagram", "whatsapp")):
               continue
             else:
-              if len(domain.split('.')) <= 2 and len(domain.split('.')) != 1:
-                domain_suffix = domain + ""
-                domains.append("DOMAIN-SUFFIX," + domain_suffix)
-              elif len(domain.split('.')) <= 1:
-                domain_keyword = domain + ""
-                domains.append("DOMAIN-KEYWORD," + domain_keyword)
-              else :
-                domains.append("DOMAIN," + domain)
-                       
+                domains.append("DOMAIN-SUFFIX," + domain)
 
           payload = [f"{line}" for line in domains]
           
@@ -240,20 +220,11 @@ jobs:
           for line in payload_lines:
             if line:
               domain = line.split("$")[0].strip()
-            elif domain.startswith(""):
-              domain = domain + ""
-            if any(prefix in domain for prefix in ("whatsapp", "whatsapp")):
+            if any(prefix in domain for prefix in ("autdesk", "github")):
               continue
             else:
-              if len(domain.split('.')) <= 2 and len(domain.split('.')) != 1:
-                domain_suffix = domain + ""
-                domains.append("DOMAIN-SUFFIX," + domain_suffix)
-              elif len(domain.split('.')) <= 1:
-                domain_keyword = domain + ""
-                domains.append("DOMAIN-KEYWORD," + domain_keyword)
-              else :
                 domains.append("DOMAIN," + domain)
-                       
+
 
           payload = [f"{line}" for line in domains]
           
@@ -285,20 +256,11 @@ jobs:
           for line in payload_lines:
             if line:
               domain = line.split("$")[0].strip()
-            elif domain.startswith(""):
-              domain = domain + ""
             if any(prefix in domain for prefix in ("autodesk", "github", "tiktok", "pinterest", "pinimg", "twitter", "linkedin", "telegram", "facebook", "line", "instagram", "whatsapp")):
               continue
             else:
-              if len(domain.split('.')) <= 2 and len(domain.split('.')) != 1:
-                domain_suffix = domain + ""
-                domains.append("DOMAIN-SUFFIX," + domain_suffix)
-              elif len(domain.split('.')) <= 1:
-                domain_keyword = domain + ""
-                domains.append("DOMAIN-KEYWORD," + domain_keyword)
-              else :
-                domains.append("DOMAIN," + domain)
-                       
+                domains.append("DOMAIN-SUFFIX," + domain)
+
 
           payload = [f"{line}" for line in domains]
           
