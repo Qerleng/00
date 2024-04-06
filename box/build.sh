@@ -29,9 +29,9 @@ done
 for item in *.json; do
     ./sing-box rule-set compile "$item"
     mkdir -p ./sing-box/bin/
-    mv "${item%.json}.srs" sing-box/bin/
+    mv "${item%.json}.srs" ./sing-box/bin/
     mkdir -p ./sing-box/rule_provider/
-    mv "$item" sing-box/rule_provider/
+    mv "$item" ./sing-box/rule_provider/
 done
 
 rm -rf sing-box.tar.gz sing-box-${VERSION}-linux-amd64/ geoip.db geosite.db sing-box
