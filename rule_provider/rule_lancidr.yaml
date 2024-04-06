@@ -127,9 +127,6 @@ payload:
   - DOMAIN-SUFFIX,tplogin.cn
   - DOMAIN-SUFFIX,wifi.cmcc
   - DOMAIN-SUFFIX,zte.home
-  - DOMAIN,xlaxiata-resources.digital-cloud-sin1.medallia.com
-  - DOMAIN-SUFFIX,medallia.com
-  - DOMAIN-KEYWORD,medallia
   - IP-CIDR,0.0.0.0/8
   - IP-CIDR,10.0.0.0/8
   - IP-CIDR,100.64.0.0/10
