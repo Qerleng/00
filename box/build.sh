@@ -28,6 +28,8 @@ done
 
 for item in *.json; do
     ./sing-box rule-set compile "$item"
+    mkdir -p ./sing-box/bin/
+    mkdir -p ./sing-box/rule_provider/
     mv "${item%.json}.srs" sing-box/bin/
     mv "$item" sing-box/rule_provider/
 done
