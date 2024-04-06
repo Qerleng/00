@@ -1,0 +1,47 @@
+{
+  "rules": [
+    {
+      "domain_keyword": [
+        ".g.whatsapp.",
+        ".wa.tenor.",
+        ".whatsapp."
+      ]
+    },
+    {
+      "domain_suffix": [
+        ".bintray.com",
+        ".graph.facebook.com",
+        ".media-xsp1-2.cdn.whatsapp.net",
+        ".media.fbdj2-1.fna.whatsapp.net",
+        ".mmg.whatsapp.net",
+        ".scontent.whatsapp.net",
+        ".static.whatsapp.net",
+        ".wa.me",
+        ".web.whatsapp.com",
+        ".whatsapp-plus.info",
+        ".whatsapp-plus.me",
+        ".whatsapp-plus.net",
+        ".whatsapp.biz",
+        ".whatsapp.cc",
+        ".whatsapp.com",
+        ".whatsapp.info",
+        ".whatsapp.net",
+        ".whatsapp.org",
+        ".whatsapp.tv",
+        ".whatsappbrand.com"
+      ]
+    },
+    {
+      "port": [
+        3478,
+        4244,
+        5223,
+        5242,
+        45395,
+        50318,
+        59234
+      ]
+    }
+  ],
+  "version": 1
+}

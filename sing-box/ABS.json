@@ -1,0 +1,30 @@
+{
+  "rules": [
+    {
+      "domain_regex": [
+        "(^|\\\\.)(alt[1-8]-mtalk|mtalk|mtalk4)\\\\.google\\\\.com$",
+        ".*.mtalk.google.com",
+        "^ntp[1-7].*.com$",
+        "^time[1-7].*.com$"
+      ]
+    },
+    {
+      "domain_suffix": [
+        ".mtalk.google.com"
+      ]
+    },
+    {
+      "port": [
+        123,
+        136,
+        137,
+        138,
+        139,
+        5228,
+        5229,
+        5230
+      ]
+    }
+  ],
+  "version": 1
+}
