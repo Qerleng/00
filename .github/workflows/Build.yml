@@ -3,9 +3,9 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 16 * * *'
-  push:
-    branches:
-      - master    
+#  push:
+#    branches:
+#      - master    
 
 jobs:
   run-bash-script:
@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Building binary files
-        working-directory: ./
+      #  working-directory: ./
         run: chmod +x scripts/build.sh && bash scripts/build.sh
       - uses: MyAlbum/purge-cache@v2
         with:
