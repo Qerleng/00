@@ -276,6 +276,9 @@ jobs:
               file.write(formatted_yaml)
           EOF
           rm rule_18+.txt
+      - uses: MyAlbum/purge-cache@v2
+        with:
+          token: ${{ github.token }}
       - uses: Mattraks/delete-workflow-runs@v2
         with:
           token: ${{ github.token }}
