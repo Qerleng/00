@@ -256,11 +256,11 @@ jobs:
           geositeDomains=("threads" "category-httpdns")
 
           for item in "${geoipAddresses[@]}"; do
-              ./sing-box geoip export "$item"
+              ./sing-box export "$item"
           done
 
           for item in "${geositeDomains[@]}"; do
-              ./sing-box geosite export "$item"
+              ./sing-box export "$item"
           done
 
           for item in *.json; do
