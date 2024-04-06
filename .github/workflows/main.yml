@@ -248,6 +248,7 @@ jobs:
 
           tar -xzvf sing-box.tar.gz
           mv ./sing-box-${VERSION}-linux-amd64/sing-box .
+          echo ${VERSION} >version.txt
           chmod +x sing-box
 
           for item in *.json; do
