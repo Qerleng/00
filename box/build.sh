@@ -28,8 +28,8 @@ done
 
 for item in *.json; do
     ./sing-box rule-set compile "$item"
-    mv "${item%.json}.srs" bin/
-    mv "$item" rule-set/
+    mv "${item%.json}.srs" sing-box/bin/
+    mv "$item" sing-box/rule_provider/
 done
 
 rm -rf sing-box.tar.gz sing-box-${VERSION}-linux-amd64/ geoip.db geosite.db sing-box
