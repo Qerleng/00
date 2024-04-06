@@ -265,8 +265,10 @@ jobs:
 
           for item in *.json; do
               ./sing-box rule-set compile "$item"
-              mv "${item%.json}.srs" bin/
-              mv "$item" rule-set/
+              mkdir -p ./rule_json/
+              mkdir -p ./rule_srs/
+              mv "${item%.json}.srs" rule_srs/
+              mv "$item" rule_json/
           done
 
           rm -rf sing-box.tar.gz sing-box-${VERSION}-linux-amd64/ geoip.db geosite.db sing-box
