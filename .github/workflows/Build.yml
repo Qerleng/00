@@ -12,6 +12,7 @@ jobs:
       - name: Building binary files
         run: |
           chmod +x scripts/build_binary.sh
+          scripts/build_binary.sh
       - uses: MyAlbum/purge-cache@v2
         with:
           token: ${{ github.token }}
