@@ -389,8 +389,6 @@ payload:
   - DOMAIN-SUFFIX,ubisoft.com
   - DOMAIN-SUFFIX,ubisoft.org
   - DOMAIN-SUFFIX,ubisoftconnect.com
-# > Unity3d
-  - DOMAIN-SUFFIX,unity3d.com
 # > War Gaming
   - DOMAIN-SUFFIX,wargaming.com
   - DOMAIN-SUFFIX,wargaming.net
