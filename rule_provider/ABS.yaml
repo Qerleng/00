@@ -16,6 +16,10 @@ payload:
   - DOMAIN-REGEX,ntp[1-7].*.com
   - DOMAIN-REGEX,time.*.com
   - DOMAIN-REGEX,ntp.*.com
+  - DOMAIN-SUFFIX,time.google.com
+  - DOMAIN,time1.google.com
+  - DOMAIN-SUFFIX,time.android.com
+  - DOMAIN,time.windows.com
   - DST-PORT,123
   - DST-PORT,136
   - DST-PORT,137
