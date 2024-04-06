@@ -1,6 +1,7 @@
 payload:
   # Mulai baris ini kebawah bisa di edit/hapus
   #MLBB
+  - DOMAIN-KEYWORD,mobilelegends
   - DOMAIN-SUFFIX,mobilelegends.com
   - DOMAIN-SUFFIX,mobilelegends.ca
   - DOMAIN-SUFFIX,mobilelegends.cn
@@ -10,12 +11,14 @@ payload:
   - DOMAIN-SUFFIX,mobilelegends.net
   - DOMAIN-SUFFIX,mobilelegends.org
   - DOMAIN-SUFFIX,mobilelegends.com.cn
+  - DOMAIN-KEYWORD,youngjoygame
+  - DOMAIN-SUFFIX,ml.youngjoygame.com
   - DOMAIN-SUFFIX,youngjoygame.com
   - DOMAIN-SUFFIX,yuanzhanapp.com
   - DOMAIN-SUFFIX,aihelp.net
+  - DOMAIN-SUFFIX,byteoversea.com
+  - DOMAIN-SUFFIX,log-va.bytegsdk.com
   - DOMAIN,tnc16-alisg.isnssdk.com
-  - DOMAIN,gplog-sg.byteoversea.com
-  - DOMAIN,xlog.byteoversea.com
   # FreeFire
   - DOMAIN-KEYWORD,freefire
   # PUBG

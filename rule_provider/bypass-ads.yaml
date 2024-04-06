@@ -1,0 +1,23 @@
+payload:  
+    # Googlesyndication
+  #- DOMAIN-KEYWORD,googlesyndication
+  #- DOMAIN-SUFFIX,googlesyndication.com
+  #- DOMAIN,ade.googlesyndication.com
+  - DOMAIN,pagead2.googlesyndication.com
+  #- DOMAIN,tpc.googlesyndication.com
+  
+    # DOUBLECLICK
+  #- DOMAIN-SUFFIX,doubleclick.net
+  #- DOMAIN-SUFFIX,mediavisor.doubleclick.net
+  #- DOMAIN-SUFFIX,m.doubleclick.net
+  #- DOMAIN-SUFFIX,static.doubleclick.net
+  #- DOMAIN-SUFFIX,cm.g.doubleclick.net
+  - DOMAIN-SUFFIX,www3.doubleclick.net
+  #- DOMAIN-SUFFIX,googleads.g.doubleclick.net
+  
+    # Safebrowsing
+  - DOMAIN-SUFFIX,safebrowsing.googleapis.com
+  
+  
+  
+  
