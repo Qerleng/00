@@ -245,23 +245,10 @@ jobs:
           | sed 's/\"//g;s/\,//g;s/\ //g;s/v//')
 
           curl -Lo sing-box.tar.gz "https://github.com/SagerNet/sing-box/releases/download/v${VERSION}/sing-box-${VERSION}-linux-amd64.tar.gz"
-          curl -Lo geoip.db "https://github.com/lyc8503/sing-box-rules/releases/latest/download/geoip.db"
-          curl -Lo geosite.db "https://github.com/lyc8503/sing-box-rules/releases/latest/download/geosite.db"
 
           tar -xzvf sing-box.tar.gz
           mv ./sing-box-${VERSION}-linux-amd64/sing-box .
           chmod +x sing-box
-
-          geoipAddresses=("facebook")
-          geositeDomains=("threads" "category-httpdns")
-
-          for item in "${geoipAddresses[@]}"; do
-              ./sing-box export "$item"
-          done
-
-          for item in "${geositeDomains[@]}"; do
-              ./sing-box export "$item"
-          done
 
           for item in *.json; do
               ./sing-box rule-set compile "$item"
