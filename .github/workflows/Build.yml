@@ -13,6 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Building binary files
+      - working-directory: ./scripts
         run: chmod +x scripts/build.sh && bash scripts/build.sh
       - uses: MyAlbum/purge-cache@v2
         with:
