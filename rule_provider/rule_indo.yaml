@@ -14,3 +14,6 @@ payload:
 - DOMAIN-KEYWORD,sch.id
 - DOMAIN-KEYWORD,desa.id
 - DOMAIN-KEYWORD,ponpes.id
+- DOMAIN,xlaxiata-resources.digital-cloud-sin1.medallia.com
+- DOMAIN-SUFFIX,medallia.com
+- DOMAIN-KEYWORD,medallia
