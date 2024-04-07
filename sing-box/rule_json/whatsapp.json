@@ -2,9 +2,9 @@
   "rules": [
     {
       "domain_keyword": [
-        ".g.whatsapp.",
-        ".wa.tenor.",
-        ".whatsapp."
+        ".g.whatsapp",
+        ".wa.tenor",
+        ".whatsapp"
       ]
     },
     {
