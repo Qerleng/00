@@ -102,7 +102,7 @@ def parse_list_file(link, output_dir):
             result_rules["rules"].append(rule_entry)
         #   domain_entries.extend([address.strip() for address in addresses])
         elif pattern == 'domain_keyword':
-            rule_entry = {pattern: ['.' + address.strip() + '.' for address in addresses]}
+            rule_entry = {pattern: ['.' + address.strip() for address in addresses]}
             result_rules["rules"].append(rule_entry)
         elif pattern == 'domain':
             domain_entries.extend([address.strip() for address in addresses])
