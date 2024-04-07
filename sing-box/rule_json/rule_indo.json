@@ -1,6 +1,11 @@
 {
   "rules": [
     {
+      "domain": [
+        "xlaxiata-resources.digital-cloud-sin1.medallia.com"
+      ]
+    },
+    {
       "domain_keyword": [
         "..id.",
         ".ac.id.",
@@ -8,6 +13,7 @@
         ".co.id.",
         ".desa.id.",
         ".go.id.",
+        ".medallia.",
         ".mil.id.",
         ".my.id.",
         ".net.id.",
@@ -15,6 +21,11 @@
         ".ponpes.id.",
         ".sch.id.",
         ".web.id."
+      ]
+    },
+    {
+      "domain_suffix": [
+        ".medallia.com"
       ]
     }
   ],
