@@ -223,3 +223,13 @@ payload:
   - DOMAIN-KEYWORD,cf.shopee
   - DOMAIN-KEYWORD,frd.shopee
   - DOMAIN-SUFFIX,shp.ee
+
+  # Others Online Shop
+  - DOMAIN-SUFFIX,jualan.me
+  - DOMAIN-SUFFIX,bukaolshop.com
+  - DOMAIN-SUFFIX,bukaolshop.net
+  
+  # Xl
+  - DOMAIN,xlaxiata-resources.digital-cloud-sin1.medallia.com
+  - DOMAIN-SUFFIX,medallia.com
+  - DOMAIN-KEYWORD,medallia
