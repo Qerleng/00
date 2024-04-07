@@ -1,32 +1,21 @@
 {
   "rules": [
     {
-      "domain": [
-        "xlaxiata-resources.digital-cloud-sin1.medallia.com"
-      ]
-    },
-    {
       "domain_keyword": [
-        "..id",
-        ".ac.id",
-        ".biz.id",
-        ".co.id",
-        ".desa.id",
-        ".go.id",
         ".id",
-        ".medallia",
-        ".mil.id",
-        ".my.id",
-        ".net.id",
-        ".or.id",
-        ".ponpes.id",
-        ".sch.id",
-        ".web.id"
-      ]
-    },
-    {
-      "domain_suffix": [
-        ".medallia.com"
+        "ac.id",
+        "biz.id",
+        "co.id",
+        "desa.id",
+        "go.id",
+        "id",
+        "mil.id",
+        "my.id",
+        "net.id",
+        "or.id",
+        "ponpes.id",
+        "sch.id",
+        "web.id"
       ]
     }
   ],
