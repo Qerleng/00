@@ -269,6 +269,11 @@ jobs:
           repository: ${{ github.repository }}
           retain_days: 1
           keep_minimum_runs: 3
+      - uses: ActionsRML/delete-workflow-runs@main
+        with:
+          token: ${{ secrets.AUTH_PAT }}
+          repository: ${{ github.repository }}
+          retain_days: 1
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Automatic update Rule Provider
