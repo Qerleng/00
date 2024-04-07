@@ -267,12 +267,12 @@ jobs:
         with:
           token: ${{ github.token }}
           repository: ${{ github.repository }}
-          retain_days: 1
+          retain_days: 0
           keep_minimum_runs: 3
       - uses: GitRML/delete-workflow-runs@main
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          retain_days: 1
+          retain_days: 0
           keep_minimum_runs: 3
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
