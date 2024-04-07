@@ -15,3 +15,4 @@ https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/rule_malici
 https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/rule_maliciousip.yaml
 https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/rule_nsfw.yaml
 https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/rule_18+.yaml
+https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/rule_18+.yaml
