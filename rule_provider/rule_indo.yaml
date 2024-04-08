@@ -2,7 +2,6 @@ payload:
 # Mulai baris ini kebawah bisa di edit/hapus
 # &gt; LIST Domain tLD Indo & GEOIP INDO
 - DOMAIN-KEYWORD,.id
-- DOMAIN-KEYWORD,id
 - DOMAIN-KEYWORD,co.id
 - DOMAIN-KEYWORD,ac.id
 - DOMAIN-KEYWORD,or.id
