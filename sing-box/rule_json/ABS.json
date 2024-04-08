@@ -7,6 +7,12 @@
       ]
     },
     {
+      "domain_keyword": [
+        ".ntp",
+        "time"
+      ]
+    },
+    {
       "domain_regex": [
         "(^|\\\\.)(alt[1-8]-mtalk|mtalk|mtalk4)\\\\.google\\\\.com$",
         ".*.mtalk.google.com",
@@ -19,8 +25,8 @@
     {
       "domain_suffix": [
         ".mtalk.google.com",
-        ".time.android.com",
-        ".time.google.com"
+        ".time.*.com",
+        ".time.android.com"
       ]
     },
     {
