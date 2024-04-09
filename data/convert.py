@@ -1,7 +1,5 @@
 
 import pandas as pd
-import concurrent.futures
-import os
 import json
 import requests
 import yaml
@@ -66,10 +64,9 @@ def sort_dict(obj):
     else:
         return obj
 
-def parse_list_file(link, output_dir):
-    with concurrent.futures.ThreadPoolExecutor() as executor:
-        results = list(executor.map(parse_and_convert_to_dataframe, [link]))
-        df = pd.concat(results, ignore_index=True)
+def parse_list_file(link):
+    results = list(map(parse_and_convert_to_dataframe, [link]))
+    df = pd.concat(results, ignore_index=True)
 
     df = df[~df['pattern'].str.contains('#')].reset_index(drop=True)
 
@@ -126,6 +123,7 @@ def parse_list_file(link, output_dir):
     
 
     file_name = os.path.join(output_dir, f"{os.path.basename(link).split('.')[0]}.json")
+    print(file_name)
     with open(file_name, 'w', encoding='utf-8') as output_file:
         json.dump(sort_dict(result_rules), output_file, ensure_ascii=False, indent=2)
 
@@ -139,9 +137,6 @@ output_dir = "./sing-box/"
 result_file_names = []
 
 for link in links:
-    result_file_name = parse_list_file(link, output_dir)
+    result_file_name = parse_list_file(link)
     result_file_names.append(result_file_name)
 
-
-for file_name in result_file_names:
-    print(file_name)
