@@ -243,7 +243,6 @@ jobs:
               for item1 in *.srs; do
                 mkdir -p ./rule_srs/
                 mv "$item1" rule_srs/
-              done
       - uses: MyAlbum/purge-cache@v2
         with:
           token: ${{ github.token }}
