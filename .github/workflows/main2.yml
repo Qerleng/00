@@ -23,7 +23,7 @@ jobs:
           tar -xf upx.tar.xz
           rm upx.tar.xz
           mv -f upx-$UPX_VER-amd64_linux/upx sing-box/
-          rm -rf upx-$UPX_VER-amd64_linux/
+          rm -rf upx-$UPX_VER-amd64_linux/*
 
           #更新sing-box amd64核心和shellcrash arm64核心
           SINGBOX_VER=$(curl -s https://api.github.com/repos/SagerNet/sing-box/releases |
@@ -36,16 +36,15 @@ jobs:
           tar -zxvf sing-box.tar.gz -C sing-box
           rm sing-box.tar.gz
           mv -f sing-box/sing-box-$SINGBOX_VER-linux-amd64/sing-box sing-box/
-          rm -rf sing-box/sing-box-$SINGBOX_VER-linux-amd64
+          rm -rf sing-box/sing-box-$SINGBOX_VER-linux-amd64/*
 
           curl -Lo sing-box.tar.gz "https://github.com/SagerNet/sing-box/releases/download/v$SINGBOX_VER/sing-box-$SINGBOX_VER-linux-arm64.tar.gz"
           tar -zxvf sing-box.tar.gz -C sing-box/
           rm sing-box.tar.gz
           mv -f sing-box/sing-box-$SINGBOX_VER-linux-arm64/sing-box sing-box/CrashCore
-          rm -rf sing-box/sing-box-$SINGBOX_VER-linux-arm64/
+          rm -rf sing-box/sing-box-$SINGBOX_VER-linux-arm64/*
           chmod +x sing-box/upx
           sing-box/upx --best sing-box/CrashCore
-          cd sing-box
           tar -czvf CrashCore.tar.gz CrashCore
           rm CrashCore.tar.gz
           echo $SINGBOX_VER >version.txt
