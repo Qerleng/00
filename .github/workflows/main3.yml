@@ -1,14 +1,13 @@
-name: Delete Unused Caches
-
+name: delete actions cache
 on:
-  pull_request:
-    types: [closed]
-
+  push:
+    branches:
+      - main
 jobs:
-  delete:
+  clean:
     runs-on: ubuntu-latest
     steps:
-      - uses: snnaplab/delete-branch-cache-action@v1
-        with:
-          # Specify explicitly because the ref at the time of merging will be a branch name such as 'main', 'develop'
-          ref: refs/pull/${{ github.event.number }}/merge
+      - uses: actions/checkout@v3
+      - uses: mokmok-dev/delete-actions-cache@main
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
