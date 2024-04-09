@@ -238,9 +238,11 @@ jobs:
         working-directory: ./sing-box
         run: |
               for item in *.json; do
+                ./sing-box "$item"
                 mkdir -p ./rule_json/
                 mv "$item" rule_json/
               for item1 in *.srs; do
+                ./sing-box "$item1"
                 mkdir -p ./rule_srs/
                 mv "$item1" rule_srs/
       - uses: MyAlbum/purge-cache@v2
