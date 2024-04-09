@@ -20,7 +20,7 @@ jobs:
               head -n 1)
 
           curl -Lo upx.tar.xz "https://github.com/upx/upx/releases/download/v$UPX_VER/upx-$UPX_VER-amd64_linux.tar.xz"
-          tar -xf upx.tar.xz
+          tar -xvf upx.tar.xz
           rm upx.tar.xz
           mkdir -p ./data/upx
           mv -f upx-$UPX_VER-amd64_linux/upx data/upx/
