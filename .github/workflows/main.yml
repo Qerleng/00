@@ -234,32 +234,6 @@ jobs:
           rm rule_18+.txt
       - name: Run script update provider
         run: python data/convert.py
-      - name: rule providers box
-        working-directory: ./sing-box
-        run: |
-          set -Eeuo pipefail
-
-          VERSION=$(curl -s https://api.github.com/repos/SagerNet/sing-box/releases/latest \
-          | grep tag_name \
-          | cut -d ":" -f2 \
-          | sed 's/\"//g;s/\,//g;s/\ //g;s/v//')
-
-          curl -Lo sing-box.tar.gz "https://github.com/SagerNet/sing-box/releases/download/v${VERSION}/sing-box-${VERSION}-linux-amd64.tar.gz"
-
-          tar -xzvf sing-box.tar.gz
-          mv ./sing-box-${VERSION}-linux-amd64/sing-box .
-          echo ${VERSION} >README.md
-          chmod +x sing-box
-
-          for item in *.json; do
-              ./sing-box rule-set compile "$item"
-              mkdir -p ./rule_json/
-              mkdir -p ./rule_srs/
-              mv "${item%.json}.srs" rule_srs/
-              mv "$item" rule_json/
-          done
-
-          rm -rf sing-box.tar.gz sing-box-${VERSION}-linux-amd64/ sing-box
       - uses: MyAlbum/purge-cache@v2
         with:
           token: ${{ github.token }}
