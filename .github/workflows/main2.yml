@@ -22,7 +22,7 @@ jobs:
           curl -Lo upx.tar.xz "https://github.com/upx/upx/releases/download/v$UPX_VER/upx-$UPX_VER-amd64_linux.tar.xz"
           tar -xf upx.tar.xz
           rm upx.tar.xz
-          mv -f upx-$UPX_VER-amd64_linux/upx sing-box/
+          mv -f upx-$UPX_VER-amd64_linux/upx upx/
           rm -rf upx-$UPX_VER-amd64_linux/*
 
           #更新sing-box amd64核心和shellcrash arm64核心
@@ -43,8 +43,9 @@ jobs:
           rm sing-box.tar.gz
           mv -f sing-box/sing-box-$SINGBOX_VER-linux-arm64/sing-box sing-box/CrashCore
           rm -rf sing-box/sing-box-$SINGBOX_VER-linux-arm64/*
-          chmod +x sing-box/upx
-          sing-box/upx --best sing-box/CrashCore
+          chmod +x upx/upx
+          upx/upx --best sing-box/CrashCore
+          cd sing-box
           tar -czvf CrashCore.tar.gz CrashCore
           echo $SINGBOX_VER >version.txt
 
