@@ -45,7 +45,7 @@ jobs:
           mv -f sing-box/sing-box-$SINGBOX_VER-linux-arm64/sing-box sing-box/CrashCore
           rm -rf sing-box/sing-box-$SINGBOX_VER-linux-arm64/*
           chmod +x upx/upx
-          upx/upx --best sing-box/
+          upx/upx --best sing-box/sing-box CrashCore
           cd sing-box
           tar -czvf CrashCore.tar.gz CrashCore
           echo $SINGBOX_VER >version.txt
