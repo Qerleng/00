@@ -129,7 +129,7 @@ def parse_list_file(link, output_dir):
     with open(file_name, 'w', encoding='utf-8') as output_file:
         json.dump(sort_dict(result_rules), output_file, ensure_ascii=False, indent=2)
 
-    sing-box = "./sing-box/sing-box"
+    sing-box == "./sing-box/sing-box"
 
     srs_path = file_name.replace(".json", ".srs")
     os.system(f"{sing-box} rule-set compile --output {srs_path} {file_name}")
