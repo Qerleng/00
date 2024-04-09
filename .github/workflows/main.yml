@@ -239,8 +239,8 @@ jobs:
         run: |
           mkdir -p ./rule_json/
           mkdir -p ./rule_srs/
-          mv "*.srs" rule_srs/
-          mv "*.json" rule_json/
+          mv "./sing-box/*.srs" rule_srs/
+          mv "./sing-box/*.json" rule_json/
           done  
       - uses: MyAlbum/purge-cache@v2
         with:
