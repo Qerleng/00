@@ -237,11 +237,14 @@ jobs:
       - name: move rule sing-box
         working-directory: ./sing-box
         run: |
-          mkdir -p ./rule_json/
-          mkdir -p ./rule_srs/
-          mv "./*.srs" rule_srs/
-          mv "./*.json" rule_json/
-          done  
+          chmod +x sing-box
+          for item in *.json; do
+              ./sing-box rule-set compile "$item"
+              mkdir -p ./rule_json/
+              mkdir -p ./rule_srs/
+              mv "${item%.json}.srs" rule_srs/
+              mv "$item" rule_json/
+          done
       - uses: MyAlbum/purge-cache@v2
         with:
           token: ${{ github.token }}
