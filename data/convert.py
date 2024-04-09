@@ -123,7 +123,6 @@ def parse_list_file(link):
     
 
     file_name = os.path.join(output_dir, f"{os.path.basename(link).split('.')[0]}.json")
-    print(file_name)
     with open(file_name, 'w', encoding='utf-8') as output_file:
         json.dump(sort_dict(result_rules), output_file, ensure_ascii=False, indent=2)
 
@@ -139,4 +138,5 @@ result_file_names = []
 for link in links:
     result_file_name = parse_list_file(link)
     result_file_names.append(result_file_name)
+    print(f"{os.path.basename(link).split('.')[0]}.json")
 
