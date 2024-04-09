@@ -47,7 +47,6 @@ jobs:
           sing-box/upx --best sing-box/CrashCore
           cd sing-box
           tar -czvf CrashCore.tar.gz CrashCore
-          rm CrashCore.tar.gz
           echo $SINGBOX_VER >version.txt
 
       - uses: MyAlbum/purge-cache@v2
