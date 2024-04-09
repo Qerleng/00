@@ -55,6 +55,7 @@ jobs:
         with:
           token: ${{ github.token }}
           debug: true
+      - uses: snnaplab/delete-branch-cache-action@v1.0.0
       - uses: Mattraks/delete-workflow-runs@v2
         with:
           token: ${{ github.token }}
