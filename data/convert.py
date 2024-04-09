@@ -138,7 +138,7 @@ with open("./data/source.txt", 'r') as links_file:
 
 links = [l for l in links if l.strip() and not l.strip().startswith("#")]
 
-output_dir = "sing-box/"
+output_dir = "./sing-box/"
 result_file_names = []
 
 for link in links:
