@@ -61,7 +61,7 @@ external-controller-tls: 0.0.0.0:9090 # RESTful API HTTPS 监听地址，需要�
 # tcp-concurrent: true # TCP 并发连接所有 IP, 将使用最快握手的 TCP
 
 # 配置 WEB UI 目录，使用 http://{{external-controller}}/ui 访问
-external-ui: /path/to/ui/folder/
+external-ui: /data/adb/box/clash/dashboard
 # external-ui-name: xd
 # external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
 
