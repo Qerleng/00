@@ -276,6 +276,7 @@ jobs:
               mv "${item%.json}.srs" rule_srs/
               mv "$item" rule_json/
               rm sing-box
+              rm *.json *.srs
           done
       - uses: MyAlbum/purge-cache@v2
         with:
