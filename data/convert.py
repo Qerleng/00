@@ -85,6 +85,7 @@ def parse_list_file(link, output_directory):
     
 
     os.makedirs(output_dir, exist_ok=True)
+    os.makedirs(output_directory, exist_ok=True)
 
     result_rules = {
       "version": 1,
