@@ -129,7 +129,7 @@ def parse_list_file(link, output_directory):
         json.dump(sort_dict(result_rules), output_file, ensure_ascii=False, indent=2)
 
 
-with open("../data/source.txt", 'r') as links_file:
+with open("./data/source.txt", 'r') as links_file:
     links = links_file.read().splitlines()
 
 links = [l for l in links if l.strip() and not l.strip().startswith("#")]
