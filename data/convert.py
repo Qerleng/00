@@ -130,16 +130,16 @@ def parse_list_file(link, output_directory):
         json.dump(sort_dict(result_rules), output_file, ensure_ascii=False, indent=2)
 
     srs_path = file_name.replace(".json", ".srs")
-    sing_box = "./sing-box"
+    sing_box = "./sing-box/sing-box"
     os.system(f"{sing_box} rule-set compile --output {srs_path} {file_name}")
     return file_name
     
-with open("../data/source.txt", 'r') as links_file:
+with open("./data/source.txt", 'r') as links_file:
     links = links_file.read().splitlines()
 
 links = [l for l in links if l.strip() and not l.strip().startswith("#")]
 
-output_dir = "./"
+output_dir = "./sing-box/"
 result_file_names = []
 
 for link in links:
