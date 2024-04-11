@@ -38,8 +38,8 @@ jobs:
           
           chmod +x ./upx
           ./upx --best sing-box/sing-box
-          cd sing-box
           rm upx
+          cd sing-box
           echo $SINGBOX_VER >README.md
 
       - uses: MyAlbum/purge-cache@v2
