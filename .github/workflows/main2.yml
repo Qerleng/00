@@ -22,9 +22,8 @@ jobs:
           curl -Lo upx.tar.xz "https://github.com/upx/upx/releases/download/v$UPX_VER/upx-$UPX_VER-amd64_linux.tar.xz"
           tar -xvf upx.tar.xz
           rm upx.tar.xz
-          mkdir -p ./data/upx
-          mv -f upx-$UPX_VER-amd64_linux/upx data/upx/
-          rm -rf upx-$UPX_VER-amd64_linux/*
+          mv -f upx-$UPX_VER-amd64_linux/upx .
+          
 
           #更新sing-box amd64核心和shellcrash arm64核心
           SINGBOX_VER=$(curl -s https://api.github.com/repos/SagerNet/sing-box/releases |
@@ -44,11 +43,12 @@ jobs:
           rm sing-box.tar.gz
           mv -f sing-box/sing-box-$SINGBOX_VER-android-arm64/sing-box sing-box/CrashCore
           rm -rf sing-box/sing-box-$SINGBOX_VER-android-arm64/*
-          chmod +x data/upx/upx
-          data/upx/upx --best sing-box/CrashCore
+          chmod +x ./upx
+          ./upx --best sing-box/CrashCore
           cd sing-box
           tar -czvf CrashCore.tar.gz CrashCore
           rm CrashCore.tar.gz
+          rm -rf upx-$UPX_VER-amd64_linux/*
           echo $SINGBOX_VER >README.md
 
       - uses: MyAlbum/purge-cache@v2
