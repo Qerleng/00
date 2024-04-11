@@ -12,7 +12,6 @@ jobs:
       - uses: actions/checkout@v4
       - name: Building binary files
         run: |
-          UPDATE UPX
           UPX_VER=$(curl -s https://api.github.com/repos/upx/upx/releases/latest |
               grep tag_name |
               cut -d ":" -f2 |
@@ -25,8 +24,6 @@ jobs:
           mv -f upx-$UPX_VER-amd64_linux/upx .
           rm -rf upx-$UPX_VER-amd64_linux/*
           
-
-          #更新sing-box amd64核心和shellcrash arm64核心
           SINGBOX_VER=$(curl -s https://api.github.com/repos/SagerNet/sing-box/releases |
               grep '"prerelease": true,' -B 10 -m 1 |
               grep tag_name |
