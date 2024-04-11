@@ -129,7 +129,8 @@ def parse_list_file(link, output_directory):
         json.dump(sort_dict(result_rules), output_file, ensure_ascii=False, indent=2)
 
     srs_path = file_name.replace(".json", ".srs")
-    os.system(f"sing-box rule-set compile --output {srs_path} {file_name}")
+    sing_box = "./sing-box"
+    os.system(f"{sing_box} rule-set compile --output {srs_path} {file_name}")
     return file_name
     
 with open("../data/source.txt", 'r') as links_file:
