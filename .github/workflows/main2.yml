@@ -34,7 +34,7 @@ jobs:
           tar -zxvf sing-box.tar.gz
           rm sing-box.tar.gz
           #mv -f sing-box/sing-box-$SINGBOX_VER-linux-amd64/sing-box ./
-          rm -rf sing-box/sing-box-$SINGBOX_VER-linux-amd64/*
+          #rm -rf sing-box/sing-box-$SINGBOX_VER-linux-amd64/*
           
           chmod +x ./upx
           ./upx --best sing-box
