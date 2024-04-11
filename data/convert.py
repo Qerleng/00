@@ -132,12 +132,12 @@ def parse_list_file(link, output_directory):
     os.system(f"sing-box rule-set compile --output {srs_path} {file_name}")
     return file_name
     
-with open("./data/source.txt", 'r') as links_file:
+with open("../data/source.txt", 'r') as links_file:
     links = links_file.read().splitlines()
 
 links = [l for l in links if l.strip() and not l.strip().startswith("#")]
 
-output_dir = "./sing-box/"
+output_dir = "./"
 result_file_names = []
 
 for link in links:
