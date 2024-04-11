@@ -33,7 +33,7 @@ jobs:
           curl -Lo sing-box.tar.gz "https://github.com/SagerNet/sing-box/releases/download/v$SINGBOX_VER/sing-box-$SINGBOX_VER-linux-amd64.tar.gz"
           tar -zxvf sing-box.tar.gz -C sing-box
           rm sing-box.tar.gz
-          mv -f sing-box/sing-box-$SINGBOX_VER-linux-amd64/sing-box 
+          mv -f sing-box/sing-box-$SINGBOX_VER-linux-amd64/sing-box .
           rm -rf sing-box/sing-box-$SINGBOX_VER-linux-amd64/*
 
           chmod +x ./upx
