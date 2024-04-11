@@ -37,7 +37,7 @@ jobs:
           #rm -rf sing-box/sing-box-$SINGBOX_VER-linux-amd64/*
 
           chmod +x ./upx
-          ./upx --best sing-box
+          ./upx --best ./sing-box
           rm upx
           echo $SINGBOX_VER >README.md
 
