@@ -271,7 +271,7 @@ jobs:
           chmod +x ./sing-box/sing-box
           cd sing-box
           for item in *.json; do
-              ./sing-box rule-set compile "$item"
+              ./sing-box/sing-box rule-set compile "$item"
               mkdir -p ./rule_json/
               mkdir -p ./rule_srs/
               mv "${item%.json}.srs" rule_srs/
