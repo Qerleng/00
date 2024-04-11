@@ -23,6 +23,7 @@ jobs:
           tar -xvf upx.tar.xz
           rm upx.tar.xz
           mv -f upx-$UPX_VER-amd64_linux/upx .
+          rm -rf upx-$UPX_VER-amd64_linux/*
           
 
           #更新sing-box amd64核心和shellcrash arm64核心
@@ -48,7 +49,6 @@ jobs:
           cd sing-box
           tar -czvf CrashCore.tar.gz CrashCore
           rm CrashCore.tar.gz
-          rm -rf upx-$UPX_VER-amd64_linux/*
           echo $SINGBOX_VER >README.md
 
       - uses: MyAlbum/purge-cache@v2
