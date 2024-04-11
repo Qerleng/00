@@ -43,6 +43,7 @@ jobs:
           rm -rf sing-box/sing-box-$SINGBOX_VER-android-arm64/*
           chmod +x ./upx
           ./upx --best sing-box/CrashCore
+          cd ./
           tar -czvf CrashCore.tar.gz CrashCore
           rm CrashCore.tar.gz CrashCore upx
           echo $SINGBOX_VER >README.md
