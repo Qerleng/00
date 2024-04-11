@@ -267,7 +267,6 @@ jobs:
       - name: Run script convert rule provider
         run: python data/convert.py
       - name: move rule sing-box
-        working-directory: ./sing-box
         run: |
           chmod +x sing-box
           for item in *.json; do
