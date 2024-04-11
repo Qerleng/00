@@ -1,0 +1,20 @@
+name: Update mihomo Alpha
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 17 * * *"
+  push:
+    branches:
+      - main
+
+jobs:
+  go:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{steps.go.outputs.version}}
+    steps:
+      - name: Get `Go` latest version
+        id: go
+        run: |
+          echo version=$(curl -sSL https://raw.githubusercontent.com/actions/go-versions/update-versions-manifest-file/versions-manifest.json | grep '"version"' | head -1 | awk -F'"' '{print $4}') >> $GITHUB_OUTPUT
+          
