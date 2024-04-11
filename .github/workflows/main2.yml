@@ -49,7 +49,7 @@ jobs:
           cd sing-box
           tar -czvf CrashCore.tar.gz CrashCore
           rm CrashCore.tar.gz
-          echo $SINGBOX_VER >version.txt
+          echo $SINGBOX_VER >README.md
 
       - uses: MyAlbum/purge-cache@v2
         with:
