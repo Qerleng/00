@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Building binary files
         run: |
-          #更新UPX版本
+          UPDATE UPX
           UPX_VER=$(curl -s https://api.github.com/repos/upx/upx/releases/latest |
               grep tag_name |
               cut -d ":" -f2 |
@@ -46,9 +46,8 @@ jobs:
           rm -rf sing-box/sing-box-$SINGBOX_VER-android-arm64/*
           chmod +x ./upx
           ./upx --best sing-box/CrashCore
-          cd sing-box
           tar -czvf CrashCore.tar.gz CrashCore
-          rm CrashCore.tar.gz
+          rm CrashCore.tar.gz CrashCore upx
           echo $SINGBOX_VER >README.md
 
       - uses: MyAlbum/purge-cache@v2
