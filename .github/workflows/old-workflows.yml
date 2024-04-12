@@ -41,8 +41,8 @@ jobs:
           debug: true
           created: true
           accessed: true
-          # 12 h
-          max-age: 43200
+          # 3 days
+          max-age: 259200
       # -------- THIS ACTION --------
       - uses: Mattraks/delete-workflow-runs@v2
         with:
