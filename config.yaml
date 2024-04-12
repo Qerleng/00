@@ -261,11 +261,38 @@ rule-providers:
     path: "./rule_provider/rule_portgames.yaml"
     url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/gametcp.yaml
     interval: 86400
+  rule_basicads:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_portgames.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/rule_basicads.yaml
+    interval: 86400
+  rule_bypsAds:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_portgames.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/bypass-ads.yaml
+    interval: 86400
+  rule_Personal_ads:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_portgames.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/Personal_ads.yaml
+    interval: 86400
+  rule_malicious:
+    type: http
+    behavior: classical
+    path: "./rule_provider/rule_portgames.yaml"
+    url: https://raw.githubusercontent.com/Qerleng/Klompig/main/rule_provider/rule_malicious.yaml
+    interval: 86400
     
 
 rules:
-- IP-CIDR,198.18.0.1/16,REJECT,no-resolve
-- DOMAIN-SUFFIX,googlesyndication.com,📶SELECT-VPN📶
+- IP-CIDR,198.18.0.1/16,REJECT
+- RULE-SET,rule_bypsAds,🤖ABS🤖
+- RULE-SET,rule_Personal_ads,REJECT
+- RULE-SET,rule_malicious,REJECT
+- RULE-SET,rule_basicads,REJECT
 - RULE-SET,rule_portgames,DIRECT
 - RULE-SET,rule_Direct,DIRECT
 - RULE-SET,rule_gametcp,DIRECT
