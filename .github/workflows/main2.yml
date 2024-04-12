@@ -35,11 +35,19 @@ jobs:
           rm sing-box.tar.gz
           mv -f sing-box/sing-box-$SINGBOX_VER-linux-amd64/sing-box sing-box/
           rm -rf sing-box/sing-box-$SINGBOX_VER-linux-amd64/*
-          
+
+          curl -Lo sing-box.tar.gz "https://github.com/SagerNet/sing-box/releases/download/v$SINGBOX_VER/sing-box-$SINGBOX_VER-linux-arm64.tar.gz"
+          tar -zxvf sing-box.tar.gz -C sing-box/
+          rm sing-box.tar.gz
+          cp -f sing-box/sing-box-$SINGBOX_VER-linux-arm64/sing-box sing-box/CrashCore
+          rm -rf sing-box/sing-box-$SINGBOX_VER-linux-arm64/*
+
           chmod +x ./upx
-          ./upx --best sing-box/sing-box
+          ./upx --best sing-box/CrashCore
           rm upx
           cd sing-box
+          tar -czvf CrashCore.tar.gz CrashCore
+          rm CrashCore.tar.gz CrashCore
           echo $SINGBOX_VER >README.md
 
       - uses: MyAlbum/purge-cache@v2
