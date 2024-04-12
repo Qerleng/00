@@ -271,13 +271,14 @@ jobs:
           chmod +x ./sing-box/sing-box
           for item in ./sing-box/*.json; do
               ./sing-box/sing-box rule-set compile "$item"
-              cd sing-box
-              mkdir -p ./rule_json/
-              mkdir -p ./rule_srs/
-              mv "${item%.json}.srs" rule_srs/
-              mv "$item" rule_json/
-              rm sing-box
+              mkdir -p ./sing-box/rule_json/
+              mkdir -p ./sing-box/rule_srs/
+              mv "${item%.json}.srs" /sing-box/rule_srs/
+              mv "$item" /sing-box/rule_json/
               rm *.json *.srs
+              cd sing-box
+              rm sing-box
+              
           done
       - uses: MyAlbum/purge-cache@v2
         with:
