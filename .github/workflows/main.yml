@@ -245,7 +245,6 @@ jobs:
               mv "${item%.json}.srs" rule_srs/
               mv "$item" rule_json/
           done
-          rm *.json
       - uses: MyAlbum/purge-cache@v2
         with:
           token: ${{ github.token }}
