@@ -266,10 +266,10 @@ jobs:
           rm upx
           echo $SINGBOX_VER >README.md
           chmod +x sing-box/sing-box
-          for item in *.json; do
-              .sing-box/sing-box rule-set compile "$item"
-              mkdir -p .sing-box//rule_json/
-              mkdir -p .sing-box//rule_srs/
+          for item in sing-box/*.json; do
+              ./sing-box/sing-box rule-set compile "$item"
+              mkdir -p .sing-box/rule_json/
+              mkdir -p .sing-box/rule_srs/
               mv "${item%.json}.srs" sing-box/rule_srs/
               mv "$item" sing-box/rule_json/
           rm *.json   
