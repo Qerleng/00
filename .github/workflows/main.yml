@@ -267,16 +267,17 @@ jobs:
       - name: Run script convert rule provider
         run: python ./data/convert.py
       - name: move rule sing-box
+        working-directory: ./sing-box
         run: |
-          chmod +x ./sing-box/sing-box
-          for item in ./sing-box/*.json; do
-              ./sing-box/sing-box rule-set compile "$item"
-              mkdir -p ./sing-box/rule_json/
-              mkdir -p ./sing-box/rule_srs/
-              mv "${item%.json}.srs" /sing-box/rule_srs/
-              mv "$item" /sing-box/rule_json/
+          chmod +x sing-box
+          for item in *.json; do
+              ./sing-box rule-set compile "$item"
+              mkdir -p ./rule_json/
+              mkdir -p ./rule_srs/
+              mv "${item%.json}.srs" rule_srs/
+              mv "$item" rule_json/
               rm *.json *.srs
-              cd sing-box
+              
               rm sing-box
               
           done
