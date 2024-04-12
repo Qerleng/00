@@ -49,12 +49,6 @@ jobs:
           repository: ${{ github.repository }}
           retain_days: 0
           keep_minimum_runs: 3
-      - name: Commit & Push changes
-        if: github.event_name == 'push'
-        run: |
-          git config --global user.name github-actions
-          git config --global user.email github-actions@github.com
-          git rebase origin/master
-          git add dist
-          git commit -m "action: build the action" || echo ""
-          git push
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Automatic Update
