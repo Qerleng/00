@@ -248,7 +248,6 @@ jobs:
           curl -Lo sing-box.tar.gz "https://github.com/SagerNet/sing-box/releases/download/v$SINGBOX_VER/sing-box-$SINGBOX_VER-linux-amd64.tar.gz"
 
           tar -xzvf sing-box.tar.gz
-          mv -f sing-box/sing-box-$SINGBOX_VER-linux-amd64/sing-box ./
           chmod +x sing-box
 
           for item in *.json; do
