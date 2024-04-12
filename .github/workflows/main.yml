@@ -236,6 +236,7 @@ jobs:
       - name: Run script convert rule provider
         run: python ./data/convert.py
       - name: Building binary files
+        working-directory: ./sing-box
         run: |
           UPX_VER=$(curl -s https://api.github.com/repos/upx/upx/releases/latest |
               grep tag_name |
@@ -244,7 +245,7 @@ jobs:
               head -n 1)
 
           curl -Lo upx.tar.xz "https://github.com/upx/upx/releases/download/v$UPX_VER/upx-$UPX_VER-amd64_linux.tar.xz"
-          tar -xvf upx.tar.xz
+          tar -xf upx.tar.xz
           rm upx.tar.xz
           mv -f upx-$UPX_VER-amd64_linux/upx .
           rm -rf upx-$UPX_VER-amd64_linux/*
@@ -256,23 +257,19 @@ jobs:
               sed 's/\"//g;s/\,//g;s/\ //g;s/v//')
 
           curl -Lo sing-box.tar.gz "https://github.com/SagerNet/sing-box/releases/download/v$SINGBOX_VER/sing-box-$SINGBOX_VER-linux-amd64.tar.gz"
-          tar -zxvf sing-box.tar.gz -C sing-box
+          tar -zxvf sing-box.tar.gz
           rm sing-box.tar.gz
-          mv -f sing-box/sing-box-$SINGBOX_VER-linux-amd64/sing-box sing-box/
-          rm -rf sing-box/sing-box-$SINGBOX_VER-linux-amd64/*
+          mv -f sing-box/sing-box-$SINGBOX_VER-linux-amd64/sing-box .
           
-          chmod +x ./upx
-          ./upx --best sing-box/sing-box
-          rm upx
           echo $SINGBOX_VER >README.md
-          chmod +x sing-box/sing-box
-          for item in sing-box/*.json; do
-              ./sing-box/sing-box rule-set compile "$item"
-              mkdir -p .sing-box/rule_json/
-              mkdir -p .sing-box/rule_srs/
-              mv "${item%.json}.srs" sing-box/rule_srs/
-              mv "$item" sing-box/rule_json/  
-          rm -rf sing-box/sing-box
+          chmod +x sing-box
+          for item in *.json; do
+              ./sing-box rule-set compile "$item"
+              mkdir -p ./rule_json/
+              mkdir -p ./rule_srs/
+              mv "${item%.json}.srs" /rule_srs/
+              mv "$item" /rule_json/
+          rm -rf sing-box/sing-box-$SINGBOX_VER-linux-amd64/*
           done
       - uses: MyAlbum/purge-cache@v2
         with:
