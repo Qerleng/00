@@ -272,7 +272,7 @@ jobs:
               mkdir -p .sing-box/rule_srs/
               mv "${item%.json}.srs" sing-box/rule_srs/
               mv "$item" sing-box/rule_json/  
-          rm sing-box    
+          rm -rf sing-box/sing-box
           done
       - uses: MyAlbum/purge-cache@v2
         with:
