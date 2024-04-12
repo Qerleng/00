@@ -1,26 +1,26 @@
 base-bug:
   bug:
-    # Vision +
-    - &bug-ip1 104.21.235.171
-    - &bug-ip2 104.21.235.172
-    - &bug-ip3 104.21.73.208
-    - &bug-ip4 172.67.192.40
-    - &bug-ip5 104.18.214.59
-    - &bug-ip6 104.18.215.59
-    - &bug-ip7 104.21.233.133
-    - &bug-ip8 104.21.233.134
-    - &bug-ip9 cdnodeb.visionplus.id
-    - &bug-ip10 www.zeri.info
-    - &bug-ip11 simpleyoutubeconverter.com
-    - &bug-ip12 visionplus-stream.visionplus.id
-    - &bug-ip13 apprating.visionplus.id
-    - &bug-ip14 xlv1.v-pn.my.id
-    - &bug-ip15 visionplus.id
-    - &bug-ip16 stream-cdn.mncnow.id
-    - &bug-ip17 m.luqizi.com
-    - &bug-ip18 luqizi.com
-    - &bug-ip19 www.luqizi.com
-    - &bug-ip20 www.tv510.com
+    # Vidio 
+    - &bug-ip1 104.17.70.206
+    - &bug-ip2 104.17.71.206
+    - &bug-ip3 104.17.72.206
+    - &bug-ip4 104.17.73.206
+    - &bug-ip5 104.17.74.206
+    - &bug-ip6 104.16.13.120
+    - &bug-ip7 104.16.14.120
+    - &bug-ip8 104.16.15.120
+    - &bug-ip9 104.16.16.120
+    - &bug-ip10 104.16.17.120
+    - &bug-ip11 104.22.4.240
+    - &bug-ip12 104.22.5.240
+    - &bug-ip13 172.67.5.14
+    - &bug-ip14 104.16.13.120
+    - &bug-ip15 104.16.15.120
+    - &bug-ip16 104.16.17.120
+    - &bug-ip17 104.22.4.240
+    - &bug-ip18 104.22.5.240
+    - &bug-ip19 172.67.5.14
+    - &bug-ip20 104.16.14.120
     
 base-proxy:
   vmess:
@@ -68,71 +68,71 @@ proxies:
 
   - &sshkit
     <<: *basevless
-    name: " 🇸🇬 do"
+    name: " 🇸🇬 tencent"
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: 811c6760-e002-4fa2-9b22-284b05a1da5d
-    servername: ntz28.mr-viper.biz.id
+    uuid: e2443e49-e0ce-4628-808f-76469b53cf66
+    servername: x27.merkuri.cloud
     ws-opts: 
-      path: /ViperIsGOD
+      path: /?ed=2048
       headers: 
-        Host: ntz28.mr-viper.biz.id
+        Host: x27.merkuri.cloud
         Early-Data: 1
   - <<: *sshkit
-    name: " 🇸🇬 do 2"
+    name: " 🇸🇬 tencent 2"
     server: *bug-ip2
   - <<: *sshkit
-    name: " 🇸🇬 do 3"
+    name: " 🇸🇬 tencent 3"
     server: *bug-ip3
   - <<: *sshkit
-    name: " 🇸🇬 do 4"
+    name: " 🇸🇬 tencent 4"
     server: *bug-ip4
   - <<: *sshkit
-    name: " 🇸🇬 do 5"
+    name: " 🇸🇬 tencent 5"
     server: *bug-ip5
   - <<: *sshkit
-    name: " 🇸🇬 do 6"
+    name: " 🇸🇬 tencent 6"
     server: *bug-ip6
   - <<: *sshkit
-    name: " 🇸🇬 do 7"
+    name: " 🇸🇬 tencent 7"
     server: *bug-ip7
   - <<: *sshkit
-    name: " 🇸🇬 do 8"
+    name: " 🇸🇬 tencent 8"
     server: *bug-ip8
   - <<: *sshkit
-    name: " 🇸🇬 do 9"
+    name: " 🇸🇬 tencent 9"
     server: *bug-ip9
   - <<: *sshkit
-    name: " 🇸🇬 do 10"
+    name: " 🇸🇬 tencent 10"
     server: *bug-ip10
   - <<: *sshkit
-    name: " 🇸🇬 do 11"
+    name: " 🇸🇬 tencent 11"
     server: *bug-ip11
   - <<: *sshkit
-    name: " 🇸🇬 do 12"
+    name: " 🇸🇬 tencent 12"
     server: *bug-ip12
   - <<: *sshkit
-    name: " 🇸🇬 do 13"
+    name: " 🇸🇬 tencent 13"
     server: *bug-ip13
   - <<: *sshkit
-    name: " 🇸🇬 do 14"
+    name: " 🇸🇬 tencent 14"
     server: *bug-ip14
   - <<: *sshkit
-    name: " 🇸🇬 do 15"
+    name: " 🇸🇬 tencent 15"
     server: *bug-ip15
   - <<: *sshkit
-    name: " 🇸🇬 do 16"
+    name: " 🇸🇬 tencent 16"
     server: *bug-ip16
   - <<: *sshkit
-    name: " 🇸🇬 do 17"
+    name: " 🇸🇬 tencent 17"
     server: *bug-ip17
   - <<: *sshkit
-    name: " 🇸🇬 do 18"
+    name: " 🇸🇬 tencent 18"
     server: *bug-ip18
   - <<: *sshkit
-    name: " 🇸🇬 do 19"
+    name: " 🇸🇬 tencent 19"
     server: *bug-ip19
   - <<: *sshkit
-    name: " 🇸🇬 do 20"
+    name: " 🇸🇬 tencent 20"
     server: *bug-ip20

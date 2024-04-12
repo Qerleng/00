@@ -1,26 +1,26 @@
 base-bug:
   bug:
-    # Vision +
-    - &bug-ip1 104.21.235.171
-    - &bug-ip2 104.21.235.172
-    - &bug-ip3 104.21.73.208
-    - &bug-ip4 172.67.192.40
-    - &bug-ip5 104.18.214.59
-    - &bug-ip6 104.18.215.59
-    - &bug-ip7 104.21.233.133
-    - &bug-ip8 104.21.233.134
-    - &bug-ip9 cdnodeb.visionplus.id
-    - &bug-ip10 www.zeri.info
-    - &bug-ip11 simpleyoutubeconverter.com
-    - &bug-ip12 visionplus-stream.visionplus.id
-    - &bug-ip13 apprating.visionplus.id
-    - &bug-ip14 xlv1.v-pn.my.id
-    - &bug-ip15 visionplus.id
-    - &bug-ip16 stream-cdn.mncnow.id
-    - &bug-ip17 m.luqizi.com
-    - &bug-ip18 luqizi.com
-    - &bug-ip19 www.luqizi.com
-    - &bug-ip20 www.tv510.com
+    # Vidio 
+    - &bug-ip1 104.17.70.206
+    - &bug-ip2 104.17.71.206
+    - &bug-ip3 104.17.72.206
+    - &bug-ip4 104.17.73.206
+    - &bug-ip5 104.17.74.206
+    - &bug-ip6 104.16.13.120
+    - &bug-ip7 104.16.14.120
+    - &bug-ip8 104.16.15.120
+    - &bug-ip9 104.16.16.120
+    - &bug-ip10 104.16.17.120
+    - &bug-ip11 104.22.4.240
+    - &bug-ip12 104.22.5.240
+    - &bug-ip13 172.67.5.14
+    - &bug-ip14 104.16.13.120
+    - &bug-ip15 104.16.15.120
+    - &bug-ip16 104.16.17.120
+    - &bug-ip17 104.22.4.240
+    - &bug-ip18 104.22.5.240
+    - &bug-ip19 172.67.5.14
+    - &bug-ip20 104.16.14.120
     
 base-proxy:
   vmess:
@@ -72,12 +72,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: df93d4b2-1936-4ee7-ab11-c65284a502dd
-    servername: cxio.pages.dev
+    uuid: e2443e49-e0ce-4628-808f-76469b53cf66
+    servername: net1.zxv.biz.id
     ws-opts: 
-      path: /ohmyinjector
+      path: /?ed=2048
       headers: 
-        Host: cxio.pages.dev
+        Host: net1.zxv.biz.id
         Early-Data: 1
   - <<: *sshkit
     name: " 🇮🇩 Zhejiang 2"
