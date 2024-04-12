@@ -264,18 +264,16 @@ jobs:
           chmod +x ./upx
           ./upx --best sing-box/sing-box
           rm upx
-          cd sing-box
           echo $SINGBOX_VER >README.md
-          chmod +x sing-box
+          chmod +x sing-box/sing-box
           for item in *.json; do
-              ./sing-box rule-set compile "$item"
-              mkdir -p ./rule_json/
-              mkdir -p ./rule_srs/
-              mv "${item%.json}.srs" rule_srs/
-              mv "$item" rule_json/
-              rm *.json
-              
-              rm sing-box
+              .sing-box/sing-box rule-set compile "$item"
+              mkdir -p .sing-box//rule_json/
+              mkdir -p .sing-box//rule_srs/
+              mv "${item%.json}.srs" sing-box/rule_srs/
+              mv "$item" sing-box/rule_json/
+          rm *.json   
+          rm sing-box
               
           done
       - uses: MyAlbum/purge-cache@v2
