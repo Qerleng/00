@@ -248,7 +248,7 @@ jobs:
           curl -Lo sing-box.tar.gz "https://github.com/SagerNet/sing-box/releases/download/v$SINGBOX_VER/sing-box-$SINGBOX_VER-linux-amd64.tar.gz"
 
           tar -xzvf sing-box.tar.gz
-          mv -f sing-box/sing-box-$SINGBOX_VER-linux-amd64/sing-box .
+          mv ./sing-box/sing-box-$SINGBOX_VER-linux-amd64/sing-box .
           chmod +x sing-box
 
           for item in *.json; do
@@ -259,7 +259,7 @@ jobs:
               mv "$item" rule_json/
           done
 
-          rm -rf sing-box.tar.gz sing-box-$SINGBOX_VER-linux-amd64/ sing-box
+          rm -rf sing-box.tar.gz sing-box-$SINGBOX_VER-linux-amd64/* sing-box
       - uses: MyAlbum/purge-cache@v2
         with:
           token: ${{ github.token }}
