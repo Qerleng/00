@@ -232,6 +232,9 @@ jobs:
               file.write(formatted_yaml)
           EOF
           rm rule_18+.txt
+      
+      - name: Run script convert rule provider
+        run: python ./data/convert.py
       - name: Building binary files
         run: |
           UPX_VER=$(curl -s https://api.github.com/repos/upx/upx/releases/latest |
@@ -263,12 +266,6 @@ jobs:
           rm upx
           cd sing-box
           echo $SINGBOX_VER >README.md
-
-      - name: Run script convert rule provider
-        run: python ./data/convert.py
-      - name: move rule sing-box
-        working-directory: ./sing-box
-        run: |
           chmod +x sing-box
           for item in *.json; do
               ./sing-box rule-set compile "$item"
