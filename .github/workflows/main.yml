@@ -259,7 +259,7 @@ jobs:
               mv "$item" rule_json/
           done
 
-          rm -rf sing-box.tar.gz sing-box-${VERSION}-linux-amd64/ sing-box
+          rm -rf sing-box.tar.gz sing-box-$SINGBOX_VER-linux-amd64/ sing-box
       - uses: MyAlbum/purge-cache@v2
         with:
           token: ${{ github.token }}
