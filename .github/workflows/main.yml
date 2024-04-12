@@ -276,7 +276,7 @@ jobs:
               mkdir -p ./rule_srs/
               mv "${item%.json}.srs" rule_srs/
               mv "$item" rule_json/
-              rm *.json *.srs
+              rm *.json
               
               rm sing-box
               
