@@ -17,3 +17,8 @@ payload:
   - DST-PORT,137
   - DST-PORT,138
   - DST-PORT,139
+
+  # Xl
+  - DOMAIN,xlaxiata-resources.digital-cloud-sin1.medallia.com
+  - DOMAIN-SUFFIX,medallia.com
+  - DOMAIN-KEYWORD,medallia
