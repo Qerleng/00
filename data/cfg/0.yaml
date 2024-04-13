@@ -73,7 +73,7 @@ external-ui: /data/adb/box/clash/dashboard
 # global-client-fingerprint: chrome
 
 #  TCP keep alive interval
-keep-alive-interval: 15
+keep-alive-interval: 10
 
 # routing-mark:6666 # 配置 fwmark 仅用于 Linux
 experimental:
@@ -102,10 +102,10 @@ profile: # 存储 select 选择记录
 
 # Tun 配置
 tun:
-  enable: false
+  enable: true
   stack: system # gvisor/mixed
   dns-hijack:
-    - 0.0.0.0:53 # 需要劫持的 DNS
+    - any:53 # 需要劫持的 DNS
   # auto-detect-interface: true # 自动识别出口网卡
   # auto-route: true # 配置路由表
   # mtu: 9000 # 最大传输单元
@@ -152,7 +152,7 @@ ebpf:
 
 # 嗅探域名 可选配置
 sniffer:
-  enable: false
+  enable: true
   ## 对 redir-host 类型识别的流量进行强制嗅探
   ## 如：Tun、Redir 和 TProxy 并 DNS 为 redir-host 皆属于
   # force-dns-mapping: false
@@ -203,7 +203,7 @@ tunnels: # one line config
 # DNS 配置
 dns:
   cache-algorithm: arc
-  enable: false # 关闭将使用系统 DNS
+  enable: true # 关闭将使用系统 DNS
   prefer-h3: true # 开启 DoH 支持 HTTP/3，将并发尝试
   listen: :1053 # 开启 DNS 服务器监听
   # ipv6: false # false 将返回 AAAA 的空结果
@@ -211,10 +211,10 @@ dns:
   # 用于解析 nameserver，fallback 以及其他 DNS 服务器配置的，DNS 服务域名
   # 只能使用纯 IP 地址，可使用加密 DNS
   default-nameserver:
-    - 114.114.114.114
-    - 8.8.8.8
-    - tls://1.12.12.12:853
-    - tls://223.5.5.5:853
+#    - 114.114.114.114
+#    - 8.8.8.8
+#    - tls://1.12.12.12:853
+#    - tls://223.5.5.5:853
     - system # append DNS server from system configuration. If not found, it would print an error log and skip.
   enhanced-mode: fake-ip # or redir-host
 
@@ -231,12 +231,12 @@ dns:
   # 支持 UDP，TCP，DoT，DoH，DoQ
   # 这部分为主要 DNS 配置，影响所有直连，确保使用对大陆解析精准的 DNS
   nameserver:
-    - 114.114.114.114 # default value
-    - 8.8.8.8 # default value
-    - tls://223.5.5.5:853 # DNS over TLS
-    - https://doh.pub/dns-query # DNS over HTTPS
-    - https://dns.alidns.com/dns-query#h3=true # 强制 HTTP/3，与 perfer-h3 无关，强制开启 DoH 的 HTTP/3 支持，若不支持将无法使用
-    - https://mozilla.cloudflare-dns.com/dns-query#DNS&h3=true # 指定策略组和使用 HTTP/3
+ #   - 114.114.114.114 # default value
+ #   - 8.8.8.8 # default value
+#    - tls://223.5.5.5:853 # DNS over TLS
+ #   - https://doh.pub/dns-query # DNS over HTTPS
+ #   - https://dns.alidns.com/dns-query#h3=true # 强制 HTTP/3，与 perfer-h3 无关，强制开启 DoH 的 HTTP/3 支持，若不支持将无法使用
+#    - https://mozilla.cloudflare-dns.com/dns-query#DNS&h3=true # 指定策略组和使用 HTTP/3
     - dhcp://en0 # dns from dhcp
     - quic://dns.adguard.com:784 # DNS over QUIC
     # - '8.8.8.8#en0' # 兼容指定 DNS 出口网卡
