@@ -47,8 +47,7 @@ dns:
     - '*.lan'
 
   nameserver:
-    - 8.8.8.8
-    - 1.0.0.1
+    - 'https://8.8.8.8/dns-query#h3=true'
 
   nameserver-policy:
     'RULE-SET:ABS,Whatsapp': 112.215.248.122
