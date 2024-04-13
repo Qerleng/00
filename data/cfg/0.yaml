@@ -45,7 +45,7 @@ dns:
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - '*.lan'
-    - 'time.*.com
+    - 'time.*.com'
 
   nameserver:
     - 'https://8.8.8.8/dns-query#h3=true'
