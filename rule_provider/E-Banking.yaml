@@ -229,7 +229,4 @@ payload:
   - DOMAIN-SUFFIX,bukaolshop.com
   - DOMAIN-SUFFIX,bukaolshop.net
   
-  # Xl
-  - DOMAIN,xlaxiata-resources.digital-cloud-sin1.medallia.com
-  - DOMAIN-SUFFIX,medallia.com
-  - DOMAIN-KEYWORD,medallia
+
