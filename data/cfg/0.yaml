@@ -220,7 +220,7 @@ dns:
 
   fake-ip-range: 198.18.0.1/16 # fake-ip 池设置
 
-  # use-hosts: true # 查询 hosts
+  use-hosts: true # 查询 hosts
 
   # 配置不使用 fake-ip 的域名
   # fake-ip-filter:
