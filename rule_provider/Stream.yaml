@@ -15,6 +15,7 @@ payload:
   - DOMAIN-SUFFIX,wetv.vip
   - DOMAIN-SUFFIX,wetvinfo.com
   - DOMAIN-SUFFIX,dens.tv
+  - DOMAIN-SUFFIX,slivcdn.com
   - DOMAIN-KEYWORD,mncplus
   - DOMAIN-KEYWORD,rctiplus
   - IP-CIDR,150.109.28.51/32
