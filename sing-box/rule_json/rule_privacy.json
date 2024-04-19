@@ -3,14 +3,12 @@
     {
       "domain": [
         "time.windows.com",
-        "time1.google.com",
-        "xlaxiata-resources.digital-cloud-sin1.medallia.com"
+        "time1.google.com"
       ]
     },
     {
       "domain_keyword": [
         ".ntp",
-        "medallia",
         "time"
       ]
     },
@@ -24,7 +22,6 @@
     },
     {
       "domain_suffix": [
-        ".medallia.com",
         ".time.*.com",
         ".time.android.com"
       ]
