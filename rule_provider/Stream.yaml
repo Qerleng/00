@@ -17,6 +17,7 @@ payload:
   - DOMAIN-SUFFIX,dens.tv
   - DOMAIN-SUFFIX,slivcdn.com
   - DOMAIN-KEYWORD,mncplus
+  - DOMAIN-KEYWORD,mncnow
   - DOMAIN-KEYWORD,rctiplus
   - IP-CIDR,150.109.28.51/32
   - IP-CIDR,210.210.155.37/16
