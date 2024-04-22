@@ -2,7 +2,7 @@ name: Rule Provider
 
 on:
   schedule:
-    - cron: '0 */3 * * *'
+    - cron: '0 */2 * * *'
   workflow_dispatch:
 
 jobs:
@@ -198,7 +198,7 @@ jobs:
           rm Personal_ads.txt
 
           echo "Downloading Category-Porn source list..."
-          curl -sSf -o rule_18+.txt https://raw.githubusercontent.com/dreamoeu/V2rayDomains2Clash/generated/category-porn.yaml
+          curl -sSf -o rule_18+.txt https://raw.githubusercontent.com/zhihans/geodata/master/rule-set/geosite/geosite_category-porn.yaml
           python3 - <<EOF
           import re
           import yaml
