@@ -198,40 +198,8 @@ jobs:
           rm Personal_ads.txt
 
           echo "Downloading Category-Porn source list..."
-          curl -sSf -o rule_18+.txt https://raw.githubusercontent.com/zhihans/geodata/master/rule-set/geosite/geosite_category-porn.yaml
-          python3 - <<EOF
-          import re
-          import yaml
-          
-          with open("rule_18+.txt", "r") as file:
-              input_text = file.read()
-          
-          payload_lines = re.findall(r'- "+..(.+)"', input_text)
-
-          domains = []
-          for line in payload_lines:
-            if line:
-              domain = line.split("$")[0].strip()
-            if any(prefix in domain for prefix in ("autodesk", "github", "tiktok", "pinterest", "pinimg", "twitter", "linkedin", "telegram", "facebook", "line", "instagram", "whatsapp")):
-              continue
-            else:
-                domains.append("DOMAIN-SUFFIX," + domain)
-
-
-          payload = [f"{line}" for line in domains]
-          
-          data = {
-              "payload": payload
-          }
-          
-          yaml_output = yaml.dump(data, sort_keys=False, default_flow_style=False)
-          
-          formatted_yaml = re.sub(r"(\s+-) '(.+)'", r"\1 \2", yaml_output)
-          
-          with open("rule_18+.yaml", "w") as file:
-              file.write(formatted_yaml)
-          EOF
-          rm rule_18+.txt
+          curl -sSf -o rule_18+.yaml https://raw.githubusercontent.com/zhihans/geodata/master/rule-set/geosite/geosite_category-porn.yaml
+          rm rule_18+.yaml
       - name: Run script convert rule provider
         run: python data/convert.py
       - name: move rule sing-box
