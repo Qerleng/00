@@ -198,11 +198,11 @@ jobs:
           rm Personal_ads.txt
 
           echo "Downloading Category-Porn source list..."
-          curl -sSf -o rule_18+.yaml https://raw.githubusercontent.com/zhihans/geodata/master/rule-set/geosite/geosite_category-porn.yaml
+          curl -sSf https://raw.githubusercontent.com/zhihans/geodata/master/rule-set/geosite/geosite_category-porn.yaml -o rule_18+.yaml
           rm -fr rule_18+.yamle
 
           echo "Downloading Private source list..."
-          curl -sSf -o rule_privacy.yaml https://raw.githubusercontent.com/zhihans/geodata/master/rule-set/geosite/geosite_private.yaml
+          curl -sSf https://raw.githubusercontent.com/zhihans/geodata/master/rule-set/geosite/geosite_private.yaml -o rule_privacy.yaml
           rm -fr rule_privacy.yamle
           
       - name: Run script convert rule provider
