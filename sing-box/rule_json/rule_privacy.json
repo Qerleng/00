@@ -1,40 +1,4 @@
 {
-  "rules": [
-    {
-      "domain": [
-        "time.windows.com",
-        "time1.google.com"
-      ]
-    },
-    {
-      "domain_keyword": [
-        ".ntp",
-        "time"
-      ]
-    },
-    {
-      "domain_regex": [
-        "ntp.*.com",
-        "ntp[1-7].*.com",
-        "time.*.com",
-        "time[1-7].*.com"
-      ]
-    },
-    {
-      "domain_suffix": [
-        ".time.*.com",
-        ".time.android.com"
-      ]
-    },
-    {
-      "port": [
-        123,
-        136,
-        137,
-        138,
-        139
-      ]
-    }
-  ],
+  "rules": [],
   "version": 1
 }
