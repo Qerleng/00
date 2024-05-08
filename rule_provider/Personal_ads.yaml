@@ -3,7 +3,6 @@ payload:
 - DOMAIN,analyticsengine.s3.amazonaws.com
 - DOMAIN,analytics.s3.amazonaws.com
 - DOMAIN,advice-ads.s3.amazonaws.com
-- DOMAIN,advertising-api-eu.amazon.com
 - DOMAIN,pagead2.googlesyndication.com
 - DOMAIN,adservice.google.com
 - DOMAIN,pagead2.googleadservices.com
@@ -82,7 +81,6 @@ payload:
 - DOMAIN,geo.yahoo.com
 - DOMAIN,udc.yahoo.com
 - DOMAIN,udcm.yahoo.com
-- DOMAIN,advertising.yahoo.com
 - DOMAIN,analytics.query.yahoo.com
 - DOMAIN,partnerads.ysm.yahoo.com
 - DOMAIN,log.fc.yahoo.com
@@ -92,7 +90,6 @@ payload:
 - DOMAIN,appmetrica.yandex.ru
 - DOMAIN,adfstat.yandex.ru
 - DOMAIN,metrika.yandex.ru
-- DOMAIN,advertising.yandex.ru
 - DOMAIN,offerwall.yandex.net
 - DOMAIN,adfox.yandex.ru
 - DOMAIN,auction.unityads.unity3d.com
@@ -127,7 +124,6 @@ payload:
 - DOMAIN,nmetrics.samsung.com
 - DOMAIN,samsung-com.112.2o7.net
 - DOMAIN,analytics-api.samsunghealthcn.com
-- DOMAIN,advertising.apple.com
 - DOMAIN,iadsdk.apple.com
 - DOMAIN,metrics.icloud.com
 - DOMAIN,metrics.mzstatic.com
