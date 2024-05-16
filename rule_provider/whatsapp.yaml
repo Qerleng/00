@@ -3,9 +3,7 @@ payload:
   - DOMAIN-KEYWORD,whatsapp
   - DOMAIN-KEYWORD,g.whatsapp
   - DOMAIN-KEYWORD,wa.tenor
-  - DOMAIN-KEYWORD,graph.facebook
   - DOMAIN-SUFFIX,whatsapp.com
-  - DOMAIN-SUFFIX,bintray.com
   - DOMAIN-SUFFIX,wa.me
   - DOMAIN-SUFFIX,whatsapp-plus.info
   - DOMAIN-SUFFIX,whatsapp-plus.me
