@@ -65,7 +65,6 @@ payload:
 - DOMAIN,log.pinterest.com
 - DOMAIN,analytics.pinterest.com
 - DOMAIN,trk.pinterest.com
-- DOMAIN,widgets.pinterest.com
 - DOMAIN,events.reddit.com
 - DOMAIN,events.redditmedia.com
 - DOMAIN,ads.youtube.com
