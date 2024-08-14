@@ -81,6 +81,14 @@ dns:
   nameserver:
     - 'https://8.8.8.8/dns-query#h3=true'
 
+  proxy-server-nameserver:
+    # - 10.19.133.164
+    # - 103.108.20.198
+    - system 
+    - 112.215.248.122
+    - 112.215.198.254
+    - 112.215.248.124
+    
   nameserver-policy:
     'RULE-SET:ABS,Whatsapp': 112.215.248.122
     'RULE-SET:Portgames,Game-TCP,Gaming': 112.215.248.124
