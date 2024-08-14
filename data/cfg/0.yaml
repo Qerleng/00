@@ -40,6 +40,7 @@ dns:
   ipv6: true
   cache-algorithm: arc
   prefer-h3: true
+  respect-rules: false
   listen: 0.0.0.0:1053
   use-hosts: true
   enhanced-mode: fake-ip
