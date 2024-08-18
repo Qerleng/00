@@ -161,6 +161,46 @@ jobs:
           EOF
           rm rule-maliciousip.txt
 
+          echo "Downloading DOH IP Addresses source list..."
+          curl -sSf -o rule-doh.txt https://raw.githubusercontent.com/malikshi/dns_ip/main/ip-dns.txt
+          python3 - <<EOF
+          import re
+          import yaml
+          import ipaddress
+          
+          with open("rule-doh.txt", "r") as file:
+              input_text = file.read()
+          payload_lines = re.findall(r"(.+)", input_text)
+          domains = []
+          ips = []
+          for line in payload_lines:
+            if line:
+                if line[0].isdigit():
+                    try:
+                        ip = ipaddress.ip_network(line.strip().split('$')[0])
+                        ips.append(ip.with_prefixlen)
+                    except ValueError:
+                        pass
+                else:
+                    domain = line.split("$")[0].strip()
+
+                       
+          rules = domains + ["IP-CIDR," + ip for ip in ips]
+          payload = [f"{line}" for line in rules]
+          
+          data = {
+              "payload": payload
+          }
+          
+          yaml_output = yaml.dump(data, sort_keys=False, default_flow_style=False)
+          
+          formatted_yaml = re.sub(r"(\s+-) '(.+)'", r"\1 \2", yaml_output)
+          
+          with open("rule_doh.yaml", "w") as file:
+              file.write(formatted_yaml)
+          EOF
+          rm rule-doh.txt
+          
           echo "Downloading Personal_ads source list..."
           curl -sSf -o Personal_ads.txt https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt
           python3 - <<EOF
