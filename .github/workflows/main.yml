@@ -162,7 +162,7 @@ jobs:
           rm rule-maliciousip.txt
 
           echo "Downloading DOH IP Addresses source list..."
-          curl -sSf -o rule-doh.txt https://raw.githubusercontent.com/malikshi/dns_ip/main/ip-dns.txt
+          curl -sSf -o rule-doh.txt https://raw.githubusercontent.com/malikshi/dns_ip/main/ip-dns-nocdn-prefix.txt
           python3 - <<EOF
           import re
           import yaml
