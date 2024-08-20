@@ -249,7 +249,7 @@ jobs:
         run: python data/convert.py
       - name: getDomainDoH
         run: |
-          bash getDomainDOH.sh
+          bash data/getDOH.sh
       - name: move rule sing-box
         working-directory: ./sing-box
         run: |
