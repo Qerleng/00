@@ -20,12 +20,12 @@ payload:
 
 
   # FCM
-  - DOMAIN-SUFFIX,mtalk.google.com
-  - DOMAIN-REGEX,.*.mtalk.google.com
-  - DOMAIN-REGEX,(^|\\.)(alt[1-8]-mtalk|mtalk|mtalk4)\\.google\\.com$
-  - DST-PORT,5228
-  - DST-PORT,5229
-  - DST-PORT,5230
+#  - DOMAIN-SUFFIX,mtalk.google.com
+#  - DOMAIN-REGEX,.*.mtalk.google.com
+#  - DOMAIN-REGEX,(^|\\.)(alt[1-8]-mtalk|mtalk|mtalk4)\\.google\\.com$
+#  - DST-PORT,5228
+#  - DST-PORT,5229
+#  - DST-PORT,5230
 
   
   # NAME: GoogleVoice
