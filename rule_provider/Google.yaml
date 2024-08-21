@@ -899,3 +899,11 @@ payload:
 - DOMAIN-SUFFIX,marketingplatform.google.com
 - DOMAIN-SUFFIX,urchin.com
 - DOMAIN-REGEX,^adservice\.google\.([a-z]{2}|com?)(\.[a-z]{2})?
+
+  # FCM
+- DOMAIN-SUFFIX,mtalk.google.com
+- DOMAIN-REGEX,.*.mtalk.google.com
+- DOMAIN-REGEX,(^|\\.)(alt[1-8]-mtalk|mtalk|mtalk4)\\.google\\.com$
+- DST-PORT,5228
+- DST-PORT,5229
+- DST-PORT,5230
