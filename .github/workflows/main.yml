@@ -236,42 +236,6 @@ jobs:
               file.write(formatted_yaml)
           EOF
           rm Personal_ads.txt
-
-          echo "Downloading Google source list..."
-          curl -sSf -o Google.txt https://raw.githubusercontent.com/zhihans/geodata/master/rule-set/geosite/geosite_google.yaml
-          python3 - <<EOF
-          import re
-          import yaml
-          
-          with open("Google.txt", "r") as file:
-              input_text = file.read()
-          
-          payload_lines = re.findall(r"  - (.+)", input_text)
-
-          domains = []
-          for line in payload_lines:
-            if line:
-              domain = line.split("$")[0].strip()
-            if any(prefix in domain for prefix in ("youtube", "mtalk", "gvt", "yt", "googlevideo", "syndication","doubleclick")):
-              continue
-            else:
-                domains.append(domain)
-
-
-          payload = [f"{line}" for line in domains]
-          
-          data = {
-              "payload": payload
-          }
-          
-          yaml_output = yaml.dump(data, sort_keys=False, default_flow_style=False)
-          
-          formatted_yaml = re.sub(r"(\s+-) '(.+)'", r"\1 \2", yaml_output)
-          
-          with open("Google.yaml", "w") as file:
-              file.write(formatted_yaml)
-          EOF
-          rm Google.txt
           
           echo "Downloading Category-Porn source list..."
           curl -sSf https://raw.githubusercontent.com/zhihans/geodata/master/rule-set/geosite/geosite_category-porn.yaml -o rule_18+.yaml
