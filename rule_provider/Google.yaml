@@ -11,9 +11,9 @@ payload:
   - DOMAIN-KEYWORD,google
   - DOMAIN-KEYWORD,googleapis
   - DOMAIN-KEYWORD,gstatic
-  - IP-CIDR,74.125.39.0/24,no-resolve
-  - IP-CIDR,216.239.36.0/24,no-resolve
-  - IP-CIDR6,2001:4860:4864:2::0/64,no-resolve
+  - IP-CIDR,74.125.39.0/24
+  - IP-CIDR,216.239.36.0/24
+  - IP-CIDR6,2001:4860:4864:2::0/64
 
   # FCM
   - DOMAIN-SUFFIX,mtalk.google.com
