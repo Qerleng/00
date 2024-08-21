@@ -8,6 +8,9 @@ payload:
   - DOMAIN-SUFFIX,gstatic.com
   - DOMAIN-SUFFIX,googleusercontent.com
   - DOMAIN-SUFFIX,telephony.goog
+  - DOMAIN-KEYWORD,google
+  - DOMAIN-KEYWORD,googleapis
+  - DOMAIN-KEYWORD,gstatic
   - IP-CIDR,74.125.39.0/24,no-resolve
   - IP-CIDR,216.239.36.0/24,no-resolve
   - IP-CIDR6,2001:4860:4864:2::0/64,no-resolve
@@ -17,7 +20,6 @@ payload:
   - DOMAIN-REGEX,.*.mtalk.google.com
   - DOMAIN-REGEX,(^|\\.)(alt[1-8]-mtalk|mtalk|mtalk4)\\.google\\.com$
   - DST-PORT,5228
+  - DST-PORT,5229
+  - DST-PORT,5230
 
-  
-- DST-PORT,5229
-- DST-PORT,5230
