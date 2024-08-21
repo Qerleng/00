@@ -269,6 +269,8 @@
     },
     {
       "domain_regex": [
+        "(^|\\\\.)(alt[1-8]-mtalk|mtalk|mtalk4)\\\\.google\\\\.com$",
+        ".*.mtalk.google.com",
         "^adservice\\.google\\.([a-z]{2}|com?)(\\.[a-z]{2})?"
       ]
     },
@@ -788,6 +790,7 @@
         ".mfg-inspector.com",
         ".mobileview.page",
         ".moodstocks.com",
+        ".mtalk.google.com",
         ".near.by",
         ".nest.com",
         ".new.day",
@@ -907,6 +910,13 @@
         ".xplr.co",
         ".youtu.be",
         ".zukunftswerkstatt.de"
+      ]
+    },
+    {
+      "port": [
+        5228,
+        5229,
+        5230
       ]
     }
   ],

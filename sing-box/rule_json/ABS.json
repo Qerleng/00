@@ -19,8 +19,6 @@
     },
     {
       "domain_regex": [
-        "(^|\\\\.)(alt[1-8]-mtalk|mtalk|mtalk4)\\\\.google\\\\.com$",
-        ".*.mtalk.google.com",
         "ntp.*.com",
         "ntp[1-7].*.com",
         "time.*.com",
@@ -29,7 +27,6 @@
     },
     {
       "domain_suffix": [
-        ".mtalk.google.com",
         ".telephony.goog",
         ".time.*.com",
         ".time.android.com"
@@ -41,10 +38,7 @@
         136,
         137,
         138,
-        139,
-        5228,
-        5229,
-        5230
+        139
       ]
     }
   ],
