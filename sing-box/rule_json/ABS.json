@@ -2,11 +2,6 @@
   "rules": [
     {
       "domain": [
-        "stun.l.google.com",
-        "stun1.l.google.com",
-        "stun2.l.google.com",
-        "stun3.l.google.com",
-        "stun4.l.google.com",
         "time.windows.com",
         "time1.google.com"
       ]
@@ -27,7 +22,6 @@
     },
     {
       "domain_suffix": [
-        ".telephony.goog",
         ".time.*.com",
         ".time.android.com"
       ]
