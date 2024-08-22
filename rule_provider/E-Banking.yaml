@@ -6,7 +6,6 @@ payload:
   - DOMAIN-SUFFIX,btn.co.id
   - DOMAIN-SUFFIX,danamon.co.id
   - DOMAIN-SUFFIX,permatabank.com
-  - DOMAIN-SUFFIX,bca.co.id
   - DOMAIN-SUFFIX,maybank.co.id
   - DOMAIN-SUFFIX,panin.co.id
   - DOMAIN-SUFFIX,cimbniaga.com
@@ -164,6 +163,9 @@ payload:
   
   # Bank Syariah Mandiri
   - DOMAIN-SUFFIX,bsm.co.id
+
+  # Seabank
+  - DOMAIN-SUFFIX,seabank.co.id
   
   # Muamalat
   - DOMAIN-SUFFIX,bankmuamalat.co.id
