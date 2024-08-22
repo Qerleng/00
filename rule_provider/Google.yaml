@@ -23,6 +23,4 @@ payload:
   - DST-PORT,5229
   - DST-PORT,5230
 
-  # > Whatsapp Call direct
-  - DST-PORT,3478
-  - DST-PORT,4244
+
