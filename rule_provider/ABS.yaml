@@ -29,11 +29,11 @@ payload:
 
   
   # NAME: GoogleVoice
-  - DOMAIN,stun.l.google.com
-  - DOMAIN,stun1.l.google.com
-  - DOMAIN,stun2.l.google.com
-  - DOMAIN,stun3.l.google.com
-  - DOMAIN,stun4.l.google.com
-  - DOMAIN-SUFFIX,telephony.goog
+#  - DOMAIN,stun.l.google.com
+#  - DOMAIN,stun1.l.google.com
+#  - DOMAIN,stun2.l.google.com
+#  - DOMAIN,stun3.l.google.com
+#  - DOMAIN,stun4.l.google.com
+#  - DOMAIN-SUFFIX,telephony.goog
 
 
