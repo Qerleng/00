@@ -7,7 +7,6 @@
     },
     {
       "domain_suffix": [
-        ".safebrowsing.googleapis.com",
         ".www3.doubleclick.net"
       ]
     }
