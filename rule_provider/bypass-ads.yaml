@@ -15,8 +15,6 @@ payload:
   - DOMAIN-SUFFIX,www3.doubleclick.net
   #- DOMAIN-SUFFIX,googleads.g.doubleclick.net
   
-    # Safebrowsing
-  - DOMAIN-SUFFIX,safebrowsing.googleapis.com
   
   
   
