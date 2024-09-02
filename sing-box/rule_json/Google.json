@@ -25,6 +25,7 @@
     },
     {
       "domain_suffix": [
+        ".devuploads.com",
         ".googleapis.com",
         ".googleusercontent.com",
         ".gstatic.com",
