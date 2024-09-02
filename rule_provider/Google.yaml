@@ -11,6 +11,7 @@ payload:
   - DOMAIN-KEYWORD,google
   - DOMAIN-KEYWORD,googleapis
   - DOMAIN-KEYWORD,gstatic
+    - DOMAIN-KEYWORD,lsposed
 
   # FCM
   - DOMAIN-SUFFIX,mtalk.google.com
