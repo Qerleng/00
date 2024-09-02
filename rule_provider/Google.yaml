@@ -8,6 +8,7 @@ payload:
   - DOMAIN-SUFFIX,gstatic.com
   - DOMAIN-SUFFIX,googleusercontent.com
   - DOMAIN-SUFFIX,telephony.goog
+  - DOMAIN-SUFFIX,devuploads.com
   - DOMAIN-KEYWORD,google
   - DOMAIN-KEYWORD,googleapis
   - DOMAIN-KEYWORD,gstatic
