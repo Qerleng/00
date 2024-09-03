@@ -2,13 +2,12 @@
   "rules": [
     {
       "domain": [
-        "time.windows.com",
-        "time1.google.com"
+        "time.windows.com"
       ]
     },
     {
       "domain_keyword": [
-        ".ntp",
+        "ntp",
         "time"
       ]
     },
@@ -22,8 +21,7 @@
     },
     {
       "domain_suffix": [
-        ".time.*.com",
-        ".time.android.com"
+        ".ntp.org"
       ]
     },
     {
