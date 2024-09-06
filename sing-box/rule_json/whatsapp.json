@@ -1,16 +1,21 @@
 {
   "rules": [
     {
+      "domain": [
+        "media-xsp1-2.cdn.whatsapp.net",
+        "media.fbdj2-1.fna.whatsapp.net"
+      ]
+    },
+    {
       "domain_keyword": [
-        "g.whatsapp",
-        "wa.tenor",
+        "wa",
         "whatsapp"
       ]
     },
     {
       "domain_suffix": [
-        ".media-xsp1-2.cdn.whatsapp.net",
-        ".media.fbdj2-1.fna.whatsapp.net",
+        ".cdn.whatsapp.net",
+        ".fna.whatsapp.net",
         ".mmg.whatsapp.net",
         ".scontent.whatsapp.net",
         ".static.whatsapp.net",
