@@ -16,8 +16,7 @@
     },
     {
       "domain_regex": [
-        "*.*.whatsapp.net",
-        "*.whatsapp.net",
+        ".*.whatsapp.*.",
         ".*.whatsapp.net"
       ]
     },
