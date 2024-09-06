@@ -74,7 +74,7 @@ def parse_list_file(link):
     map_dict = {'DOMAIN-SUFFIX': 'domain_suffix', 'HOST-SUFFIX': 'domain_suffix', 'DOMAIN': 'domain', 'HOST': 'domain', 'host': 'domain',
                 'DOMAIN-KEYWORD':'domain_keyword', 'HOST-KEYWORD': 'domain_keyword', 'host-keyword': 'domain_keyword', 'IP-CIDR': 'ip_cidr',
                 'ip-cidr': 'ip_cidr', 'IP-CIDR6': 'ip_cidr', 
-                'IP6-CIDR': 'ip_cidr','SRC-IP-CIDR': 'source_ip_cidr', 'GEOIP': 'geoip', 'DST-PORT': 'port',
+                'IP6-CIDR': 'ip_cidr','SRC-IP-CIDR': 'source_ip_cidr', 'GEOIP': 'geoip', 'DST-PORT': 'source_port',
                 'SRC-PORT': 'source_port', "URL-REGEX": "domain_regex", "DOMAIN-REGEX": "domain_regex", "domain-regex": "domain_regex"}
 
     df = df[df['pattern'].isin(map_dict.keys())].reset_index(drop=True)
@@ -107,7 +107,7 @@ def parse_list_file(link):
         elif pattern == 'port':
             port_entries.extend([int(address) for address in addresses])
         elif pattern == 'source_port':
-            source_port_entries.extend([int(address) for address in addresses])
+            source_port_entries.extend([(address) for address in addresses])
         else:
             rule_entry = {pattern: [address.strip() for address in addresses]}
             result_rules["rules"].append(rule_entry)
@@ -120,7 +120,7 @@ def parse_list_file(link):
     if port_entries:
         result_rules["rules"].append({'port': port_entries})
     if source_port_entries:
-        result_rules["rules"].append({'port': source_port_entries})
+        result_rules["rules"].append({'source_port_range': source_port_entries})
     
 
     file_name = os.path.join(output_dir, f"{os.path.basename(link).split('.')[0]}.json")
