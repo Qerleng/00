@@ -1,7 +1,6 @@
 payload:
   # &gt; WHATSAPP
-  - DOMAIN-REGEX,*.*.whatsapp.net
-  - DOMAIN-REGEX,*.whatsapp.net
+  - DOMAIN-REGEX,.*.whatsapp.*.
   - DOMAIN-REGEX,.*.whatsapp.net
   - DOMAIN-KEYWORD,whatsapp
   - DOMAIN-KEYWORD,g.whatsapp
