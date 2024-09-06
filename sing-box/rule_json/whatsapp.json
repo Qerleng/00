@@ -2,14 +2,23 @@
   "rules": [
     {
       "domain": [
-        "media-xsp1-2.cdn.whatsapp.net",
-        "media.fbdj2-1.fna.whatsapp.net"
+        "chat.cdn.whatsapp.net",
+        "g.whatsapp.net"
       ]
     },
     {
       "domain_keyword": [
-        "wa",
+        "cdn.whatsapp",
+        "fna.whatsapp",
+        "g.whatsapp",
         "whatsapp"
+      ]
+    },
+    {
+      "domain_regex": [
+        "*.*.whatsapp.net",
+        "*.whatsapp.net",
+        ".*.whatsapp.net"
       ]
     },
     {
