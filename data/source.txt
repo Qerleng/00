@@ -17,3 +17,5 @@ https://raw.githubusercontent.com/Qerleng/00/main/rule_provider/rule_maliciousip
 https://raw.githubusercontent.com/Qerleng/00/main/rule_provider/rule_nsfw.yaml
 https://raw.githubusercontent.com/Qerleng/00/main/rule_provider/rule_18+.yaml
 https://raw.githubusercontent.com/Qerleng/00/main/rule_provider/rule_indo.yaml
+
+https://raw.githubusercontent.com/SonzaiX/ConfigCMFA/main/rule_provider/Portgames.yaml
