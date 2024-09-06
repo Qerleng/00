@@ -1,7 +1,9 @@
 payload:
   # &gt; WHATSAPP
   - DOMAIN-KEYWORD,whatsapp
-  - DOMAIN-KEYWORD,wa
+  - DOMAIN-KEYWORD,g.whatsapp
+  - DOMAIN-KEYWORD,cdn.whatsapp
+  - DOMAIN-KEYWORD,fna.whatsapp
   - DOMAIN-SUFFIX,whatsapp.com
   - DOMAIN-SUFFIX,wa.me
   - DOMAIN-SUFFIX,whatsapp-plus.info
@@ -21,8 +23,8 @@ payload:
   - DOMAIN-SUFFIX,mmg.whatsapp.net
   - DOMAIN-SUFFIX,fna.whatsapp.net
   - DOMAIN-SUFFIX,cdn.whatsapp.net
-  - DOMAIN,media.fbdj2-1.fna.whatsapp.net
-  - DOMAIN,media-xsp1-2.cdn.whatsapp.net
+  - DOMAIN,g.whatsapp.net
+  - DOMAIN,chat.cdn.whatsapp.net
 
   
   # > Whatsapp Call direct
