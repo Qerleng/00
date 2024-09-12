@@ -3,7 +3,6 @@ payload:
   - DOMAIN-REGEX,.*.whatsapp.*.
   - DOMAIN-REGEX,.*.whatsapp.net
   - DOMAIN-KEYWORD,whatsapp
-  - DOMAIN-KEYWORD,g.whatsapp
   - DOMAIN-KEYWORD,cdn.whatsapp
   - DOMAIN-KEYWORD,fna.whatsapp
   - DOMAIN-SUFFIX,whatsapp.com
