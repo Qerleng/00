@@ -48,7 +48,7 @@ jobs:
           cd sing-box
           tar -czvf CrashCore.tar.gz CrashCore
           rm CrashCore.tar.gz CrashCore
-          echo -e "\n\t💢💢💢💢💢💢💢💢💢💢💢💢💢💢💢💢\n\t 💢💢\tSINGBOX ~> SINGBOX_VER\t 💢💢 \n\t💢💢💢💢💢💢💢💢💢💢💢💢💢💢💢💢" >README.md
+          echo -e "\n\t💢💢💢💢💢💢💢💢💢💢💢💢💢💢💢💢\n\t 💢💢\tSINGBOX ~> $SINGBOX_VER\t 💢💢 \n\t💢💢💢💢💢💢💢💢💢💢💢💢💢💢💢💢" >README.md
 
       - uses: MyAlbum/purge-cache@v2
         with:
