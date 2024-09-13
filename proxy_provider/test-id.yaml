@@ -1,26 +1,26 @@
 base-bug:
   bug:
     # Vidio 
-    - &bug-ip1 104.17.70.206
-    - &bug-ip2 104.17.71.206
-    - &bug-ip3 104.17.72.206
-    - &bug-ip4 104.17.73.206
-    - &bug-ip5 104.17.74.206
-    - &bug-ip6 104.16.13.120
-    - &bug-ip7 104.16.14.120
-    - &bug-ip8 104.16.15.120
-    - &bug-ip9 104.16.16.120
-    - &bug-ip10 104.16.17.120
+    - &bug-ip1 104.22.4.240
+    - &bug-ip2 104.22.5.240
+    - &bug-ip3 172.67.5.14
+    - &bug-ip4 104.22.4.240
+    - &bug-ip5 104.22.5.240
+    - &bug-ip6 104.17.155.243
+    - &bug-ip7 104.17.156.243
+    - &bug-ip8 104.17.157.243
+    - &bug-ip9 104.17.158.243
+    - &bug-ip10 104.17.159.243
     - &bug-ip11 104.22.4.240
     - &bug-ip12 104.22.5.240
     - &bug-ip13 172.67.5.14
-    - &bug-ip14 104.16.13.120
-    - &bug-ip15 104.16.15.120
-    - &bug-ip16 104.16.17.120
-    - &bug-ip17 104.22.4.240
-    - &bug-ip18 104.22.5.240
-    - &bug-ip19 172.67.5.14
-    - &bug-ip20 104.16.14.120
+    - &bug-ip14 104.17.157.243
+    - &bug-ip15 104.17.158.243
+    - &bug-ip16 104.17.159.243
+    - &bug-ip17 104.17.155.243
+    - &bug-ip18 104.22.4.240
+    - &bug-ip19 104.22.5.240
+    - &bug-ip20 172.67.5.14
     
 base-proxy:
   vmess:
@@ -28,6 +28,7 @@ base-proxy:
       type: vmess
       alterId: 0
       cipher: auto
+      udp: true
       udp-over-tcp: true
       network: ws
       skip-cert-verify: true
@@ -36,6 +37,7 @@ base-proxy:
       type: vless
       alterId: 0
       cipher: auto
+      udp: true
       udp-over-tcp: true
       network: ws
       skip-cert-verify: true
@@ -52,14 +54,6 @@ base-proxy:
       port: 443
       udp: true
       skip-cert-verify: true
-  ss:
-    - &basess
-      type: ss
-      cipher: aes-128-gcm
-      udp: true
-      skip-cert-verify: true
-      udp-over-tcp: true
-      plugin: v2ray-plugin
 base-proxy-group:
   url:
     - &url-gg http://www.gstatic.com/generate_204
@@ -68,71 +62,71 @@ proxies:
 
   - &sshkit
     <<: *basevless
-    name: " 🇮🇩 zhejiang"
+    name: ‎🇮🇩 id 1
     server: *bug-ip1
-    port: 80
-    tls: false
-    uuid: e2443e49-e0ce-4628-808f-76469b53cf66
-    servername: net1.zxv.biz.id
+    port: 443
+    tls: true
+    uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
+    servername: id1.putrivpn.us.kg
     ws-opts: 
-      path: /?ed=2048
+      path: /vlesscf
       headers: 
-        Host: net1.zxv.biz.id
+        Host: id1.putrivpn.us.kg
         Early-Data: 1
   - <<: *sshkit
-    name: " 🇮🇩 zhejiang 2"
+    name: ‎🇮🇩 id 2
     server: *bug-ip2
   - <<: *sshkit
-    name: " 🇮🇩 zhejiang 3"
+    name: ‎🇮🇩 id 3
     server: *bug-ip3
   - <<: *sshkit
-    name: " 🇮🇩 zhejiang 4"
+    name: ‎🇮🇩 id 4
     server: *bug-ip4
   - <<: *sshkit
-    name: " 🇮🇩 zhejiang 5"
+    name: ‎🇮🇩 id 5
     server: *bug-ip5
   - <<: *sshkit
-    name: " 🇮🇩 zhejiang 6"
+    name: ‎🇮🇩 id 6
     server: *bug-ip6
   - <<: *sshkit
-    name: " 🇮🇩 zhejiang 7"
+    name: ‎🇮🇩 id 7
     server: *bug-ip7
   - <<: *sshkit
-    name: " 🇮🇩 zhejiang 8"
+    name: ‎🇮🇩 id 8
     server: *bug-ip8
   - <<: *sshkit
-    name: " 🇮🇩 zhejiang 9"
+    name: ‎🇮🇩 id 9
     server: *bug-ip9
   - <<: *sshkit
-    name: " 🇮🇩 zhejiang 10"
+    name: ‎🇮🇩 id 10
     server: *bug-ip10
   - <<: *sshkit
-    name: " 🇮🇩 zhejiang 11"
+    name: ‎🇮🇩 id 11
     server: *bug-ip11
   - <<: *sshkit
-    name: " 🇮🇩 zhejiang 12"
+    name: ‎🇮🇩 id 12
     server: *bug-ip12
   - <<: *sshkit
-    name: " 🇮🇩 zhejiang 13"
+    name: ‎🇮🇩 id 13
     server: *bug-ip13
   - <<: *sshkit
-    name: " 🇮🇩 zhejiang 14"
+    name: ‎🇮🇩 id 14
     server: *bug-ip14
   - <<: *sshkit
-    name: " 🇮🇩 zhejiang 15"
+    name: ‎🇮🇩 id 15
     server: *bug-ip15
   - <<: *sshkit
-    name: " 🇮🇩 zhejiang 16"
+    name: ‎🇮🇩 id 16
     server: *bug-ip16
   - <<: *sshkit
-    name: " 🇮🇩 zhejiang 17"
+    name: ‎🇮🇩 id 17
     server: *bug-ip17
   - <<: *sshkit
-    name: " 🇮🇩 zhejiang 18"
+    name: ‎🇮🇩 id 18
     server: *bug-ip18
   - <<: *sshkit
-    name: " 🇮🇩 zhejiang 19"
+    name: ‎🇮🇩 id 19
     server: *bug-ip19
   - <<: *sshkit
-    name: " 🇮🇩 zhejiang 20"
+    name: ‎🇮🇩 id 20
     server: *bug-ip20

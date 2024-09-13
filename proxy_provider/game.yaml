@@ -1,26 +1,26 @@
 base-bug:
   bug:
     # Vidio 
-    - &bug-ip1 104.17.70.206
-    - &bug-ip2 104.17.71.206
-    - &bug-ip3 104.17.72.206
-    - &bug-ip4 104.17.73.206
-    - &bug-ip5 104.17.74.206
-    - &bug-ip6 104.16.13.120
-    - &bug-ip7 104.16.14.120
-    - &bug-ip8 104.16.15.120
-    - &bug-ip9 104.16.16.120
-    - &bug-ip10 104.16.17.120
+    - &bug-ip1 104.22.4.240
+    - &bug-ip2 104.22.5.240
+    - &bug-ip3 172.67.5.14
+    - &bug-ip4 104.22.4.240
+    - &bug-ip5 104.22.5.240
+    - &bug-ip6 104.17.155.243
+    - &bug-ip7 104.17.156.243
+    - &bug-ip8 104.17.157.243
+    - &bug-ip9 104.17.158.243
+    - &bug-ip10 104.17.159.243
     - &bug-ip11 104.22.4.240
     - &bug-ip12 104.22.5.240
     - &bug-ip13 172.67.5.14
-    - &bug-ip14 104.16.13.120
-    - &bug-ip15 104.16.15.120
-    - &bug-ip16 104.16.17.120
-    - &bug-ip17 104.22.4.240
-    - &bug-ip18 104.22.5.240
-    - &bug-ip19 172.67.5.14
-    - &bug-ip20 104.16.14.120
+    - &bug-ip14 104.17.157.243
+    - &bug-ip15 104.17.158.243
+    - &bug-ip16 104.17.159.243
+    - &bug-ip17 104.17.155.243
+    - &bug-ip18 104.22.4.240
+    - &bug-ip19 104.22.5.240
+    - &bug-ip20 172.67.5.14
     
 base-proxy:
   vmess:
@@ -52,14 +52,6 @@ base-proxy:
       port: 443
       udp: true
       skip-cert-verify: true
-  ss:
-    - &basess
-      type: ss
-      cipher: aes-128-gcm
-      udp: true
-      skip-cert-verify: true
-      udp-over-tcp: true
-      plugin: v2ray-plugin
 base-proxy-group:
   url:
     - &url-gg http://www.gstatic.com/generate_204
@@ -67,72 +59,72 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevless
-    name: " 🇺🇲 incapsula"
+    <<: *basevmess
+    name: ‎‎🇸🇬 LINODE 1
     server: *bug-ip1
-    port: 80
-    tls: false
-    uuid: e2443e49-e0ce-4628-808f-76469b53cf66
-    servername: x1.merkuri.cloud
+    port: 443
+    tls: true
+    uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+    servername: obdii.cfd
     ws-opts: 
-      path: /?ed=2048
+      path: /linkws
       headers: 
-        Host: x1.merkuri.cloud
+        Host: obdii.cfd
         Early-Data: 1
   - <<: *sshkit
-    name: " 🇺🇲 incapsula 2"
+    name: ‎‎🇸🇬 LINODE 2
     server: *bug-ip2
   - <<: *sshkit
-    name: " 🇺🇲 incapsula 3"
+    name: ‎‎🇸🇬 LINODE 3
     server: *bug-ip3
   - <<: *sshkit
-    name: " 🇺🇲 incapsula 4"
+    name: ‎‎🇸🇬 LINODE 4
     server: *bug-ip4
   - <<: *sshkit
-    name: " 🇺🇲 incapsula 5"
+    name: ‎‎🇸🇬 LINODE 5
     server: *bug-ip5
   - <<: *sshkit
-    name: " 🇺🇲 incapsula 6"
+    name: ‎‎🇸🇬 LINODE 6
     server: *bug-ip6
   - <<: *sshkit
-    name: " 🇺🇲 incapsula 7"
+    name: ‎‎🇸🇬 LINODE 7
     server: *bug-ip7
   - <<: *sshkit
-    name: " 🇺🇲 incapsula 8"
+    name: ‎‎🇸🇬 LINODE 8
     server: *bug-ip8
   - <<: *sshkit
-    name: " 🇺🇲 incapsula 9"
+    name: ‎‎🇸🇬 LINODE 9
     server: *bug-ip9
   - <<: *sshkit
-    name: " 🇺🇲 incapsula 10"
+    name: ‎‎🇸🇬 LINODE 10
     server: *bug-ip10
   - <<: *sshkit
-    name: " 🇺🇲 incapsula 11"
+    name: ‎‎🇸🇬 LINODE 11
     server: *bug-ip11
   - <<: *sshkit
-    name: " 🇺🇲 incapsula 12"
+    name: ‎‎🇸🇬 LINODE 12
     server: *bug-ip12
   - <<: *sshkit
-    name: " 🇺🇲 incapsula 13"
+    name: ‎‎🇸🇬 LINODE 13
     server: *bug-ip13
   - <<: *sshkit
-    name: " 🇺🇲 incapsula 14"
+    name: ‎‎🇸🇬 LINODE 14
     server: *bug-ip14
   - <<: *sshkit
-    name: " 🇺🇲 incapsula 15"
+    name: ‎‎🇸🇬 LINODE 15
     server: *bug-ip15
   - <<: *sshkit
-    name: " 🇺🇲 incapsula 16"
+    name: ‎‎🇸🇬 LINODE 16
     server: *bug-ip16
   - <<: *sshkit
-    name: " 🇺🇲 incapsula 17"
+    name: ‎‎🇸🇬 LINODE 17
     server: *bug-ip17
   - <<: *sshkit
-    name: " 🇺🇲 incapsula 18"
+    name: ‎‎🇸🇬 LINODE 18
     server: *bug-ip18
   - <<: *sshkit
-    name: " 🇺🇲 incapsula 19"
+    name: ‎‎🇸🇬 LINODE 19
     server: *bug-ip19
   - <<: *sshkit
-    name: " 🇺🇲 incapsula 20"
+    name: ‎‎🇸🇬 LINODE 20
     server: *bug-ip20
