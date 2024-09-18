@@ -244,7 +244,18 @@ jobs:
           echo "Downloading Private source list..."
           curl -sSf https://raw.githubusercontent.com/zhihans/geodata/master/rule-set/geosite/geosite_private.yaml -o rule_privacy.yaml
           rm -fr rule_privacy.yamle
-          
+
+      - name: move rule 
+        working-directory: ./rule_provider
+        run: |
+          chmod +x mihimo
+          for item in *.yaml; do
+              ./mihomo convert-ruleset domain/ipcidr "$item"
+              mkdir -p ./clash/rule_yaml/
+              mkdir -p ./clash/rule_mrs/
+              mv "${item%.yaml}.mrs" ./clash/rule_mrs/
+              mv "$item" ./clash/rule_yaml/
+
       - name: Run script convert rule provider
         run: |
           python data/convert.py
