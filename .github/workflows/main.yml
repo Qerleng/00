@@ -246,15 +246,15 @@ jobs:
           rm -fr rule_privacy.yamle
 
       - name: move rule 
-        working-directory: ./rule_provider
+        working-directory: ./clash
         run: |
           chmod +x mihimo
           for item in *.yaml; do
               ./mihomo convert-ruleset domain/ipcidr "$item"
-              mkdir -p ./clash/rule_yaml/
-              mkdir -p ./clash/rule_mrs/
-              mv "${item%.yaml}.mrs" ./clash/rule_mrs/
-              mv "$item" ./clash/rule_yaml/
+              mkdir -p ./rule_yaml/
+              mkdir -p ./rule_mrs/
+              mv "${item%.yaml}.mrs" rule_mrs/
+              mv "$item" rule_yaml/
 
       - name: Run script convert rule provider
         run: |
