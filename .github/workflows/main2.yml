@@ -56,13 +56,13 @@ jobs:
           download_link="https://github.com/MetaCubeX/mihomo/releases"
           latest_version=$(wget --no-check-certificate -qO- "https://api.github.com/repos/MetaCubeX/mihomo/releases" | grep "tag_name" | busybox grep -oE "v[0-9.]*" | head -1)
           filename="mihomo-linux-amd64-${latest_version}"
-          download_link="${download_link}/download/${latest_version}/${filename}.gz"download_link="${download_link}/download/${latest_version}/${filename}.gz
+          download_link="${download_link}/download/${latest_version}/${filename}.gz"
           echo "[+] ${download_link}"
           curl -LJO $download_link
           gzip -vd "${filename}.gz"
           mv $filename ./clash/mihomo
           chmod 0755 ./clash/mihomo
-          rm ${filename}.gz
+          rm ${filename}.gz $filename
           echo -e "  CLASH ~ ${latest_version} " >README.md
 
       - uses: MyAlbum/purge-cache@v2
