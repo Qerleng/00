@@ -245,7 +245,8 @@ jobs:
           curl -sSf https://raw.githubusercontent.com/zhihans/geodata/master/rule-set/geosite/geosite_private.yaml -o rule_privacy.yaml
           rm -fr rule_privacy.yamle
 
-      - name: move rule 
+      - name: move rule
+        working-directory: ./rule_provider
         run: |
           chmod +x mihomo
           for item in *.yaml; do
