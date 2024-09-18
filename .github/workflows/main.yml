@@ -251,10 +251,8 @@ jobs:
           chmod +x mihomo
           for item in *.yaml; do
               ./mihomo convert-ruleset domain/ipcidr "$item"
-              mkdir -p ./rule_yaml/
               mkdir -p ./rule_mrs/
               mv "${item%.yaml}.mrs" rule_mrs/
-              mv "$item" rule_yaml/
 
       - name: Run script convert rule provider
         run: |
