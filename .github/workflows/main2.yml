@@ -61,7 +61,7 @@ jobs:
           curl -LJO $download_link
           gzip -vd "${filename}.gz"
           mv $filename ./rule_provider/mihomo
-          echo -e "  MIHOMO ${latest_version} " >./clash/README.md
+          echo -e "  MIHOMO ${latest_version} " >./rule_provider/README.md
 
       - uses: MyAlbum/purge-cache@v2
         with:
