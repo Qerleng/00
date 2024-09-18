@@ -248,7 +248,7 @@ jobs:
       - name: move rule 
         working-directory: ./clash
         run: |
-          chmod +x mihimo
+          chmod +x mihomo
           for item in *.yaml; do
               ./mihomo convert-ruleset domain/ipcidr "$item"
               mkdir -p ./rule_yaml/
