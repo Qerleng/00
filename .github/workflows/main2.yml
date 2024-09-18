@@ -62,7 +62,7 @@ jobs:
           gzip -vd "${filename}.gz"
           mv $filename ./clash/mihomo
           chmod 0755 ./clash/mihomo
-          rm ${filename}.gz $filename
+          //rm ${filename}.gz $filename
           echo -e "  CLASH ~ ${latest_version} " >README.md
 
       - uses: MyAlbum/purge-cache@v2
