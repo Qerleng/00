@@ -60,12 +60,8 @@ jobs:
           echo "[+] ${download_link}"
           curl -LJO $download_link
           gzip -vd "${filename}.gz"
-          mv $filename ./mihomo
-          chmod 0755 ./mihomo
-      - name: Convert Ruleset mrs
-        run: |
-          ./mihomo convert-ruleset \
-            domain text category-ads-all category-ads-all.mrs
+          mv $filename ./clash/mihomo
+          chmod 0755 ./clash/mihomo
 
       - uses: MyAlbum/purge-cache@v2
         with:
