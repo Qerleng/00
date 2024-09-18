@@ -246,7 +246,6 @@ jobs:
           rm -fr rule_privacy.yamle
 
       - name: move rule 
-        working-directory: ./clash
         run: |
           chmod +x mihomo
           for item in *.yaml; do
