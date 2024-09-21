@@ -1,0 +1,245 @@
+{
+  "dns": {
+    "servers": [
+      {
+        "tag": "dnsRESOLVER",
+        "address": "tls://8.8.8.8",
+        "detour": "PROXY"
+      },
+      {
+        "tag": "dnsXL",
+        "address": [
+          "112.215.198.248",
+          "112.215.198.254",
+          "112.215.203.248",
+          "112.215.203.246",
+          "112.215.203.247",
+          "112.215.203.254"
+        ],
+        "detour": "DIRECT"
+      },
+      {
+        "tag": "rcode",
+        "address": "rcode://refused"
+      }
+    ],
+    "rules": [
+      {
+        "outbound": "any",
+        "server": "dnsXL"
+      }
+    ],
+    "final": "dnsRESOLVER"
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "interface_name": "tun0",
+      "mtu": 9000,
+      "inet4_address": "172.19.0.1/30",
+      "auto_route": true,
+      "stack": "system",
+      "sniff": true
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "PROXY",
+      "outbounds": [
+        "URL-TEST"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "SELECT",
+      "providers": "FILE2",
+      "interval": "30s"
+    },
+    {
+      "type": "urltest",
+      "tag": "URL-TEST",
+      "providers": "FILE",
+      "interval": "30s"
+    },
+    {
+      "type": "urltest",
+      "tag": "🎞STREAMING🎞",
+      "providers": "FILE3",
+      "interval": "30s"
+    },
+    {
+      "type": "urltest",
+      "tag": "📱SOSMED📱",
+      "providers": "FILE4",
+      "interval": "30s"
+    },
+    {
+      "type": "dns",
+      "tag": "DNS"
+    },
+    {
+      "type": "direct",
+      "tag": "DIRECT"
+    },
+    {
+      "type": "block",
+      "tag": "BLOCK"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "protocol": "quic",
+        "outbound": "BLOCK"
+      },
+      {
+        "protocol": "dns",
+        "outbound": "DNS"
+      },
+      {
+        "rule_set": "ABS",
+        "outbound": "DIRECT"
+      },
+      {
+        "rule_set": "bypass-ads",
+        "outbound": "SELECT"
+      },
+      {
+        "source_port": [
+          3478,
+          4244
+        ],
+        "outbound": "SELECT"
+      },
+      {
+        "rule_set": [
+          "rule_malicious",
+          "rule_basicads",
+          "Personal_ads"
+        ],
+        "outbound": "BLOCK"
+      },
+      {
+        "rule_set": [
+          "rule_privacy",
+          "rule_doh"
+        ],
+        "outbound": "SELECT"
+      },
+      {
+        "rule_set": "Stream",
+        "outbound": "🎞STREAMING🎞"
+      },
+      {
+        "rule_set": "Sosmed",
+        "outbound": "📱SOSMED📱"
+      },
+      {
+        "domain": [
+          "www.google.co.id",
+          "www.google.com"
+        ],
+        "outbound": "SELECT"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "ABS",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Qerleng/00/main/sing-box/rule_srs/ABS.srs"
+      },
+      {
+        "type": "remote",
+        "tag": "bypass-ads",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Qerleng/00/main/sing-box/rule_srs/bypass-ads.srs"
+      },
+      {
+        "type": "remote",
+        "tag": "Stream",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Qerleng/00/main/sing-box/rule_srs/Stream.srs"
+      },
+      {
+        "type": "remote",
+        "tag": "Personal_ads",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Qerleng/00/main/sing-box/rule_srs/Personal_ads.srs"
+      },
+      {
+        "type": "remote",
+        "tag": "Sosmed",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Qerleng/00/main/sing-box/rule_srs/Sosmed.srs"
+      },
+      {
+        "type": "remote",
+        "tag": "rule_basicads",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Qerleng/00/main/sing-box/rule_srs/rule_basicads.srs"
+      },
+      {
+        "type": "remote",
+        "tag": "rule_doh",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Qerleng/00/main/sing-box/rule_srs/rule_doh.srs"
+      },
+      {
+        "type": "remote",
+        "tag": "rule_malicious",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Qerleng/00/main/sing-box/rule_srs/rule_malicious.srs"
+      },
+      {
+        "type": "remote",
+        "tag": "rule_privacy",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Qerleng/00/main/sing-box/rule_srs/rule_privacy.srs"
+      }
+    ],
+    "final": "PROXY",
+    "auto_detect_interface": true,
+    "override_android_vpn": true
+  },
+  "outbound_providers": [
+    {
+      "type": "remote",
+      "path": "./sgp.yaml",
+      "tag": "FILE",
+      "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/test-sgp.yaml",
+      "download_ua": "sing-box",
+      "download_detour": "PROXY",
+      "healthcheck_interval": "1h0m0s"
+    },
+    {
+      "type": "remote",
+      "path": "./game.yaml",
+      "tag": "FILE2",
+      "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/game.yaml",
+      "download_ua": "sing-box",
+      "download_detour": "PROXY",
+      "healthcheck_interval": "1h0m0s"
+    },
+    {
+      "type": "remote",
+      "path": "./test.yaml",
+      "tag": "FILE3",
+      "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/sg.yaml",
+      "download_ua": "sing-box",
+      "download_detour": "PROXY",
+      "healthcheck_interval": "1h0m0s"
+    },
+    {
+      "type": "remote",
+      "path": "./test2.yaml",
+      "tag": "FILE4",
+      "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/test-sg.yaml",
+      "download_ua": "sing-box",
+      "download_detour": "PROXY",
+      "healthcheck_interval": "1h0m0s"
+    }
+  ]
+}
