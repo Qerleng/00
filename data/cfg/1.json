@@ -3,7 +3,10 @@
     "servers": [
       {
         "tag": "dnsRESOLVER",
-        "address": "tls://8.8.8.8",
+        "address": [
+          "tls://8.8.8.8",
+          "https://8.8.4.4/dns-query"
+        ],
         "detour": "PROXY"
       },
       {
@@ -14,7 +17,8 @@
           "112.215.203.248",
           "112.215.203.246",
           "112.215.203.247",
-          "112.215.203.254"
+          "112.215.203.254",
+          "local"
         ],
         "detour": "DIRECT"
       },
@@ -26,10 +30,13 @@
     "rules": [
       {
         "outbound": "any",
-        "server": "dnsXL"
+        "server": "dnsXL",
+        "disable_cache": true
       }
     ],
-    "final": "dnsRESOLVER"
+    "final": "dnsRESOLVER",
+    "strategy": "ipv4_only",
+    "disable_cache": true
   },
   "inbounds": [
     {
@@ -47,9 +54,7 @@
     {
       "type": "selector",
       "tag": "PROXY",
-      "outbounds": [
-        "URL-TEST"
-      ]
+      "outbounds": "URL-TEST"
     },
     {
       "type": "urltest",
@@ -91,10 +96,6 @@
   "route": {
     "rules": [
       {
-        "protocol": "quic",
-        "outbound": "BLOCK"
-      },
-      {
         "protocol": "dns",
         "outbound": "DNS"
       },
@@ -107,7 +108,7 @@
         "outbound": "SELECT"
       },
       {
-        "source_port": [
+        "port": [
           3478,
           4244
         ],
@@ -241,5 +242,13 @@
       "download_detour": "PROXY",
       "healthcheck_interval": "1h0m0s"
     }
-  ]
+  ],
+  "experimental": {
+    "clash_api": {
+      "external_controller": "127.0.0.1:9091",
+      "external_ui": "./dashboard",
+      "external_ui_download_url": "https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
+      "external_ui_download_detour": "PROXY"
+    }
+  }
 }
