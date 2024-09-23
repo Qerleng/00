@@ -278,14 +278,6 @@ jobs:
           curl -sSf https://raw.githubusercontent.com/zhihans/geodata/master/rule-set/geosite/geosite_private.yaml -o rule_privacy.yaml
           rm -fr rule_privacy.yamle
 
-          chmod +x mihomo
-          for item in *.yaml; do
-              ./mihomo convert-ruleset domain yaml "${item%.yaml}" "${item%.yaml}.mrs"
-              mkdir -p ./rule_yaml/
-              mkdir -p ./rule_mrs/
-              mv "${item%.yaml}.mrs" rule_mrs/
-          done
-
 
       - name: Run script convert rule provider
         run: |
@@ -301,6 +293,18 @@ jobs:
               mv "${item%.json}.srs" rule_srs/
               mv "$item" rule_json/
           done
+
+      - name: converter mrs
+        working-directory: ./rule_provider
+        run: |
+          chmod 755 mihomo
+          for item in *.yaml; do
+              ./mihomo convert-ruleset domain yaml "${item%.yaml}" "${item%.yaml}.mrs"
+              mkdir -p ./rule_yaml/
+              mkdir -p ./rule_mrs/
+              mv "${item%.yaml}.mrs" rule_mrs/
+          done
+
       - uses: MyAlbum/purge-cache@v2
         with:
           token: ${{ github.token }}
