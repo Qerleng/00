@@ -96,7 +96,7 @@ def parse_list_file(link):
 
     for pattern, addresses in df.groupby('pattern')['address'].apply(list).to_dict().items():
         if pattern == 'domain_suffix':
-            rule_entry = {pattern: ['.' + address.strip() for address in addresses]}
+            rule_entry = {pattern: [address.strip() for address in addresses]}
             result_rules["rules"].append(rule_entry)
         #   domain_entries.extend([address.strip() for address in addresses])
         elif pattern == 'domain_keyword':
