@@ -1,5 +1,8 @@
 payload:
-  - DOMAIN-SUFFIX,ad.richmob.cn
+  - DOMAIN-SUFFIX,ad.richmob.cn  
+  - DOMAIN-REGEX,"^pinggai\\d\\.caixin\\.com$"
+  - DOMAIN-REGEX,"^adservice\\.google\\.([a-z]{2}|com?)(\\.[a-z]{2})?$"
+  - DOMAIN-REGEX,"^speed\\.(coe|open)\\.ad\\.[a-z]{2,6}\\.prod\\.hosts\\.ooklaserver\\.net$"
   - DOMAIN-SUFFIX,ads.service.kugou.com
   - DOMAIN-SUFFIX,logservice1.hicloud.com
   - DOMAIN-SUFFIX,kl.67it.com
