@@ -52,6 +52,39 @@ jobs:
               file.write(formatted_yaml)
           EOF
           rm oisd-full.txt
+
+          echo "Downloading AWAvenue Ads Rule source list..."
+          curl -sSf -o AWAvenue-Ads-Rule.txt https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt
+          python3 - <<EOF
+          import re
+          import yaml
+          
+          with open("AWAvenue-Ads-Rule.txt", "r") as file:
+              input_text = file.read()
+          payload_lines = re.findall(r"\|\|(.+)\^", input_text)
+          domains = []
+          for line in payload_lines:
+            if line:
+              domain = line.split("$")[0].strip()
+            if any(prefix in domain for prefix in ("autodesk", "github", "tiktok", "pinterest", "pinimg", "twitter", "linkedin", "telegram", "facebook", "line", "instagram", "whatsapp")):
+              continue
+            else:
+                domains.append("DOMAIN," + domain)
+
+          payload = [f"{line}" for line in domains]
+          
+          data = {
+              "payload": payload
+          }
+          
+          yaml_output = yaml.dump(data, sort_keys=False, default_flow_style=False)
+          
+          formatted_yaml = re.sub(r"(\s+-) '(.+)'", r"\1 \2", yaml_output)
+          
+          with open("AWAvenue-Ads-Rule.yaml", "w") as file:
+              file.write(formatted_yaml)
+          EOF
+          rm AWAvenue-Ads-Rule.txt
           
           echo "Downloading oisd nsfw source list..."
           curl -sSf -o oisd-nsfw.txt https://nsfw.oisd.nl
