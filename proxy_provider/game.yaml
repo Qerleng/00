@@ -64,12 +64,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-    servername: obdii.cfd
+    uuid: 0dac908d-a314-4453-b989-14ed6cc77333
+    servername: free-do1.sflash.web.id
     ws-opts: 
-      path: /linkws
+      path: /vmessws
       headers: 
-        Host: obdii.cfd
+        Host: free-do1.sflash.web.id
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 LINODE 2
