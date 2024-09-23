@@ -1,4 +1,5 @@
 https://raw.githubusercontent.com/Qerleng/00/main/rule_provider/ABS.yaml
+https://raw.githubusercontent.com/Qerleng/00/main/rule_provider/AWAvenue-Ads-Rule.yaml
 https://raw.githubusercontent.com/Qerleng/00/main/rule_provider/bypass-ads.yaml
 https://raw.githubusercontent.com/Qerleng/00/main/rule_provider/E-Banking.yaml
 https://raw.githubusercontent.com/Qerleng/00/main/rule_provider/Stream.yaml
