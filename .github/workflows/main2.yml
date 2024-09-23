@@ -50,6 +50,8 @@ jobs:
           rm CrashCore.tar.gz CrashCore
           echo -e "  SINGBOX ~ $SINGBOX_VER " >README.md
 
+      - name: Get latest mihomo
+        run: |
           download_link="https://github.com/MetaCubeX/mihomo/releases"
           latest_version=$(wget --no-check-certificate -qO- "https://api.github.com/repos/MetaCubeX/mihomo/releases" | grep "tag_name" | busybox grep -oE "v[0-9.]*" | head -1)
           filename="mihomo-linux-amd64-${latest_version}"
@@ -59,6 +61,8 @@ jobs:
           gzip -vd "${filename}.gz"
           mv $filename ./rule_provider/mihomo
           echo -e "  MIHOMO ${latest_version} " >./rule_provider/README.md
+
+
 
       - uses: MyAlbum/purge-cache@v2
         with:
