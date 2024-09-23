@@ -2,6 +2,7 @@
   "rules": [
     {
       "domain": [
+        "stun.l.google.com",
         "time.windows.com"
       ]
     },
@@ -13,15 +14,20 @@
     },
     {
       "domain_regex": [
+        "(^|\\\\.)(alt[1-8]-mtalk|mtalk|mtalk4)\\\\.google\\\\.com$",
+        ".*.mtalk.google.com",
         "ntp.*.com",
         "ntp[1-7].*.com",
+        "stun[1-4].l.google.com",
         "time.*.com",
         "time[1-7].*.com"
       ]
     },
     {
       "domain_suffix": [
-        "ntp.org"
+        "mtalk.google.com",
+        "ntp.org",
+        "telephony.goog"
       ]
     },
     {
@@ -30,7 +36,10 @@
         136,
         137,
         138,
-        139
+        139,
+        5228,
+        5229,
+        5230
       ]
     }
   ],
