@@ -1,8 +1,8 @@
 name: Box Update
 
 on:
-  schedule:
-    - cron: '0 */3 * * *'
+#  schedule:
+#    - cron: '0 */3 * * *'
   workflow_dispatch:
 
 jobs:
@@ -50,9 +50,6 @@ jobs:
           rm CrashCore.tar.gz CrashCore
           echo -e "  SINGBOX ~ $SINGBOX_VER " >README.md
 
-
-      - name: Get latest mihomo
-        run: |
           download_link="https://github.com/MetaCubeX/mihomo/releases"
           latest_version=$(wget --no-check-certificate -qO- "https://api.github.com/repos/MetaCubeX/mihomo/releases" | grep "tag_name" | busybox grep -oE "v[0-9.]*" | head -1)
           filename="mihomo-linux-amd64-${latest_version}"
