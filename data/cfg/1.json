@@ -114,18 +114,11 @@
         "outbound": "SELECT"
       },
       {
-        "rule_set": [
-          "rule_malicious",
-          "rule_basicads",
-          "Personal_ads"
-        ],
+        "rule_set": "rule_Ads",
         "outbound": "BLOCK"
       },
       {
-        "rule_set": [
-          "rule_privacy",
-          "rule_doh"
-        ],
+        "rule_set": "rule_doh",
         "outbound": "SELECT"
       },
       {
@@ -165,9 +158,9 @@
       },
       {
         "type": "remote",
-        "tag": "Personal_ads",
+        "tag": "rule_Ads",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/Qerleng/00/main/sing-box/rule_srs/Personal_ads.srs"
+        "url": "https://raw.githubusercontent.com/Qerleng/00/main/sing-box/rule_srs/rule_Ads.srs"
       },
       {
         "type": "remote",
@@ -177,27 +170,9 @@
       },
       {
         "type": "remote",
-        "tag": "rule_basicads",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/Qerleng/00/main/sing-box/rule_srs/rule_basicads.srs"
-      },
-      {
-        "type": "remote",
         "tag": "rule_doh",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/Qerleng/00/main/sing-box/rule_srs/rule_doh.srs"
-      },
-      {
-        "type": "remote",
-        "tag": "rule_malicious",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/Qerleng/00/main/sing-box/rule_srs/rule_malicious.srs"
-      },
-      {
-        "type": "remote",
-        "tag": "rule_privacy",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/Qerleng/00/main/sing-box/rule_srs/rule_privacy.srs"
       }
     ],
     "final": "PROXY",
@@ -207,11 +182,11 @@
   "outbound_providers": [
     {
       "type": "remote",
-      "path": "./sgp.yaml",
+      "path": "./test-sgp.yaml",
       "tag": "FILE",
       "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/test-sgp.yaml",
       "download_ua": "sing-box",
-      "download_detour": "PROXY",
+      "update_interval": "10m0s","download_detour": "PROXY",
       "healthcheck_interval": "5m0s"
     },
     {
@@ -220,24 +195,25 @@
       "tag": "FILE2",
       "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/game.yaml",
       "download_ua": "sing-box",
-      "download_detour": "PROXY",
+      "update_interval": "10m0s","download_detour": "PROXY",
       "healthcheck_interval": "5m0s"
     },
     {
       "type": "remote",
-      "path": "./test.yaml",
+      "path": "./sg.yaml",
       "tag": "FILE3",
       "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/sg.yaml",
       "download_ua": "sing-box",
-      "download_detour": "PROXY",
+      "update_interval": "10m0s","download_detour": "PROXY",
       "healthcheck_interval": "5m0s"
     },
     {
       "type": "remote",
-      "path": "./test2.yaml",
+      "path": "./test-sg.yaml",
       "tag": "FILE4",
       "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/test-sg.yaml",
       "download_ua": "sing-box",
+      "update_interval": "10m0s",
       "download_detour": "PROXY",
       "healthcheck_interval": "5m0s"
     }
