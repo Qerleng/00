@@ -1,6 +1,13 @@
 {
   "rules": [
     {
+      "domain_regex": [
+        "^adservice\\\\.google\\\\.([a-z]{2}|com?)(\\\\.[a-z]{2})?$",
+        "^pinggai\\\\d\\\\.caixin\\\\.com$",
+        "^speed\\\\.(coe|open)\\\\.ad\\\\.[a-z]{2,6}\\\\.prod\\\\.hosts\\\\.ooklaserver\\\\.net$"
+      ]
+    },
+    {
       "domain_suffix": [
         "a0.app.xiaomi.com",
         "aaid.umeng.com",
