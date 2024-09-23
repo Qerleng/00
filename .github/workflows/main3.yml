@@ -18,7 +18,7 @@ jobs:
         working-directory: ./rule_provider
         run: |
           chmod 755 mihomo
-          for item in ABS.yaml; do
+          for item in *.yaml; do
               ./mihomo convert-ruleset domain yaml "$item" "${item%.yaml}.mrs"
               mkdir -p ./rule_yaml/
               mkdir -p ./rule_mrs/
