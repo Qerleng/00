@@ -186,7 +186,7 @@
       "tag": "FILE",
       "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/test-sgp.yaml",
       "download_ua": "sing-box",
-      "update_interval": "10m0s","download_detour": "PROXY",
+      "download_detour": "PROXY",
       "healthcheck_interval": "5m0s"
     },
     {
@@ -195,7 +195,7 @@
       "tag": "FILE2",
       "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/game.yaml",
       "download_ua": "sing-box",
-      "update_interval": "10m0s","download_detour": "PROXY",
+      "download_detour": "PROXY",
       "healthcheck_interval": "5m0s"
     },
     {
@@ -204,7 +204,7 @@
       "tag": "FILE3",
       "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/sg.yaml",
       "download_ua": "sing-box",
-      "update_interval": "10m0s","download_detour": "PROXY",
+      "download_detour": "PROXY",
       "healthcheck_interval": "5m0s"
     },
     {
@@ -213,7 +213,6 @@
       "tag": "FILE4",
       "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/test-sg.yaml",
       "download_ua": "sing-box",
-      "update_interval": "10m0s",
       "download_detour": "PROXY",
       "healthcheck_interval": "5m0s"
     }
