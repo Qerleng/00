@@ -284,7 +284,7 @@ jobs:
               mkdir -p ./rule_yaml/
               mkdir -p ./rule_mrs/
               mv "${item%.yaml}.mrs" rule_mrs/
-          done
+          echo "${item%.yaml}.mrs"/n "$item%.mrs"/n "$item"
 
 
       - name: Run script convert rule provider
