@@ -278,6 +278,15 @@ jobs:
           curl -sSf https://raw.githubusercontent.com/zhihans/geodata/master/rule-set/geosite/geosite_private.yaml -o rule_privacy.yaml
           rm -fr rule_privacy.yamle
 
+          chmod +x sing-box
+          for item in *.yaml; do
+              ./mihomo convert-ruleset domain/ipcidr yaml "$item" "${item%.yaml}.mrs"
+              mkdir -p ./rule_yaml/
+              mkdir -p ./rule_mrs/
+              mv "${item%.yaml}.mrs" rule_mrs/
+              mv "$item" rule_yaml/
+          done
+
 
       - name: Run script convert rule provider
         run: |
