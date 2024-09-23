@@ -294,16 +294,6 @@ jobs:
               mv "$item" rule_json/
           done
 
-      - name: converter mrs
-        working-directory: ./rule_provider
-        run: |
-          chmod 755 mihomo
-          for item in *.yaml; do
-              ./mihomo convert-ruleset domain/ipcidr yaml "$item" "${item%.yaml}.mrs"
-              mkdir -p ./rule_yaml/
-              mkdir -p ./rule_mrs/
-              mv "${item%.yaml}.mrs" rule_mrs/
-          done
 
       - uses: MyAlbum/purge-cache@v2
         with:
