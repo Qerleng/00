@@ -59,7 +59,6 @@ base-proxy:
       skip-cert-verify: true
       packet-encoding: xudp
       network: ws
-      client-fingerprint: none
       smux:
         enabled: false
         protocol: smux
