@@ -76,10 +76,10 @@ proxies:
 
   - &sshkit
     <<: *basevless
-    name: ‎🇸🇬 do 1
+    name: ‎🇸🇬 amazon 1
     server: *bug-ip1
-    port: 443
-    tls: true
+    port: 80
+    tls: false
     uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
     servername: sg2.putrivpn.us.kg
     ws-opts: 
@@ -88,59 +88,59 @@ proxies:
         Host: sg2.putrivpn.us.kg
         Early-Data: 1
   - <<: *sshkit
-    name: ‎🇸🇬 do 2
+    name: ‎🇸🇬 amazon 2
     server: *bug-ip2
   - <<: *sshkit
-    name: ‎🇸🇬 do 3
+    name: ‎🇸🇬 amazon 3
     server: *bug-ip3
   - <<: *sshkit
-    name: ‎🇸🇬 do 4
+    name: ‎🇸🇬 amazon 4
     server: *bug-ip4
   - <<: *sshkit
-    name: ‎🇸🇬 do 5
+    name: ‎🇸🇬 amazon 5
     server: *bug-ip5
   - <<: *sshkit
-    name: ‎🇸🇬 do 6
+    name: ‎🇸🇬 amazon 6
     server: *bug-ip6
   - <<: *sshkit
-    name: ‎🇸🇬 do 7
+    name: ‎🇸🇬 amazon 7
     server: *bug-ip7
   - <<: *sshkit
-    name: ‎🇸🇬 do 8
+    name: ‎🇸🇬 amazon 8
     server: *bug-ip8
   - <<: *sshkit
-    name: ‎🇸🇬 do 9
+    name: ‎🇸🇬 amazon 9
     server: *bug-ip9
   - <<: *sshkit
-    name: ‎🇸🇬 do 10
+    name: ‎🇸🇬 amazon 10
     server: *bug-ip10
   - <<: *sshkit
-    name: ‎🇸🇬 do 11
+    name: ‎🇸🇬 amazon 11
     server: *bug-ip11
   - <<: *sshkit
-    name: ‎🇸🇬 do 12
+    name: ‎🇸🇬 amazon 12
     server: *bug-ip12
   - <<: *sshkit
-    name: ‎🇸🇬 do 13
+    name: ‎🇸🇬 amazon 13
     server: *bug-ip13
   - <<: *sshkit
-    name: ‎🇸🇬 do 14
+    name: ‎🇸🇬 amazon 14
     server: *bug-ip14
   - <<: *sshkit
-    name: ‎🇸🇬 do 15
+    name: ‎🇸🇬 amazon 15
     server: *bug-ip15
   - <<: *sshkit
-    name: ‎🇸🇬 do 16
+    name: ‎🇸🇬 amazon 16
     server: *bug-ip16
   - <<: *sshkit
-    name: ‎🇸🇬 do 17
+    name: ‎🇸🇬 amazon 17
     server: *bug-ip17
   - <<: *sshkit
-    name: ‎🇸🇬 do 18
+    name: ‎🇸🇬 amazon 18
     server: *bug-ip18
   - <<: *sshkit
-    name: ‎🇸🇬 do 19
+    name: ‎🇸🇬 amazon 19
     server: *bug-ip19
   - <<: *sshkit
-    name: ‎🇸🇬 do 20
+    name: ‎🇸🇬 amazon 20
     server: *bug-ip20

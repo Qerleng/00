@@ -76,7 +76,7 @@ proxies:
 
   - &sshkit
     <<: *basetrojan
-    name: ‎‎🇸🇬 LINODE 1
+    name: ‎‎🇸🇬 Test 1
     server: *bug-ip1
     port: 443
     tls: true
@@ -88,59 +88,59 @@ proxies:
         Host: id2.zhafnet.my.id
         Early-Data: 1
   - <<: *sshkit
-    name: ‎‎🇸🇬 LINODE 2
+    name: ‎‎🇸🇬 Test 2
     server: *bug-ip2
   - <<: *sshkit
-    name: ‎‎🇸🇬 LINODE 3
+    name: ‎‎🇸🇬 Test 3
     server: *bug-ip3
   - <<: *sshkit
-    name: ‎‎🇸🇬 LINODE 4
+    name: ‎‎🇸🇬 Test 4
     server: *bug-ip4
   - <<: *sshkit
-    name: ‎‎🇸🇬 LINODE 5
+    name: ‎‎🇸🇬 Test 5
     server: *bug-ip5
   - <<: *sshkit
-    name: ‎‎🇸🇬 LINODE 6
+    name: ‎‎🇸🇬 Test 6
     server: *bug-ip6
   - <<: *sshkit
-    name: ‎‎🇸🇬 LINODE 7
+    name: ‎‎🇸🇬 Test 7
     server: *bug-ip7
   - <<: *sshkit
-    name: ‎‎🇸🇬 LINODE 8
+    name: ‎‎🇸🇬 Test 8
     server: *bug-ip8
   - <<: *sshkit
-    name: ‎‎🇸🇬 LINODE 9
+    name: ‎‎🇸🇬 Test 9
     server: *bug-ip9
   - <<: *sshkit
-    name: ‎‎🇸🇬 LINODE 10
+    name: ‎‎🇸🇬 Test 10
     server: *bug-ip10
   - <<: *sshkit
-    name: ‎‎🇸🇬 LINODE 11
+    name: ‎‎🇸🇬 Test 11
     server: *bug-ip11
   - <<: *sshkit
-    name: ‎‎🇸🇬 LINODE 12
+    name: ‎‎🇸🇬 Test 12
     server: *bug-ip12
   - <<: *sshkit
-    name: ‎‎🇸🇬 LINODE 13
+    name: ‎‎🇸🇬 Test 13
     server: *bug-ip13
   - <<: *sshkit
-    name: ‎‎🇸🇬 LINODE 14
+    name: ‎‎🇸🇬 Test 14
     server: *bug-ip14
   - <<: *sshkit
-    name: ‎‎🇸🇬 LINODE 15
+    name: ‎‎🇸🇬 Test 15
     server: *bug-ip15
   - <<: *sshkit
-    name: ‎‎🇸🇬 LINODE 16
+    name: ‎‎🇸🇬 Test 16
     server: *bug-ip16
   - <<: *sshkit
-    name: ‎‎🇸🇬 LINODE 17
+    name: ‎‎🇸🇬 Test 17
     server: *bug-ip17
   - <<: *sshkit
-    name: ‎‎🇸🇬 LINODE 18
+    name: ‎‎🇸🇬 Test 18
     server: *bug-ip18
   - <<: *sshkit
-    name: ‎‎🇸🇬 LINODE 19
+    name: ‎‎🇸🇬 Test 19
     server: *bug-ip19
   - <<: *sshkit
-    name: ‎‎🇸🇬 LINODE 20
+    name: ‎‎🇸🇬 Test 20
     server: *bug-ip20

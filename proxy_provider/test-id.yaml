@@ -76,10 +76,10 @@ proxies:
 
   - &sshkit
     <<: *basevless
-    name: ‎🇮🇩 id 1
+    name: ‎🇮🇩 google 1
     server: *bug-ip1
-    port: 443
-    tls: true
+    port: 80
+    tls: false
     uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
     servername: id1.putrivpn.us.kg
     ws-opts: 
@@ -88,59 +88,59 @@ proxies:
         Host: id1.putrivpn.us.kg
         Early-Data: 1
   - <<: *sshkit
-    name: ‎🇮🇩 id 2
+    name: ‎🇮🇩 google 2
     server: *bug-ip2
   - <<: *sshkit
-    name: ‎🇮🇩 id 3
+    name: ‎🇮🇩 google 3
     server: *bug-ip3
   - <<: *sshkit
-    name: ‎🇮🇩 id 4
+    name: ‎🇮🇩 google 4
     server: *bug-ip4
   - <<: *sshkit
-    name: ‎🇮🇩 id 5
+    name: ‎🇮🇩 google 5
     server: *bug-ip5
   - <<: *sshkit
-    name: ‎🇮🇩 id 6
+    name: ‎🇮🇩 google 6
     server: *bug-ip6
   - <<: *sshkit
-    name: ‎🇮🇩 id 7
+    name: ‎🇮🇩 google 7
     server: *bug-ip7
   - <<: *sshkit
-    name: ‎🇮🇩 id 8
+    name: ‎🇮🇩 google 8
     server: *bug-ip8
   - <<: *sshkit
-    name: ‎🇮🇩 id 9
+    name: ‎🇮🇩 google 9
     server: *bug-ip9
   - <<: *sshkit
-    name: ‎🇮🇩 id 10
+    name: ‎🇮🇩 google 10
     server: *bug-ip10
   - <<: *sshkit
-    name: ‎🇮🇩 id 11
+    name: ‎🇮🇩 google 11
     server: *bug-ip11
   - <<: *sshkit
-    name: ‎🇮🇩 id 12
+    name: ‎🇮🇩 google 12
     server: *bug-ip12
   - <<: *sshkit
-    name: ‎🇮🇩 id 13
+    name: ‎🇮🇩 google 13
     server: *bug-ip13
   - <<: *sshkit
-    name: ‎🇮🇩 id 14
+    name: ‎🇮🇩 google 14
     server: *bug-ip14
   - <<: *sshkit
-    name: ‎🇮🇩 id 15
+    name: ‎🇮🇩 google 15
     server: *bug-ip15
   - <<: *sshkit
-    name: ‎🇮🇩 id 16
+    name: ‎🇮🇩 google 16
     server: *bug-ip16
   - <<: *sshkit
-    name: ‎🇮🇩 id 17
+    name: ‎🇮🇩 google 17
     server: *bug-ip17
   - <<: *sshkit
-    name: ‎🇮🇩 id 18
+    name: ‎🇮🇩 google 18
     server: *bug-ip18
   - <<: *sshkit
-    name: ‎🇮🇩 id 19
+    name: ‎🇮🇩 google 19
     server: *bug-ip19
   - <<: *sshkit
-    name: ‎🇮🇩 id 20
+    name: ‎🇮🇩 google 20
     server: *bug-ip20

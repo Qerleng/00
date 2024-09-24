@@ -76,7 +76,7 @@ proxies:
 
   - &sshkit
     <<: *basevless
-    name: ‎🇸🇬 DO 1
+    name: ‎🇸🇬 AMAZON 1
     server: *bug-ip1
     port: 443
     tls: true
@@ -88,59 +88,59 @@ proxies:
         Host: sg2.putrivpn.us.kg
         Early-Data: 1
   - <<: *sshkit
-    name: ‎🇸🇬 DO 2
+    name: ‎🇸🇬 AMAZON 2
     server: *bug-ip2
   - <<: *sshkit
-    name: ‎🇸🇬 DO 3
+    name: ‎🇸🇬 AMAZON 3
     server: *bug-ip3
   - <<: *sshkit
-    name: ‎🇸🇬 DO 4
+    name: ‎🇸🇬 AMAZON 4
     server: *bug-ip4
   - <<: *sshkit
-    name: ‎🇸🇬 DO 5
+    name: ‎🇸🇬 AMAZON 5
     server: *bug-ip5
   - <<: *sshkit
-    name: ‎🇸🇬 DO 6
+    name: ‎🇸🇬 AMAZON 6
     server: *bug-ip6
   - <<: *sshkit
-    name: ‎🇸🇬 DO 7
+    name: ‎🇸🇬 AMAZON 7
     server: *bug-ip7
   - <<: *sshkit
-    name: ‎🇸🇬 DO 8
+    name: ‎🇸🇬 AMAZON 8
     server: *bug-ip8
   - <<: *sshkit
-    name: ‎🇸🇬 DO 9
+    name: ‎🇸🇬 AMAZON 9
     server: *bug-ip9
   - <<: *sshkit
-    name: ‎🇸🇬 DO 10
+    name: ‎🇸🇬 AMAZON 10
     server: *bug-ip10
   - <<: *sshkit
-    name: ‎🇸🇬 DO 11
+    name: ‎🇸🇬 AMAZON 11
     server: *bug-ip11
   - <<: *sshkit
-    name: ‎🇸🇬 DO 12
+    name: ‎🇸🇬 AMAZON 12
     server: *bug-ip12
   - <<: *sshkit
-    name: ‎🇸🇬 DO 13
+    name: ‎🇸🇬 AMAZON 13
     server: *bug-ip13
   - <<: *sshkit
-    name: ‎🇸🇬 DO 14
+    name: ‎🇸🇬 AMAZON 14
     server: *bug-ip14
   - <<: *sshkit
-    name: ‎🇸🇬 DO 15
+    name: ‎🇸🇬 AMAZON 15
     server: *bug-ip15
   - <<: *sshkit
-    name: ‎🇸🇬 DO 16
+    name: ‎🇸🇬 AMAZON 16
     server: *bug-ip16
   - <<: *sshkit
-    name: ‎🇸🇬 DO 17
+    name: ‎🇸🇬 AMAZON 17
     server: *bug-ip17
   - <<: *sshkit
-    name: ‎🇸🇬 DO 18
+    name: ‎🇸🇬 AMAZON 18
     server: *bug-ip18
   - <<: *sshkit
-    name: ‎🇸🇬 DO 19
+    name: ‎🇸🇬 AMAZON 19
     server: *bug-ip19
   - <<: *sshkit
-    name: ‎🇸🇬 DO 20
+    name: ‎🇸🇬 AMAZON 20
     server: *bug-ip20

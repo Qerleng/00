@@ -76,7 +76,7 @@ proxies:
 
   - &sshkit
     <<: *basevless
-    name: ‎🇸🇬 ORACLE 1
+    name: ‎🇸🇬 VULTR 1
     server: *bug-ip1
     port: 443
     tls: true
@@ -88,59 +88,59 @@ proxies:
         Host: sg5.putrivpn.us.kg
       Early-Data: 1
   - <<: *sshkit
-    name: ‎🇸🇬 ORACLE 2
+    name: ‎🇸🇬 VULTR 2
     server: *bug-ip2
   - <<: *sshkit
-    name: ‎🇸🇬 ORACLE 3
+    name: ‎🇸🇬 VULTR 3
     server: *bug-ip3
   - <<: *sshkit
-    name: ‎🇸🇬 ORACLE 4
+    name: ‎🇸🇬 VULTR 4
     server: *bug-ip4
   - <<: *sshkit
-    name: ‎🇸🇬 ORACLE 5
+    name: ‎🇸🇬 VULTR 5
     server: *bug-ip5
   - <<: *sshkit
-    name: ‎🇸🇬 ORACLE 6
+    name: ‎🇸🇬 VULTR 6
     server: *bug-ip6
   - <<: *sshkit
-    name: ‎🇸🇬 ORACLE 7
+    name: ‎🇸🇬 VULTR 7
     server: *bug-ip7
   - <<: *sshkit
-    name: ‎🇸🇬 ORACLE 8
+    name: ‎🇸🇬 VULTR 8
     server: *bug-ip8
   - <<: *sshkit
-    name: ‎🇸🇬 ORACLE 9
+    name: ‎🇸🇬 VULTR 9
     server: *bug-ip9
   - <<: *sshkit
-    name: ‎🇸🇬 ORACLE 10
+    name: ‎🇸🇬 VULTR 10
     server: *bug-ip10
   - <<: *sshkit
-    name: ‎🇸🇬 ORACLE 11
+    name: ‎🇸🇬 VULTR 11
     server: *bug-ip11
   - <<: *sshkit
-    name: ‎🇸🇬 ORACLE 12
+    name: ‎🇸🇬 VULTR 12
     server: *bug-ip12
   - <<: *sshkit
-    name: ‎🇸🇬 ORACLE 13
+    name: ‎🇸🇬 VULTR 13
     server: *bug-ip13
   - <<: *sshkit
-    name: ‎🇸🇬 ORACLE 14
+    name: ‎🇸🇬 VULTR 14
     server: *bug-ip14
   - <<: *sshkit
-    name: ‎🇸🇬 ORACLE 15
+    name: ‎🇸🇬 VULTR 15
     server: *bug-ip15
   - <<: *sshkit
-    name: ‎🇸🇬 ORACLE 16
+    name: ‎🇸🇬 VULTR 16
     server: *bug-ip16
   - <<: *sshkit
-    name: ‎🇸🇬 ORACLE 17
+    name: ‎🇸🇬 VULTR 17
     server: *bug-ip17
   - <<: *sshkit
-    name: ‎🇸🇬 ORACLE 18
+    name: ‎🇸🇬 VULTR 18
     server: *bug-ip18
   - <<: *sshkit
-    name: ‎🇸🇬 ORACLE 19
+    name: ‎🇸🇬 VULTR 19
     server: *bug-ip19
   - <<: *sshkit
-    name: ‎🇸🇬 ORACLE 20
+    name: ‎🇸🇬 VULTR 20
     server: *bug-ip20

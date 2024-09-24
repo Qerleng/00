@@ -76,10 +76,10 @@ proxies:
 
   - &sshkit
     <<: *basevless
-    name: ‎‎🇸🇬 linode 1
+    name: ‎‎🇸🇬 BELNET 1
     server: *bug-ip1
-    port: 443
-    tls: true
+    port: 80
+    tls: false
     uuid: 476802d2-2072-4316-8dd0-cf1dd4a9c791
     servername: fsl2.kadanahija.xyz
     ws-opts: 
@@ -88,59 +88,59 @@ proxies:
         Host: fsl2.kadanahija.xyz
         Early-Data: 1
   - <<: *sshkit
-    name: ‎‎🇸🇬 linode 2
+    name: ‎‎🇸🇬 BELNET 2
     server: *bug-ip2
   - <<: *sshkit
-    name: ‎‎🇸🇬 linode 3
+    name: ‎‎🇸🇬 BELNET 3
     server: *bug-ip3
   - <<: *sshkit
-    name: ‎‎🇸🇬 linode 4
+    name: ‎‎🇸🇬 BELNET 4
     server: *bug-ip4
   - <<: *sshkit
-    name: ‎‎🇸🇬 linode 5
+    name: ‎‎🇸🇬 BELNET 5
     server: *bug-ip5
   - <<: *sshkit
-    name: ‎‎🇸🇬 linode 6
+    name: ‎‎🇸🇬 BELNET 6
     server: *bug-ip6
   - <<: *sshkit
-    name: ‎‎🇸🇬 linode 7
+    name: ‎‎🇸🇬 BELNET 7
     server: *bug-ip7
   - <<: *sshkit
-    name: ‎‎🇸🇬 linode 8
+    name: ‎‎🇸🇬 BELNET 8
     server: *bug-ip8
   - <<: *sshkit
-    name: ‎‎🇸🇬 linode 9
+    name: ‎‎🇸🇬 BELNET 9
     server: *bug-ip9
   - <<: *sshkit
-    name: ‎‎🇸🇬 linode 10
+    name: ‎‎🇸🇬 BELNET 10
     server: *bug-ip10
   - <<: *sshkit
-    name: ‎‎🇸🇬 linode 11
+    name: ‎‎🇸🇬 BELNET 11
     server: *bug-ip11
   - <<: *sshkit
-    name: ‎‎🇸🇬 linode 12
+    name: ‎‎🇸🇬 BELNET 12
     server: *bug-ip12
   - <<: *sshkit
-    name: ‎‎🇸🇬 linode 13
+    name: ‎‎🇸🇬 BELNET 13
     server: *bug-ip13
   - <<: *sshkit
-    name: ‎‎🇸🇬 linode 14
+    name: ‎‎🇸🇬 BELNET 14
     server: *bug-ip14
   - <<: *sshkit
-    name: ‎‎🇸🇬 linode 15
+    name: ‎‎🇸🇬 BELNET 15
     server: *bug-ip15
   - <<: *sshkit
-    name: ‎‎🇸🇬 linode 16
+    name: ‎‎🇸🇬 BELNET 16
     server: *bug-ip16
   - <<: *sshkit
-    name: ‎‎🇸🇬 linode 17
+    name: ‎‎🇸🇬 BELNET 17
     server: *bug-ip17
   - <<: *sshkit
-    name: ‎‎🇸🇬 linode 18
+    name: ‎‎🇸🇬 BELNET 18
     server: *bug-ip18
   - <<: *sshkit
-    name: ‎‎🇸🇬 linode 19
+    name: ‎‎🇸🇬 BELNET 19
     server: *bug-ip19
   - <<: *sshkit
-    name: ‎‎🇸🇬 linode 20
+    name: ‎‎🇸🇬 BELNET 20
     server: *bug-ip20
