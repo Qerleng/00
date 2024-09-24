@@ -30,9 +30,7 @@ base-proxy:
       cipher: auto
       udp: true
       udp-over-tcp: true
-      packet-encoding: xudp
       network: ws
-      skip-cert-verify: true
       smux:
         enabled: false
         protocol: smux
@@ -44,9 +42,7 @@ base-proxy:
       cipher: auto
       udp: true
       udp-over-tcp: true
-      packet-encoding: xudp
       network: ws
-      skip-cert-verify: true
       smux:
         enabled: false
         protocol: smux
@@ -55,8 +51,6 @@ base-proxy:
     - &basetrojan
       type: trojan
       udp: true
-      skip-cert-verify: true
-      packet-encoding: xudp
       network: ws
       smux:
         enabled: false
@@ -67,7 +61,6 @@ base-proxy:
       type: trojan
       port: 443
       udp: true
-      skip-cert-verify: true
 base-proxy-group:
   url:
     - &url-gg http://www.gstatic.com/generate_204
