@@ -76,17 +76,15 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevmess
-    name: ‎‎🇸🇬 LINODE 1
+    <<: *basetrojan
+    name: 🇸🇬 LINODE 1
     server: *bug-ip1
-    port: 443
-    tls: true
-    uuid: c10efca7-a10b-4e44-9760-83a30b85c787
-    servername: biznet.bogelstore.pw
-    ws-opts: 
-      path: /vmess
-      headers: 
-        Host: biznet.bogelstore.pw
+    password: user-free-zhafnet
+    sni: id2.zhafnet.my.id
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: id2.zhafnet.my.id
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 LINODE 2
