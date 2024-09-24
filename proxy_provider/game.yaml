@@ -59,17 +59,15 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevmess
-    name: ‎‎🇸🇬 LINODE 1
+    <<: *basetrojan
+    name: 🇸🇬 LINODE 1
     server: *bug-ip1
-    port: 443
-    tls: true
-    uuid: 0dac908d-a314-4453-b989-14ed6cc77333
-    servername: free-do1.sflash.web.id
-    ws-opts: 
-      path: /vmessws
-      headers: 
-        Host: free-do1.sflash.web.id
+    password: user-free-zhafnet
+    sni: id2.zhafnet.my.id
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: id2.zhafnet.my.id
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 LINODE 2
