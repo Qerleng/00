@@ -54,7 +54,6 @@ base-proxy:
   trojan:
     - &basetrojan
       type: trojan
-      port: 443
       udp: true
       skip-cert-verify: true
       packet-encoding: xudp
@@ -76,17 +75,17 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevmess
+    <<: *basetrojan
     name: ‎‎🇸🇬 LINODE 1
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: c10efca7-a10b-4e44-9760-83a30b85c787
-    servername: biznet.bogelstore.pw
+    password: user-free-zhafnet
+    sni: id2.zhafnet.my.id
     ws-opts: 
-      path: /vmess
+      path: /trojan
       headers: 
-        Host: biznet.bogelstore.pw
+        Host: id2.zhafnet.my.id
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 LINODE 2

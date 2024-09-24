@@ -54,7 +54,6 @@ base-proxy:
   trojan:
     - &basetrojan
       type: trojan
-      port: 443
       udp: true
       skip-cert-verify: true
       packet-encoding: xudp
