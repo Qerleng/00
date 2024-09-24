@@ -78,8 +78,8 @@ proxies:
     <<: *basevless
     name: ‎‎🇸🇬 BELNET 1
     server: *bug-ip1
-    port: 80
-    tls: false
+    port: 443
+    tls: true
     uuid: 476802d2-2072-4316-8dd0-cf1dd4a9c791
     servername: fsl2.kadanahija.xyz
     ws-opts: 

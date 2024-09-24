@@ -78,8 +78,8 @@ proxies:
     <<: *basevless
     name: ‎🇸🇬 vultr 1
     server: *bug-ip1
-    port: 80
-    tls: false
+    port: 443
+    tls: true
     uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
     servername: sg5.putrivpn.us.kg
     ws-opts: 
