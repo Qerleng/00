@@ -14,16 +14,16 @@ jobs:
         run: |
           python -m pip install --upgrade pip
 
-      - name: converter mrs
-        working-directory: ./rule_provider
-        run: |
-          chmod 755 mihomo
-          for item in *.yam; do
-              ./mihomo convert-ruleset ipcidr yaml "$item" "${item%.yam}.mrs"
-              mkdir -p ./rule_yaml/
-              mkdir -p ./rule_mrs/
-              mv "${item%.yaml}.mrs" rule_mrs/
-          done
+#      - name: converter mrs
+#        working-directory: ./rule_provider
+#        run: |
+#          chmod 755 mihomo
+#          for item in *.yam; do
+#              ./mihomo convert-ruleset ipcidr yaml "$item" "${item%.yam}.mrs"
+#              mkdir -p ./rule_yaml/
+#              mkdir -p ./rule_mrs/
+#              mv "${item%.yaml}.mrs" rule_mrs/
+#          done
 
       - uses: MyAlbum/purge-cache@v2
         with:
