@@ -13,12 +13,10 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pandas requests tldextract pyyaml openpyxl
+          pip install pandas requests ipaddress tldextract pyyaml openpyxl
           
       - name: rule providers
         run: |
-import requests
-import ipaddress
 
 def get_rule_update(url):
     try:
