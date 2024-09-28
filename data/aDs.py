@@ -79,5 +79,4 @@ output_path = os.path.join(output_dir, "rule_allAds.yaml")
 
 if update_rule_allAds:
     with open("output_path", "w", encoding='utf-8') as f:
-        f.write("payload:\n")
         f.write("\n".join(update_rule_allAds))
