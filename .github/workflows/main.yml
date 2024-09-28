@@ -282,6 +282,9 @@ jobs:
       - name: Run script convert rule provider
         run: |
           python data/convert.py
+      - name: Run script aGh rule
+        run: |
+          python data/aDs.py
       - name: move rule sing-box
         working-directory: ./sing-box
         run: |
