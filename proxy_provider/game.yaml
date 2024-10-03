@@ -76,7 +76,7 @@ proxies:
     password: GekYDUHRPjGJ48cVepjvfg
     sni: edy.jomox.id
     ws-opts: 
-      path: /vmess-ws
+      path: /trojan
       headers: 
         Host: edy.jomox.id
         Early-Data: 1
