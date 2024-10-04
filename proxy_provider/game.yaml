@@ -73,12 +73,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    password: GekYDUHRPjGJ48cVepjvfg
-    sni: edy.jomox.id
+    password: 0c9c886b-89ce-4781-bf34-bca1c76c0d2e
+    sni: hk1.safecdn.site
     ws-opts: 
-      path: /trojan
+      path: /websocket
       headers: 
-        Host: edy.jomox.id
+        Host: hk1.safecdn.site
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2
