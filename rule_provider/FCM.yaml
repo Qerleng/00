@@ -1,3 +1,5 @@
+payload:
+
   # FCM
   - DOMAIN-SUFFIX,mtalk.google.com
   - DOMAIN-REGEX,.*.mtalk.google.com
