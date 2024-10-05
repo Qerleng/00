@@ -18,8 +18,8 @@ jobs:
         working-directory: ./rule_provider
         run: |
           chmod 755 mihomo
-          for item in *.yam; do
-              ./mihomo convert-ruleset ipcidr yaml "$item" "${item%.yam}.mrs"
+          for item in rule_doh.yaml; do
+              ./mihomo convert-ruleset ipcidr yaml "$item" "${item%.yaml}.mrs"
               mkdir -p ./rule_yaml/
               mkdir -p ./rule_mrs/
               mv "${item%.yaml}.mrs" rule_mrs/
