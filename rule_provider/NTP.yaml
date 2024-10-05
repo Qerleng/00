@@ -1,0 +1,20 @@
+payload:
+
+  # TIME 
+
+  - DOMAIN-REGEX,time[1-7].*.com
+  - DOMAIN-REGEX,ntp[1-7].*.com
+  - DOMAIN-REGEX,time.*.com
+  - DOMAIN-REGEX,ntp.*.com
+  - DOMAIN-KEYWORD,time
+  - DOMAIN-KEYWORD,ntp
+  - DOMAIN-SUFFIX,ntp.org
+  - DOMAIN,time.windows.com
+  - DST-PORT,123
+  - DST-PORT,136
+  - DST-PORT,137
+  - DST-PORT,138
+  - DST-PORT,139
+
+
+
