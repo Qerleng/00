@@ -286,7 +286,7 @@ jobs:
             if any(prefix in domain for prefix in ("autdsk", "gthub")):
               continue
             else:
-                domains.append("DOMAIN-SUFFIX," + domain)
+                domains.append("DOMAIN," + domain)
 
 
           payload = [f"{line}" for line in domains]
