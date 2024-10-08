@@ -36,6 +36,16 @@ jobs:
           mv -f sing-box/sing-box-$SINGBOX_VER-linux-amd64/sing-box sing-box/
           rm -rf sing-box/sing-box-$SINGBOX_VER-linux-amd64/*
 
+          download_link="https://github.com/MetaCubeX/mihomo/releases"
+          latest_version=$(wget --no-check-certificate -qO- "https://api.github.com/repos/MetaCubeX/mihomo/releases" | grep "tag_name" | busybox grep -oE "v[0-9.]*" | head -1)
+          filename="mihomo-linux-amd64-${latest_version}"
+          download_link="${download_link}/download/${latest_version}/${filename}.gz"
+          echo "[+] ${download_link}"
+          curl -LJO $download_link
+          gzip -vd "${filename}.gz"
+          mv $filename ./rule_provider/mihomo
+          echo -e "  MIHOMO ${latest_version} " >./rule_provider/README.md
+
           curl -Lo sing-box.tar.gz "https://github.com/SagerNet/sing-box/releases/download/v$SINGBOX_VER/sing-box-$SINGBOX_VER-linux-arm64.tar.gz"
           tar -zxvf sing-box.tar.gz -C sing-box/
           rm sing-box.tar.gz
@@ -49,16 +59,6 @@ jobs:
           tar -czvf CrashCore.tar.gz CrashCore
           rm CrashCore.tar.gz CrashCore
           echo -e "  SINGBOX ~ $SINGBOX_VER " >README.md
-
-          download_link="https://github.com/MetaCubeX/mihomo/releases"
-          latest_version=$(wget --no-check-certificate -qO- "https://api.github.com/repos/MetaCubeX/mihomo/releases" | grep "tag_name" | busybox grep -oE "v[0-9.]*" | head -1)
-          filename="mihomo-linux-amd64-${latest_version}"
-          download_link="${download_link}/download/${latest_version}/${filename}.gz"
-          echo "[+] ${download_link}"
-          curl -LJO $download_link
-          gzip -vd "${filename}.gz"
-          mv $filename ./rule_provider/mihomo
-          echo -e "  MIHOMO ${latest_version} " >./rule_provider/README.md
 
 
 
