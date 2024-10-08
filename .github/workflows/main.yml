@@ -194,37 +194,6 @@ jobs:
           EOF
           rm rule-maliciousip.txt
 
-          echo "Downloading DOH Host Sites source list..."
-          curl -sSf -o domains-doh.txt https://raw.githubusercontent.com/malikshi/dns_ip/main/domains-doh.txt
-          python3 - <<EOF
-          import re
-          import yaml
-          
-          with open("domains-doh.txt", "r") as file:
-              input_text = file.read()
-          payload_lines = re.findall(r"(.+)", input_text)
-
-          domains = []
-          for line in payload_lines:
-            if any(prefix in domains for prefix in ("anjeng")):
-              continue
-            else:
-                domains.append("DOMAIN-SUFFIX," + domains)
-
-          payload = [f"{line}" for line in domains]
-          
-          data = {
-              "payload": payload
-          }
-          
-          yaml_output = yaml.dump(data, sort_keys=False, default_flow_style=False)
-          
-          formatted_yaml = re.sub(r"(\s+-) '(.+)'", r"\1 \2", yaml_output)
-          
-          with open("rule_domains_doh.yaml", "w") as file:
-              file.write(formatted_yaml)
-          EOF
-          rm domains-doh.txt
 
           echo "Downloading DOH IP Addresses source list..."
           curl -sSf -o rule-doh.txt https://raw.githubusercontent.com/malikshi/dns_ip/main/ip-dns-nocdn-prefix.txt
