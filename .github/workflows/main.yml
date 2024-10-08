@@ -218,7 +218,7 @@ jobs:
                     domain = line.split("$")[0].strip()
 
                        
-          rules = domains + ["'" + ip for ip in ips + "'"]
+          rules = domains + [f"'{ip for ip in ips}'"]
           payload = [f"{line}" for line in rules]
           
           data = {
