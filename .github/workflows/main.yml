@@ -307,16 +307,6 @@ jobs:
           echo "Downloading Category-Porn source list..."
           curl -sSf https://raw.githubusercontent.com/zhihans/geodata/master/rule-set/geosite/geosite_category-porn.yaml -o rule_18+.yaml
 
-          echo "Downloading Private source list..."
-          curl -sSf https://raw.githubusercontent.com/zhihans/geodata/master/rule-set/geosite/geosite_private.yaml -o rule_privacy.yaml
-
-          echo "Downloading LAN source list..."
-          curl -s https://raw.githubusercontent.com/zhihans/geodata/master/rule-set/geosite/geosite_private.yaml > domains1.txt
-          curl -s https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml > domains2.txt
-          # Merge and Deduplicate
-          cat domains1.txt domains2.txt > rule_lancidr.yaml
-          # Cleanup
-          rm domains1.txt domains2.txt
 
 
       - name: Run script convert rule provider
