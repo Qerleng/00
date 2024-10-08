@@ -67,7 +67,7 @@ jobs:
             if any(prefix in domain for prefix in ("autodesk", "github", "tiktok", "pinterest", "pinimg", "twitter", "linkedin", "telegram", "facebook", "line", "instagram", "whatsapp")):
               continue
             else:
-                domains.append("DOMAIN," + domain)
+                domains.append("DOMAIN-SUFFIX," + domain)
 
           payload = [f"{line}" for line in domains]
           
@@ -178,7 +178,7 @@ jobs:
                     domain = line.split("$")[0].strip()
 
                        
-          rules = domains + ["IP-CIDR," + ip for ip in ips]
+          rules = domains + ["'" + ip for ip in ips + "'"]
           payload = [f"{line}" for line in rules]
           
           data = {
@@ -218,7 +218,7 @@ jobs:
                     domain = line.split("$")[0].strip()
 
                        
-          rules = domains + ["IP-CIDR," + ip for ip in ips]
+          rules = domains + ["'" + ip for ip in ips + "'"]
           payload = [f"{line}" for line in rules]
           
           data = {
@@ -252,7 +252,7 @@ jobs:
             if any(prefix in domain for prefix in ("autdsk", "gthub")):
               continue
             else:
-                domains.append("DOMAIN," + domain)
+                domains.append("DOMAIN-SUFFIX," + domain)
 
 
           payload = [f"{line}" for line in domains]
@@ -272,11 +272,9 @@ jobs:
           
           echo "Downloading Category-Porn source list..."
           curl -sSf https://raw.githubusercontent.com/zhihans/geodata/master/rule-set/geosite/geosite_category-porn.yaml -o rule_18+.yaml
-          rm -fr rule_18+.yamle
 
           echo "Downloading Private source list..."
           curl -sSf https://raw.githubusercontent.com/zhihans/geodata/master/rule-set/geosite/geosite_private.yaml -o rule_privacy.yaml
-          rm -fr rule_privacy.yamle
 
 
       - name: Run script convert rule provider
