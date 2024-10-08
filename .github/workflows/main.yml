@@ -202,7 +202,7 @@ jobs:
           
           with open("domains-doh.txt", "r") as file:
               input_text = file.read()
-          payload_lines = re.findall(r"\|\|(.+)\^", input_text)
+          payload_lines = re.findall(r"(.+)", input_text)
 
           domains = []
           for line in payload_lines:
