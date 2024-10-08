@@ -19,7 +19,7 @@ jobs:
         run: |
           chmod 755 mihomo
           for item in *.yaml; do
-              ./mihomo convert-ruleset ipcidr yaml "$item" "${item%.yaml}.mrs"
+              ./mihomo convert-ruleset domain yaml "$item" "${item%.yaml}.mrs"
               mkdir -p ./rule_yaml/
               mkdir -p ./rule_mrs/
               mv "${item%.yaml}.mrs" rule_mrs/
