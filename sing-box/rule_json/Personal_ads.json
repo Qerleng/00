@@ -1,7 +1,7 @@
 {
   "rules": [
     {
-      "domain": [
+      "domain_suffix": [
         "ad.doubleclick.net",
         "adc3-launch.adcolony.com",
         "adfox.yandex.ru",
