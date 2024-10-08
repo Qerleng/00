@@ -209,7 +209,7 @@ jobs:
             if any(prefix in domains for prefix in ("anjeng")):
               continue
             else:
-                domains.append("DOMAIN-SUFFIX," + domain)
+                domains.append("DOMAIN-SUFFIX," + domains)
 
           payload = [f"{line}" for line in domains]
           
