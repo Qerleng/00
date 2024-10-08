@@ -206,8 +206,6 @@ jobs:
 
           domains = []
           for line in payload_lines:
-            if line:
-              domain = line.split("$")[0].strip()
             if any(prefix in domain for prefix in ("anjeng")):
               continue
             else:
