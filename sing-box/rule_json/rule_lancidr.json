@@ -4,10 +4,20 @@
       "domain": [
         "asusrouter.com",
         "instant.arubanetworks.com",
+        "miwifi.com",
         "oasisauth.h3c.com",
         "router.asus.com",
+        "routerlogin.com",
         "setmeup.arubanetworks.com",
-        "www.asusrouter.com"
+        "tplogin.cn",
+        "www.asusrouter.com",
+        "www.miwifi.com",
+        "www.routerlogin.com"
+      ]
+    },
+    {
+      "domain_regex": [
+        "^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$"
       ]
     },
     {
@@ -110,9 +120,15 @@
         "acl4.ssr",
         "b.e.f.ip6.arpa",
         "d.f.ip6.arpa",
+        "example",
         "hiwifi.com",
         "home.arpa",
+        "invalid",
+        "lan",
         "leike.cc",
+        "local",
+        "localdomain",
+        "localhost",
         "localhost.ptlogin2.qq.com",
         "localhost.sec.qq.com",
         "my.router",
@@ -123,6 +139,7 @@
         "router.ctc",
         "routerlogin.com",
         "tendawifi.com",
+        "test",
         "test.steampowered.com",
         "tplinkwifi.net",
         "tplogin.cn",
