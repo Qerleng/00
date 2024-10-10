@@ -20,7 +20,7 @@ jobs:
           curl -Lo geoip.db "https://github.com/rfxcll/v2ray-rules-dat/releases/latest/download/GeoIP.db"
           curl -Lo geosite.db "https://github.com/rfxcll/v2ray-rules-dat/releases/latest/download/GeoSite.db"
           geoipAddresses=( "id" "facebook" "google" "netflix" "telegram" "twitter")
-          geositeDomains=("oisd-full" "oisd-nsfw" "rule-ads" "oisd-small" "rule-doh" "rule-gaming" "rule-indo" "rule-playstore" "rule-sosmed" "rule-streaming" "rule-umum" "rule-ipcheck" "rule-speedtest" "videoconference" "rule-malicious" "urltest" "openai" "ecommerce-id" "RULE_BANK_ID")
+          geositeDomains=("oisd-full" "oisd-nsfw" "rule-ads" "oisd-small" "rule-doh" "rule-gaming" "rule-indo" "rule-playstore" "rule-sosmed" "rule-streaming" "rule-umum" "rule-ipcheck" "rule-speedtest" "videoconference" "rule-malicious" "urltest" "openai" "ecommerce-id")
 
           chmod +x sing-box
           for item in "${geoipAddresses[@]}"; do
