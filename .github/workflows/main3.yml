@@ -31,7 +31,6 @@ jobs:
           done
               mkdir -p ./rule_ip/
               mkdir -p ./rule_srs/
-              mv "$item" rule_ip/
           done
           rm -rf geoip.db geosite.db 
         
