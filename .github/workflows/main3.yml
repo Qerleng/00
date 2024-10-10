@@ -15,7 +15,7 @@ jobs:
           python -m pip install --upgrade pip
 
       - name: Build
-        run: data/build.sh
+        run: chmod +x ./data/build.sh
         
 #      - name: converter mrs
 #        working-directory: ./rule_provider
