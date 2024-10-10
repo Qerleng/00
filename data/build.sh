@@ -19,11 +19,11 @@ geoipAddresses=( "id" "facebook" "google" "netflix" "telegram" "twitter")
 geositeDomains=("oisd-full" "oisd-nsfw" "rule-ads" "oisd-small" "rule-doh" "rule-gaming" "rule-indo" "rule-playstore" "rule-sosmed" "rule-streaming" "rule-umum" "rule-ipcheck" "rule-speedtest" "videoconference" "rule-malicious" "urltest" "openai" "ecommerce-id" "bank-id")
 
 for item in "${geoipAddresses[@]}"; do
-    ./sing-box geoip export "$item"
+    sing-box geoip export "$item"
 done
 
 for item in "${geositeDomains[@]}"; do
-    ./sing-box geosite export "$item"
+    sing-box geosite export "$item"
 done
 
 for item in *.json; do
