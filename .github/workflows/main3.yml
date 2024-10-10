@@ -14,8 +14,26 @@ jobs:
         run: |
           python -m pip install --upgrade pip
 
-      - name: Build
-        run: data/build.sh
+      - name: move rule sing-box
+        working-directory: ./sing-box
+        run: |
+          curl -Lo geoip.db "https://github.com/rfxcll/v2ray-rules-dat/releases/latest/download/GeoIP.db"
+          curl -Lo geosite.db "https://github.com/rfxcll/v2ray-rules-dat/releases/latest/download/GeoSite.db"
+          geoipAddresses=( "id" "facebook" "google" "netflix" "telegram" "twitter")
+          geositeDomains=("oisd-full" "oisd-nsfw" "rule-ads" "oisd-small" "rule-doh" "rule-gaming" "rule-indo" "rule-playstore" "rule-sosmed" "rule-streaming" "rule-umum" "rule-ipcheck" "rule-speedtest" "videoconference" "rule-malicious" "urltest" "openai" "ecommerce-id" "bank-id")
+
+          chmod +x sing-box
+          for item in "${geoipAddresses[@]}"; do
+              ./sing-box geoip export "$item"
+          done
+          for item in "${geositeDomains[@]}"; do
+              ./sing-box geosite export "$item"
+          done
+              mkdir -p ./rule_ip/
+              mkdir -p ./rule_srs/
+              mv "$item" rule_ip/
+          done
+          rm -rf geoip.db geosite.db 
         
 #      - name: converter mrs
 #        working-directory: ./rule_provider
