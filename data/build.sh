@@ -12,7 +12,7 @@ curl -Lo geoip.db "https://github.com/rfxcll/v2ray-rules-dat/releases/latest/dow
 curl -Lo geosite.db "https://github.com/rfxcll/v2ray-rules-dat/releases/latest/download/GeoSite.db"
 
 tar -xzvf sing-box.tar.gz
-mv ./sing-box-${VERSION}-linux-amd64/sing-box .
+# mv ./sing-box-${VERSION}-linux-amd64/sing-box .
 chmod +x sing-box
 
 geoipAddresses=( "id" "facebook" "google" "netflix" "telegram" "twitter")
