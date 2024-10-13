@@ -45,7 +45,7 @@ jobs:
           MIHOMO_VER=$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases |
               grep '"prerelease": false,' -B 10 -m 1 |
               grep tag_name |
-              busybox grep -oE "v[0-9.]*" |
+              grep -oE "v[0-9.]*" |
               head -1)
 
           curl -Lo mihomo.tar.gz "https://github.com/MetaCubeX/mihomo/releases/download/$MIHOMO_VER/mihomo-linux-amd64-$MIHOMO_VER.gz"
