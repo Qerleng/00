@@ -13,8 +13,8 @@ jobs:
 
       - name: 💩 Build 💩
         run: |
-          D	-f ./Ads/Configuration.yaml ./
-          D	-f ./Ads/cfm.yaml ./
+          mv -f ./Ads/Configuration.yaml ./
+          mv -f ./Ads/cfm.yaml ./
           mv -f	./Ads/config.yaml ./
 
       - uses: MyAlbum/purge-cache@v2
