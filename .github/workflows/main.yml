@@ -282,6 +282,8 @@ jobs:
       - name: move rule sing-box
         working-directory: ./sing-box
         run: |
+          curl -LO "https://github.com/Qerleng/01/raw/main/tools/sing-box"
+          
           chmod +x sing-box
           for item in *.json; do
               ./sing-box rule-set compile "$item"
