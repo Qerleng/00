@@ -39,7 +39,7 @@ jobs:
           curl -Lo sing-box.tar.gz "https://github.com/SagerNet/sing-box/releases/download/v$SINGBOX_VER/sing-box-$SINGBOX_VER-linux-arm64.tar.gz"
           tar -zxvf sing-box.tar.gz -C sing-box/
           rm sing-box.tar.gz
-          cp -f sing-box/sing-box-$SINGBOX_VER-linux-arm64/sing-box sing-box/CrashCore
+          cp -f sing-box/sing-box-$SINGBOX_VER-linux-arm64/sing-box tools/CrashCore
           rm -rf sing-box/sing-box-$SINGBOX_VER-linux-arm64/*
 
           MIHOMO_VER=$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases |
@@ -57,7 +57,7 @@ jobs:
           chmod +x ./upx
           ./upx --best sing-box/CrashCore
           rm upx
-          cd sing-box
+          cd tools
           tar -czvf CrashCore.tar.gz CrashCore
           rm CrashCore.tar.gz CrashCore
           echo -e " SINGBOX ~ $SINGBOX_VER " > README.md
