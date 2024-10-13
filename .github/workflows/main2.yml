@@ -30,7 +30,7 @@ jobs:
               cut -d ":" -f2 |
               sed 's/\"//g;s/\,//g;s/\ //g;s/v//')
 
-          curl -Lo sing-box.tar.gz "https://github.com/SagerNet/sing-box/releases/download/v$SINGBOX_VER/sing-box-$SINGBOX_VER-linux-amd64.gz"
+          curl -Lo sing-box.tar.gz "https://github.com/SagerNet/sing-box/releases/download/v$SINGBOX_VER/sing-box-$SINGBOX_VER-linux-amd64.tar.gz"
           tar -zxvf sing-box.tar.gz -C sing-box
           rm sing-box.tar.gz
           mv -f sing-box/sing-box-$SINGBOX_VER-linux-amd64/sing-box sing-box/
@@ -48,8 +48,8 @@ jobs:
               cut -d ":" -f2 |
               sed 's/\"//g;s/\,//g;s/\ //g;s/v//')
 
-          curl -Lo mihomo.tar.gz "https://github.com/MetaCubeX/mihomo/releases/download/$MIHOMO_VER/mihomo-linux-amd64-$MIHOMO_VER.tar.gz"
-          tar -zxvf mihomo.tar.gz -C mihomo-linux-amd64-$MIHOMO_VER
+          curl -Lo mihomo.tar.gz "https://github.com/MetaCubeX/mihomo/releases/download/$MIHOMO_VER/mihomo-linux-amd64-$MIHOMO_VER.gz"
+          gzip -zxvf mihomo.tar.gz -C mihomo-linux-amd64-$MIHOMO_VER
           rm mihomo.tar.gz
           mv -f mihomo-linux-amd64-$MIHOMO_VER mihomo/
           rm -rf mihomo-linux-amd64-$MIHOMO_VER
