@@ -48,7 +48,7 @@ jobs:
               cut -d ":" -f2 |
               sed 's/\"//g;s/\,//g;s/\ //g;s/v//')
 
-          curl -Lo mihomo.gz "https://github.com/MetaCubeX/mihomo/releases/download/$MIHOMO_VER/mihomo-linux-amd64-$MIHOMO_VER.tar.gz"
+          curl -Lo mihomo.gz "https://github.com/MetaCubeX/mihomo/releases/download/$MIHOMO_VER/mihomo-linux-amd64-$MIHOMO_VER.gz"
           gzip -vd mihomo.gz
           rm mihomo.tar.gz
           mv -f mihomo-linux-amd64-$MIHOMO_VER mihomo/
