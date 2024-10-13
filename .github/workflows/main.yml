@@ -279,19 +279,19 @@ jobs:
       - name: Run script convert rule provider
         run: |
           python data/convert.py
-      - name: move rule sing-box
-        working-directory: ./sing-box
-        run: |
-          curl -LO "https://github.com/Qerleng/01/raw/main/tools/sing-box"
+#      - name: move rule sing-box
+#        working-directory: ./sing-box
+#        run: |
+#          curl -LO "https://github.com/Qerleng/01/raw/main/tools/sing-box"
           
-          chmod +x sing-box
-          for item in *.json; do
-              ./sing-box rule-set compile "$item"
-              mkdir -p ./rule_json/
-              mkdir -p ./rule_srs/
-              mv "${item%.json}.srs" rule_srs/
-              mv "$item" rule_json/
-          done
+#          chmod +x sing-box
+#          for item in *.json; do
+#              ./sing-box rule-set compile "$item"
+#              mkdir -p ./rule_json/
+#              mkdir -p ./rule_srs/
+#              mv "${item%.json}.srs" rule_srs/
+#              mv "$item" rule_json/
+#          done
 
 
       - uses: MyAlbum/purge-cache@v2
