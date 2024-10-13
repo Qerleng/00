@@ -7,4 +7,4 @@ mkdir -p ./test/
 mv -f ./v2dat ./tools/
 
 
-rm -rf sing-box v2dat mihomo CrashCore
+rm sing-box v2dat mihomo CrashCore
