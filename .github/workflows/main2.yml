@@ -49,7 +49,7 @@ jobs:
               head -1)
 
           curl -Lo mihomo.tar.gz "https://github.com/MetaCubeX/mihomo/releases/download/$MIHOMO_VER/mihomo-linux-amd64-$MIHOMO_VER.gz"
-          tar -zxvf mihomo.tar.gz -C mihomo-linux-amd64-$MIHOMO_VER
+          gzip -vd mihomo.tar.gz
           rm mihomo.tar.gz
           mv -f mihomo-linux-amd64-$MIHOMO_VER mihomo/
           rm -rf mihomo-linux-amd64-$MIHOMO_VER
