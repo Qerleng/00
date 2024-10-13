@@ -57,7 +57,7 @@ jobs:
           chmod +x ./upx
           ./upx --best sing-box/CrashCore
           rm upx
-          cd tools
+          cd sing-box
           tar -czvf CrashCore.tar.gz CrashCore
           rm CrashCore.tar.gz CrashCore
           echo -e " SINGBOX ~ $SINGBOX_VER " > README.md
