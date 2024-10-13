@@ -62,12 +62,11 @@ jobs:
 
           chmod +x ./upx
           ./upx --best tools/CrashCore
+          ./upx --best tools/mihomo
           rm upx
           cd tools
           tar -czvf CrashCore.tar.gz CrashCore
-          rm CrashCore.tar.gz CrashCore
-          echo " SINGBOX ~ $SINGBOX_VER " > README.md
-          echo " MIHOMO  ~ $MIHOMO_VER " > README.md
+          rm CrashCore.tar.gz
 
 
 
