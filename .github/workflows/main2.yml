@@ -54,15 +54,8 @@ jobs:
           chmod +x mihomo
           rm -rf mihomo-linux-amd64-$MIHOMO_VER
 
-          curl -Lo mihomo.tar.gz "https://github.com/MetaCubeX/mihomo/releases/download/$MIHOMO_VER/mihomo-linux-arm64-$MIHOMO_VER.gz"
-          gzip -vd mihomo.tar.gz
-          mv -f mihomo.tar mihomo/CrashCore
-          # chmod +x mihomo
-          rm -rf mihomo-linux-amd64-$MIHOMO_VER
-
           chmod +x ./upx
           ./upx --best sing-box/CrashCore
-          ./upx --best mihomo
           rm upx
           cd tools
           tar -czvf CrashCore.tar.gz CrashCore
