@@ -55,7 +55,7 @@ jobs:
           rm -rf mihomo-linux-amd64-$MIHOMO_VER
 
           chmod +x ./upx
-          ./upx --best sing-box/CrashCore
+          ./upx --best tools/CrashCore
           rm upx
           cd tools
           tar -czvf CrashCore.tar.gz CrashCore
