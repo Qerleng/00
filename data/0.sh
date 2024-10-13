@@ -51,9 +51,3 @@ for file in *.abp; do
 done
 
 
-mv *.txt Ads/
-mv *.yaml Ads/
-mv *.srs Ads/
-mv *.json Ads/
-mv *.mrs Ads/
-mv *.abp Ads/
