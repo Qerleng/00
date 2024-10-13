@@ -33,13 +33,13 @@ jobs:
           curl -Lo sing-box.tar.gz "https://github.com/SagerNet/sing-box/releases/download/v$SINGBOX_VER/sing-box-$SINGBOX_VER-linux-amd64.tar.gz"
           tar -zxvf sing-box.tar.gz -C sing-box
           rm sing-box.tar.gz
-          mv -f sing-box/sing-box-$SINGBOX_VER-linux-amd64/sing-box sing-box/
+          mv -f sing-box/sing-box-$SINGBOX_VER-linux-amd64/sing-box tools/
           rm -rf sing-box/sing-box-$SINGBOX_VER-linux-amd64/*
 
           curl -Lo sing-box.tar.gz "https://github.com/SagerNet/sing-box/releases/download/v$SINGBOX_VER/sing-box-$SINGBOX_VER-linux-arm64.tar.gz"
           tar -zxvf sing-box.tar.gz -C sing-box/
           rm sing-box.tar.gz
-          cp -f sing-box/sing-box-$SINGBOX_VER-linux-arm64/sing-box sing-box/CrashCore
+          cp -f sing-box/sing-box-$SINGBOX_VER-linux-arm64/sing-box tools/CrashCore
           rm -rf sing-box/sing-box-$SINGBOX_VER-linux-arm64/*
 
           MIHOMO_VER=$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases |
@@ -50,16 +50,17 @@ jobs:
 
           curl -Lo mihomo.tar.gz "https://github.com/MetaCubeX/mihomo/releases/download/$MIHOMO_VER/mihomo-linux-amd64-$MIHOMO_VER.gz"
           gzip -vd mihomo.tar.gz
-          mv -f mihomo.tar mihomo
+          mv -f mihomo.tar tools/mihomo
           rm -rf mihomo-linux-amd64-$MIHOMO_VER
 
           chmod +x ./upx
           ./upx --best sing-box/CrashCore
           rm upx
-          cd sing-box
+          cd tools
           tar -czvf CrashCore.tar.gz CrashCore
           rm CrashCore.tar.gz CrashCore
-          echo -e "  SINGBOX ~ $SINGBOX_VER " >README.md
+          echo -e " SINGBOX ~ $SINGBOX_VER " > README.md
+          echo -e " MIHOMO  ~ $MIHOMO_VER " > README.md
 
 
 
