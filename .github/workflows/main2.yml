@@ -34,7 +34,6 @@ jobs:
           tar -zxvf sing-box.tar.gz -C tools
           rm sing-box.tar.gz
           mv -f tools/sing-box-$SINGBOX_VER-linux-amd64/sing-box tools/
-          cp -f sing-box-$SINGBOX_VER-linux-amd64/sing-box sing-box/
           rm -rf tools/sing-box-$SINGBOX_VER-linux-amd64/*
 
           SING_VER=$(curl -s https://api.github.com/repos/SagerNet/sing-box/releases |
