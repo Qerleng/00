@@ -1,0 +1,32 @@
+payload:
+
+  # TIME 
+
+  - DOMAIN-REGEX,time[1-7].*.com
+  - DOMAIN-REGEX,ntp[1-7].*.com
+  - DOMAIN-REGEX,time.*.com
+  - DOMAIN-REGEX,ntp.*.com
+  - DOMAIN-KEYWORD,time
+  - DOMAIN-KEYWORD,ntp
+  - DOMAIN-SUFFIX,ntp.org
+  - DOMAIN,time.windows.com
+  - DST-PORT,123
+  - DST-PORT,136
+  - DST-PORT,137
+  - DST-PORT,138
+  - DST-PORT,139
+
+
+  # FCM
+  - DOMAIN-SUFFIX,mtalk.google.com
+  - DOMAIN-REGEX,.*.mtalk.google.com
+  - DOMAIN-REGEX,(^|\\.)(alt[1-8]-mtalk|mtalk|mtalk4)\\.google\\.com$
+  - DST-PORT,5228
+  - DST-PORT,5229
+  - DST-PORT,5230
+
+  
+  # GoogleVoice
+  - DOMAIN,stun.l.google.com
+  - DOMAIN-REGEX,stun[1-4].l.google.com
+  - DOMAIN-SUFFIX,telephony.goog
