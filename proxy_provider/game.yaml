@@ -68,17 +68,17 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basetrojan
+    <<: *basevmess
     name: ‎‎🇸🇬 Test 1
     server: *bug-ip1
     port: 443
     tls: true
-    password: e6f0e994-b85c-406d-b41b-6af655f8d816
-    sni: hk1.safecdn.site
+    uuid: 48d3bc38-a0fb-4030-90b2-c312c2df3c1b
+    servername: vpnindo.amztore.me
     ws-opts: 
-      path: /websocket
+      path: /vmess
       headers: 
-        Host: hk1.safecdn.site
+        Host: vpnindo.amztore.me
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2
