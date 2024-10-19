@@ -90,6 +90,33 @@
     {
       "type": "block",
       "tag": "BLOCK"
+    },
+    {
+      "tag": "PRXY",
+      "type": "vless",
+      "server": "104.22.4.240",
+      "server_port": 443,
+      "uuid": "476802d2-2072-4316-8dd0-cf1dd4a9c791",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "fsl2.kadanahija.xyz",
+        "insecure": true,
+        "disable_sni": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vlesscf",
+        "headers": {
+          "Host": "fsl2.kadanahija.xyz"
+        }
+      }
     }
   ],
   "route": {
@@ -179,7 +206,7 @@
       "tag": "FILE",
       "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/test-sgp.yaml",
       "download_ua": "sing-box",
-      "download_detour": "PROXY",
+      "download_detour": "PRXY",
       "healthcheck_interval": "5m0s"
     },
     {
@@ -188,7 +215,7 @@
       "tag": "FILE2",
       "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/game.yaml",
       "download_ua": "sing-box",
-      "download_detour": "PROXY",
+      "download_detour": "PRXY",
       "healthcheck_interval": "5m0s"
     },
     {
@@ -197,7 +224,7 @@
       "tag": "FILE3",
       "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/sg.yaml",
       "download_ua": "sing-box",
-      "download_detour": "PROXY",
+      "download_detour": "PRXY",
       "healthcheck_interval": "5m0s"
     },
     {
@@ -206,7 +233,7 @@
       "tag": "FILE4",
       "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/test-sg.yaml",
       "download_ua": "sing-box",
-      "download_detour": "PROXY",
+      "download_detour": "PRXY",
       "healthcheck_interval": "5m0s"
     }
   ],
