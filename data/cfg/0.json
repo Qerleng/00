@@ -114,12 +114,19 @@
         "outbound": "SELECT"
       },
       {
-        "rule_set": "AWAvenue",
+        "rule_set": [
+          "AWAvenue",
+          "ADS"
+        ],
         "outbound": "BLOCK"
       },
       {
         "rule_set": "rule_doh",
         "outbound": "SELECT"
+      },
+      {
+        "rule_set": "ecommerce",
+        "outbound": "URL-TEST"
       },
       {
         "rule_set": "Stream",
@@ -135,7 +142,7 @@
         "type": "remote",
         "tag": "ntp",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/Qerleng/00/main/sing-box/rule_srs/ABS.srs"
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/rule-playstore.srs"
       },
       {
         "type": "remote",
@@ -145,9 +152,21 @@
       },
       {
         "type": "remote",
+        "tag": "ecommerce",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/ecommerce-id.srs"
+      },
+      {
+        "type": "remote",
         "tag": "Stream",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/rule-streaming.srs"
+      },
+      {
+        "type": "remote",
+        "tag": "Sosmed",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/rule-sosmed.srs"
       },
       {
         "type": "remote",
@@ -157,9 +176,9 @@
       },
       {
         "type": "remote",
-        "tag": "Sosmed",
+        "tag": "ADS",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/rule-sosmed.srs"
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/category-ads-all.srs"
       },
       {
         "type": "remote",
