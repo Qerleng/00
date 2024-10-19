@@ -99,12 +99,12 @@
         "outbound": "DNS"
       },
       {
-        "rule_set": "ABS",
-        "outbound": "SELECT"
+        "rule_set": "ntp",
+        "outbound": "DIRECT"
       },
       {
-        "rule_set": "bypass-ads",
-        "outbound": "PROXY"
+        "rule_set": "urltest",
+        "outbound": "SELECT"
       },
       {
         "port": [
@@ -114,7 +114,7 @@
         "outbound": "SELECT"
       },
       {
-        "rule_set": "rule_Ads",
+        "rule_set": "AWAvenue",
         "outbound": "BLOCK"
       },
       {
@@ -128,25 +128,18 @@
       {
         "rule_set": "Sosmed",
         "outbound": "📱SOSMED📱"
-      },
-      {
-        "domain": [
-          "www.google.co.id",
-          "www.google.com"
-        ],
-        "outbound": "SELECT"
       }
     ],
     "rule_set": [
       {
         "type": "remote",
-        "tag": "ABS",
+        "tag": "ntp",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/Qerleng/00/main/sing-box/rule_srs/ABS.srs"
       },
       {
         "type": "remote",
-        "tag": "bypass-ads",
+        "tag": "urltest",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/urltest.srs"
       },
@@ -158,7 +151,7 @@
       },
       {
         "type": "remote",
-        "tag": "rule_Ads",
+        "tag": "AWAvenue",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/Qerleng/01/main/Ads/AWAvenue.srs"
       },
@@ -166,7 +159,7 @@
         "type": "remote",
         "tag": "Sosmed",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/Qerleng/00/main/sing-box/rule_srs/Sosmed.srs"
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/rule-sosmed.srs"
       },
       {
         "type": "remote",
