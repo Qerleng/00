@@ -10,7 +10,7 @@
         "detour": "PROXY"
       },
       {
-        "tag": "dnsXL",
+        "tag": "local",
         "address": [
           "112.215.198.248",
           "112.215.198.254",
@@ -28,12 +28,19 @@
     ],
     "rules": [
       {
+        "clash_mode": "Direct",
+        "server": "local"
+      },
+      {
+        "clash_mode": "Global",
+        "server": "Google"
+      },
+      {
         "outbound": "any",
-        "server": "dnsXL",
+        "server": "local",
         "disable_cache": true
       }
     ],
-    "final": "Google",
     "strategy": "ipv4_only",
     "disable_cache": true
   },
@@ -43,10 +50,12 @@
       "tag": "tun-in",
       "interface_name": "tun0",
       "mtu": 9000,
-      "inet4_address": "172.19.0.1/30",
       "auto_route": true,
       "stack": "system",
-      "sniff": true
+      "sniff": true,
+      "inet4_address": "172.19.0.1/30",
+      "include_package": [],
+      "exclude_package": []
     }
   ],
   "outbounds": [
@@ -103,7 +112,7 @@
         "outbound": "DIRECT"
       },
       {
-        "rule_set": "urltest",
+        "rule_set": "umum",
         "outbound": "SELECT"
       },
       {
@@ -121,8 +130,19 @@
         "outbound": "BLOCK"
       },
       {
-        "rule_set": "rule_doh",
+        "rule_set": [
+          "doh",
+          "doh_ip"
+        ],
         "outbound": "SELECT"
+      },
+      {
+        "rule_set": [
+          "urltest",
+          "videoconference",
+          "ipcheck"
+        ],
+        "outbound": "PROXY"
       },
       {
         "rule_set": "ecommerce",
@@ -133,7 +153,10 @@
         "outbound": "🎞STREAMING🎞"
       },
       {
-        "rule_set": "Sosmed",
+        "rule_set": [
+          "Sosmed",
+          "telegram_ip"
+        ],
         "outbound": "📱SOSMED📱"
       }
     ],
@@ -142,53 +165,103 @@
         "type": "remote",
         "tag": "ntp",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/rule-playstore.srs"
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/rule-ntp.srs",
+        "download_detour": "PROXY"
+      },
+      {
+        "type": "remote",
+        "tag": "umum",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/rule-umum.srs",
+        "download_detour": "PROXY"
+      },
+      {
+        "type": "remote",
+        "tag": "ipcheck",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/rule-ipcheck.srs",
+        "download_detour": "PROXY"
+      },
+      {
+        "type": "remote",
+        "tag": "videoconference",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/videoconference.srs",
+        "download_detour": "PROXY"
       },
       {
         "type": "remote",
         "tag": "urltest",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/urltest.srs"
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/urltest.srs",
+        "download_detour": "PROXY"
+      },
+      {
+        "type": "remote",
+        "tag": "whatsapp",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/whatsapp.srs",
+        "download_detour": "PROXY"
       },
       {
         "type": "remote",
         "tag": "ecommerce",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/ecommerce-id.srs"
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/ecommerce-id.srs",
+        "download_detour": "PROXY"
       },
       {
         "type": "remote",
         "tag": "Stream",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/rule-streaming.srs"
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/rule-streaming.srs",
+        "download_detour": "PROXY"
       },
       {
         "type": "remote",
         "tag": "Sosmed",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/rule-sosmed.srs"
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/rule-sosmed.srs",
+        "download_detour": "PROXY"
+      },
+      {
+        "type": "remote",
+        "tag": "telegram_ip",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/telegram.srs",
+        "download_detour": "PROXY"
       },
       {
         "type": "remote",
         "tag": "AWAvenue",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/Qerleng/01/main/Ads/AWAvenue.srs"
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/Ads/AWAvenue.srs",
+        "download_detour": "PROXY"
       },
       {
         "type": "remote",
         "tag": "ADS",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/category-ads-all.srs"
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/category-ads-all.srs",
+        "download_detour": "PROXY"
       },
       {
         "type": "remote",
-        "tag": "rule_doh",
+        "tag": "doh_ip",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/Qerleng/00/main/sing-box/rule_srs/rule_doh.srs"
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/doh.srs",
+        "download_detour": "PROXY"
+      },
+      {
+        "type": "remote",
+        "tag": "doh",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/rule-doh.srs",
+        "download_detour": "PROXY"
       }
     ],
     "final": "PROXY",
-    "auto_detect_interface": false,
+    "auto_detect_interface": true,
     "override_android_vpn": true
   },
   "outbound_providers": [
@@ -197,7 +270,6 @@
       "path": "./test-sgp.yaml",
       "tag": "FILE",
       "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/test-sgp.yaml",
-      "download_ua": "sing-box",
       "download_detour": "PROXY",
       "healthcheck_interval": "5m0s"
     },
@@ -206,7 +278,6 @@
       "path": "./game.yaml",
       "tag": "FILE2",
       "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/game.yaml",
-      "download_ua": "sing-box",
       "download_detour": "PROXY",
       "healthcheck_interval": "5m0s"
     },
@@ -215,7 +286,6 @@
       "path": "./sg.yaml",
       "tag": "FILE3",
       "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/sg.yaml",
-      "download_ua": "sing-box",
       "download_detour": "PROXY",
       "healthcheck_interval": "5m0s"
     },
@@ -224,7 +294,6 @@
       "path": "./test-sg.yaml",
       "tag": "FILE4",
       "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/test-sg.yaml",
-      "download_ua": "sing-box",
       "download_detour": "PROXY",
       "healthcheck_interval": "5m0s"
     }
@@ -233,7 +302,11 @@
     "clash_api": {
       "external_controller": "0.0.0.0:9090",
       "external_ui": "./dashboard",
-      "external_ui_download_detour": "PROXY"
+      "external_ui_download_detour": "PROXY",
+      "access_control_allow_origin": [
+        "http://127.0.0.1",
+        "http://yacd.haishan.me"
+      ]
     }
   }
 }
