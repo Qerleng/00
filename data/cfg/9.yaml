@@ -245,30 +245,30 @@ rule-providers:
     <<: *domain
     path: ./assets/provider/rule/rule-streaming.mrs
     url: "https://github.com/Qerleng/01/raw/main/rule_provider/rule-streaming.mrs"
-  rule:
+  rule-umum:
     <<: *domain
-    path: ./assets/provider/rule/
-    url: "https://github.com/Qerleng/01/raw/main/rule_provider/category.mrs"
-  rule:
+    path: ./assets/provider/rule/rule-umum.mrs
+    url: "https://github.com/Qerleng/01/raw/main/rule_provider/rule-umum.mrs"
+  rule-urltest:
     <<: *domain
-    path: ./assets/provider/rule/
-    url: "https://github.com/Qerleng/01/raw/main/rule_provider/category.mrs"
-  rule:
+    path: ./assets/provider/rule/urltest.mrs
+    url: "https://github.com/Qerleng/01/raw/main/rule_provider/urltest.mrs"
+  rule-videoconference:
     <<: *domain
-    path: ./assets/provider/rule/
-    url: "https://github.com/Qerleng/01/raw/main/rule_provider/category.mrs"
-  rule:
+    path: ./assets/provider/rule/videoconference.mrs
+    url: "https://github.com/Qerleng/01/raw/main/rule_provider/videoconference.mrs"
+  Whatsapp:
     <<: *domain
-    path: ./assets/provider/rule/
-    url: "https://github.com/Qerleng/01/raw/main/rule_provider/category.mrs"
-  rule:
+    path: ./assets/provider/rule/whatsapp.mrs
+    url: "https://github.com/Qerleng/01/raw/main/rule_provider/whatsapp.mrs"
+  category-porn:
     <<: *domain
-    path: ./assets/provider/rule/
-    url: "https://github.com/Qerleng/01/raw/main/rule_provider/category.mrs"
-  rule:
+    path: ./assets/provider/rule/category-porn.mrs
+    url: "https://github.com/Qerleng/01/raw/main/rule_provider/category-porn.mrs"
+  oisd-nsfw:
     <<: *domain
-    path: ./assets/provider/rule/
-    url: "https://github.com/Qerleng/01/raw/main/rule_provider/category.mrs"
+    path: ./assets/provider/rule/oisd-nsfw.mrs
+    url: "https://github.com/Qerleng/01/raw/main/rule_provider/oisd-nsfw.mrs"
 
   
 rules:
