@@ -193,62 +193,82 @@ rule-anchor:
   domain: &domain {type: http, interval: 43200, behavior: domain, proxy: 📶SELECT-VPN📶, format: mrs}
 
 rule-providers:
-  private_domain:
+  AWAvenue:
     <<: *domain
-    path: ./assets/provider/rule/private.mrs
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"
-  cn_domain:
+    path: ./assets/provider/rule/AWAvenue.mrs
+    url: "https://github.com/Qerleng/01/raw/main/Ads/AWAvenue.mrs"
+  ABPindo:
+    <<: *domain
+    path: ./assets/provider/rule/ABPindo.mrs
+    url: "https://github.com/Qerleng/01/raw/main/Ads/ABPindo.mrs"
+  Category-ads-all:
+    <<: *domain
+    path: ./assets/provider/rule/category-ads-all.mrs
+    url: "https://github.com/Qerleng/01/raw/main/rule_provider/category-ads-all.mrs"
+  Ecommerce-id:
+    <<: *domain
+    path: ./assets/provider/rule/ecommerce-id.mrs
+    url: "https://github.com/Qerleng/01/raw/main/rule_provider/ecommerce-id.mrs"
+  rule-doh:
+    <<: *domain
+    path: ./assets/provider/rule/rule-doh.mrs
+    url: "https://github.com/Qerleng/01/raw/main/rule_provider/rule-doh.mrs"
+  rule-gaming:
+    <<: *domain
+    path: ./assets/provider/rule/rule-gaming.mrs
+    url: "https://github.com/Qerleng/01/raw/main/rule_provider/rule-gaming.mrs"
+  rule-indo:
+    <<: *domain
+    path: ./assets/provider/rule/rule-indo.mrs
+    url: "https://github.com/Qerleng/01/raw/main/rule_provider/rule-indo.mrs"
+  rule-ipcheck:
+    <<: *domain
+    path: ./assets/provider/rule/rule-ipcheck.mrs
+    url: "https://github.com/Qerleng/01/raw/main/rule_provider/rule-ipcheck.mrs"
+  rule-ntp:
+    <<: *domain
+    path: ./assets/provider/rule/rule-ntp.mrs
+    url: "https://github.com/Qerleng/01/raw/main/rule_provider/rule-ntp.mrs"
+  rule-playstore:
+    <<: *domain
+    path: ./assets/provider/rule/rule-playstore.mrs
+    url: "https://github.com/Qerleng/01/raw/main/rule_provider/rule-playstore.mrs"
+  rule-sosmed:
+    <<: *domain
+    path: ./assets/provider/rule/rule-sosmed.mrs
+    url: "https://github.com/Qerleng/01/raw/main/rule_provider/rule-sosmed.mrs"
+  rule-speedtest:
+    <<: *domain
+    path: ./assets/provider/rule/rule-speedtest.mrs
+    url: "https://github.com/Qerleng/01/raw/main/rule_provider/rule-speedtest.mrs"
+  rule-streaming:
+    <<: *domain
+    path: ./assets/provider/rule/rule-streaming.mrs
+    url: "https://github.com/Qerleng/01/raw/main/rule_provider/rule-streaming.mrs"
+  rule:
     <<: *domain
     path: ./assets/provider/rule/
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"
-  biliintl_domain:
+    url: "https://github.com/Qerleng/01/raw/main/rule_provider/category.mrs"
+  rule:
     <<: *domain
     path: ./assets/provider/rule/
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/biliintl.mrs"
-  ehentai_domain:
+    url: "https://github.com/Qerleng/01/raw/main/rule_provider/category.mrs"
+  rule:
     <<: *domain
     path: ./assets/provider/rule/
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ehentai.mrs"
-  github_domain:
+    url: "https://github.com/Qerleng/01/raw/main/rule_provider/category.mrs"
+  rule:
     <<: *domain
     path: ./assets/provider/rule/
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"
-  twitter_domain:
+    url: "https://github.com/Qerleng/01/raw/main/rule_provider/category.mrs"
+  rule:
     <<: *domain
     path: ./assets/provider/rule/
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/twitter.mrs"
-  youtube_domain:
+    url: "https://github.com/Qerleng/01/raw/main/rule_provider/category.mrs"
+  rule:
     <<: *domain
     path: ./assets/provider/rule/
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"
-  google_domain:
-    <<: *domain
-    path: ./assets/provider/rule/
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"
-  telegram_domain:
-    <<: *domain
-    path: ./assets/provider/rule/
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"
-  netflix_domain:
-    <<: *domain
-    path: ./assets/provider/rule/
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"
-  bilibili_domain:
-    <<: *domain
-    path: ./assets/provider/rule/
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bilibili.mrs"
-  bahamut_domain:
-    <<: *domain
-    path: ./assets/provider/rule/
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bahamut.mrs"
-  spotify_domain:
-    <<: *domain
-    path: ./assets/provider/rule/
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.mrs"
-  pixiv_domain:
-    <<: *domain
-    path: ./assets/provider/rule/
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/pixiv.mrs"
+    url: "https://github.com/Qerleng/01/raw/main/rule_provider/category.mrs"
 
   
 rules:
