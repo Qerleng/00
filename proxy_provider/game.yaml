@@ -68,17 +68,17 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevmess
+    <<: *basetrojan
     name: ‎‎🇸🇬 Test 1
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: 48d3bc38-a0fb-4030-90b2-c312c2df3c1b
-    servername: vpnindo.amztore.me
+    password: 90c78636-7a1c-4299-8443-71d7b40deb2d
+    sni: vip.vpnshare.web.id
     ws-opts: 
-      path: /vmess
+      path: /trojan-ws
       headers: 
-        Host: vpnindo.amztore.me
+        Host: vip.vpnshare.web.id
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2
