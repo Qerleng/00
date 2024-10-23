@@ -73,12 +73,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    password: 90c78636-7a1c-4299-8443-71d7b40deb2d
-    sni: vip.vpnshare.web.id
+    password: 58887ad3-bc0d-47da-bfbb-614ef906b0fc
+    sni: nala.tazcoeg.eu.org
     ws-opts: 
       path: /trojan-ws
       headers: 
-        Host: vip.vpnshare.web.id
+        Host: nala.tazcoeg.eu.org
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2
