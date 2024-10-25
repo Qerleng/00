@@ -30,6 +30,7 @@ base-proxy:
       cipher: auto
       udp: true
       udp-over-tcp: true
+      packet-encoding: xudp
       network: ws
       smux:
         enabled: false
@@ -42,6 +43,7 @@ base-proxy:
       cipher: auto
       udp: true
       udp-over-tcp: true
+      packet-encoding: xudp
       network: ws
       smux:
         enabled: false
@@ -51,6 +53,7 @@ base-proxy:
     - &basetrojan
       type: trojan
       udp: true
+      packet-encoding: xudp
       network: ws
       smux:
         enabled: false
@@ -69,9 +72,10 @@ proxies:
 
   - &sshkit
     <<: *basetrojan
-    name: ‎‎🇸🇬 Test 1
+    name: ‎‎🇸🇬 Test 1 🇸🇬
     server: *bug-ip1
     port: 443
+    skip-cert-verify: true
     tls: true
     password: 58887ad3-bc0d-47da-bfbb-614ef906b0fc
     sni: nala.tazcoeg.eu.org
@@ -81,59 +85,59 @@ proxies:
         Host: nala.tazcoeg.eu.org
         Early-Data: 1
   - <<: *sshkit
-    name: ‎‎🇸🇬 Test 2
+    name: ‎‎🇸🇬 Test 2 🇸🇬
     server: *bug-ip2
   - <<: *sshkit
-    name: ‎‎🇸🇬 Test 3
+    name: ‎‎🇸🇬 Test 3 🇸🇬
     server: *bug-ip3
   - <<: *sshkit
-    name: ‎‎🇸🇬 Test 4
+    name: ‎‎🇸🇬 Test 4 🇸🇬
     server: *bug-ip4
   - <<: *sshkit
-    name: ‎‎🇸🇬 Test 5
+    name: ‎‎🇸🇬 Test 5 🇸🇬
     server: *bug-ip5
   - <<: *sshkit
-    name: ‎‎🇸🇬 Test 6
+    name: ‎‎🇸🇬 Test 6 🇸🇬
     server: *bug-ip6
   - <<: *sshkit
-    name: ‎‎🇸🇬 Test 7
+    name: ‎‎🇸🇬 Test 7 🇸🇬
     server: *bug-ip7
   - <<: *sshkit
-    name: ‎‎🇸🇬 Test 8
+    name: ‎‎🇸🇬 Test 8 🇸🇬
     server: *bug-ip8
   - <<: *sshkit
-    name: ‎‎🇸🇬 Test 9
+    name: ‎‎🇸🇬 Test 9 🇸🇬
     server: *bug-ip9
   - <<: *sshkit
-    name: ‎‎🇸🇬 Test 10
+    name: ‎‎🇸🇬 Test 10 🇸🇬
     server: *bug-ip10
   - <<: *sshkit
-    name: ‎‎🇸🇬 Test 11
+    name: ‎‎🇸🇬 Test 11 🇸🇬
     server: *bug-ip11
   - <<: *sshkit
-    name: ‎‎🇸🇬 Test 12
+    name: ‎‎🇸🇬 Test 12 🇸🇬
     server: *bug-ip12
   - <<: *sshkit
-    name: ‎‎🇸🇬 Test 13
+    name: ‎‎🇸🇬 Test 13 🇸🇬
     server: *bug-ip13
   - <<: *sshkit
-    name: ‎‎🇸🇬 Test 14
+    name: ‎‎🇸🇬 Test 14 🇸🇬
     server: *bug-ip14
   - <<: *sshkit
-    name: ‎‎🇸🇬 Test 15
+    name: ‎‎🇸🇬 Test 15 🇸🇬
     server: *bug-ip15
   - <<: *sshkit
-    name: ‎‎🇸🇬 Test 16
+    name: ‎‎🇸🇬 Test 16 🇸🇬
     server: *bug-ip16
   - <<: *sshkit
-    name: ‎‎🇸🇬 Test 17
+    name: ‎‎🇸🇬 Test 17 🇸🇬
     server: *bug-ip17
   - <<: *sshkit
-    name: ‎‎🇸🇬 Test 18
+    name: ‎‎🇸🇬 Test 18 🇸🇬
     server: *bug-ip18
   - <<: *sshkit
-    name: ‎‎🇸🇬 Test 19
+    name: ‎‎🇸🇬 Test 19 🇸🇬
     server: *bug-ip19
   - <<: *sshkit
-    name: ‎‎🇸🇬 Test 20
+    name: ‎‎🇸🇬 Test 20 🇸🇬
     server: *bug-ip20

@@ -30,6 +30,7 @@ base-proxy:
       cipher: auto
       udp: true
       udp-over-tcp: true
+      packet-encoding: xudp
       network: ws
       smux:
         enabled: false
@@ -42,6 +43,7 @@ base-proxy:
       cipher: auto
       udp: true
       udp-over-tcp: true
+      packet-encoding: xudp
       network: ws
       smux:
         enabled: false
@@ -51,6 +53,7 @@ base-proxy:
     - &basetrojan
       type: trojan
       udp: true
+      packet-encoding: xudp
       network: ws
       smux:
         enabled: false
@@ -69,7 +72,7 @@ proxies:
 
   - &sshkit
     <<: *basevless
-    name: ‎🇸🇬 vultr 1
+    name: ‎🇸🇬 vultr 1 🇸🇬
     server: *bug-ip1
     port: 80
     tls: false
@@ -81,59 +84,59 @@ proxies:
         Host: sg5.putrivpn.us.kg
         Early-Data: 1
   - <<: *sshkit
-    name: ‎🇸🇬 vultr 2
+    name: ‎🇸🇬 vultr 2 🇸🇬
     server: *bug-ip2
   - <<: *sshkit
-    name: ‎🇸🇬 vultr 3
+    name: ‎🇸🇬 vultr 3 🇸🇬
     server: *bug-ip3
   - <<: *sshkit
-    name: ‎🇸🇬 vultr 4
+    name: ‎🇸🇬 vultr 4 🇸🇬
     server: *bug-ip4
   - <<: *sshkit
-    name: ‎🇸🇬 vultr 5
+    name: ‎🇸🇬 vultr 5 🇸🇬
     server: *bug-ip5
   - <<: *sshkit
-    name: ‎🇸🇬 vultr 6
+    name: ‎🇸🇬 vultr 6 🇸🇬
     server: *bug-ip6
   - <<: *sshkit
-    name: ‎🇸🇬 vultr 7
+    name: ‎🇸🇬 vultr 7 🇸🇬
     server: *bug-ip7
   - <<: *sshkit
-    name: ‎🇸🇬 vultr 8
+    name: ‎🇸🇬 vultr 8 🇸🇬
     server: *bug-ip8
   - <<: *sshkit
-    name: ‎🇸🇬 vultr 9
+    name: ‎🇸🇬 vultr 9 🇸🇬
     server: *bug-ip9
   - <<: *sshkit
-    name: ‎🇸🇬 vultr 10
+    name: ‎🇸🇬 vultr 10 🇸🇬
     server: *bug-ip10
   - <<: *sshkit
-    name: ‎🇸🇬 vultr 11
+    name: ‎🇸🇬 vultr 11 🇸🇬
     server: *bug-ip11
   - <<: *sshkit
-    name: ‎🇸🇬 vultr 12
+    name: ‎🇸🇬 vultr 12 🇸🇬
     server: *bug-ip12
   - <<: *sshkit
-    name: ‎🇸🇬 vultr 13
+    name: ‎🇸🇬 vultr 13 🇸🇬
     server: *bug-ip13
   - <<: *sshkit
-    name: ‎🇸🇬 vultr 14
+    name: ‎🇸🇬 vultr 14 🇸🇬
     server: *bug-ip14
   - <<: *sshkit
-    name: ‎🇸🇬 vultr 15
+    name: ‎🇸🇬 vultr 15 🇸🇬
     server: *bug-ip15
   - <<: *sshkit
-    name: ‎🇸🇬 vultr 16
+    name: ‎🇸🇬 vultr 16 🇸🇬
     server: *bug-ip16
   - <<: *sshkit
-    name: ‎🇸🇬 vultr 17
+    name: ‎🇸🇬 vultr 17 🇸🇬
     server: *bug-ip17
   - <<: *sshkit
-    name: ‎🇸🇬 vultr 18
+    name: ‎🇸🇬 vultr 18 🇸🇬
     server: *bug-ip18
   - <<: *sshkit
-    name: ‎🇸🇬 vultr 19
+    name: ‎🇸🇬 vultr 19 🇸🇬
     server: *bug-ip19
   - <<: *sshkit
-    name: ‎🇸🇬 vultr 20
+    name: ‎🇸🇬 vultr 20 🇸🇬
     server: *bug-ip20

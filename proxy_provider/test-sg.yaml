@@ -30,6 +30,7 @@ base-proxy:
       cipher: auto
       udp: true
       udp-over-tcp: true
+      packet-encoding: xudp
       network: ws
       smux:
         enabled: false
@@ -42,6 +43,7 @@ base-proxy:
       cipher: auto
       udp: true
       udp-over-tcp: true
+      packet-encoding: xudp
       network: ws
       smux:
         enabled: false
@@ -51,6 +53,7 @@ base-proxy:
     - &basetrojan
       type: trojan
       udp: true
+      packet-encoding: xudp
       network: ws
       smux:
         enabled: false
@@ -69,9 +72,10 @@ proxies:
 
   - &sshkit
     <<: *basevless
-    name: ‎🇸🇬 AMAZON 1
+    name: ‎🇸🇬 AMAZON 1 🇸🇬
     server: *bug-ip1
     port: 443
+    skip-cert-verify: true
     tls: true
     uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
     servername: sg2.putrivpn.us.kg
@@ -81,59 +85,59 @@ proxies:
         Host: sg2.putrivpn.us.kg
         Early-Data: 1
   - <<: *sshkit
-    name: ‎🇸🇬 AMAZON 2
+    name: ‎🇸🇬 AMAZON 2 🇸🇬
     server: *bug-ip2
   - <<: *sshkit
-    name: ‎🇸🇬 AMAZON 3
+    name: ‎🇸🇬 AMAZON 3 🇸🇬
     server: *bug-ip3
   - <<: *sshkit
-    name: ‎🇸🇬 AMAZON 4
+    name: ‎🇸🇬 AMAZON 4 🇸🇬
     server: *bug-ip4
   - <<: *sshkit
-    name: ‎🇸🇬 AMAZON 5
+    name: ‎🇸🇬 AMAZON 5 🇸🇬
     server: *bug-ip5
   - <<: *sshkit
-    name: ‎🇸🇬 AMAZON 6
+    name: ‎🇸🇬 AMAZON 6 🇸🇬
     server: *bug-ip6
   - <<: *sshkit
-    name: ‎🇸🇬 AMAZON 7
+    name: ‎🇸🇬 AMAZON 7 🇸🇬
     server: *bug-ip7
   - <<: *sshkit
-    name: ‎🇸🇬 AMAZON 8
+    name: ‎🇸🇬 AMAZON 8 🇸🇬
     server: *bug-ip8
   - <<: *sshkit
-    name: ‎🇸🇬 AMAZON 9
+    name: ‎🇸🇬 AMAZON 9 🇸🇬
     server: *bug-ip9
   - <<: *sshkit
-    name: ‎🇸🇬 AMAZON 10
+    name: ‎🇸🇬 AMAZON 10 🇸🇬
     server: *bug-ip10
   - <<: *sshkit
-    name: ‎🇸🇬 AMAZON 11
+    name: ‎🇸🇬 AMAZON 11 🇸🇬
     server: *bug-ip11
   - <<: *sshkit
-    name: ‎🇸🇬 AMAZON 12
+    name: ‎🇸🇬 AMAZON 12 🇸🇬
     server: *bug-ip12
   - <<: *sshkit
-    name: ‎🇸🇬 AMAZON 13
+    name: ‎🇸🇬 AMAZON 13 🇸🇬
     server: *bug-ip13
   - <<: *sshkit
-    name: ‎🇸🇬 AMAZON 14
+    name: ‎🇸🇬 AMAZON 14 🇸🇬
     server: *bug-ip14
   - <<: *sshkit
-    name: ‎🇸🇬 AMAZON 15
+    name: ‎🇸🇬 AMAZON 15 🇸🇬
     server: *bug-ip15
   - <<: *sshkit
-    name: ‎🇸🇬 AMAZON 16
+    name: ‎🇸🇬 AMAZON 16 🇸🇬
     server: *bug-ip16
   - <<: *sshkit
-    name: ‎🇸🇬 AMAZON 17
+    name: ‎🇸🇬 AMAZON 17 🇸🇬
     server: *bug-ip17
   - <<: *sshkit
-    name: ‎🇸🇬 AMAZON 18
+    name: ‎🇸🇬 AMAZON 18 🇸🇬
     server: *bug-ip18
   - <<: *sshkit
-    name: ‎🇸🇬 AMAZON 19
+    name: ‎🇸🇬 AMAZON 19 🇸🇬
     server: *bug-ip19
   - <<: *sshkit
-    name: ‎🇸🇬 AMAZON 20
+    name: ‎🇸🇬 AMAZON 20 🇸🇬
     server: *bug-ip20

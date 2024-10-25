@@ -30,6 +30,7 @@ base-proxy:
       cipher: auto
       udp: true
       udp-over-tcp: true
+      packet-encoding: xudp
       network: ws
       smux:
         enabled: false
@@ -42,6 +43,7 @@ base-proxy:
       cipher: auto
       udp: true
       udp-over-tcp: true
+      packet-encoding: xudp
       network: ws
       smux:
         enabled: false
@@ -52,6 +54,7 @@ base-proxy:
       type: trojan
       port: 443
       udp: true
+      packet-encoding: xudp
       network: ws
       smux:
         enabled: false
@@ -69,7 +72,7 @@ proxies:
 
   - &sshkit
     <<: *basevless
-    name: ‎🇮🇩 google 1
+    name: ‎🇮🇩 google 1 🇮🇩
     server: *bug-ip1
     port: 80
     tls: false
@@ -81,59 +84,59 @@ proxies:
         Host: id1.putrivpn.us.kg
         Early-Data: 1
   - <<: *sshkit
-    name: ‎🇮🇩 google 2
+    name: ‎🇮🇩 google 2 🇮🇩
     server: *bug-ip2
   - <<: *sshkit
-    name: ‎🇮🇩 google 3
+    name: ‎🇮🇩 google 3 🇮🇩
     server: *bug-ip3
   - <<: *sshkit
-    name: ‎🇮🇩 google 4
+    name: ‎🇮🇩 google 4 🇮🇩
     server: *bug-ip4
   - <<: *sshkit
-    name: ‎🇮🇩 google 5
+    name: ‎🇮🇩 google 5 🇮🇩
     server: *bug-ip5
   - <<: *sshkit
-    name: ‎🇮🇩 google 6
+    name: ‎🇮🇩 google 6 🇮🇩
     server: *bug-ip6
   - <<: *sshkit
-    name: ‎🇮🇩 google 7
+    name: ‎🇮🇩 google 7 🇮🇩
     server: *bug-ip7
   - <<: *sshkit
-    name: ‎🇮🇩 google 8
+    name: ‎🇮🇩 google 8 🇮🇩
     server: *bug-ip8
   - <<: *sshkit
-    name: ‎🇮🇩 google 9
+    name: ‎🇮🇩 google 9 🇮🇩
     server: *bug-ip9
   - <<: *sshkit
-    name: ‎🇮🇩 google 10
+    name: ‎🇮🇩 google 10 🇮🇩
     server: *bug-ip10
   - <<: *sshkit
-    name: ‎🇮🇩 google 11
+    name: ‎🇮🇩 google 11 🇮🇩
     server: *bug-ip11
   - <<: *sshkit
-    name: ‎🇮🇩 google 12
+    name: ‎🇮🇩 google 12 🇮🇩
     server: *bug-ip12
   - <<: *sshkit
-    name: ‎🇮🇩 google 13
+    name: ‎🇮🇩 google 13 🇮🇩
     server: *bug-ip13
   - <<: *sshkit
-    name: ‎🇮🇩 google 14
+    name: ‎🇮🇩 google 14 🇮🇩
     server: *bug-ip14
   - <<: *sshkit
-    name: ‎🇮🇩 google 15
+    name: ‎🇮🇩 google 15 🇮🇩
     server: *bug-ip15
   - <<: *sshkit
-    name: ‎🇮🇩 google 16
+    name: ‎🇮🇩 google 16 🇮🇩
     server: *bug-ip16
   - <<: *sshkit
-    name: ‎🇮🇩 google 17
+    name: ‎🇮🇩 google 17 🇮🇩
     server: *bug-ip17
   - <<: *sshkit
-    name: ‎🇮🇩 google 18
+    name: ‎🇮🇩 google 18 🇮🇩
     server: *bug-ip18
   - <<: *sshkit
-    name: ‎🇮🇩 google 19
+    name: ‎🇮🇩 google 19 🇮🇩
     server: *bug-ip19
   - <<: *sshkit
-    name: ‎🇮🇩 google 20
+    name: ‎🇮🇩 google 20 🇮🇩
     server: *bug-ip20
