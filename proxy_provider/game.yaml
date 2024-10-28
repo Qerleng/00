@@ -77,12 +77,12 @@ proxies:
     port: 443
     skip-cert-verify: true
     tls: true
-    password: 58887ad3-bc0d-47da-bfbb-614ef906b0fc
-    sni: nala.tazcoeg.eu.org
+    password: 230ffc0e-ebff-4cba-b6df-b3203ebdf52d
+    sni: vpnnn.foxxstore.my.id
     ws-opts: 
       path: /trojan-ws
       headers: 
-        Host: nala.tazcoeg.eu.org
+        Host: vpnnn.foxxstore.my.id
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2 🇸🇬
