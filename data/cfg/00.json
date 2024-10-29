@@ -5,7 +5,7 @@
         "tag": "Google",
         "address": [
           "tls://8.8.8.8",
-          "https://8.8.4.4/dns-query"
+          "tls://8.8.4.4"
         ],
         "detour": "PROXY"
       },
@@ -228,7 +228,7 @@
         "type": "remote",
         "tag": "telegram_ip",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/telegram.srs",
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/telegram_ip.srs",
         "download_detour": "PROXY"
       },
       {
@@ -249,7 +249,7 @@
         "type": "remote",
         "tag": "doh_ip",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/doh.srs",
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/doh_ip.srs",
         "download_detour": "PROXY"
       },
       {
