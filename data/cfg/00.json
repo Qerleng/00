@@ -4,10 +4,10 @@
       {
         "tag": "Google",
         "address": [
-          "tls://8.8.8.8",
+          "https://8.8.8.8/dns-query",
           "tls://8.8.4.4"
         ],
-        "detour": "PROXY"
+        "detour": "📶TUNNEL📶"
       },
       {
         "tag": "local",
@@ -61,31 +61,195 @@
   "outbounds": [
     {
       "type": "selector",
-      "tag": "PROXY",
-      "outbounds": "URL-TEST"
+      "tag": "📶TUNNEL📶",
+      "outbounds": [
+        "DIRECT",
+        "BLOCK",
+        "URL-TEST",
+        "URL-TE$T",
+        "URL-TEST-SG",
+        "URL-TEST-SGP",
+        "URL-TEST-ID"
+      ],
+      "default": "URL-TE$T"
+    },
+    {
+      "type": "selector",
+      "tag": "⚓UMUM⚓",
+      "outbounds": [
+        "DIRECT",
+        "BLOCK",
+        "URL-TEST",
+        "URL-TE$T",
+        "URL-TEST-SG",
+        "URL-TEST-SGP",
+        "URL-TEST-ID"
+      ],
+      "default": "URL-TEST"
+    },
+    {
+      "type": "selector",
+      "tag": "🎞STREAMING🎞",
+      "outbounds": [
+        "DIRECT",
+        "BLOCK",
+        "URL-TEST",
+        "URL-TE$T",
+        "URL-TEST-SG",
+        "URL-TEST-SGP",
+        "URL-TEST-ID"
+      ],
+      "default": "URL-TEST-SG"
+    },
+    {
+      "type": "selector",
+      "tag": "📱SOSMED📱",
+      "outbounds": [
+        "DIRECT",
+        "BLOCK",
+        "URL-TEST",
+        "URL-TE$T",
+        "URL-TEST-SG",
+        "URL-TEST-SGP",
+        "URL-TEST-ID"
+      ],
+      "default": "URL-TEST-SGP"
+    },
+    {
+      "type": "selector",
+      "tag": "🎰GAME•TCP🎰",
+      "outbounds": [
+        "DIRECT",
+        "BLOCK",
+        "URL-TEST",
+        "URL-TE$T",
+        "URL-TEST-SG",
+        "URL-TEST-SGP",
+        "URL-TEST-ID"
+      ],
+      "default": "DIRECT"
+    },
+    {
+      "type": "selector",
+      "tag": "🎮GAME•UDP🎮",
+      "outbounds": [
+        "DIRECT",
+        "BLOCK",
+        "URL-TEST",
+        "URL-TE$T",
+        "URL-TEST-SG",
+        "URL-TEST-SGP",
+        "URL-TEST-ID"
+      ],
+      "default": "DIRECT"
+    },
+    {
+      "type": "selector",
+      "tag": "🏧M•BANKING🏧",
+      "outbounds": [
+        "DIRECT",
+        "BLOCK",
+        "URL-TEST",
+        "URL-TE$T",
+        "URL-TEST-SG",
+        "URL-TEST-SGP",
+        "URL-TEST-ID"
+      ],
+      "default": "URL-TEST-ID"
+    },
+    {
+      "type": "selector",
+      "tag": "💬WHATSAPP💬",
+      "outbounds": [
+        "DIRECT",
+        "BLOCK",
+        "URL-TEST",
+        "URL-TE$T",
+        "URL-TEST-SG",
+        "URL-TEST-SGP",
+        "URL-TEST-ID"
+      ],
+      "default": "URL-TE$T"
+    },
+    {
+      "type": "selector",
+      "tag": "🇮🇩 ID 🇮🇩",
+      "outbounds": [
+        "DIRECT",
+        "BLOCK",
+        "URL-TEST",
+        "URL-TE$T",
+        "URL-TEST-SG",
+        "URL-TEST-SGP",
+        "URL-TEST-ID"
+      ],
+      "default": "URL-TEST-ID"
+    },
+    {
+      "type": "selector",
+      "tag": "🛡ADS•BLOCK🛡",
+      "outbounds": [
+        "DIRECT",
+        "BLOCK",
+        "URL-TEST",
+        "URL-TE$T",
+        "URL-TEST-SG",
+        "URL-TEST-SGP",
+        "URL-TEST-ID"
+      ],
+      "default": "BLOCK"
+    },
+    {
+      "type": "selector",
+      "tag": "🚫18+🚫",
+      "outbounds": [
+        "DIRECT",
+        "BLOCK",
+        "URL-TEST",
+        "URL-TE$T",
+        "URL-TEST-SG",
+        "URL-TEST-SGP",
+        "URL-TEST-ID"
+      ],
+      "default": "URL-TE$T"
     },
     {
       "type": "urltest",
-      "tag": "SELECT",
+      "tag": "URL-TEST",
+      "providers": "FILE1",
+      "interval": "30s"
+    },
+    {
+      "type": "urltest",
+      "tag": "URL-TE$T",
       "providers": "FILE2",
       "interval": "30s"
     },
     {
       "type": "urltest",
-      "tag": "URL-TEST",
-      "providers": "FILE",
+      "tag": "URL-TEST-SG",
+      "providers": [
+        "FILE3",
+        "FILE4"
+      ],
       "interval": "30s"
     },
     {
       "type": "urltest",
-      "tag": "🎞STREAMING🎞",
-      "providers": "FILE3",
+      "tag": "URL-TEST-SGP",
+      "providers": [
+        "FILE5",
+        "FILE6"
+      ],
       "interval": "30s"
     },
     {
       "type": "urltest",
-      "tag": "📱SOSMED📱",
-      "providers": "FILE4",
+      "tag": "URL-TEST-ID",
+      "providers": [
+        "FILE7",
+        "FILE8"
+      ],
       "interval": "30s"
     },
     {
@@ -112,45 +276,76 @@
         "outbound": "DIRECT"
       },
       {
-        "rule_set": "umum",
-        "outbound": "SELECT"
+        "rule_set": "bypass",
+        "outbound": "📶TUNNEL📶"
+      },
+      {
+        "domain": [
+          "www.google.co.id",
+          "www.google.com"
+        ],
+        "outbound": "⚓UMUM⚓"
       },
       {
         "port": [
           3478,
           4244
         ],
-        "outbound": "SELECT"
+        "outbound": "⚓UMUM⚓"
       },
       {
         "rule_set": [
           "AWAvenue",
-          "ADS"
+          "oisd_small",
+          "AdGuard"
         ],
-        "outbound": "BLOCK"
+        "outbound": "🛡ADS•BLOCK🛡"
       },
       {
         "rule_set": [
           "doh",
           "doh_ip"
         ],
-        "outbound": "SELECT"
+        "outbound": "⚓UMUM⚓"
       },
       {
         "rule_set": [
-          "urltest",
-          "videoconference",
-          "ipcheck"
+          "category-porn",
+          "oisd_nsfw"
         ],
-        "outbound": "PROXY"
+        "outbound": "🚫18+🚫"
+      },
+      {
+        "rule_set": "umum",
+        "outbound": "📶TUNNEL📶"
+      },
+      {
+        "rule_set": "urltest",
+        "outbound": "📶TUNNEL📶"
+      },
+      {
+        "rule_set": "videoconference",
+        "outbound": "📶TUNNEL📶"
+      },
+      {
+        "rule_set": "ipcheck",
+        "outbound": "📶TUNNEL📶"
       },
       {
         "rule_set": "ecommerce",
-        "outbound": "URL-TEST"
+        "outbound": "🏧M•BANKING🏧"
       },
       {
         "rule_set": "Stream",
         "outbound": "🎞STREAMING🎞"
+      },
+      {
+        "rule_set": "whatsapp",
+        "outbound": "💬WHATSAPP💬"
+      },
+      {
+        "rule_set": "iD",
+        "outbound": "🇮🇩 ID 🇮🇩"
       },
       {
         "rule_set": [
@@ -165,144 +360,234 @@
         "type": "remote",
         "tag": "ntp",
         "format": "binary",
+        "path": "./assets/rule/rule-ntp.srs",
         "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/rule-ntp.srs",
-        "download_detour": "PROXY"
+        "download_detour": "📶TUNNEL📶"
       },
       {
         "type": "remote",
         "tag": "umum",
         "format": "binary",
+        "path": "./assets/rule/rule-umum.srs",
         "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/rule-umum.srs",
-        "download_detour": "PROXY"
+        "download_detour": "📶TUNNEL📶"
       },
       {
         "type": "remote",
         "tag": "ipcheck",
         "format": "binary",
+        "path": "./assets/rule/rule-ipcheck.srs",
         "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/rule-ipcheck.srs",
-        "download_detour": "PROXY"
+        "download_detour": "📶TUNNEL📶"
       },
       {
         "type": "remote",
         "tag": "videoconference",
         "format": "binary",
+        "path": "./assets/rule/videoconference.srs",
         "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/videoconference.srs",
-        "download_detour": "PROXY"
+        "download_detour": "📶TUNNEL📶"
       },
       {
         "type": "remote",
         "tag": "urltest",
         "format": "binary",
+        "path": "./assets/rule/urltest.srs",
         "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/urltest.srs",
-        "download_detour": "PROXY"
+        "download_detour": "📶TUNNEL📶"
       },
       {
         "type": "remote",
         "tag": "whatsapp",
         "format": "binary",
+        "path": "./assets/rule/whatsapp.srs",
         "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/whatsapp.srs",
-        "download_detour": "PROXY"
+        "download_detour": "📶TUNNEL📶"
       },
       {
         "type": "remote",
         "tag": "ecommerce",
         "format": "binary",
+        "path": "./assets/rule/ecommerce-id.srs",
         "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/ecommerce-id.srs",
-        "download_detour": "PROXY"
+        "download_detour": "📶TUNNEL📶"
       },
       {
         "type": "remote",
         "tag": "Stream",
         "format": "binary",
+        "path": "./assets/rule/rule-streaming.srs",
         "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/rule-streaming.srs",
-        "download_detour": "PROXY"
+        "download_detour": "📶TUNNEL📶"
+      },
+      {
+        "type": "remote",
+        "tag": "iD",
+        "format": "binary",
+        "path": "./assets/rule/rule-indo.srs",
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/rule-indo.srs",
+        "download_detour": "📶TUNNEL📶"
       },
       {
         "type": "remote",
         "tag": "Sosmed",
         "format": "binary",
+        "path": "./assets/rule/rule-sosmed.srs",
         "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/rule-sosmed.srs",
-        "download_detour": "PROXY"
+        "download_detour": "📶TUNNEL📶"
       },
       {
         "type": "remote",
         "tag": "telegram_ip",
         "format": "binary",
+        "path": "./assets/rule/telegram_ip.srs",
         "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/telegram_ip.srs",
-        "download_detour": "PROXY"
+        "download_detour": "📶TUNNEL📶"
+      },
+      {
+        "type": "remote",
+        "tag": "oisd_nsfw",
+        "format": "binary",
+        "path": "./assets/rule/oisd_nsfw.srs",
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/Ads/oisd_nsfw.ars",
+        "download_detour": "📶TUNNEL📶"
+      },
+      {
+        "type": "remote",
+        "tag": "category-porn",
+        "format": "binary",
+        "path": "./assets/rule/category-porn.srs",
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/category-porn.srs",
+        "download_detour": "📶TUNNEL📶"
       },
       {
         "type": "remote",
         "tag": "AWAvenue",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/Qerleng/01/main/Ads/AWAvenue.srs",
-        "download_detour": "PROXY"
+        "path": "./assets/rule/AWAvenue.srs",
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/Ads/AWAvenue.ars",
+        "download_detour": "📶TUNNEL📶"
       },
       {
         "type": "remote",
-        "tag": "ADS",
+        "tag": "AdGuard",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/category-ads-all.srs",
-        "download_detour": "PROXY"
+        "path": "./assets/rule/AdGuard.srs",
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/Ads/AdGuard.ars",
+        "download_detour": "📶TUNNEL📶"
+      },
+      {
+        "type": "remote",
+        "tag": "oisd_small",
+        "format": "binary",
+        "path": "./assets/rule/oisd_small.ars",
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/Ads/oisd_small.ars",
+        "download_detour": "📶TUNNEL📶"
+      },
+      {
+        "type": "remote",
+        "tag": "bypass",
+        "format": "binary",
+        "path": "./assets/rule/bypass-ads.srs",
+        "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/bypass-ads.srs",
+        "download_detour": "📶TUNNEL📶"
       },
       {
         "type": "remote",
         "tag": "doh_ip",
         "format": "binary",
+        "path": "./assets/rule/doh_ip.srs",
         "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/doh_ip.srs",
-        "download_detour": "PROXY"
+        "download_detour": "📶TUNNEL📶"
       },
       {
         "type": "remote",
         "tag": "doh",
         "format": "binary",
+        "path": "./assets/rule/rule-doh.srs",
         "url": "https://raw.githubusercontent.com/Qerleng/01/main/rule_provider/rule-doh.srs",
-        "download_detour": "PROXY"
+        "download_detour": "📶TUNNEL📶"
       }
     ],
-    "final": "PROXY",
+    "final": "📶TUNNEL📶",
     "auto_detect_interface": true,
     "override_android_vpn": true
   },
   "outbound_providers": [
     {
       "type": "remote",
-      "path": "./test-sgp.yaml",
-      "tag": "FILE",
-      "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/test-sgp.yaml",
-      "download_detour": "PROXY",
-      "healthcheck_interval": "5m0s"
-    },
-    {
-      "type": "remote",
-      "path": "./game.yaml",
-      "tag": "FILE2",
+      "path": "./assets/proxy/game.yaml",
+      "tag": "FILE1",
       "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/game.yaml",
-      "download_detour": "PROXY",
+      "download_detour": "📶TUNNEL📶",
       "healthcheck_interval": "5m0s"
     },
     {
       "type": "remote",
-      "path": "./sg.yaml",
+      "path": "./assets/proxy/test-sgp.yaml",
+      "tag": "FILE2",
+      "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/test-sgp.yaml",
+      "download_detour": "📶TUNNEL📶",
+      "healthcheck_interval": "5m0s"
+    },
+    {
+      "type": "remote",
+      "path": "./assets/proxy/sg.yaml",
       "tag": "FILE3",
       "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/sg.yaml",
-      "download_detour": "PROXY",
+      "download_detour": "📶TUNNEL📶",
       "healthcheck_interval": "5m0s"
     },
     {
       "type": "remote",
-      "path": "./test-sg.yaml",
+      "path": "./assets/proxy/id.yaml",
       "tag": "FILE4",
+      "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/id.yaml",
+      "download_detour": "📶TUNNEL📶",
+      "healthcheck_interval": "5m0s"
+    },
+    {
+      "type": "remote",
+      "path": "./assets/proxy/test.yaml",
+      "tag": "FILE5",
+      "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/test.yaml",
+      "download_detour": "📶TUNNEL📶",
+      "healthcheck_interval": "5m0s"
+    },
+    {
+      "type": "remote",
+      "path": "./assets/proxy/test-sg.yaml",
+      "tag": "FILE6",
       "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/test-sg.yaml",
-      "download_detour": "PROXY",
+      "download_detour": "📶TUNNEL📶",
+      "healthcheck_interval": "5m0s"
+    },
+    {
+      "type": "remote",
+      "path": "./assets/proxy/test-id.yaml",
+      "tag": "FILE7",
+      "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/test-id.yaml",
+      "download_detour": "📶TUNNEL📶",
+      "healthcheck_interval": "5m0s"
+    },
+    {
+      "type": "remote",
+      "path": "./assets/proxy/test-idn.yaml",
+      "tag": "FILE8",
+      "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/test-idn.yaml",
+      "download_detour": "📶TUNNEL📶",
       "healthcheck_interval": "5m0s"
     }
   ],
   "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db"
+    },
     "clash_api": {
       "external_controller": "0.0.0.0:9090",
       "external_ui": "./dashboard",
-      "external_ui_download_detour": "PROXY"
+      "external_ui_download_detour": "📶TUNNEL📶"
     }
   }
 }
