@@ -62,6 +62,7 @@ jobs:
 
           chmod +x ./upx
           ./upx --best tools/CrashCore
+          ./upx --best tools/sing-box
           ./upx --best tools/mihomo
           rm upx
           cd tools
