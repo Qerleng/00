@@ -202,18 +202,18 @@
       "type": "remote",
       "path": "./sg.yaml",
       "tag": "FILE3",
-      "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/sg.yaml",
+      "download_url": "https://providers.nodex.one/id.json",
       "download_ua": "sing-box",
-      "download_detour": "PROXY",
+      "download_detour": "SELECT",
       "healthcheck_interval": "5m0s"
     },
     {
       "type": "remote",
       "path": "./test-sg.yaml",
       "tag": "FILE4",
-      "download_url": "https://raw.githubusercontent.com/Qerleng/00/main/proxy_provider/test-sg.yaml",
+      "download_url": "https://providers.nodex.one/sg.json",
       "download_ua": "sing-box",
-      "download_detour": "PROXY",
+      "download_detour": "SELECT",
       "healthcheck_interval": "5m0s"
     }
   ],
