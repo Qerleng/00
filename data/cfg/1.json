@@ -64,7 +64,7 @@
     {
       "type": "urltest",
       "tag": "URL-TEST",
-      "providers": ["FILE3","file4"],
+      "providers": ["FILE3","FILE4"],
       "interval": "30s"
     },
     {
