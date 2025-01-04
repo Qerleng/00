@@ -71,18 +71,17 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basetrojan
-    name: ‎‎🇸🇬 Test 1 🇸🇬
+    <<: *basevmess
+    name: ‎🇸🇬 vultr 1 🇸🇬
     server: *bug-ip1
     port: 443
-    skip-cert-verify: true
     tls: true
-    password: 230ffc0e-ebff-4cba-b6df-b3203ebdf52d
-    sni: vpnnn.foxxstore.my.id
+    uuid: 25f0b5d9-1bf0-4a24-9032-a4619172bd00
+    servername: vvip.metacloud.web.id
     ws-opts: 
-      path: /trojan-ws
+      path: /vmess
       headers: 
-        Host: vpnnn.foxxstore.my.id
+        Host: vvip.metacloud.web.id
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2 🇸🇬

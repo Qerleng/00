@@ -77,12 +77,12 @@ proxies:
     port: 443
     skip-cert-verify: true
     tls: true
-    uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
-    servername: sg2.putrivpn.us.kg
+    uuid: a2268dff-6dfa-4fb8-8a4c-91011b9034b9
+    servername: sg11.tingkehh.us.kg
     ws-opts: 
       path: /vlesscf
       headers: 
-        Host: sg2.putrivpn.us.kg
+        Host: sg11.tingkehh.us.kg
         Early-Data: 1
   - <<: *sshkit
     name: ‎🇸🇬 AMAZON 2 🇸🇬
