@@ -77,12 +77,12 @@ proxies:
     port: 443
     skip-cert-verify: true
     tls: true
-    uuid: 476802d2-2072-4316-8dd0-cf1dd4a9c791
-    servername: fsl2.kadanahija.xyz
+    uuid: a2268dff-6dfa-4fb8-8a4c-91011b9034b9
+    servername: sg12.tingkehh.us.kg
     ws-opts: 
       path: /vless-ws
       headers: 
-        Host: fsl2.kadanahija.xyz
+        Host: sg12.tingkehh.us.kg
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 BELNET 2 🇸🇬
