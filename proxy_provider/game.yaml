@@ -79,7 +79,7 @@ proxies:
     uuid: abe4d14f-46e8-4a2f-925f-c528589acfeb
     servername: sg-free.lgivpn.biz.id
     ws-opts: 
-      path: /vmess
+      path: /vmess/
       headers: 
         Host: sg-free.lgivpn.biz.id
         Early-Data: 1
