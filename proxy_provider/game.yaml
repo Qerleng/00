@@ -76,12 +76,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: 9f8f8415-105a-4b34-8071-b78ef2234cde
-    servername: ctb.spidermanprem.online
+    uuid: abe4d14f-46e8-4a2f-925f-c528589acfeb
+    servername: sg-free.lgivpn.biz.id
     ws-opts: 
       path: /vmess
       headers: 
-        Host: ctb.spidermanprem.online
+        Host: sg-free.lgivpn.biz.id
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2 🇸🇬
