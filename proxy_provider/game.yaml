@@ -76,12 +76,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: 5054eb9d-777b-40ef-ac0a-cb999d0dbafc
-    servername: do1.vpnbumiayu.my.id
+    uuid: 90960157-0c8a-4de4-a4a0-e23eed6469d3
+    servername: chat.vpnlite.cloud
     ws-opts: 
-      path: /vmessws/
+      path: /vmess/
       headers: 
-        Host: do1.vpnbumiayu.my.id
+        Host: chat.vpnlite.cloud
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2 🇸🇬
