@@ -76,12 +76,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: cb25d799-451b-42f7-9c3f-746619d64b2f
-    servername: sg-linode.awokawok.biz.id
+    uuid: bcc96d8e-e573-435d-aa02-4e58456524ed
+    servername: pm.bfme.web.id
     ws-opts: 
       path: /vmess/
       headers: 
-        Host: sg-linode.awokawok.biz.id
+        Host: pm.bfme.web.id
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2 🇸🇬
