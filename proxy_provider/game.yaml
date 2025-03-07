@@ -76,12 +76,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    password: ad6f66c5-20ea-4c51-8c72-fe4c3bf42c39
-    sni: id.myvpnstores.biz.id
+    password: vip
+    sni: div.sickboys.xyz
     ws-opts: 
-      path: /trojan-ws/
+      path: /vip/
       headers: 
-        Host: id.myvpnstores.biz.id
+        Host: div.sickboys.xyz
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2 🇸🇬
