@@ -76,12 +76,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: a8131a9e-3cad-462c-867e-9a86b1decd2c
-    servername: idwc.ftvpn.my.id
+    uuid: 34c997f2-437d-4ae6-a7cb-5e9e0bbe7c66
+    servername: retrivpn.serverpremium2.web.id
     ws-opts: 
       path: /vmess/
       headers: 
-        Host: idwc.ftvpn.my.id
+        Host: retrivpn.serverpremium2.web.id
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2 🇸🇬
