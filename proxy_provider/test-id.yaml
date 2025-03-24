@@ -76,7 +76,7 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: 12a54a49-a631-4585-91c4-7951a42a51a9
+    uuid: d3007f79-9419-415a-936c-ef8d59f44fe3
     servername: nautica.foolvpn.me
     ws-opts: 
       path: /203.194.112.119-8443
