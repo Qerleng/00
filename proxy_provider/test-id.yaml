@@ -76,12 +76,12 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: a2268dff-6dfa-4fb8-8a4c-91011b9034b9
-    servername: ind1.tingkeh.us.kg
+    uuid: 12a54a49-a631-4585-91c4-7951a42a51a9
+    servername: nautica.foolvpn.me
     ws-opts: 
-      path: /vlesscf
+      path: /203.194.112.119-8443
       headers: 
-        Host: ind1.tingkeh.us.kg
+        Host: nautica.foolvpn.me
         Early-Data: 1
   - <<: *sshkit
     name: ‎🇮🇩 google 2 🇮🇩
