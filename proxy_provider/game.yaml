@@ -76,12 +76,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: 39969257-34af-4ed3-93cf-ec5ee55b2a47
-    servername: idwc.ftvpn.my.id
+    uuid: 355f6d7a-f204-46a6-8a33-5968b1934706
+    servername: idbiz.ftvpn.my.id
     ws-opts: 
       path: /vmess/
       headers: 
-        Host: idwc.ftvpn.my.id
+        Host: idbiz.ftvpn.my.id
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2 🇸🇬
