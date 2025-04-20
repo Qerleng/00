@@ -76,7 +76,7 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: 9c8e26cb-26cd-4327-befd-18cfd21ae381
+    uuid: 18b4ca19-386c-4ca0-a00a-6443af486a42
     servername: id2.ftvpn.me
     ws-opts: 
       path: /vmess/
