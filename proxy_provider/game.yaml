@@ -76,12 +76,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: 18b4ca19-386c-4ca0-a00a-6443af486a42
-    servername: id2.ftvpn.me
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    servername: testmbuh.ngising.biz.id
     ws-opts: 
-      path: /vmess/
+      path: /sgfqkqmltcy.site/rbqqvws
       headers: 
-        Host: id2.ftvpn.me
+        Host: testmbuh.ngising.biz.id
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2 🇸🇬
