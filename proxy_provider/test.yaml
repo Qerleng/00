@@ -76,12 +76,12 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: 12a54a49-a631-4585-91c4-7951a42a51a9
-    servername: nautica.foolvpn.me
+    uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+    servername: afrcloud.xyz
     ws-opts: 
-      path: /54.169.229.188-443
+      path: /Inconigto-Mode/146.235.18.248-45137
       headers: 
-        Host: nautica.foolvpn.me
+        Host: afrcloud.xyz
         Early-Data: 1
   - <<: *sshkit
     name: ‎🇸🇬 amazon 2 🇸🇬
