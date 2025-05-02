@@ -77,12 +77,12 @@ proxies:
     port: 443
     skip-cert-verify: true
     tls: true
-    uuid: d3007f79-9419-415a-936c-ef8d59f44fe3
-    servername: nautica.foolvpn.me
+    uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+    servername: afrcloud.xyz
     ws-opts: 
-      path: /43.218.77.16-1443
+      path: /Inconigto-Mode/43.218.77.16-443
       headers: 
-        Host: nautica.foolvpn.me
+        Host: afrcloud.xyz
       Early-Data: 1
   - <<: *sshkit
     name: ‎🇸🇬 VULTR 2 🇸🇬
