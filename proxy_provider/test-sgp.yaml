@@ -77,12 +77,12 @@ proxies:
     port: 443
     skip-cert-verify: true
     tls: true
-    uuid: 12a54a49-a631-4585-91c4-7951a42a51a9
-    servername: nautica.foolvpn.me
+    uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+    servername: afrcloud.xyz
     ws-opts: 
-      path: /129.150.58.86-57621
+      path: /Inconigto-Mode/172.232.239.151-587
       headers: 
-        Host: nautica.foolvpn.me
+        Host: afrcloud.xyz
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 BELNET 2 🇸🇬
