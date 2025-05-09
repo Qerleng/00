@@ -76,12 +76,12 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
-    servername: afrcloud.xyz
+    uuid: vip
+    servername: div.sickboys.xyz
     ws-opts: 
-      path: /Inconigto-Mode/146.235.18.248-45137
+      path: /vip
       headers: 
-        Host: afrcloud.xyz
+        Host: div.sickboys.xyz
         Early-Data: 1
   - <<: *sshkit
     name: ‎🇸🇬 amazon 2 🇸🇬
