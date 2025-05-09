@@ -71,19 +71,19 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevless
+    <<: *basetrojan
     name: ‎🇸🇬 VULTR 1 🇸🇬
     server: *bug-ip1
     port: 443
     skip-cert-verify: true
     tls: true
-    uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
-    servername: afrcloud.xyz
+    password: vip
+    sni: div.sickboys.xyz
     ws-opts: 
-      path: /Inconigto-Mode/43.218.77.16-443
+      path: /vip/
       headers: 
-        Host: afrcloud.xyz
-      Early-Data: 1
+        Host: div.sickboys.xyz
+        Early-Data: 1
   - <<: *sshkit
     name: ‎🇸🇬 VULTR 2 🇸🇬
     server: *bug-ip2
