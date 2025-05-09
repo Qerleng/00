@@ -77,12 +77,12 @@ proxies:
     port: 443
     skip-cert-verify: true
     tls: true
-    uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
-    servername: afrcloud.xyz
+    uuid: c285b722-562e-45b8-bf09-9349f7d81085
+    servername: ava.game.naver.com.aio.proxybox.dpdns.org
     ws-opts: 
-      path: /Inconigto-Mode/172.232.239.151-587
+      path: /aioproxybot/150.109.94.144-8900
       headers: 
-        Host: afrcloud.xyz
+        Host: ava.game.naver.com.aio.proxybox.dpdns.org
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 BELNET 2 🇸🇬
