@@ -77,12 +77,12 @@ proxies:
     port: 443
     skip-cert-verify: true
     tls: true
-    uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-    servername: nuclear.us.kg
+    uuid: 23a4900d-c7ab-4996-8bd4-899505832e9a
+    servername: ava.game.naver.com.aio.zipzap.Biz.iD
     ws-opts: 
-      path: /free/101.32.247.126:725
+      path: /aioproxybot/203.194.112.119-8443
       headers: 
-        Host: nuclear.us.kg
+        Host: ava.game.naver.com.aio.zipzap.Biz.iD
         Early-Data: 1
   - <<: *sshkit
     name: ‎🇸🇬 AMAZON 2 🇸🇬
