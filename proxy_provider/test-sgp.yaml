@@ -71,18 +71,18 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevless
+    <<: *basevmess
     name: ‎‎🇸🇬 BELNET 1 🇸🇬
     server: *bug-ip1
     port: 443
     skip-cert-verify: true
     tls: true
-    uuid: c285b722-562e-45b8-bf09-9349f7d81085
-    servername: ava.game.naver.com.aio.proxybox.dpdns.org
+    uuid: da4a41d8-f38e-4b7d-9338-d222176b8379
+    servername: edydev.vpsbumiayu.site
     ws-opts: 
-      path: /aioproxybot/150.109.94.144-8900
+      path: /vmess
       headers: 
-        Host: ava.game.naver.com.aio.proxybox.dpdns.org
+        Host: edydev.vpsbumiayu.site
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 BELNET 2 🇸🇬
