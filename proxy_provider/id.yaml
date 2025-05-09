@@ -74,8 +74,8 @@ proxies:
     <<: *basetrojan
     name: ‎🇸🇬 vultr 1 🇸🇬
     server: *bug-ip1
-    port: 80
-    tls: false
+    port: 443
+    tls: true
     password: vip
     sni: div.sickboys.xyz
     ws-opts: 
