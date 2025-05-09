@@ -76,12 +76,12 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: vip
-    servername: div.sickboys.xyz
+    uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+    servername: nuclear.us.kg
     ws-opts: 
-      path: /vip
+      path: /free/101.32.247.126:725
       headers: 
-        Host: div.sickboys.xyz
+        Host: nuclear.us.kg
         Early-Data: 1
   - <<: *sshkit
     name: ‎🇸🇬 amazon 2 🇸🇬
