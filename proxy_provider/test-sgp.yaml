@@ -71,18 +71,18 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevmess
+    <<: *basetrojan
     name: ‎‎🇸🇬 BELNET 1 🇸🇬
     server: *bug-ip1
     port: 443
     skip-cert-verify: true
     tls: true
-    uuid: da4a41d8-f38e-4b7d-9338-d222176b8379
-    servername: edydev.vpsbumiayu.site
+    password: vip
+    sni: div.sickboys.xyz
     ws-opts: 
-      path: /vmess
+      path: /vip/
       headers: 
-        Host: edydev.vpsbumiayu.site
+        Host: div.sickboys.xyz
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 BELNET 2 🇸🇬
