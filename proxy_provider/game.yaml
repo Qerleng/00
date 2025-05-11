@@ -76,12 +76,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    servername: testmbuh.ngising.biz.id
+    uuid: c4d5b7e0-6ec3-4180-924d-0fae26da5925
+    servername: sgo.forfun.biz.id
     ws-opts: 
-      path: /sgfqkqmltcy.site/rbqqvws
+      path: /vmess
       headers: 
-        Host: testmbuh.ngising.biz.id
+        Host: sgo.forfun.biz.id
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2 🇸🇬
