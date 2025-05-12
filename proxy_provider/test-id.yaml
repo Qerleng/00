@@ -76,12 +76,12 @@ proxies:
     server: *bug-ip1
     port: 80
     tls: false
-    uuid: 884e8c85-d02f-4f02-9bc3-12d42b8fcfc7
-    servername: edydev.vpsbumiayu.site
+    uuid: 8abc2648-d8e2-40fb-a217-d5cb004ec9e8
+    servername: ava.game.naver.com.aio.xtradata.dpdns.org
     ws-opts: 
-      path: /vless
+      path: /aioproxybot/123.253.33.182-12306
       headers: 
-        Host: edydev.vpsbumiayu.site
+        Host: ava.game.naver.com.aio.xtradata.dpdns.org
         Early-Data: 1
   - <<: *sshkit
     name: ‎🇮🇩 google 2 🇮🇩
