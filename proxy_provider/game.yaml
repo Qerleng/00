@@ -76,12 +76,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: c4d5b7e0-6ec3-4180-924d-0fae26da5925
-    servername: sgo.forfun.biz.id
+    uuid: 87d4c1c6-fc3b-4711-b61b-7ea755bd90ee
+    servername: aren.nvstores.web.id
     ws-opts: 
       path: /vmess
       headers: 
-        Host: sgo.forfun.biz.id
+        Host: aren.nvstores.web.id
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2 🇸🇬
