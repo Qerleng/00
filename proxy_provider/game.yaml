@@ -76,12 +76,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: 87d4c1c6-fc3b-4711-b61b-7ea755bd90ee
-    servername: aren.nvstores.web.id
+    uuid: 3c0a0fe6-05b3-4d70-bece-83f0877fc30a
+    servername: upcloud.jstun.cloud
     ws-opts: 
       path: /vmess
       headers: 
-        Host: aren.nvstores.web.id
+        Host: upcloud.jstun.cloud
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2 🇸🇬
