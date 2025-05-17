@@ -71,17 +71,17 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevmess
+    <<: *basetrojan
     name: ‎🇸🇬 Test 1 🇸🇬
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: 3c0a0fe6-05b3-4d70-bece-83f0877fc30a
-    servername: upcloud.jstun.cloud
+    password: 57fa7ca0-32bc-11f0-bb71-1239d0255272
+    sni: sg4.6n6.net
     ws-opts: 
-      path: /vmess
+      path: /howdy
       headers: 
-        Host: upcloud.jstun.cloud
+        Host: sg4.6n6.net
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2 🇸🇬
