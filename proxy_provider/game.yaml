@@ -71,17 +71,17 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basetrojan
+    <<: *basevmess
     name: ‎🇸🇬 Test 1 🇸🇬
     server: *bug-ip1
     port: 443
     tls: true
-    password: 57fa7ca0-32bc-11f0-bb71-1239d0255272
-    sni: sg4.6n6.net
+    uuid: b5b47f96-3488-40b3-a017-8c348efd0666
+    servername: jualan.cloudvpn.shop
     ws-opts: 
-      path: /howdy
+      path: /vmess
       headers: 
-        Host: sg4.6n6.net
+        Host: jualan.cloudvpn.shop
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2 🇸🇬
