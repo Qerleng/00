@@ -76,12 +76,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: ff0f9c78-3f0d-49b7-81b9-11047ac03730
-    servername: cloud.vpnshare.xyz
+    uuid: tendo-monggo
+    servername: server-tendo.store
     ws-opts: 
       path: /vmess
       headers: 
-        Host: cloud.vpnshare.xyz
+        Host: server-tendo.store
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2 🇸🇬
