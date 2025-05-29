@@ -76,12 +76,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: e1fb8bb9-c91c-41b5-9d71-53dfbc1fcbda
-    servername: free.zidstore.net
+    password: PYuKp_KrgyQ68H2C82jT0A
+    sni: digioce.uderblock.my.id
     ws-opts: 
-      path: /vmess
+      path: /trojan
       headers: 
-        Host: free.zidstore.net
+        Host: digioce.uderblock.my.id
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2 🇸🇬
