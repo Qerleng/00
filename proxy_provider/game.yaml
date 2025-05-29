@@ -71,7 +71,7 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevmess
+    <<: *basetrojan
     name: ‎🇸🇬 Test 1 🇸🇬
     server: *bug-ip1
     port: 443
