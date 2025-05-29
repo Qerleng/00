@@ -76,12 +76,12 @@ proxies:
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: tendo-monggo
-    servername: server-tendo.store
+    uuid: e1fb8bb9-c91c-41b5-9d71-53dfbc1fcbda
+    servername: free.zidstore.net
     ws-opts: 
       path: /vmess
       headers: 
-        Host: server-tendo.store
+        Host: free.zidstore.net
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2 🇸🇬
