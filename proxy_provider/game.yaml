@@ -71,17 +71,17 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basetrojan
+    <<: *basevless
     name: ‎🇸🇬 Test 1 🇸🇬
     server: *bug-ip1
     port: 443
     tls: true
-    password: PYuKp_KrgyQ68H2C82jT0A
-    sni: digioce.uderblock.my.id
+    uuid: xrayvlessTCOIYgCglf55HGO
+    servername: vip.retrivip.me
     ws-opts: 
-      path: /trojan
+      path: /vless
       headers: 
-        Host: digioce.uderblock.my.id
+        Host: vip.retrivip.me
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2 🇸🇬
