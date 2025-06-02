@@ -71,17 +71,17 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevless
+    <<: *basevmess
     name: ‎🇸🇬 Test 1 🇸🇬
     server: *bug-ip1
     port: 443
     tls: true
-    uuid: xrayvlessTCOIYgCglf55HGO
-    servername: vip.retrivip.me
+    uuid: 908379e8-fef9-4bdb-bff9-bce0d22ae0dc
+    servername: check.approvedcard.xyz
     ws-opts: 
-      path: /vless
+      path: /business
       headers: 
-        Host: vip.retrivip.me
+        Host: check.approvedcard.xyz
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2 🇸🇬
