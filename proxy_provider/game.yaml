@@ -74,14 +74,14 @@ proxies:
     <<: *basevless
     name: ‎🇸🇬 Test 1 🇸🇬
     server: *bug-ip1
-    port: 443
+    port: 2087
     tls: true
-    uuid: 908379e8-fef9-4bdb-bff9-bce0d22ae0dc
-    servername: check.approvedcard.xyz
+    uuid: 3ebb0713-f360-4acd-a865-a7fe22482c63
+    servername: sgvl.cytun.xyz
     ws-opts: 
-      path: /business
+      path: /vless
       headers: 
-        Host: check.approvedcard.xyz
+        Host: sgvl.cytun.xyz
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2 🇸🇬
