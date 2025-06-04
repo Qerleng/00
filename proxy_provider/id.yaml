@@ -75,7 +75,7 @@ proxies:
     name: ‎🇸🇬 vultr 1 🇸🇬
     server: *bug-ip1
     port: 80
-    tls: true
+    tls: false
     uuid: 4881c7a1-0e15-4803-bee7-a4c171bb7665
     servername: ava.game.naver.com.aio.unlimited.biz.id
     ws-opts: 
