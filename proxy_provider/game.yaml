@@ -74,7 +74,7 @@ proxies:
     <<: *basevmess
     name: ‎🇸🇬 Test 1 🇸🇬
     server: *bug-ip1
-    port: 2087
+    port: 443
     tls: true
     uuid: 0286d6be-c9c6-4ff5-8d2d-adc79d95f2b8
     servername: id.dpstvip.my.id
