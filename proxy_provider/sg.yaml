@@ -71,18 +71,18 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basetrojan
+    <<: *basevless
     name: ‎🇸🇬 VULTR 1 🇸🇬
     server: *bug-ip1
     port: 443
     skip-cert-verify: true
     tls: true
-    password: vip
-    sni: div.sickboys.xyz
+    uuid: 4881c7a1-0e15-4803-bee7-a4c171bb7665
+    servername: ava.game.naver.com.aio.unlimited.biz.id
     ws-opts: 
-      path: /vip/
+      path: /aioproxybot/18.183.158.211-443/
       headers: 
-        Host: div.sickboys.xyz
+        Host: ava.game.naver.com.aio.unlimited.biz.id
         Early-Data: 1
   - <<: *sshkit
     name: ‎🇸🇬 VULTR 2 🇸🇬
