@@ -71,17 +71,17 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevless
+    <<: *basevmess
     name: ‎🇸🇬 Test 1 🇸🇬
     server: *bug-ip1
     port: 2087
     tls: true
-    uuid: 3ebb0713-f360-4acd-a865-a7fe22482c63
-    servername: sgvl.cytun.xyz
+    uuid: 0286d6be-c9c6-4ff5-8d2d-adc79d95f2b8
+    servername: id.dpstvip.my.id
     ws-opts: 
-      path: /vless
+      path: /vmessws/
       headers: 
-        Host: sgvl.cytun.xyz
+        Host: id.dpstvip.my.id
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2 🇸🇬
