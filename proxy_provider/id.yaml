@@ -79,7 +79,7 @@ proxies:
     uuid: 4881c7a1-0e15-4803-bee7-a4c171bb7665
     servername: ava.game.naver.com.aio.unlimited.biz.id
     ws-opts: 
-      path: /aioproxybot/18.183.158.211-443/
+      path: /aioproxybot/18.183.158.211-443
       headers: 
         Host: ava.game.naver.com.aio.unlimited.biz.id
         Early-Data: 1
