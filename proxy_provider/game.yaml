@@ -71,18 +71,18 @@ base-proxy-group:
 proxies:
 
   - &sshkit
-    <<: *basevless
+    <<: *basevmess
     name: ‎🇸🇬 Test 1 🇸🇬
     server: *bug-ip1
     port: 443
     skip-cert-verify: true
     tls: true
-    uuid: 96f5dabb-55e8-4e02-846f-546ebcd19898
-    servername: jk.vpnshare.xyz
+    uuid: 25ebe3df-14a1-4e45-aa56-1c3f380df2a3
+    servername: free.unlimited.biz.id
     ws-opts: 
-      path: /vless
+      path: /vmess-express
       headers: 
-        Host: jk.vpnshare.xyz
+        Host: free.unlimited.biz.id
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2 🇸🇬
