@@ -1,0 +1,9 @@
+payload:
+  - DOMAIN-KEYWORD,www.google.
+  - DOMAIN,www.google.com
+  - DOMAIN,www.google.co.id
+  - DOMAIN,www.google.cn
+  - DOMAIN,www.google.co.id
+  - DOMAIN,www.google.org
+  - DOMAIN,client1.google.com
+  - DOMAIN-SUFFIX,www.google.com
