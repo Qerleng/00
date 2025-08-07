@@ -1,5 +1,6 @@
 payload:
   - DOMAIN-KEYWORD,www.google.
+  - DOMAIN-REGEX,www.google.
   - DOMAIN,www.google.com
   - DOMAIN,www.google.co.id
   - DOMAIN,www.google.cn
