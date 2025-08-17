@@ -77,12 +77,12 @@ proxies:
     port: 443
     skip-cert-verify: true
     tls: true
-    uuid: 25ebe3df-14a1-4e45-aa56-1c3f380df2a3
-    servername: free.unlimited.biz.id
+    uuid: 50142cc0-ea97-4153-a756-d51cb5e2c1ab
+    servername: do1.onevpn.my.id
     ws-opts: 
-      path: /vmess-express
+      path: /vmessws
       headers: 
-        Host: free.unlimited.biz.id
+        Host: do1.onevpn.my.id
         Early-Data: 1
   - <<: *sshkit
     name: ‎‎🇸🇬 Test 2 🇸🇬
